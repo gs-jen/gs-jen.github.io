@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>StyleBuilder.SetBorderBottom</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>public method <b>StyleBuilder.SetBorderBottom</b></code></font>
+    </p><p><b>Brief</b></p>
+<p>Sets the bottom border width, stroke style and color.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td colspan="2">C#</td>
+  </tr>
+  <tr>
+    <td width="1%" nowrap valign="top"><code><a href="Gehtsoft.PDFFlow.Builder.StyleBuilder.html">Gehtsoft.PDFFlow.Builder.StyleBuilder</a>&nbsp;</code></td>
+    <td width="99%" valign="top"><code><b>SetBorderBottom</b> (<a href="Gehtsoft.PDFFlow.Models.Shared.XUnit.html">Gehtsoft.PDFFlow.Models.Shared.XUnit</a>? width, <a href="Gehtsoft.PDFFlow.Models.Enumerations.Stroke.html">Gehtsoft.PDFFlow.Models.Enumerations.Stroke</a>? stroke, <a href="Gehtsoft.PDFFlow.Models.Shared.Color.html">Gehtsoft.PDFFlow.Models.Shared.Color</a>? color) </code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>width</code></td>
+    <td class="tmain" width="69%"><p>The border width in points.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>stroke</code></td>
+    <td class="tmain" width="69%"><p>The border stroke style.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>color</code></td>
+    <td class="tmain" width="69%"><p>The border color.<br>
+The color can be specified using a system-defined color (for example,
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.Yellow.TZ4.html"><code>Color.Yellow</code></a>),
+can be translated from an HTML color code using the method
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.FromHtml.mO8.html"><code>Color.FromHtml</code></a>,
+or created from RGBA values using the method
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.FromRgba.SJA.html"><code>Color.FromRgba</code></a>.<br>
+The RGBA red, green, blue, and alpha components must have values between <code>0.0f</code> (0%, 0 byte value) and <code>1.0f</code>
+(100%, 255 byte value). The alpha component is optional, its value is <code>1.0f</code> by default, which means that the color
+is fully opaque.</p></td>
+  </tr>
+</table><p>Declared in <a href="Gehtsoft.PDFFlow.Builder.StyleBuilder.html">StyleBuilder</a></p>
+<p>
+  <center><a href="Gehtsoft.PDFFlow.Builder.StyleBuilder.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'Gehtsoft.PDFFlow.Builder.StyleBuilder.html');</script></body>
+</html>

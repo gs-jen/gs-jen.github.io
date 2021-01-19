@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Adding Table</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Adding Table</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The article describes how to add a table to a document, configure the table and add content to it.</p>
+    <p><b>Details</b></p><p>Using the library, you can create a wide variety of tables, including:</p><ul class="main">
+  <li><p>Tables with various content. You can add paragraphs, images, lines, and nest tables in a table.</p></li>
+  <li><p>Tables of different sizes. You can set a table size, row and column sizes. If you have a large table with a lot of rows,
+it will continue on the next page automatically.</p></li>
+  <li><p>Tables with different formatting. You can use easy-to-set styles for a whole table and its headers, footers, content and alternate rows, as well as
+instruments for precise formatting of each element.</p></li>
+  <li><p>Multipage tables. You do not have to calculate whether a table will fit into a page, the library can calculate this automatically
+and continue the table on the next page or a number of pages if necessary.</p></li>
+  <li><p>Tables from a JSON data source.</p></li>
+  <li><p>Tables with rowspan and colspan.</p></li>
+</ul><p><br>
+<b>Adding a Table</b></p>
+<p>You can add a table to a <a href="AddingSection.html">section</a> and to a <a href="AddingRepeatingArea.html">repeating area</a>.</p>
+<p><b>To add a a table to a section</b>, you can use the following options:</p><ul class="main">
+  <li><p>Call one of the <code>AddTable</code> methods.</p><ul class="main">
+  <li><p>The <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTable.Q72.html"><code>AddTable</code></a> method allows you to add a table and specify the column width.</p></li>
+  <li><p>The <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTable.8I4.html"><code>AddTable</code></a> method allows you to add a table,
+configure the table and add content to it inside this method.</p></li>
+</ul><pre class="example" id="example21"><code>   mySectionBuilder.AddTable(...)</code></pre></li>
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTableToSection.ahD.html"><code>AddTableToSection</code></a> method
+to add a table, configure the table and add content to it inside this method.</p><pre class="example" id="example22"><code>   mySectionBuilder.AddTableToSection(...)</code></pre></li>
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.New.VE4.html"><code>TableBuilder.New</code></a> method and pass the instance of
+<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a> you want to add this table to in this method.</p></li>
+</ul><p><b>To add a table to a repeating area</b>, you can use the following options:</p><ul class="main">
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTable.EeE.html"><code>AddTable</code></a> method to add a table and specify the column width.</p><pre class="example" id="example23"><code>   myRepeatingAreaBuilder.AddTable(...)</code></pre></li>
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTableToRepeatingArea.c03.html"><code>AddTableToRepeatingArea</code></a> method
+to add a table, configure the table and add content to it inside this method.</p><pre class="example" id="example24"><code>   myRepeatingAreaBuilder.AddTableToRepeatingArea(...)</code></pre></li>
+</ul><p><br>
+<b>Configuring the Table</b></p>
+<p>When you add a table and do not specify any style or formatting for it, it will be created with default formatting settings defined in the default table style.
+For details about formatting and styles, see the <a href="FormattingAndStyles.html">Formatting and Styles</a> article.</p>
+<p>The style and formatting for an entire table can be configured using methods of the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.html"><code>TableBuilder</code></a> class.</p>
+<p>For example:</p><pre class="example" id="example25"><code>   myTableBuilder.SetContentRowStyleHorizontalAlignment(HorizontalAlignment.Center)</code></pre><p><br>
+<b>Adding and Configuring Columns, Rows, and Cells</b></p>
+<p>After you add a table to a section or repeating area, you should add columns, rows and cells to the table by following these steps:</p><ol class="main">
+  <li><p>Add columns to the table using one of the following options:</p><ul class="main">
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddColumn</code></a> methods.</p></li>
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddColumnPercent.IA9.html"><code>AddColumnPercent</code></a> method to set the column width in percent.</p></li>
+</ul><p>Call any of these methods for each column you want to add.<br>
+For example:</p><pre class="example" id="example26"><code>   myTableBuilder.AddColumn().AddColumn().AddColumn();</code></pre></li>
+  <li><p>Add a row to the table by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRow</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRowToTable</code></a> methods.
+<br>
+For example,</p><pre class="example" id="example27"><code>   myTable.AddRow(...)</code></pre></li>
+  <li><p>Add cells to the row by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCell</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCellToRow</code></a> methods.
+The number of cells in the row must be equal to the number of columns in the table.</p></li>
+</ol><p>The style and formatting for table columns, rows and cells can be configured using the methods of
+<a href="Gehtsoft.PDFFlow.Builder.TableColumnBuilder.html"><code>TableColumnBuilder</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html"><code>TableRowBuilder</code></a>, and
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a> respectively.</p>
+<p><br>
+<b>Adding Content to the Table</b></p>
+<p>Table content is contained in cells. A cell can contain <a href="AddingParagraph.html">paragraphs</a> and nested tables.</p>
+<p>To add a paragraph to a cell:</p><ul class="main">
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraph</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraphToCell</code></a> methods.</p></li>
+</ul><p>To nest a table in a cell, you can use one of the following options:</p><ul class="main">
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.AddTable.2y7.html"><code>AddTable</code></a> method.</p><pre class="example" id="example28"><code>   myTableCellBuilder.AddTable(...)</code></pre></li>
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.New.927.html"><code>TableBuilder.New</code></a> method and pass the instance of
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a> you want to nest this table in.</p><pre class="example" id="example29"><code>   var myTable1 = TableBuilder.New(myCellBuilder)</code></pre></li>
+</ul><p><br><br>
+<b>Configuring Table Borders</b></p>
+<p>In the default table style, table borders have the following parameters: <code>stroke = Solid</code>, <code>color = Black</code>, <code>width = 0.5f</code>.
+Table borders can be configured for each cell, for each row (i.e. for every cell of the row), and for a whole table.
+You can set the width, height, and stroke style for each border side.
+If you set one or two of the parameters, the other parameter or parameters will have the values set on a higher level - on the row level for a cell,
+on the table level for a row, and in the default table style for a table.
+For example, if you set only the border width for an entire table, the table will have the default border stroke style and color;
+if you set only the border stroke style for a row in this table, the row will have the border width set for the table and the default border color;
+if you set only the border color for a cell in this row, the cell will have the border width set for the table and the border stroke style set for the row.</p><div id="open30" style="display:none">
+  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('close30'); hidediv('open30');" onclick="javascript: showdiv('close30'); hidediv('open30');">[show]</a></p>
+</div>
+<div id="close30" style="display:inline">
+  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('open30'); hidediv('close30');" onclick="javascript: showdiv('open30'); hidediv('close30');">[hide]</a></p>
+  <pre class="example" id="example30"><code>            DocumentBuilder.New()
+                .AddSection()
+                    .AddTable()
+                        .SetBorderWidth(2.0f)
+                        .AddColumnToTable()
+                        .AddColumnToTable()
+                        .AddRow()
+                    .SetBorderStroke(Stroke.Dashed)
+                    .AddCell(&quot;Cell1&quot;)
+                        .SetBorderColor(Color.Blue)
+                        .ToRow()
+                    .AddCell(&quot;Cell2&quot;)
+                        .SetBorderColor(Color.Red)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><div id="open31" style="display:inline">
+  <p>Example 1. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('close31'); hidediv('open31');" onclick="javascript: showdiv('close31'); hidediv('open31');">[show]</a></p>
+</div>
+<div id="close31" style="display:none">
+  <p>Example 1. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('open31'); hidediv('close31');" onclick="javascript: showdiv('open31'); hidediv('close31');">[hide]</a></p>
+  <pre class="example" id="example31"><code>            DocumentBuilder.New()
+            .AddSectionToDocument(sectionBuilder =&gt;
+            {
+                sectionBuilder.AddTable(tableBuilder =&gt;
+                {
+                    tableBuilder.SetBorderWidth(2.0f);
+                    tableBuilder.AddColumnToTable();
+                    tableBuilder.AddColumnToTable();
+                    tableBuilder.AddRow(rowBuilder =&gt;
+                    {
+                        rowBuilder.SetBorderStroke(Stroke.Dashed);
+                        rowBuilder.AddCell(&quot;Cell1&quot;, 0, 0, cellBuilder =&gt;
+                        {
+                            cellBuilder.SetBorderColor(Color.Blue);
+                        });
+                        rowBuilder.AddCell(&quot;Cell2&quot;, 0, 0, cellBuilder =&gt;
+                        {
+                            cellBuilder.SetBorderColor(Color.Red);
+                        });
+                    });
+                });
+            })
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p>The above code will generate the following:</p>
+<p><img src="img/tableborders.png"></p>
+<p><a href="pdf/Sample_ConfiguringTable4.pdf" target="_blank">See the document</a></p>
+<p>Note that if any of these three border parameters are not set for a cell, row or table by direct formatting,
+but these parameters are specified in a style is applied to the cell, row or table, the values will be taken
+from the style of the corresponding element, if specified, or from a style of a higher level element.
+So the following code will generate the same document because the border width will be taken from the table style:</p><div id="open32" style="display:none">
+  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('close32'); hidediv('open32');" onclick="javascript: showdiv('close32'); hidediv('open32');">[show]</a></p>
+</div>
+<div id="close32" style="display:inline">
+  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('open32'); hidediv('close32');" onclick="javascript: showdiv('open32'); hidediv('close32');">[hide]</a></p>
+  <pre class="example" id="example32"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddTable()
+                    .ApplyStyle(StyleSheet.DefaultTableStyleBuilder().SetBorderWidth(2.0f))
+                    .AddColumnToTable()
+                    .AddColumnToTable()
+                        .AddRow()
+                        .SetBorderStroke(Stroke.Dashed)
+                            .AddCell(&quot;Cell1&quot;)
+                            .SetBorderColor(Color.Blue)
+                        .ToRow()
+                            .AddCell(&quot;Cell2&quot;)
+                            .SetBorderColor(Color.Red)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><div id="open33" style="display:inline">
+  <p>Example 2. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('close33'); hidediv('open33');" onclick="javascript: showdiv('close33'); hidediv('open33');">[show]</a></p>
+</div>
+<div id="close33" style="display:none">
+  <p>Example 2. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('open33'); hidediv('close33');" onclick="javascript: showdiv('open33'); hidediv('close33');">[hide]</a></p>
+  <pre class="example" id="example33"><code>            DocumentBuilder.New()
+            .AddSectionToDocument(sectionBuilder =&gt;
+            {
+                sectionBuilder.AddTable(tableBuilder =&gt;
+                {
+                    tableBuilder.ApplyStyle(
+                        StyleSheet.DefaultTableStyleBuilder().SetBorderWidth(2.0f));
+                    tableBuilder.AddColumnToTable();
+                    tableBuilder.AddColumnToTable();
+                    tableBuilder.AddRow(rowBuilder =&gt;
+                    {
+                        rowBuilder.SetBorderStroke(Stroke.Dashed);
+                        rowBuilder.AddCell(&quot;Cell1&quot;, 0, 0, cellBuilder =&gt;
+                        {
+                            cellBuilder.SetBorderColor(Color.Blue);
+                        });
+                        rowBuilder.AddCell(&quot;Cell2&quot;, 0, 0, cellBuilder =&gt;
+                        {
+                            cellBuilder.SetBorderColor(Color.Red);
+                        });
+                    });
+                });
+            })
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p><a href="pdf/Sample_ConfiguringTable5.pdf" target="_blank">See the document</a></p>
+<p><br><br>
+<b>Configuring Table Background Color</b></p>
+<p>You can specify the background color:</p><ul class="main">
+  <li><p>For an entire table using the
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetBackColor.iWD.html"><code>TableBuilder.SetBackColor</code></a> method.</p></li>
+  <li><p>For content, alternate, header, and footer rows using the
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetContentRowStyleBackColor.75C.html"><code>SetContentRowStyleBackColor</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetAltRowStyleBackColor.PcB.html"><code>SetAltRowStyleBackColor</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetHeaderRowStyleBackColor.031.html"><code>SetHeaderRowStyleBackColor</code></a>, and
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetFooterRowStyleBackColor.K3C.html"><code>SetFooterRowStyleBackColor</code></a>
+methods respectively.</p></li>
+  <li><p>For a particular table row using the
+<a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBackColor.AZA.html"><code>TableRowBuilder.SetBackColor</code></a> method.</p></li>
+  <li><p>For a particular cell using the
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.SetBackColor.JdC.html"><code>TableCellBuilder.SetBackColor</code></a> method.</p></li>
+</ul><p>When you add a paragraph to a table cell or nest a table into a table cell, you can specify the
+background color for the paragraph and for the table (the entire table, its rows, and cells)
+using the <code>SetBackColor</code> methods of
+<a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableBuilder.html"><code>TableBuilder</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html"><code>TableRowBuilder</code></a>, and
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a>.</p>
+<p><br><br>
+<b>Tables with Colspan and Rowspan</b></p>
+<p>When you create a table with specifying column span and row span, make sure that the number of cells in each table row
+with taking into account the column span parameter is equal the number of cells in the table.
+You may have to add empty cells for correct table generation.</p>
+<p>For example, you create a table with two columns and add the same number of rows to the first table row:</p><pre class="example" id="example34"><code>    section.AddTable(tableBuilder =&gt;
+    {
+        tableBuilder.AddColumn()
+                    .AddColumn();
+        tableBuilder.AddRowToTable(rowBuilder =&gt;
+        {
+             rowBuilder.AddCellToRow(&quot;cell1.1&quot;);
+             rowBuilder.AddCellToRow(&quot;cell1.2&quot;);
+        });
+    .....</code></pre><p>In the second row, a cell with <code>colspan = 2 </code> spans two columns:</p><pre class="example" id="example35"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
+        {
+             rowBuilder.AddCellToRow(&quot;cell2.1-2&quot;, 2);
+        });</code></pre><p>In the third row, a cell with <code>rowspan = 2 </code> spans two rows, but the number of cells in the lower row must be equal to the
+number of columns in the table, so it is necessary to add an empty cell:</p><pre class="example" id="example36"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
+        {
+             rowBuilder.AddCell(&quot;cell3-4.1&quot;, 1, 2);
+             rowBuilder.AddCell(&quot;cell3.2&quot;);
+        });
+ 
+        tableBuilder.AddRowToTable(rowBuilder =&gt;
+        {
+             rowBuilder.AddCell();
+             rowBuilder.AddCell(&quot;cell4.2&quot;);
+        });
+    });</code></pre><p><br><br>
+<b>Image Columns</b></p>
+<p>When you need to create a column with a certain image in each cell of this column (for example, a column with check boxes that the user should select on a form),
+you can specify this image in the method <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddImageColumn.0SE.html"><code>AddImageColumn</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddImageColumnToTable.7OC.html"><code>AddImageColumnToTable</code></a>. See Example 6 below.</p>
+<p><br><br>
+<b>Multipage Tables</b></p>
+<p>When you create a table that spreads to two pages, it is supposed that you expect to get a book spread table, that is,
+a number of columns will be located on an odd page and a number of columns will be located on an even page. So if
+such a table is added in the beginning of a document, its first page will be empty, and the table will be generated on
+the second and third pages (the first book spread).</p>
+<p>You can create a table on more than two pages. To create such a table, it is necessary to specify the number of columns
+to show on each page using the method <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetMultipageSpread.V45.html"><code>SetMultipageSpread</code></a>.</p>
+<p>For example, for a table containing 12 columns, calling</p><pre class="example" id="example37"><code>    mytable.SetMultipageSpread(4, 3, 5)</code></pre><p>will make the first four columns rendered on the first page, the following three columns - on the second page, and the
+remaining five - on the third page. If some of the table rows do not fit into one page, they will continue on the fourth page for the first four columns,
+on the fifth page for the following three columns, and on the sixth page for the remaining five columns.</p>
+<p>You can also make the library automatically calculate whether a table fits into the page or not and continue the table on the next page or a number of pages if necessary.
+For this, enable the automatic multi-page spread mode using the method <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetAutomaticMultipageSpreadMode.dU1.html"><code>SetAutomaticMultipageSpreadMode</code></a>.</p>
+<p><br><br></p>
+<p><b>See also</b></p>
+<p><a href="AddingSection.html">Adding Section</a></p>
+<p><a href="AddingRepeatingArea.html">Adding Repeating Area</a></p>
+<p><br><br>
+<b>Examples</b></p><div id="open38" style="display:none">
+  <p>Example 3. Add simple table to a section&nbsp;<a href="javascript: showdiv('close38'); hidediv('open38');" onclick="javascript: showdiv('close38'); hidediv('open38');">[show]</a></p>
+</div>
+<div id="close38" style="display:inline">
+  <p>Example 3. Add simple table to a section&nbsp;<a href="javascript: showdiv('open38'); hidediv('close38');" onclick="javascript: showdiv('open38'); hidediv('close38');">[hide]</a></p>
+  <pre class="example" id="example38"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddParagraph(&quot;Simple table&quot;)
+                .SetBold()
+                .SetMarginBottom(5)
+            .ToSection()
+                .AddTable()
+                .SetWidth(300)
+                .SetContentRowStyleHorizontalAlignment(HorizontalAlignment.Center)
+                .SetAltRowStyleHorizontalAlignment(HorizontalAlignment.Center)
+                .AddColumnToTable(&quot;City&quot;)
+                .AddColumnToTable(&quot;State&quot;)
+                .AddColumnToTable(&quot;Population&quot;)
+                    .AddRow()
+                    .AddCellToRow(&quot;New York&quot;)
+                    .AddCellToRow(&quot;New York&quot;)
+                    .AddCellToRow(&quot;8,336,817&quot;)
+                .ToTable()
+                    .AddRow()
+                    .AddCellToRow(&quot;Los Angeles&quot;)
+                    .AddCellToRow(&quot;California&quot;)
+                    .AddCellToRow(&quot;3,979,576&quot;)
+                .ToTable()
+                    .AddRow()
+                    .AddCellToRow(&quot;Chicago&quot;)
+                    .AddCellToRow(&quot;Illinois&quot;)
+                    .AddCellToRow(&quot;2,693,976&quot;)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><div id="open39" style="display:inline">
+  <p>Example 3. Add simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('close39'); hidediv('open39');" onclick="javascript: showdiv('close39'); hidediv('open39');">[show]</a></p>
+</div>
+<div id="close39" style="display:none">
+  <p>Example 3. Add simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('open39'); hidediv('close39');" onclick="javascript: showdiv('open39'); hidediv('close39');">[hide]</a></p>
+  <pre class="example" id="example39"><code>            DocumentBuilder.New()
+            .AddSectionToDocument(sectionBuilder =&gt;
+            {
+                sectionBuilder.AddParagraph(&quot;Simple table&quot;).SetBold().SetMarginBottom(5);
+                sectionBuilder.AddTable(tableBuilder =&gt;
+                {
+                    tableBuilder.SetContentRowStyleHorizontalAlignment(HorizontalAlignment.Center);
+                    tableBuilder.SetAltRowStyleHorizontalAlignment(HorizontalAlignment.Center);
+                    tableBuilder.AddColumnToTable(&quot;City&quot;);
+                    tableBuilder.AddColumnToTable(&quot;State&quot;);
+                    tableBuilder.AddColumnToTable(&quot;Population&quot;);
+                    tableBuilder.AddRowToTable(rowBuilder =&gt;
+                    {
+                            rowBuilder
+                                .AddCellToRow(&quot;New York&quot;)
+                                .AddCellToRow(&quot;New York&quot;)
+                                .AddCellToRow(&quot;8,336,817&quot;);
+                    });
+                    tableBuilder.AddRowToTable(rowBuilder =&gt;
+                    {
+                            rowBuilder
+                                .AddCellToRow(&quot;Los Angeles&quot;)
+                                .AddCellToRow(&quot;California&quot;)
+                                .AddCellToRow(&quot;3,979,576&quot;);
+                    });
+                    tableBuilder.AddRowToTable(rowBuilder =&gt;
+                    {
+                            rowBuilder
+                                .AddCellToRow(&quot;Chicago&quot;)
+                                .AddCellToRow(&quot;Illinois&quot;)
+                                .AddCellToRow(&quot;2,693,976&quot;);
+                    });
+                    tableBuilder.SetWidth(300);
+                });
+            })
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p><b>The above code will generate the following:</b></p>
+<p><img src="img/configure-table-ex1.png">
+<a href="pdf/Sample_ConfiguringTable1.pdf" target="_blank">See the document</a></p><div id="open40" style="display:none">
+  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('close40'); hidediv('open40');" onclick="javascript: showdiv('close40'); hidediv('open40');">[show]</a></p>
+</div>
+<div id="close40" style="display:inline">
+  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('open40'); hidediv('close40');" onclick="javascript: showdiv('open40'); hidediv('close40');">[hide]</a></p>
+  <pre class="example" id="example40"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddHeaderToBothPages(100)
+                .AddParagraphToRepeatingArea(&quot;Repeating header with table&quot;)
+                    .AddTable()
+                    .AddColumnToTable(&quot;Column 1&quot;).AddColumnToTable(&quot;Column 2&quot;)
+                        .AddRow()
+                        .AddCellToRow(&quot;Row 1 Cell 1&quot;)
+                        .AddCellToRow(&quot;Row 1 Cell 2&quot;)
+                    .ToTable()
+                        .AddRow()
+                        .AddCellToRow(&quot;Row 2 Cell 1&quot;)
+                        .AddCellToRow(&quot;Row 2 Cell 2&quot;)
+            .ToSection()
+                .AddParagraph(&quot;Main flow of the document&quot;)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><div id="open41" style="display:inline">
+  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('close41'); hidediv('open41');" onclick="javascript: showdiv('close41'); hidediv('open41');">[show]</a></p>
+</div>
+<div id="close41" style="display:none">
+  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('open41'); hidediv('close41');" onclick="javascript: showdiv('open41'); hidediv('close41');">[hide]</a></p>
+  <pre class="example" id="example41"><code>            DocumentBuilder.New()
+            .AddSectionToDocument(sectionBuilder =&gt;
+            {
+                sectionBuilder.AddHeaderToBothPages(100, headerBuilder =&gt;
+                {
+                    headerBuilder.AddParagraphToRepeatingArea(&quot;Repeating header with table&quot;);
+                    headerBuilder.AddTable(tableBuilder =&gt;
+                    {
+                        tableBuilder.AddColumnToTable(&quot;Column 1&quot;);
+                        tableBuilder.AddColumnToTable(&quot;Column 2&quot;);
+                        tableBuilder.AddRow(rowBuilder =&gt;
+                        {
+                            rowBuilder
+                                .AddCellToRow(&quot;Row 1 Cell 1&quot;)
+                                .AddCellToRow(&quot;Row 1 Cell 2&quot;);
+                        });
+                        tableBuilder.AddRow(rowBuilder =&gt;
+                        {
+                            rowBuilder
+                                .AddCellToRow(&quot;Row 2 Cell 1&quot;)
+                                .AddCellToRow(&quot;Row 2 Cell 2&quot;);
+                        });
+                    });
+                });
+                sectionBuilder.AddParagraph(&quot;Main flow of the document&quot;);
+            })
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p><b>The above code will generate the following:</b></p>
+<p><img src="img/table_in_repeating_area.png">
+<a href="pdf/Sample_ConfiguringTable8.pdf" target="_blank">See the document</a></p><div id="open42" style="display:none">
+  <p>Example 5. Add simple table with image:&nbsp;<a href="javascript: showdiv('close42'); hidediv('open42');" onclick="javascript: showdiv('close42'); hidediv('open42');">[show]</a></p>
+</div>
+<div id="close42" style="display:inline">
+  <p>Example 5. Add simple table with image:&nbsp;<a href="javascript: showdiv('open42'); hidediv('close42');" onclick="javascript: showdiv('open42'); hidediv('close42');">[hide]</a></p>
+  <pre class="example" id="example42"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddTable()
+                .AddColumnToTable().AddColumnToTable()
+                    .AddRow()
+                    .AddCellToRow(&quot;Image in table cell:&quot;)
+                    .AddCell()
+                        .AddImage(&quot;imageFile.png&quot;)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p><b>The above code will generate the following:</b></p>
+<p><img src="img/configure-table-ex12.png">
+<a href="pdf/Sample_ConfiguringTable12.pdf" target="_blank">See the document</a></p><div id="open43" style="display:none">
+  <p>Example 6. Add image with formating:&nbsp;<a href="javascript: showdiv('close43'); hidediv('open43');" onclick="javascript: showdiv('close43'); hidediv('open43');">[show]</a></p>
+</div>
+<div id="close43" style="display:inline">
+  <p>Example 6. Add image with formating:&nbsp;<a href="javascript: showdiv('open43'); hidediv('close43');" onclick="javascript: showdiv('open43'); hidediv('close43');">[hide]</a></p>
+  <pre class="example" id="example43"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddTable()
+                .AddColumnToTable().AddColumnToTable()
+                    .AddRow()
+                    .AddCellToRow(&quot;Image in table cell:&quot;)
+                    .AddCell()
+                        .AddImage(&quot;imageFile.png&quot;, 50, 50, ScalingMode.UserDefined)
+                            .SetAlignment(HorizontalAlignment.Center)
+                            .SetBorder(Stroke.Dotted, Color.Blue, 1.4f)
+                            .SetMargins(10)
+            .ToDocument()
+            .Build(&quot;Result.pdf&quot;);</code></pre>
+</div><p><b>The above code will generate the following:</b></p>
+<p><img src="img/configure-table-ex13.png">
+<a href="pdf/Sample_ConfiguringTable13.pdf" target="_blank">See the document</a></p><p>Example 7. Table with colspan and rowspan:</p>
+<pre class="example" id="example44"><code>            DocumentBuilder.New()
+            .AddSection()
+                .AddParagraph(&quot;Table with colspan and rowspan:&quot;)
+                    .SetBold()
+                    .SetMarginBottom(5)
+            .ToSection().AddTable().SetWidth(300)
+                    .AddColumnToTable().AddColumnToTable()
+                    .AddColumnToTable().AddColumnToTable()
+                    .AddRow()
+                        .SetBackColor(Color.FromRgba(0, 0.69, 0.94, 1)).SetBold()
+                        .AddCell(&quot;Product&quot;)
+                            .SetRowSpan(2)
+                            .SetVerticalAlignment(VerticalAlignment.Center)
+                    .ToRow()
+                        .AddCell(&quot;Month&quot;)
+                            .SetColSpan(3)
+                            .SetHorizontalAlignment(HorizontalAlignment.Center)
+                    .ToTable()
+                    .AddRow().SetHorizontalAlignment(HorizontalAlignment.Center)
+                            .AddCellToRow()
+                            .AddCellToRow(&quot;January&quot;)
+                            .AddCellToRow(&quot;February&quot;)
+                            .AddCellToRow(&quot;March&quot;)
+                            .SetBackColor(Color.FromRgba(0, 0.69, 0.94, 1))
+                            .SetBold()
+                            .SetHorizontalAlignment(HorizontalAlignment.Center)
+                    .ToTable().AddRow()
+                            .SetHorizontalAlignment(HorizontalAlignment.Center)
+                            .AddCell()
+                            .AddParagraphToCell(&quot;Product 1&quot;)
+                            .SetHorizontalAlignment(HorizontalAlignment.Left)
+                            .ToRow()
+                            .AddCellToRow(&quot;1,000&quot;)
+                            .AddCellToRow(&quot;1,015&quot;)
+                            .AddCellToRow(&quot;1,030&quot;)
+                    .ToTable().AddRow()
+                            .SetHorizontalAlignment(HorizontalAlignment.Center)
+                            .AddCell()
+                            .AddParagraphToCell(&quot;Product 2&quot;)
+                            .SetHorizontalAlignment(HorizontalAlignment.Left)
+                            .ToRow()
+                            .AddCellToRow(&quot;2,000&quot;)
+                            .AddCellToRow(&quot;2,040&quot;)
+                            .AddCellToRow(&quot;2,075&quot;)
+                    .ToTable().AddRow()
+                            .SetHorizontalAlignment(HorizontalAlignment.Center)
+                            .AddCell()
+                            .AddParagraphToCell(&quot;Product 3&quot;)
+                            .SetHorizontalAlignment(HorizontalAlignment.Left)
+                            .ToRow()
+                            .AddCellToRow(&quot;3,000&quot;)
+                            .AddCellToRow(&quot;3,060&quot;)
+                            .AddCellToRow(&quot;3,100&quot;)
+                    .ToTable().AddRow()
+                            .SetBackColor(Color.FromRgba(0, 0.69, 0.94, 1))
+                            .SetBold()
+                            .AddCellToRow(&quot;Total for Q1&quot;)
+                            .AddCell(&quot;18,320&quot;)
+                            .SetHorizontalAlignment(HorizontalAlignment.Left)
+                            .SetColSpan(3)
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex2.png">
+ <a href="pdf/Sample_ConfiguringTable2.pdf" target="_blank">See the document</a></code></pre><div id="open45" style="display:none">
+  <p>Example 8. Add a complex table with images and tables inside:&nbsp;<a href="javascript: showdiv('close45'); hidediv('open45');" onclick="javascript: showdiv('close45'); hidediv('open45');">[show]</a></p>
+</div>
+<div id="close45" style="display:inline">
+  <p>Example 8. Add a complex table with images and tables inside:&nbsp;<a href="javascript: showdiv('open45'); hidediv('close45');" onclick="javascript: showdiv('open45'); hidediv('close45');">[hide]</a></p>
+  <pre class="example" id="example45"><code>   <b>//Create data structures for tables to avoid a lot of code and to use cycles instead</b>
+   <b>//In a real application, you can get data from an external source, database or .json file</b>
+   <b>//Define two structures in your 'Program' class, somewhere outside of methods:</b>
+        internal struct Game
+        {
+            public string name;
+            public string logo;
+            public CountryResult[] result;
+            public Game(string name, string logo, CountryResult[] result)
+            {
+                this.name = name;
+                this.logo = logo;
+                this.result = result;
+            }
+        }
+        internal struct CountryResult
+        {
+            public string country;
+            public int[] mc;
+            public CountryResult(string country, int[] mc)
+            {
+                this.country = country;
+                this.mc = mc;
+            }
+        }
+        private static void Main(string[] args)
+        {
+            var folderPath = Environment.CurrentDirectory;
+            var imgPath = Path.Combine(folderPath, &quot;Content&quot;, &quot;Images&quot;);
+            //Fill data for the table
+            Game[] games =
+            {
+               new Game(&quot;2018 Winter Olympics&quot;,
+                  Path.Combine(imgPath, &quot;olyw23.png&quot;),
+                  new CountryResult[]
+                  {
+                      new CountryResult(&quot;Norway&quot;, new int[] {14, 14, 11 }),
+                      new CountryResult(&quot;Germany&quot;, new int[] { 14, 10, 7 }),
+                      new CountryResult(&quot;Canada&quot;, new int[] { 11, 8, 10 })
+                  }),
+               new Game(&quot;2016 Summer Olympics&quot;,
+                  Path.Combine(imgPath, &quot;olys31.png&quot;),
+                  new CountryResult[]
+                  {
+                      new CountryResult(&quot;United States&quot;, new int[] { 46, 37, 38 }),
+                      new CountryResult(&quot;Great Britain&quot;, new int[] { 27, 23, 17 }),
+                      new CountryResult(&quot;China&quot;, new int[] { 26, 18, 26 })
+                  }),
+               new Game(&quot;2014 Winter Olympics&quot;,
+                  Path.Combine(imgPath, &quot;olyw22.png&quot;),
+                  new CountryResult[]
+                  {
+                      new CountryResult(&quot;Russia&quot;, new int[] { 11, 10, 9 }),
+                      new CountryResult(&quot;Norway&quot;, new int[] { 11, 5, 10 }),
+                      new CountryResult(&quot;Canada&quot;, new int[] { 10, 10, 5 })
+                  })
+            };
+            // Create a document and add a section to it
+            var document = DocumentBuilder.New();
+            var section = document.AddSection()
+                .AddParagraph(&quot;Complex table with images and table in table:&quot;)
+                .SetBold()
+                .SetMarginBottom(5)
+                .ToSection();
+            //Add a table to the section
+            var outerTableBuilder = section.AddTable()
+               .SetHeaderRowStyleMinHeight(20)
+               .SetHeaderRowStyleBackColor(Color.Gray)
+               .AddColumnPercentToTable(&quot;Games&quot;, 25)
+               .AddColumnPercentToTable(&quot;Logo&quot;, 25)
+               .AddColumnPercent(&quot;Winners&quot;, 50)
+               .ToTable();
+               //Fill the table with the data
+            foreach (Game game in games)
+            {
+                var cell = outerTableBuilder.AddRow()
+                   .AddCell(game.name)
+                        .SetVerticalAlignment(VerticalAlignment.Center)
+                        .SetHorizontalAlignment(HorizontalAlignment.Center)
+                   .ToRow().AddCell()
+                        .AddParagraph()
+                           .SetAlignment(HorizontalAlignment.Center)
+                           .AddInlineImage(game.logo)
+                           .SetScale(ScalingMode.UserDefined)
+                           .SetHeight(70)
+                   .ToRow().AddCell();
+                var tableBuilder = cell.AddTable()
+                           .AddColumnToTable(&quot;Country&quot;)
+                           .AddColumnToTable(&quot;Gold&quot;)
+                           .AddColumnToTable(&quot;Silver&quot;)
+                           .AddColumnToTable(&quot;Bronze&quot;)
+                           .AddColumnToTable(&quot;Total&quot;)
+                           .SetHeaderRowStyleFont(FontBuilder.New().SetSize(10).SetBold());
+                foreach (CountryResult countryResult in game.result)
+                {
+                    var rowBuilder = tableBuilder.AddRow();
+                    rowBuilder.AddCell()
+                           .AddParagraph(countryResult.country)
+                           .SetAlignment(HorizontalAlignment.Right);
+                    int sum = 0;
+                    foreach (int mc in countryResult.mc)
+                    {
+                        sum += mc;
+                        rowBuilder
+                        .AddCellToRow(mc.ToString());
+                    }
+                    rowBuilder
+                    .AddCellToRow(sum.ToString())
+                    .SetHorizontalAlignment(HorizontalAlignment.Center);
+                }
+            }
+            document.Build(&quot;Result.pdf&quot;);
+        }
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex3.png">
+ <a href="pdf/Sample_ConfiguringTable3.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open46" style="display:none">
+  <p>Example 9. Add a table with data from data source:&nbsp;<a href="javascript: showdiv('close46'); hidediv('open46');" onclick="javascript: showdiv('close46'); hidediv('open46');">[show]</a></p>
+</div>
+<div id="close46" style="display:inline">
+  <p>Example 9. Add a table with data from data source:&nbsp;<a href="javascript: showdiv('open46'); hidediv('close46');" onclick="javascript: showdiv('open46'); hidediv('close46');">[hide]</a></p>
+  <pre class="example" id="example46"><code>        public static void CreateExample()
+        {
+            string simpleJSON = @&quot;[
+                {
+                    CountryId: 'AU',
+                    CountryName: 'Australia'
+                },
+                {
+                    CountryId: 'US',
+                    CountryName: 'The United States Of America'
+                }]&quot;;
+            DocumentBuilder.New()
+            .AddSection()
+                .AddTable()
+                    .SetDataSource(
+                        JsonConvert.DeserializeObject&lt;List&lt;SimpleData&gt;&gt;(simpleJSON))
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+        }
+        public class SimpleData
+        {
+            public string CountryId { get; set; }
+            public string CountryName { get; set; }
+        }
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex9.png">
+ <a href="pdf/Sample_ConfiguringTable9.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open47" style="display:none">
+  <p>Example 10. Add a table with an image column:&nbsp;<a href="javascript: showdiv('close47'); hidediv('open47');" onclick="javascript: showdiv('close47'); hidediv('open47');">[show]</a></p>
+</div>
+<div id="close47" style="display:inline">
+  <p>Example 10. Add a table with an image column:&nbsp;<a href="javascript: showdiv('open47'); hidediv('close47');" onclick="javascript: showdiv('open47'); hidediv('close47');">[hide]</a></p>
+  <pre class="example" id="example47"><code>        public static void CreateExample()
+        {
+            string simpleJSON = @&quot;[
+                {
+                    CountryId: 'AU',
+                    CountryName: 'Australia'
+                },
+                {
+                    CountryId: 'US',
+                    CountryName: 'The United States Of America'
+                }]&quot;;
+            var image = ImageBuilder.New()
+                .SetFile(Path.Combine(Environment.CurrentDirectory,
+                    &quot;Content&quot;, &quot;Images&quot;, &quot;checkbox.png&quot;))
+                .SetScale(ScalingMode.UserDefined)
+                .SetSize(12, 12)
+                .SetMargins(2);
+            DocumentBuilder.New()
+            .AddSection()
+                .AddTable()
+                    .AddImageColumnToTable(&quot;Image column&quot;, image)
+                    .SetDataSource(
+                        JsonConvert.DeserializeObject&lt;List&lt;SimpleData&gt;&gt;(simpleJSON))
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+        }
+        public class SimpleData
+        {
+            public string CountryId { get; set; }
+            public string CountryName { get; set; }
+        }
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex10.png">
+ <a href="pdf/Sample_ConfiguringTable10.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open48" style="display:none">
+  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('close48'); hidediv('open48');" onclick="javascript: showdiv('close48'); hidediv('open48');">[show]</a></p>
+</div>
+<div id="close48" style="display:inline">
+  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('open48'); hidediv('close48');" onclick="javascript: showdiv('open48'); hidediv('close48');">[hide]</a></p>
+  <pre class="example" id="example48"><code>            var builder = DocumentBuilder.New();
+            TableBuilder t = builder.AddSection().AddTable()
+                .SetMultipageSpread(4, 3)
+                .AddColumnToTable(&quot;100pt&quot;, 100).AddColumnToTable(&quot;50pt&quot;, 50)
+                .AddColumnToTable(&quot;50pt&quot;, 50).AddColumnPercentToTable(&quot;50%&quot;, 50)
+                .AddColumnToTable(&quot;150pt&quot;, 150).AddColumnToTable(&quot;300pt&quot;, 300)
+                .AddColumnPercentToTable(&quot;10%&quot;, 10);
+            for (int i = 1; i &lt;= 20; i++)
+            {
+                TableRowBuilder r = t.AddRow();
+                for (int j = 1; j &lt;= 7; j++)
+                {
+                    TableCellBuilder c = r.AddCell(&quot;Row&quot; + i.ToString() + &quot; Cell&quot; + j.ToString());
+                    if (((i == 2) &amp; (j == 2)) || ((i == 6) &amp; (j == 4)))
+                        c.AddParagraph(&quot;This is a long text leading to several lines in one cell&quot;);
+                }
+            }
+            builder.Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex6.png">
+ <a href="pdf/Sample_ConfiguringTable6.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open49" style="display:inline">
+  <p>Example 12. Add a multipage spread table (using actions)&nbsp;<a href="javascript: showdiv('close49'); hidediv('open49');" onclick="javascript: showdiv('close49'); hidediv('open49');">[show]</a></p>
+</div>
+<div id="close49" style="display:none">
+  <p>Example 12. Add a multipage spread table (using actions)&nbsp;<a href="javascript: showdiv('open49'); hidediv('close49');" onclick="javascript: showdiv('open49'); hidediv('close49');">[hide]</a></p>
+  <pre class="example" id="example49"><code>            DocumentBuilder.New().AddSectionToDocument(sectionBuilder =&gt;
+            {
+                sectionBuilder.AddTable(t =&gt;
+                {
+                    t.SetMultipageSpread(4, 3);
+ 
+                    t.AddColumn(&quot;100pt&quot;, 100);
+                    t.AddColumn(&quot;50pt&quot;, 50);
+                    t.AddColumn(&quot;50pt&quot;, 50);
+                    t.AddColumnPercent(&quot;50%&quot;, 50);
+                    t.AddColumn(&quot;150pt&quot;, 150);
+                    t.AddColumn(&quot;300pt&quot;, 300);
+                    t.AddColumnPercent(&quot;10%&quot;, 10);
+ 
+                    for (int i = 1; i &lt;= 20; i++)
+                    {
+                        t.AddRow(r =&gt;
+                        {
+                            for (int j = 1; j &lt;= 7; j++)
+                            {
+                                r.AddCell(&quot;Row&quot; + i.ToString() + &quot; Cell&quot; + j.ToString(), 0, 0, c =&gt;
+                                {
+                                    if (((i == 2) &amp; (j == 2)) || ((i == 6) &amp; (j == 4)))
+                                        c.AddParagraph(&quot;This is a long text leading to several lines in one cell&quot;);
+                                });
+                            }
+                        });
+                   }
+                });
+            })
+            .Build(&quot;Result.pdf&quot;);
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex7.png">
+ <a href="pdf/Sample_ConfiguringTable7.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open50" style="display:none">
+  <p>Example 13. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('close50'); hidediv('open50');" onclick="javascript: showdiv('close50'); hidediv('open50');">[show]</a></p>
+</div>
+<div id="close50" style="display:inline">
+  <p>Example 13. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('open50'); hidediv('close50');" onclick="javascript: showdiv('open50'); hidediv('close50');">[hide]</a></p>
+  <pre class="example" id="example50"><code>            var builder = DocumentBuilder.New();
+                    TableBuilder t = builder
+                        .AddSection()
+                        .AddTable()
+                        .SetAutomaticMultipageSpreadMode()
+                        .AddColumnToTable(&quot;100pt&quot;, 100)
+                        .AddColumnToTable(&quot;50pt&quot;, 50)
+                        .AddColumnToTable(&quot;50pt&quot;, 50)
+                        .AddColumnToTable(&quot;200pt&quot;, 200)
+                        .AddColumnToTable(&quot;150pt&quot;, 150)
+            	         // The last two columns do not fit into the first page, so they will be rendered on the second page:
+                        .AddColumnToTable(&quot;300pt&quot;, 300)
+                        .AddColumnToTable(&quot;100pt&quot;, 100);
+            for (int i = 1; i &lt;= 20; i++)
+            {
+                 TableRowBuilder r = t.AddRow();
+                 for (int j = 1; j &lt;= 7; j++)
+                 {
+                     TableCellBuilder c = r.AddCell(&quot;Row&quot; + i + &quot; Cell&quot; + j);
+                     if (i == 2 &amp; j == 2 || i == 6 &amp; j == 4)
+                         c.AddParagraph(&quot;This is a long text leading to several lines in one cell&quot;);
+                  }
+            }
+            builder.Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex11.png">
+ <a href="pdf/Sample_ConfiguringTable11.pdf" target="_blank">See the document</a></code></pre>
+</div><p>
+      <center><a href="tutorials.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

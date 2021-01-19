@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>PDFFlow Library</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>PDFFlow Library</b></font>
+    </p><p>PDFFlow is a cross-platform C# library for creating PDF documents. The library is based on the well-known libHaru.</p>
+<p>With PDFFlow, you can create complex PDF documents fast and efficiently - you define documents as a set of layout rules and a sequence of paragraphs, tables, images, headers, etc.
+and the library does all the work to create a PDF document by applying the layout on the content stream.</p>
+<p>You can create agreements, contracts, log books, invoices, tickets, catalogs, brochures, complex tax and regulatory forms, medical documents, school and university tests, books and
+magazines and many other kinds of documents.</p>
+<p>Your documents can include:</p><ul class="main">
+  <li><p>Text with different formatting, including special fields such as page numbers and URLs, and widow and orphan control.</p></li>
+  <li><p>Built-in Base14 fonts, multibyte CID fonts, external TrueType and Type1 fonts, single-byte and multibyte encodings.</p></li>
+  <li><p>Multilevel lists with easy-to-use styles.</p></li>
+  <li><p>Tabulations.</p></li>
+  <li><p>Images with configurable size and scaling.</p></li>
+  <li><p>Lines, both vertical and horizontal.</p></li>
+  <li><p>Tables taking data from a data source, with colspan and rowspan.</p></li>
+  <li><p>Multi-page and book spread tables.</p></li>
+  <li><p>Repeating areas: multiple headers, footers, left and right repeating areas, and repeating areas by coordinates.</p></li>
+  <li><p>Document flow areas that define the location of the document main flow on the pages.</p></li>
+  <li><p>Automatically generated table of content.</p></li>
+</ul><p>PDFFlow supports automatic pagination and layouting: the content is automatically continued on the next page if it does not fit in the current page.</p>
+<p>You can configure any formatting settings of your document and its elements: fonts, colors, alignment, borders, indents, stroke styles, etc. as you need.
+This can be done using the corresponding methods in each case or through styles - you create your styles and apply them to quickly get the necessary formatting.</p>
+<p>The PDFFlow library is supplied with <a href="https://github.com/gehtsoft-usa/PDF.Flow.Examples" target="_blank">real document samples accompanied by descriptive articles</a> and tutorials with many working code examples
+that can be used as is or modified, and the API reference.</p>
+<p>The included license allows you to use the library for free:</p><ul class="main">
+  <li><p>In any open source or non-commercial project or products.</p></li>
+  <li><p>To prototype, develop, and test commercial projects or products.</p></li>
+</ul><p>The commercial license is required to use the library in commercial projects on the production stage (including the products used to support the internal business).
+Please contact Gehtsoft USA LLC sales representative to get details about the licensing.</p><p></p>
+    <table class="tmain" width="100%">
+      <tr>
+        <td colspan="2" class="thdr"><b>Groups</b></td>
+      </tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="tutorials.html">Tutorials</a></p>
+    <p>Basic principles of using the PDF Flow library.</p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.Builder.html">Namespace Gehtsoft.PDFFlow.Builder</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.Models.Enumerations.html">Namespace Gehtsoft.PDFFlow.Models.Enumerations</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.Models.Exceptions.html">Namespace Gehtsoft.PDFFlow.Models.Exceptions</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.Models.Shared.html">Namespace Gehtsoft.PDFFlow.Models.Shared</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.UserUtils.html">Namespace Gehtsoft.PDFFlow.UserUtils</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="Gehtsoft.PDFFlow.Utils.html">Namespace Gehtsoft.PDFFlow.Utils</a></p>
+    <p></p>
+  </td>
+</tr></table><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

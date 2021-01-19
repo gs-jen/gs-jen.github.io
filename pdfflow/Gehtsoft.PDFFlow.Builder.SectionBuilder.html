@@ -1,0 +1,629 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>SectionBuilder</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>SectionBuilder</b></code></font>
+    </p>
+    <p></p>
+    <table class="tmain" width="100%">
+      <tr>
+        <td colspan="2" class="thdr"><b>Parents</b></td>
+      </tr>
+      <tr>
+        <td style="tmain" width="30"></td>
+        <td style="tmain"><code>object</code></td>
+      </tr>
+    </table>
+    <p><b>Brief</b></p>
+    <p>The class for adding and configuring sections and their content.</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Static Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.New.XN9.html">New</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Creates a new instance of <code>SectionBuilder</code>.</p>
+    </td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Properties</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.Margins.VxF.html">Margins</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The section margins.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.PageSize.MqE.html">PageSize</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The page size.</p>
+    </td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToBothPages.wj.html">AddDocumentFlowAreaToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a document flow area for both odd and even pages of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToEvenPage.dB9.html">AddDocumentFlowAreaToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a document flow area for even pages of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToOddPage.Kr.html">AddDocumentFlowAreaToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a document flow area for odd pages of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToBothPages.am5.html">AddFooterToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to both odd and even pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToBothPagesToSection.UL1.html">AddFooterToBothPagesToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to both odd and even pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToEvenPage.NY.html">AddFooterToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to even pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToEvenPageToSection.Te3.html">AddFooterToEvenPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to even pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToOddPage.8H7.html">AddFooterToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to odd pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddFooterToOddPageToSection.Z94.html">AddFooterToOddPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a footer to odd pages of the section, allows configuring the footer, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToBothPages.Pw9.html">AddHeaderToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to both odd and even pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToBothPagesToSection.441.html">AddHeaderToBothPagesToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to both odd and even pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToEvenPage.NU.html">AddHeaderToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to even pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToEvenPageToSection.Ja8.html">AddHeaderToEvenPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to even pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToOddPage.gS9.html">AddHeaderToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to odd pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddHeaderToOddPageToSection.bCD.html">AddHeaderToOddPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a header to odd pages of the section, allows configuring the header, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToBothPages.Cm4.html">AddRptAreaLeftToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToBothPagesToSection.Ij6.html">AddRptAreaLeftToBothPagesToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToEvenPage.f2D.html">AddRptAreaLeftToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToEvenPageToSection.Yj8.html">AddRptAreaLeftToEvenPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToOddPage.sm7.html">AddRptAreaLeftToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaLeftToOddPageToSection.49G.html">AddRptAreaLeftToOddPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a left repeating area to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToBothPages.ngF.html">AddRptAreaRightToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToBothPagesToSection.pAB.html">AddRptAreaRightToBothPagesToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToEvenPage.Cr7.html">AddRptAreaRightToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToEvenPageToSection.dGC.html">AddRptAreaRightToEvenPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToOddPage.m01.html">AddRptAreaRightToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaRightToOddPageToSection.jr3.html">AddRptAreaRightToOddPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a right repeating area to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToBothPages.5W2.html">AddRptAreaToBothPages</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToBothPagesToSection.KbA.html">AddRptAreaToBothPagesToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to both odd and even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToEvenPage.a8.html">AddRptAreaToEvenPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToEvenPageToSection.RaE.html">AddRptAreaToEvenPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to even pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToOddPage.N5.html">AddRptAreaToOddPage</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddRptAreaToOddPageToSection.GD3.html">AddRptAreaToOddPageToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a repeating area by coordinates to odd pages of the section, allows configuring the repeating area, and returns the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.ApplyStyle.Bm4.html">ApplyStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Applies a style to the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.BuildToDocument.X79.html">BuildToDocument</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Builds a section to the document.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.Configure.ZR2.html">Configure</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Configures the section by a configuration action.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.GetHeight.2V.html">GetHeight</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Gets the height of the section pages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.GetWidth.gfG.html">GetWidth</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Gets the width of the section pages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.InsertPageBreak.64F.html">InsertPageBreak</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Inserts a page break in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetImageStyle.LXG.html">SetImageStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the style for images and inline images in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetLineStyle.UM2.html">SetLineStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the style for lines in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetListStyle.8M2.html">SetListStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the style for multilevel lists in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetMargins.dy8.html">SetMargins</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the margins for all sides of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetMargins.xKC.html">SetMargins</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the same margins for all sides of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetMargins.gM3.html">SetMargins</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the horizontal and vertical margins of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetMargins.ml9.html">SetMargins</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the margin for each side of the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetNumerationStyle.uX1.html">SetNumerationStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the page numbering style for the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetOrientation.owE.html">SetOrientation</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the page orientation for the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetPageNumberStart.XY1.html">SetPageNumberStart</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the number from which the page numbering will start.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetParagraphStyle.rd3.html">SetParagraphStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the style for paragraphs in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetRepeatingAreaPriority.Td5.html">SetRepeatingAreaPriority</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the priority of repeating areas with a predefined position for the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetSize.9ND.html">SetSize</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets custom paper width and height for the section pages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetSize.gp8.html">SetSize</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets a custom paper size for the section pages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetSize.3b3.html">SetSize</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets a predefined paper size for the section pages.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetStyleFont.VVF.html">SetStyleFont</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the font for the section style.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetTableStyle.63C.html">SetTableStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the style for tables in the section.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.ToDocument.7W9.html">ToDocument</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Changes the current fluent context to <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"><code>DocumentBuilder</code></a>.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

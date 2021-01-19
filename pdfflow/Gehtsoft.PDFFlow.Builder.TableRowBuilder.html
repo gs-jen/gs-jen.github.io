@@ -1,0 +1,509 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>TableRowBuilder</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>TableRowBuilder</b></code></font>
+    </p>
+    <p></p>
+    <table class="tmain" width="100%">
+      <tr>
+        <td colspan="2" class="thdr"><b>Parents</b></td>
+      </tr>
+      <tr>
+        <td style="tmain" width="30"></td>
+        <td style="tmain"><code>object</code></td>
+      </tr>
+    </table>
+    <p><b>Brief</b></p>
+    <p>The class for building table rows.</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Static Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.New.ZW2.html">New</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Creates a new instance of <code>TableRowBuilder</code>.</p>
+    </td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Properties</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.Index.1o6.html">Index</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The index of the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.RowType.LyB.html">RowType</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The type of the table row.</p>
+    </td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.ApplyStyle.Qe.html">ApplyStyle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Applies a style to the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.GetTag.3t9.html">GetTag</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Gets the tag of the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBackColor.AZA.html">SetBackColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the background color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBold.vcF.html">SetBold</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the bold font style for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorder.bU2.html">SetBorder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row border by a configuration action.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorder.7r6.html">SetBorder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row border.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorder.IFD.html">SetBorder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Method applies border style to given row</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorder.88G.html">SetBorder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Method applies border style to given row</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorder.NrA.html">SetBorder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Method applies border style to given row</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderColor.z4C.html">SetBorderColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the border color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderColor.ha6.html">SetBorderColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Method sets table row border color</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderStroke.ZO7.html">SetBorderStroke</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the border stroke style for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderStroke.P31.html">SetBorderStroke</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the stroke style for each side the table row border.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderWidth.YnF.html">SetBorderWidth</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the border width for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetBorderWidth.b3G.html">SetBorderWidth</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Method sets width for given table row border</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetFont.FV9.html">SetFont</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row font.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetFont.5g1.html">SetFont</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the font for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetFontColor.kT.html">SetFontColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the font color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetFontName.ij7.html">SetFontName</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the font name for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetFontSize.a37.html">SetFontSize</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row font size.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetHeight.Yj7.html">SetHeight</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row height.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetHorizontalAlignment.0p8.html">SetHorizontalAlignment</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row horizontal alignment.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetItalic.PzE.html">SetItalic</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the italic font style for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetMinHeight.cf5.html">SetMinHeight</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row minimum height.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetOblique.pj8.html">SetOblique</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the oblique font style for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetRowIndex.hs6.html">SetRowIndex</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the index of the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetRowType.ldA.html">SetRowType</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the type of the table row (header, content or footer).</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetStrikethrough.Y3F.html">SetStrikethrough</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row strikethrough stroke style and color.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetStrikethrough.Qs9.html">SetStrikethrough</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the strikethrough stroke style and color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetStrikethroughColor.xGF.html">SetStrikethroughColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the strikethrough color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetStrikethroughStroke.KZ1.html">SetStrikethroughStroke</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the strikethrough color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetTag.kOB.html">SetTag</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets a tag for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetTextOverflowAction.BgC.html">SetTextOverflowAction</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Set the text overflow action for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetUnderline.1rC.html">SetUnderline</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the underline stroke and color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetUnderline.D4E.html">SetUnderline</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets that font style for the table row to underline.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetUnderlineColor.aW6.html">SetUnderlineColor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the underline color for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetUnderlineStroke.oEC.html">SetUnderlineStroke</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the underline stroke style for the table row.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.SetVerticalAlignment.vKA.html">SetVerticalAlignment</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Sets the table row vertical alignment.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.ToArea.xu2.html">ToArea</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Changes the current fluent context to <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.html"><code>RepeatingAreaBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.ToDocument.aj5.html">ToDocument</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Changes the current fluent context to <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"><code>DocumentBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.ToSection.Ap6.html">ToSection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Changes the current fluent context to <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.ToTable.XEA.html">ToTable</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Changes the current fluent context to <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.html"><code>TableBuilder</code></a>.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

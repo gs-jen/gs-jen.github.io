@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Adding Repeating Area</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Adding Repeating Area</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The article describes how to add and configure repeating areas.</p>
+    <p><b>Details</b></p><p><i>Repeating area</i> is a container with content that repeats on both odd and even pages of a section, or on its odd or even pages.
+A repeating area is a box of specified width or height located in a certain position on a page.<br>
+The position can be:</p><ul class="main">
+  <li><p><i>Predefined</i>. The following types of repeating areas have a predefined position:</p><ul class="main">
+  <li><p>Headers - located at the top margin of the section.</p></li>
+  <li><p>Footers - located at the bottom margin of the section.</p></li>
+  <li><p>Left and right repeating areas - located at the left and right margins of the section.</p></li>
+</ul></li>
+  <li><p>Specified <i>by coordinates</i> on a page as the distance from the left and top margins of the section.</p></li>
+</ul><p>A repeating area can include any content elements, such as paragraphs, tables, images, lines.
+They can be added to the area using the corresponding methods, for example <code>AddParagraph</code> and <code>AddParagraphToRepeatingArea</code>.
+The elements must fit in the repeating area box.<br>
+For details about adding and configuring content elements, see the corresponding articles.</p>
+<p>Repeating areas can be added to a section for both odd and even pages and for odd and even pages separately
+by using the corresponding methods of <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
+<p>You can add a number of repeating areas to a section, but they should not overlap.</p>
+<p>When a number of repeating areas are added, the following rules apply:</p><ul class="main">
+  <li><p>If headers, footers and left and right repeating areas are added to a section, their priority is configured by the
+<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetRepeatingAreaPriority.Td5.html"><code>SectionBuilder.SetRepeatingAreaPriority</code></a> method.
+By default, headers and footers have priority over left and right repeating areas - that is, the height of the left and right repeating areas
+is reduced by the height of headers and footers.</p></li>
+  <li><p>If you add a number of repeating areas with a predefined position of the same type, for example, footers -
+they will stack on to each other in the order they were added to the section without any space between them.</p></li>
+</ul><p><b>Repeating Areas and Document Flow Areas</b></p>
+<p>The layout of pages in a section is defined by repeating areas and <a href="AddingDocumentFlowArea.html">document flow area</a>.</p><ul class="main">
+  <li><p>If you add a repeating area by specifying its coordinates, it is necessary to specify the coordinates of the document flow area.</p></li>
+  <li><p>If the coordinates of the document flow area are specified for the same pages (both odd and even, odd, or even) as the repeating areas,
+it is also necessary to make sure that the repeating areas do not overlap it.</p></li>
+  <li><p>If you add a repeating area with a predefined position and the coordinates of the document flow area are not specified,
+the section content will occupy the entire remaining space of the page.</p></li>
+</ul><p>Note that if you need to create a document only with repeating areas and without a document flow area, for correct generation
+of the document, you should call the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code>.SetMargins(0)</code> method.</p>
+<p><br><br>
+If you do not specify formatting settings for a repeating area, they will have their default values defined by the default style.
+You can apply a style to an entire repeating area using the method <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.ApplyStyle.RF6.html"><code>ApplyStyle</code></a> and
+set styles for all content elements of the same type on the repeating area level by using the methods
+<a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetParagraphStyle.wfA.html"><code>SetParagraphStyle</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetTableStyle.Wr8.html"><code>SetTableStyle</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetImageStyle.rQD.html"><code>SetImageStyle</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetLineStyle.YFB.html"><code>SetLineStyle</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetListStyle.WFB.html"><code>SetListStyle</code></a>.
+For more on working with styles, see the article <a href="FormattingAndStyles.html">Formatting and Styles</a>.</p>
+<p><b>See also</b></p>
+<p><a href="AddingSection.html">Adding Section</a></p>
+<p><a href="AddingDocumentFlowArea.html">Adding Document Flow Area</a></p>
+<p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
+<p><b>Examples</b></p><div id="open118" style="display:none">
+  <p>Example 1. Add a header with an image and add a footer with a custom text and a page number on each page&nbsp;<a href="javascript: showdiv('close118'); hidediv('open118');" onclick="javascript: showdiv('close118'); hidediv('open118');">[show]</a></p>
+</div>
+<div id="close118" style="display:inline">
+  <p>Example 1. Add a header with an image and add a footer with a custom text and a page number on each page&nbsp;<a href="javascript: showdiv('open118'); hidediv('close118');" onclick="javascript: showdiv('open118'); hidediv('close118');">[hide]</a></p>
+  <pre class="example" id="example118"><code>            var pathImage = Path.Combine(
+                Environment.CurrentDirectory, &quot;Images&quot;, &quot;PDF.png&quot;);
+            var styleMain = StyleBuilder.New().SetFontSize(11);
+            //Create a document:
+            DocumentBuilder.New()
+            .AddSection().ApplyStyle(styleMain)
+                .SetSize(PaperSize.A5)
+                .SetOrientation(PageOrientation.Portrait)
+            .AddHeaderToBothPages(30)
+                .AddParagraph()
+                    .SetFont(Fonts.Courier(11))
+                    .SetAlignment(HorizontalAlignment.Center)
+                    .AddInlineImage(pathImage, 24, 24)
+                    .SetMarginRight(5).SetMarginTop(5).ToParagraph()
+                    .AddText(&quot;GS PDF Library&quot;)
+            .ToSection()
+                .AddParagraphToSection(&quot;This document is an example of a PDF document:&quot; +
+                       &quot;A5 paper size, portrait orientation, a header with an image, &quot; +
+                       &quot;a footer with a line and a page number, an empty page at the end.&quot;)
+                .InsertPageBreak()
+            .AddFooterToBothPages(20)
+                .AddLineToRepeatingArea()
+                .AddParagraph(&quot;A footer with custom text, &quot;)
+                    .AddPageNumberToParagraph(&quot;page #&quot;)
+                    .SetAlignment(HorizontalAlignment.Center)
+            //Build a file:
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configure-repeating-areas-ex1.png">
+ 
+ <a href="pdf/Sample_Configure-Repeating-Areas1.pdf" target="_blank">See the document</a>
+</code></pre>
+</div><div id="open119" style="display:none">
+  <p>Example 2. Add a footer for each page and different right and left repeating areas for odd and even pages (the code doesn't include texts)&nbsp;<a href="javascript: showdiv('close119'); hidediv('open119');" onclick="javascript: showdiv('close119'); hidediv('open119');">[show]</a></p>
+</div>
+<div id="close119" style="display:inline">
+  <p>Example 2. Add a footer for each page and different right and left repeating areas for odd and even pages (the code doesn't include texts)&nbsp;<a href="javascript: showdiv('open119'); hidediv('close119');" onclick="javascript: showdiv('open119'); hidediv('close119');">[hide]</a></p>
+  <pre class="example" id="example119"><code>            var pathQRcode = Path.Combine(
+                Environment.CurrentDirectory, &quot;Content&quot;, &quot;Images&quot;, &quot;qrcode.png&quot;);
+            var styleMain = StyleBuilder.New()
+                .SetFontSize(14);
+            //Create a document:
+            var document = DocumentBuilder.New();
+            var section = document.AddSection().ApplyStyle(styleMain)
+                .SetRepeatingAreaPriority(RepeatingAreaPriority.Vertical)
+                .SetSize(PaperSize.A5).SetOrientation(PageOrientation.Portrait)
+                .SetMargins(40)
+                .AddRptAreaRightToOddPage(70)
+                    .AddParagraph(&quot;page #&quot;)
+                    .SetBackColor(Color.Gray).SetAlignment(HorizontalAlignment.Center)
+                    .AddPageNumber().ToSection()
+                .AddRptAreaLeftToEvenPage(70)
+                    .AddImage(pathQRcode, ScalingMode.Stretch).SetMarginRight(10)
+                .ToSection()
+                    .AddParagraphToSection(&quot;This document is an example of a PDF &quot; +
+                                        &quot;document: A5 paper size, portrait &quot; +
+                                        &quot;orientation, a left footer on odd pages with &quot; +
+                                        &quot;page number and width 50, a right footer &quot; +
+                                        &quot;on even pages with QR code and width 50, &quot; +
+                                        &quot;a footer with custom text and a line to show &quot; +
+                                        &quot;that left and right footers have priority over &quot; +
+                                        &quot;horizontal footer.&quot;)
+                    .AddLine().SetMarginTop(50).ToSection();
+            for (int n = 0; n &lt; arrQuestions.Length; n++)
+                AddQA(section, arrQuestions[n], arrAnswers[n]);
+            section.AddFooterToBothPages(40)
+                   .AddLineToRepeatingArea()
+                   .AddParagraph(&quot;This a footer set for each page of this section.&quot;)
+                   .SetFontSize(12).SetFontColor(Color.Blue);
+            //Build a file:
+            document.Build(&quot;Result.pdf&quot;);
+            //Method:
+            void AddQA(SectionBuilder docFlow,
+                       string question, string answer)
+            {
+                docFlow.AddParagraph(question).SetMarginTop(30).SetMarginBottom(30)
+                       .SetBold();
+                docFlow.AddParagraph(answer);
+            }
+
+ <b>After including the corresponding texts, the above code will generate the following:</b>
+ <img src="img/configure-repeating-areas-ex3.png">
+ 
+ <a href="pdf/Sample_ConfigureSectionRepeatingAreas3.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open120" style="display:inline">
+  <p>Example 2. Add a footer for each page and different right and left repeating areas for odd and even pages (full version)&nbsp;<a href="javascript: showdiv('close120'); hidediv('open120');" onclick="javascript: showdiv('close120'); hidediv('open120');">[show]</a></p>
+</div>
+<div id="close120" style="display:none">
+  <p>Example 2. Add a footer for each page and different right and left repeating areas for odd and even pages (full version)&nbsp;<a href="javascript: showdiv('open120'); hidediv('close120');" onclick="javascript: showdiv('open120'); hidediv('close120');">[hide]</a></p>
+  <pre class="example" id="example120"><code>        public static void CreateExample2()
+        {
+            var pathQRcode = Path.Combine(
+                Environment.CurrentDirectory, &quot;Content&quot;, &quot;Images&quot;, &quot;qrcode.png&quot;);
+            var styleMain = StyleBuilder.New()
+                .SetFontSize(14);
+            string[] arrQuestions = new string[]
+            {
+                Example2q1,
+                Example2q2,
+                Example2q3,
+                Example2q4,
+                Example2q5,
+                Example2q6
+            };
+ 
+            string[] arrAnswers = new string[]
+            {
+                Example2a1,
+                Example2a2,
+                Example2a3,
+                Example2a4,
+                Example2a5,
+                Example2a6
+            };
+            //Create a document:
+            var document = DocumentBuilder.New();
+            var section = document.AddSection().ApplyStyle(styleMain)
+                .SetRepeatingAreaPriority(RepeatingAreaPriority.Vertical)
+                .SetSize(PaperSize.A5).SetOrientation(PageOrientation.Portrait)
+                .SetMargins(40)
+                .AddRptAreaRightToOddPage(70)
+                    .AddParagraph(&quot;page #&quot;)
+                    .SetBackColor(Color.Gray).SetAlignment(HorizontalAlignment.Center)
+                    .AddPageNumber().ToSection()
+                .AddRptAreaLeftToEvenPage(70)
+                    .AddImage(pathQRcode, ScalingMode.Stretch).SetMarginRight(10)
+                .ToSection()
+                    .AddParagraphToSection(&quot;This document is an example of a PDF &quot; +
+                                        &quot;document: A5 paper size, portrait &quot; +
+                                        &quot;orientation, a left footer on odd pages with &quot; +
+                                        &quot;page number and width 50, a right footer &quot; +
+                                        &quot;on even pages with QR code and width 50, &quot; +
+                                        &quot;a footer with custom text and a line to show &quot; +
+                                        &quot;that left and right footers have priority over &quot; +
+                                        &quot;horizontal footer.&quot;)
+                    .AddLine().SetMarginTop(50).ToSection();
+            for (int n = 0; n &lt; arrQuestions.Length; n++)
+                AddQA(section, arrQuestions[n], arrAnswers[n]);
+            section.AddFooterToBothPages(40)
+                   .AddLineToRepeatingArea()
+                   .AddParagraph(&quot;This a footer set for each page of this section.&quot;)
+                   .SetFontSize(12).SetFontColor(Color.Blue);
+            //Build a file:
+            document.Build(&quot;Result.pdf&quot;);
+            //Add texts to the document:
+            void AddQA(SectionBuilder docFlow,
+                       string question, string answer)
+            {
+                docFlow.AddParagraph(question).SetMarginTop(30).SetMarginBottom(30)
+                       .SetBold();
+                docFlow.AddParagraph(answer);
+            }
+        }
+ 
+        private static string Example2q1 = &quot;What differs GS PDFFlow Library from any other PDF generation library out there?&quot;;
+        private static string Example2a1 = &quot;Any library that is available on the market right now would be a direct competitor to Haru we base GS PDFFlow Library on. &quot; +
+            &quot;Don't think of GS PDFFlow as a library to just create a document. It is rather a page making API that you can use in your application. &quot; +
+            &quot;We provide a big chunk of functionality that you would expect in applications like Adobe InDesign minus the user interface. &quot; +
+            &quot;This approach takes a load off of developer's shoulders allowing them to concentrate solely on the business needs. &quot; +
+            &quot;It improves code readability and supportability, decreases the chances of defects or other mistakes, saves time and money - &quot; +
+            &quot;all when working with PDF documents.&quot;;
+        private static string Example2q2 = &quot;This sounds complicated. Do I really need GS PDFFlow Library if I only need to create printable version of an invoice in my application?&quot;;
+        private static string Example2a2 = &quot;GS PDFFlow Library is not a complicated tool. It is versatile, but removes a lot of costs that are normally associated with PDF development. &quot; +
+            &quot;For example, since the library takes care of the content layout, TOC, pagination, even book spread tables, you do not need deep and thorough knowledge of PDF technology. &quot; +
+            &quot;This reduces the learning curve as you are working with objects (for example, tables or images) that are easy to understand. &quot; +
+            &quot;Additionally, since the use of the library reduces the amount of code and potential errors, in the long run it is efficient even for small tasks.&quot;;
+        private static string Example2q3 = &quot;Can I read and/or change an existing PDF document?&quot;;
+        private static string Example2a3 = &quot;No, we do not provide functionality to work with existing PDF. The sole purpose of GS PDFFlow Library is to offer an easy way to create simple and complex &quot; +
+            &quot;PDF documents when you need to provide a printable version for your needs or the needs of your end-users.&quot;;
+        private static string Example2q4 = &quot;Do you provide mobile platforms support?&quot;;
+        private static string Example2a4 = &quot;Yes, GS PDFFlow Library can be used for mobile platform applications as well. Contact us with any inquiries about mobile platform builds.&quot;;
+        private static string Example2q5 = &quot;Can I use GS PDFFlow library in commercial applications?&quot;;
+        private static string Example2a5 = &quot;Yes, GS PDFFlow Library is available for purchase for commercial use. We offer both: volume based licenses and per server licenses. &quot; +
+            &quot;Also, we are always open to discuss the licensing that works best for your. Contact us today to get more information on pricing!&quot;;
+        private static string Example2q6 = &quot;Do I need a commercial license for Dev or QA Server?&quot;;
+        private static string Example2a6 = &quot;No, we strongly believe in affordability. You only need to pay for the production server for your internal usage or external application. &quot; +
+            &quot;You can use free license for development and QA needs.&quot;;
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configure-repeating-areas-ex3.png">
+ 
+ <a href="pdf/Sample_ConfigureSectionRepeatingAreas3.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open121" style="display:none">
+  <p>Example 3. Create a document consisting only of repeating areas: a footer on each page and left and right repeating areas on odd and even pages&nbsp;<a href="javascript: showdiv('close121'); hidediv('open121');" onclick="javascript: showdiv('close121'); hidediv('open121');">[show]</a></p>
+</div>
+<div id="close121" style="display:inline">
+  <p>Example 3. Create a document consisting only of repeating areas: a footer on each page and left and right repeating areas on odd and even pages&nbsp;<a href="javascript: showdiv('open121'); hidediv('close121');" onclick="javascript: showdiv('open121'); hidediv('close121');">[hide]</a></p>
+  <pre class="example" id="example121"><code>            var pathImage = Path.Combine(
+                Environment.CurrentDirectory, &quot;Content&quot;, &quot;Images&quot;, &quot;logo.png&quot;);
+            var styleMain = StyleBuilder.New()
+                .SetFontSize(14)
+                .SetMarginLeft(40)
+                .SetMarginTop(20)
+                .SetMarginRight(40);
+            var styleLine = StyleBuilder.New(styleMain)
+                .SetMargin(Inherit.Parent)
+                .SetMarginTop(50);
+            //Create a document:
+            var document = DocumentBuilder.New();
+            var section = document.AddSection().SetSize(PaperSize.A5).SetMargins(0);
+            section.AddRptAreaRightToOddPage(295).ApplyStyle(styleMain)
+                        .AddImageToRepeatingArea(pathImage)
+                        .AddParagraph(&quot;Many developers have the same need: a tool to create documents &quot; +
+                                      &quot;for printing or sending to their users in a PDF format. The solutions &quot; +
+                                      &quot;currently available on the market have one common drawback - they  &quot; +
+                                      &quot;provide only a low-level functionality to create PDF documents.&quot;);
+            AddNote(section.AddRptAreaLeftToOddPage(295));
+            AddNote(section.AddRptAreaRightToEvenPage(295));
+            AddNote(section.AddRptAreaLeftToEvenPage(295));
+            section.AddEmptyPage().AddEmptyPage()
+                    .AddFooterToBothPages(20)
+                        .AddLineToRepeatingArea()
+                        .AddParagraph()
+                        .AddTabulation(150, TabulationType.Center)
+                        .AddTabulation(450, TabulationType.Center)
+                        .AddTabSymbol()
+                        .AddTextToParagraph(&quot;additional information on the website&quot;)
+                        .AddTabSymbol()
+                        .AddUrlToParagraph(&quot;https://gehtsoftusa.com/products/gs-pdf-library/&quot;);
+            //Build a file:
+            document.Build(&quot;Result.pdf&quot;);
+            //Add lines for notes:
+            void AddNote(RepeatingAreaBuilder area)
+            {
+                area.ApplyStyle(styleMain).SetLineStyle(styleLine)
+                    .AddParagraph(&quot;Notes&quot;).SetAlignment(HorizontalAlignment.Center);
+                for (int i = 0; i &lt; 6; i++)
+                    area.AddLineToRepeatingArea();
+            }
+
+ <b>The above code will generate the following:</b>
+ <img src="img/configure-repeating-areas-ex2.png">
+ 
+ <a href="pdf/Sample_ConfigureSectionRepeatingAreas2.pdf" target="_blank">See the document</a>
+</code></pre>
+</div><p>
+      <center><a href="tutorials.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>
