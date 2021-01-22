@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Namespace KendoUI.DataRequest</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Namespace KendoUI.DataRequest</b></font>
+    </p><p>In order to provide data to Kendo controls that relies (such as <a href="tags.form.x-autocomplete-edit.html"><code>x-autocomplete-edit</code></a>,
+<a href="tags.form.x-select.html"><code>x-select</code></a> or <a href="tags.grid.x-grid.html"><code>x-grid</code></a> on the server data:</p>
+<p>1) Add <code>KendoUI.DataRequest</code> package from the private Gehtsoft repository to the project.</p>
+<p>2) For each kind of the data, implement an action that takes <a href="KendoUI.DataRequest.DataSourceRequest.html"><code>DataSourceRequest</code></a> object
+and returns a json object with the data.</p>
+<p>3) The json object that is returned by the method must consist of the following properties:</p><table class="tmain">
+  <tr>
+    <td class="thdr" width="15%"><p>Name</p></td>
+    <td class="thdr" width="15%"><p>Type</p></td>
+    <td class="thdr"><p>Description</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>total</p></td>
+    <td class="tmain"><p>int</p></td>
+    <td class="tmain"><p>Total number of the records in the whole filtered set. The value is used when paging is requested to show proper page bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>errors</p></td>
+    <td class="tmain"><p>string</p></td>
+    <td class="tmain"><p>Errors (if any) happened during getting the data.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>data</p></td>
+    <td class="tmain"><p>object[]</p></td>
+    <td class="tmain"><p>An array of the filtered and paginated data.</p></td>
+  </tr>
+</table><p>The data for the <a href="tags.form.x-autocomplete-edit.html"><code>x-autocomplete-edit</code></a> and <a href="tags.form.x-select.html"><code>x-select</code></a> tags
+must consist of two properties <code>Id</code> with the data identifier and <code>Value</code> with the text to display in the control.</p>
+<p>The data for the <a href="tags.grid.x-grid.html"><code>x-grid</code></a> must follow
+the schema defined in the control using <a href="tags.transport.x-server-field.html"><code>x-server-field</code></a> tag.</p>
+<p>See below an example of the implementation of the data getting method on the base of EF database access.</p><div id="open29" style="display:none">
+  <p>Example&nbsp;<a href="javascript: showdiv('close29'); hidediv('open29');" onclick="javascript: showdiv('close29'); hidediv('open29');">[show]</a></p>
+</div>
+<div id="close29" style="display:inline">
+  <p>Example&nbsp;<a href="javascript: showdiv('open29'); hidediv('close29');" onclick="javascript: showdiv('open29'); hidediv('close29');">[hide]</a></p>
+  <pre class="example" id="example29"><code class="cs">public IActionResult AutocompleteAction(DataSourceRequest request)
+{
+    string mask = null;
+    if (request.Filter?.Arguments != null &amp; request.Filter?.Arguments.Length &gt; 0)
+        mask = request.Filter.Arguments[0].Value;
+    try
+    {
+        int count = mDao.CountGoods(mask);
+        var goods = mDao.GetGoods(mask, request.Skip, request.Take);
+        object[] r = new object[goods.Count];
+        for (int j = 0; j &lt; goods.Count; j++)
+            r[j] = new {Id = goods[j].ID, Value = goods[j].Name};
+        return Json(new {total = count, data = r});
+    }
+    catch (Exception e)
+    {
+        return Json(new {errors = &quot;Can't get data&quot;});
+    }
+}</code></pre>
+</div><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Classes</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.html">DataSourceRequest</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The Request for Data</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.FilterDescritor.html">DataSourceRequest.FilterDescritor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The descriptor of the data filtering.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.FilterDescritor.FilterArgumentDescriptor.html">DataSourceRequest.FilterDescritor.FilterArgumentDescriptor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The descriptor of individual arguments of the data filtering</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.OperatorIds.html">DataSourceRequest.OperatorIds</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Operator names used in Kendo</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.SortOrderDescriptor.html">DataSourceRequest.SortOrderDescriptor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Descriptor of the sort order.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="KendoUI.DataRequest.DataSourceRequest.SortOrdersIds.html">DataSourceRequest.SortOrdersIds</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Kendo identifiers used to specify the sorting order.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="classes.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

@@ -1,0 +1,490 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tags <b>Form</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p></p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Tags</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-area.html">x-area</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Declares a group of controls.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-autocomplete-edit.html">x-autocomplete-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The autocomplete edit control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-autocomplete-selector.html">x-autocomplete-selector</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The autocomplete edit control that keeps suggestion ids.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-check.html">x-check</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A checkbox.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-check-switch.html">x-check-switch</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A checkbox in form of on/off switch.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-color-picker.html">x-color-picker</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The color picker form control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-control-strip.html">x-control-strip</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>One control in a control strip.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-date-edit.html">x-date-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The edit for date or date and time.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-edit.html">x-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The edit control (kendo-based).</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-editable-select.html">x-editable-select</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The select control with option to enter value manually</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-embedded-form.html">x-embedded-form</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag that defines a form to be embed into another forms.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-embed-form.html">x-embed-form</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag that embeds the form that is stored in a partial view.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-enable.html">x-enable</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A  rule for a form control or a whole form.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-form.html">x-form</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The form.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-form-control.html">x-form-control</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The common attributes for all form controls.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-form-errors.html">x-form-errors</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag that configures validation on the form.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-form-group.html">x-form-group</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The control which consists of one or more other controls.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-hidden.html">x-hidden</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The hidden control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-html-edit.html">x-html-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The edit control (html-based).</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-label.html">x-label</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The label</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-link-guard.html">x-link-guard</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag that protected leaving the form via link if data is changed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-listbox.html">x-listbox</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The listbox control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-listbox-dropsource.html">x-listbox-dropsource</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The drop source for dragging in listbox control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-listbox-toolbar.html">x-listbox-toolbar</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The toolbar specification for listbox control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-listbox-toolbar-button.html">x-listbox-toolbar-button</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>One button inside the toolbar specification for listbox control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-masked-edit.html">x-masked-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The masked edit control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-numeric-edit.html">x-numeric-edit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The numeric editor</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-password.html">x-password</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The password control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-radio.html">x-radio</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The radio button.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-select.html">x-select</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The select control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-select-option.html">x-select-option</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag that defines an option for the select control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-static.html">x-static</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The non-editable static text control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-text-area.html">x-text-area</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The text area control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-text-editor.html">x-text-editor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The formatting text editor.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-text-editor-command.html">x-text-editor-command</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The text editor command</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-text-editor-command-item.html">x-text-editor-command-item</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An item of the editor command.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-tree-control.html">x-tree-control</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tree control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-tree-item.html">x-tree-item</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An item inside of tree view.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-tree-select.html">x-tree-select</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The select control with options tree.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-upload.html">x-upload</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>File upload control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-upload-async.html">x-upload-async</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.form.x-validate.html">x-validate</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A validation rule for a form control or a whole form.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="tags.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

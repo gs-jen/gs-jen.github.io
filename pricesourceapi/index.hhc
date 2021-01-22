@@ -1,0 +1,101 @@
+﻿<html>
+
+<OBJECT type="text/site properties"></OBJECT>
+<UL>
+    <li><object type="text/sitemap"><param name="Name" value="Index"><param name="Local" value="index.html"></object><a href="index.html">Index</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="C++ API"><param name="Local" value="cpp.html"></object><a href="cpp.html">C++ API</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="ATask"><param name="Local" value="ATask.html"></object><a href="ATask.html">ATask</a>
+    <li><object type="text/sitemap"><param name="Name" value="DateUtils"><param name="Local" value="DateUtils.html"></object><a href="DateUtils.html">DateUtils</a>
+    <li><object type="text/sitemap"><param name="Name" value="IBar"><param name="Local" value="IBar.html"></object><a href="IBar.html">IBar</a>
+    <li><object type="text/sitemap"><param name="Name" value="IBarHistory"><param name="Local" value="IBarHistory.html"></object><a href="IBarHistory.html">IBarHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="ICandle"><param name="Local" value="ICandle.html"></object><a href="ICandle.html">ICandle</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetInstrumentsTask"><param name="Local" value="IGetInstrumentsTask.html"></object><a href="IGetInstrumentsTask.html">IGetInstrumentsTask</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetInstrumentsTaskCallback"><param name="Local" value="IGetInstrumentsTaskCallback.html"></object><a href="IGetInstrumentsTaskCallback.html">IGetInstrumentsTaskCallback</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetPricesRangeTask"><param name="Local" value="IGetPricesRangeTask.html"></object><a href="IGetPricesRangeTask.html">IGetPricesRangeTask</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetPricesRangeTaskCallback"><param name="Local" value="IGetPricesRangeTaskCallback.html"></object><a href="IGetPricesRangeTaskCallback.html">IGetPricesRangeTaskCallback</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetPricesTask"><param name="Local" value="IGetPricesTask.html"></object><a href="IGetPricesTask.html">IGetPricesTask</a>
+    <li><object type="text/sitemap"><param name="Name" value="IGetPricesTaskCallback"><param name="Local" value="IGetPricesTaskCallback.html"></object><a href="IGetPricesTaskCallback.html">IGetPricesTaskCallback</a>
+    <li><object type="text/sitemap"><param name="Name" value="IInstruments"><param name="Local" value="IInstruments.html"></object><a href="IInstruments.html">IInstruments</a>
+    <li><object type="text/sitemap"><param name="Name" value="IPriceArchiveClient"><param name="Local" value="IPriceArchiveClient.html"></object><a href="IPriceArchiveClient.html">IPriceArchiveClient</a>
+    <li><object type="text/sitemap"><param name="Name" value="IPricesRange"><param name="Local" value="IPricesRange.html"></object><a href="IPricesRange.html">IPricesRange</a>
+    <li><object type="text/sitemap"><param name="Name" value="ITimeframe"><param name="Local" value="ITimeframe.html"></object><a href="ITimeframe.html">ITimeframe</a>
+    <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClientFactory"><param name="Local" value="PriceArchiveClientFactory.html"></object><a href="PriceArchiveClientFactory.html">PriceArchiveClientFactory</a>
+    <li><object type="text/sitemap"><param name="Name" value="PriceHistoryArchiveException"><param name="Local" value="PriceHistoryArchiveException.html"></object><a href="PriceHistoryArchiveException.html">PriceHistoryArchiveException</a>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="Enumerations"></object>Enumerations
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="TimeframeUnit"><param name="Local" value="TimeframeUnit.html"></object><a href="TimeframeUnit.html">TimeframeUnit</a>
+    
+        </UL>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="C#/.NET API"><param name="Local" value="cs.html"></object><a href="cs.html">C#/.NET API</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Namespace Gehtsoft.PriceArchive.Client"><param name="Local" value="Gehtsoft.PriceArchive.Client.html"></object><a href="Gehtsoft.PriceArchive.Client.html">Namespace Gehtsoft.PriceArchive.Client</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClient"><param name="Local" value="Gehtsoft.PriceArchive.Client.PriceArchiveClient.html"></object><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.html">PriceArchiveClient</a>
+    <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClient.InstrumentRange"><param name="Local" value="Gehtsoft.PriceArchive.Client.PriceArchiveClient.InstrumentRange.html"></object><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.InstrumentRange.html">PriceArchiveClient.InstrumentRange</a>
+    <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClient.Range"><param name="Local" value="Gehtsoft.PriceArchive.Client.PriceArchiveClient.Range.html"></object><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.Range.html">PriceArchiveClient.Range</a>
+    <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClientException"><param name="Local" value="Gehtsoft.PriceArchive.Client.PriceArchiveClientException.html"></object><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClientException.html">PriceArchiveClientException</a>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="Enumerations"></object>Enumerations
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="PriceArchiveClientException.ProblemCode"><param name="Local" value="Gehtsoft.PriceArchive.Client.PriceArchiveClientException.ProblemCode.html"></object><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClientException.ProblemCode.html">PriceArchiveClientException.ProblemCode</a>
+    
+        </UL>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="Namespace Gehtsoft.PriceArchive.PriceCollection.History"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.html">Namespace Gehtsoft.PriceArchive.PriceCollection.History</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Bar"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.Bar.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.Bar.html">Bar</a>
+    <li><object type="text/sitemap"><param name="Name" value="BarHistory"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.BarHistory.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.BarHistory.html">BarHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="Candle"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.Candle.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.Candle.html">Candle</a>
+    <li><object type="text/sitemap"><param name="Name" value="IBarHistory"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.IBarHistory.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.IBarHistory.html">IBarHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="IHistory"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.IHistory.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.IHistory.html">IHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="IHistoryContainer"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.IHistoryContainer.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.IHistoryContainer.html">IHistoryContainer</a>
+    <li><object type="text/sitemap"><param name="Name" value="ITickHistory"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.ITickHistory.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.ITickHistory.html">ITickHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="Tick"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.Tick.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.Tick.html">Tick</a>
+    <li><object type="text/sitemap"><param name="Name" value="TickHistory"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.TickHistory.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.TickHistory.html">TickHistory</a>
+    <li><object type="text/sitemap"><param name="Name" value="Timeframe"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.Timeframe.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.Timeframe.html">Timeframe</a>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="Enumerations"></object>Enumerations
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Timeframe.TimeUnit"><param name="Local" value="Gehtsoft.PriceArchive.PriceCollection.History.Timeframe.TimeUnit.html"></object><a href="Gehtsoft.PriceArchive.PriceCollection.History.Timeframe.TimeUnit.html">Timeframe.TimeUnit</a>
+    
+        </UL>
+    
+        </UL>
+    
+        </UL>
+    <li><object type="text/sitemap"><param name="Name" value="JavaScript API"><param name="Local" value="js.html"></object><a href="js.html">JavaScript API</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="Gehtsoft.PriceArchive.JSClient"><param name="Local" value="Gehtsoft.PriceArchive.JSClient.html"></object><a href="Gehtsoft.PriceArchive.JSClient.html">Gehtsoft.PriceArchive.JSClient</a>
+    
+        </UL>
+    
+        </UL>
+    
+        </UL>
+    
+</UL>
+</html>
+    

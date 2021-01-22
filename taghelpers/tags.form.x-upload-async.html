@@ -1,0 +1,223 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-upload-async in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-upload-async</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-upload-async</b> auto-upload=&quot;<i>true|false</i>&quot; concurrent=&quot;<i>true|false</i>&quot; chunk-size=&quot;<i>number</i>&quot; auto-retry-after=&quot;<i>number</i>&quot; auto-retries-max=&quot;<i>number</i>&quot; save-url=&quot;<i>text</i>&quot; remove-url=&quot;<i>text</i>&quot; initial-files=&quot;IEnumerable&lt;<a href="Gehtsoft.TagHelpers.IUploadInitialFile.html"><code>IUploadInitialFile</code></a>&gt;&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-upload</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether upload must start immediately after the file is selected.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>concurrent</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether multiple files may be uploaded at a time.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>chunk-size</code></td>
+    <td class="tmain" width="69%"><p>The size of the chunk. If this parameter is set, the control will upload the file by chunks, otherwise it will upload it in whole.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-retry-after</code></td>
+    <td class="tmain" width="69%"><p>The timeout in milliseconds to retry in case of error.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-retries-max</code></td>
+    <td class="tmain" width="69%"><p>The maximum number of retries.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>save-url</code></td>
+    <td class="tmain" width="69%"><p>The url to save files or chunks.</p>
+<p>See discussion below about the implementation of the method.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>remove-url</code></td>
+    <td class="tmain" width="69%"><p>The url to remove files.</p>
+<p>See discussion below about the implementation of the method.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>initial-files</code></td>
+    <td class="tmain" width="69%"><p>The initial list of the file to be displayed, e.g. the list of the files that are already
+on the server for the object associated with the current control.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>Asynchronous upload control must NOT be bound to the form response object. Instead, two urls, one to save a whole file or chunk, and the other
+to remove a file shall be provided. However, the upload control MUST have the name as this name will be used in the methods associated
+with the save and remove URLs.</p>
+<p>NOTE: Because there is no object associated in the post, no automatic validation is supposed. Use <code>select</code> event of <code>x-upload</code> control
+in order to validate files added on the client side.</p>
+<p>Save URL implementation for whole file upload (e.g. when <code>chunk-size</code> attribute isn't set).</p>
+<p>Save URL implementation must be a POST method which has the parameter with the name of the control of type <code>IEnumerable&lt;IFormFile&gt;</code>.</p>
+<p>The parameter may consist of one or more files that are being uploaded. The file content is delivered in whole.</p>
+<p>In case of success the method must return an empty string.</p>
+<p>In case of error, the method must return the error text.</p>
+<p>Save URL implementation for chunked file upload (e.g. when <code>chunk-size</code> attribute is set).</p>
+<p>Save URL implementation must be a POST method which has the parameter with the name of the control of type <code>IEnumerable&lt;IFormFile&gt;</code> and
+a string parameter called <code>metaData</code>. The metadata string consist of a JSON object which may be parsed using
+<a href="Gehtsoft.TagHelpers.AsyncUploadChunkData.html"><code>AsyncUploadChunkData</code></a> class and consists of information about
+the file, the chunk number and the chunk total number.</p>
+<p>Typically the collection of <code>IFormFile</code> objects consists of only one file with the current chunk content. The chunk is supposed to be
+added to the file.</p>
+<p>In case of success, the method is expected to return a JSON object <a href="Gehtsoft.TagHelpers.AsyncUploadResult.html"><code>AsyncUploadResult</code></a>.</p>
+<p>In case of error, the method is expected to return a error text.</p>
+<p>Remove URL implementation.</p>
+<p>The remove URL method must be a POST method which has a parameter of type <code>string[]</code> and name <code>fileNames</code>.</p>
+<p>In case of success the method must return an empty string.</p>
+<p>In case of error, the method must return the error text.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

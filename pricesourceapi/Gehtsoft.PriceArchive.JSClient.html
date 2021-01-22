@@ -1,0 +1,204 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Gehtsoft.PriceArchive.JSClient</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>Gehtsoft.PriceArchive.JSClient</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>JavaScript client for the PriceArchive API</p>
+    <p><b>Details</b></p><p>To use the JavaScript client API add a reference to API definition into your code:</p><p>To add reference to JavaScript API in HTML</p>
+<pre class="example" id="example9"><code class="html">&lt;script src=&quot;https://pricearchive.gehtsoft.com/lib/Gehtsoft.PriceArchive/Gehtsoft.PriceArchive.JSClient.min.js?version=1.2.4&quot; /&gt;</code></pre><p>To add reference using bower</p>
+<div id="tab10_1" style="display:inline">
+  <pre class="example" id="example10_1">&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_1&quot;);" onclick="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_1&quot;);"><b>.bowerrc</b></a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_2&quot;);" onclick="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_2&quot;);">Command line</a>&nbsp;|&nbsp;<hr><code class="json">{ &quot;registry&quot;: &quot;https://www.myget.org/F/gehtsoft-public/bower/&quot; }</code></pre>
+</div>
+<div id="tab10_2" style="display:none">
+  <pre class="example" id="example10_2">&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_1&quot;);" onclick="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_1&quot;);">.bowerrc</a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_2&quot;);" onclick="javascript: hidediv(&quot;tab10_1&quot;);hidediv(&quot;tab10_2&quot;);showdiv(&quot;tab10_2&quot;);"><b>Command line</b></a>&nbsp;|&nbsp;<hr><code class="bash">$bower install Gehtsoft.PriceArchive.JSClient</code></pre>
+</div><p>To use package in node.js</p>
+<div id="tab11_1" style="display:inline">
+  <pre class="example" id="example11_1">&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);"><b>.npmrc</b></a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);">Command line</a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);">Code</a>&nbsp;|&nbsp;<hr><code class="bash">registry=https://www.myget.org/F/gehtsoft-public/npm/</code></pre>
+</div>
+<div id="tab11_2" style="display:none">
+  <pre class="example" id="example11_2">&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);">.npmrc</a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);"><b>Command line</b></a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);">Code</a>&nbsp;|&nbsp;<hr><code class="bash">$npm install price-archive@1.2.5</code></pre>
+</div>
+<div id="tab11_3" style="display:none">
+  <pre class="example" id="example11_3">&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_1&quot;);">.npmrc</a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_2&quot;);">Command line</a>&nbsp;|&nbsp;&nbsp;|&nbsp;<a href="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);" onclick="javascript: hidediv(&quot;tab11_1&quot;);hidediv(&quot;tab11_2&quot;);hidediv(&quot;tab11_3&quot;);showdiv(&quot;tab11_3&quot;);"><b>Code</b></a>&nbsp;|&nbsp;<hr><code class="js">let JSClient = require('./node_modules/price-archive/Gehtsoft.PriceArchive.JSClient.min.js');
+let client = new JSClient('https://pricearchiveapi.gehtsoft.com');</code></pre>
+</div><p>To start using the client in your code create an instance of the object:</p><pre class="example" id="example12"><code class="js">let client = new Gehtsoft.PriceArchive.JSClient(&quot;https://pricearchive.gehtsoft.com&quot;);</code></pre><p>See the list of the methods available below:</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PriceArchive.JSClient.GetAllRanges.html">GetAllRanges</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the range of the price data available for each instrument</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PriceArchive.JSClient.GetInstruments.html">GetInstruments</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The method returns the list of the instruments supported</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PriceArchive.JSClient.GetPrices.html">GetPrices</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the price history</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.PriceArchive.JSClient.JSClient.html">JSClient</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Constructor</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="js.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

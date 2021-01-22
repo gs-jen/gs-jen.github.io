@@ -1,0 +1,287 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Tag Extension Library</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Tag Extension Library</b></font>
+    </p><p><b>What are Razor-tags</b></p>
+<p>The razor tags are custom tags designed to simplify creating of the pages based on Kendo UI and to separate
+business logic and presentation better.</p>
+<p><b>How to Start Using Tags?</b></p>
+<p><b>1. Add Kendo UI Libraries</b></p>
+<p>Add <code>.bowerrc</code> file to the root of your ASP.NET MVC Core project.</p>
+<p>Put the following content into <code>.bowerrc</code> file</p><div id="open1" style="display:none">
+  <p><code>.bowerrc</code> content&nbsp;<a href="javascript: showdiv('close1'); hidediv('open1');" onclick="javascript: showdiv('close1'); hidediv('open1');">[show]</a></p>
+</div>
+<div id="close1" style="display:inline">
+  <p><code>.bowerrc</code> content&nbsp;<a href="javascript: showdiv('open1'); hidediv('close1');" onclick="javascript: showdiv('open1'); hidediv('close1');">[hide]</a></p>
+  <pre class="example" id="example1"><code class="json">{
+    &quot;directory&quot;: &quot;wwwroot/lib&quot;
+}</code></pre>
+</div><p>Add <code>bower.json</code> file to the root of your ASP.NET MVC Core project.</p>
+<p>Put the following code into <code>bower.json</code></p><div id="open2" style="display:none">
+  <p><code>bower.json</code> content&nbsp;<a href="javascript: showdiv('close2'); hidediv('open2');" onclick="javascript: showdiv('close2'); hidediv('open2');">[show]</a></p>
+</div>
+<div id="close2" style="display:inline">
+  <p><code>bower.json</code> content&nbsp;<a href="javascript: showdiv('open2'); hidediv('close2');" onclick="javascript: showdiv('open2'); hidediv('close2');">[hide]</a></p>
+  <pre class="example" id="example2"><code class="json">{
+    &quot;name&quot;: &quot;asp.net&quot;,
+    &quot;private&quot;: true,
+    &quot;dependencies&quot;: {
+        &quot;Kendo.UI&quot;: &quot;http://asp.gehtsoftusa.com/nuget/bower/kendo.ui.2018.1.221.zip&quot;
+    }
+}</code></pre>
+</div><p>In the Visual Studio, right-click on <code>bower.json</code> file and choose &quot;Restore Packages&quot;.</p>
+<p><b>2. Add Kendo UI to Layout page</b></p>
+<p>In the <code>_Layout.cshtml</code> page of your project add the following code into the header section of the page:</p><div id="open3" style="display:none">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('close3'); hidediv('open3');" onclick="javascript: showdiv('close3'); hidediv('open3');">[show]</a></p>
+</div>
+<div id="close3" style="display:inline">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('open3'); hidediv('close3');" onclick="javascript: showdiv('open3'); hidediv('close3');">[hide]</a></p>
+  <pre class="example" id="example3"><code class="html">&lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.common.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.default.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.default.mobile.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jquery.cookie.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jszip.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/kendo.all.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+</div><p>If you want to make theme configurable, use the following code:</p><div id="open4" style="display:none">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('close4'); hidediv('open4');" onclick="javascript: showdiv('close4'); hidediv('open4');">[show]</a></p>
+</div>
+<div id="close4" style="display:inline">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('open4'); hidediv('close4');" onclick="javascript: showdiv('open4'); hidediv('close4');">[hide]</a></p>
+  <pre class="example" id="example4"><code class="cshtml">//the string variable <b>themeName</b> keeps the name of the chosen Kendo Theme
+@if ((<b>themeName</b>) == &quot;bootstrap&quot;)
+{
+    &lt;link href=&quot;~/lib/Kendo.UI/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.common-bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+}
+else
+{
+    &lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.common.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+}
+&lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.@(<b>themeName</b>).min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;~/lib/Kendo.UI/css/kendo/kendo.@(<b>themeName</b>).mobile.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jquery.cookie.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/jszip.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;~/lib/Kendo.UI/script/kendo.all.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+</div><p>Alternatively, you can use <a href="tags.common.x-lib-includes.html"><code>x-lib-includes</code></a> tag.</p>
+<p><b>3. Add Tags Support</b></p>
+<p>Add <code>Gehtsoft.TagHelpers</code> package for the Gehtsoft private repository.</p>
+<p>In the <code>_ViewImports.cshtml</code> page of your project add the following code:</p><div id="open5" style="display:none">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('close5'); hidediv('open5');" onclick="javascript: showdiv('close5'); hidediv('open5');">[show]</a></p>
+</div>
+<div id="close5" style="display:inline">
+  <p>Code Example&nbsp;<a href="javascript: showdiv('open5'); hidediv('close5');" onclick="javascript: showdiv('open5'); hidediv('close5');">[hide]</a></p>
+  <pre class="example" id="example5"><code>#@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+#@addTagHelper *, Gehtsoft.TagHelpers</code></pre>
+</div><p></p>
+    <table class="tmain" width="100%">
+      <tr>
+        <td colspan="2" class="thdr"><b>Groups</b></td>
+      </tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="csr.html">CSR</a></p>
+    <p>Client-side form rendering</p>
+  </td>
+</tr></table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Functions</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="jsfunc.html">Tag Library Functions</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The list of JavaScript functions available</p>
+    </td>
+  </tr>
+</table>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Tags</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="tags.common.html">Common</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="tags.form.html">Form</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="tags.grid.html">Grid</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The description of the tags that may be used in the Razor templates.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="tags.scheduler.html">Scheduler</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The description of the tags that may be used in the Razor templates.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="tags.transport.html">Transport</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The description of the tags that may be used in the Razor templates.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="index.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

@@ -1,0 +1,270 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-menu in Common</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-menu</b> in Common</code></font>
+    </p><p><b>Brief</b></p>
+<p>The menu</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-menu</b> logo-image=&quot;<i>url</i>&quot; logo-href=&quot;<i>url</i>&quot; logo-height=&quot;<i>number</i>&quot; menu-id=&quot;<i>text</i>&quot; mobile-menu-id=&quot;<i>text</i>&quot; menu-name=&quot;<i>text</i>&quot; mobile-menu-sprite=&quot;<i>text</i>&quot; menu=&quot;<a href="Gehtsoft.TagHelpers.IMenu.html"><code>IMenu</code></a>&quot; orientation=&quot;<i>horizontal|vertical|verticalPanel</i>&quot; width=&quot;<i>text</i>&quot; scrollable=&quot;<i>true|false</i>&quot; panel-item-class=&quot;<i>text</i>&quot; auth-info=&quot;<a href="Gehtsoft.TagHelpers.IAuthInfo.html"><code>IAuthInfo</code></a>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>logo-image</code></td>
+    <td class="tmain" width="69%"><p>The image of the logo to put to left-top corner.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>logo-href</code></td>
+    <td class="tmain" width="69%"><p>The URL to navigate when logo image is clicked.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>logo-height</code></td>
+    <td class="tmain" width="69%"><p>The height of the logo in pixels.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>menu-id</code></td>
+    <td class="tmain" width="69%"><p>The menu identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>mobile-menu-id</code></td>
+    <td class="tmain" width="69%"><p>The mobile menu identifier. If this attribute is not set the mobile (aka responsive) menu won't be created.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>menu-name</code></td>
+    <td class="tmain" width="69%"><p>The name of the menu. The name of the menu will be displayed in the mobile version. If the name is not set, only sprite icon will be displayed
+on the top of th menu.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>mobile-menu-sprite</code></td>
+    <td class="tmain" width="69%"><p>The mobile icon sprite.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/styles-and-layout/icons-web" target="_blank">Kendo UI icons</a> and
+<a href="https://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp" target="_blank">Bootstrap glyphicons</a>
+for available icons.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>menu</code></td>
+    <td class="tmain" width="69%"><p>The menu content defined provided via menu interface.</p>
+<p>See also <a href="Gehtsoft.TagHelpers.IMenu.html"><code>IMenu</code></a> interface.</p>
+<p>You can use either <code>x-menuitem-*</code> tags or <a href="Gehtsoft.TagHelpers.IMenu.html"><code>IMenu</code></a> to provide the menu content but not
+both together.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>orientation</code></td>
+    <td class="tmain" width="69%"><p>The menu orientation:</p>
+<p>The attribute can take one of the following values:</p>
+<p><code>horizontal</code> - the menu on the top of the page with responsive option.</p>
+<p><code>vertical</code> - the menu along left side of the page.</p>
+<p><code>verticalPanel</code> - the menu made as accordion panel along the left side of the page.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>width</code></td>
+    <td class="tmain" width="69%"><p>The width of the vertical menu in pixel or percents.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>scrollable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether menu is scrollable.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>panel-item-class</code></td>
+    <td class="tmain" width="69%"><p>For the panel menu, the class to apply to an individual accordion panels.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auth-info</code></td>
+    <td class="tmain" width="69%"><p>The interface that provides information about the current authentication.</p>
+<p>If no menu items use <code>when-logged-in</code> or <code>permissions</code> attributes, this attribute may be omitted.</p>
+<p>See also <a href="Gehtsoft.TagHelpers.IAuthInfo.html"><code>IAuthInfo</code></a> interface.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>Only <a href="tags.common.x-menuitem.html"><code>x-menuitem</code></a>, <a href="tags.common.x-menuitem-submenu.html"><code>x-menuitem-submenu</code></a>,
+<a href="tags.common.x-menuitem-action.html"><code>x-menuitem-submenu</code></a> or
+<a href="tags.common.x-menuitem-url.html"><code>x-menuitem-url</code></a> tags can be used inside of this tag.</p>
+<p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/controls/navigation/menu/overview" target="_blank">Menu Overview</a>.</p>
+<p><b>How to Make Horizontal Menu Full Width</b></p>
+<p>Add following styles to the page stylesheet:</p><div id="open18" style="display:none">
+  <p>Style&nbsp;<a href="javascript: showdiv('close18'); hidediv('open18');" onclick="javascript: showdiv('close18'); hidediv('open18');">[show]</a></p>
+</div>
+<div id="close18" style="display:inline">
+  <p>Style&nbsp;<a href="javascript: showdiv('open18'); hidediv('close18');" onclick="javascript: showdiv('open18'); hidediv('close18');">[hide]</a></p>
+  <pre class="example" id="example18"><code>.container, .container-fluid {
+    padding: 0;
+}</code></pre>
+</div><p>Put menu within a div that has styles <code>container-fluid k-content col-xs-12</code></p>
+<p>Add style <code>container-fluid</code> to the <code>x-menu</code> tag.</p>
+<p><b>Make Last Item Menu of Horizontal Adjust to Right</b></p>
+<p>Add following styles to the page stylesheet:</p><div id="open19" style="display:none">
+  <p>Style (Replace <b>menu</b> with id of your menu)&nbsp;<a href="javascript: showdiv('close19'); hidediv('open19');" onclick="javascript: showdiv('close19'); hidediv('open19');">[show]</a></p>
+</div>
+<div id="close19" style="display:inline">
+  <p>Style (Replace <b>menu</b> with id of your menu)&nbsp;<a href="javascript: showdiv('open19'); hidediv('close19');" onclick="javascript: showdiv('open19'); hidediv('close19');">[hide]</a></p>
+  <pre class="example" id="example19"><code><b>#menu</b> &gt; .k-last {
+    float: right;
+    border-left-width: 1px;
+    border-right-width: 0;
+}</code></pre>
+</div><p><b>What If Spites Aren't Displayed</b></p>
+<p>Add following styles to the page stylesheet:</p><div id="open20" style="display:none">
+  <p>Style&nbsp;<a href="javascript: showdiv('close20'); hidediv('open20');" onclick="javascript: showdiv('close20'); hidediv('open20');">[show]</a></p>
+</div>
+<div id="close20" style="display:inline">
+  <p>Style&nbsp;<a href="javascript: showdiv('open20'); hidediv('close20');" onclick="javascript: showdiv('open20'); hidediv('close20');">[hide]</a></p>
+  <pre class="example" id="example20"><code>.k-sprite {
+    text-indent: 0;
+    font-size: 16px;
+    height: 24px;
+    line-height: normal;
+}</code></pre>
+</div><p>Declared in <a href="tags.common.html">Common</a></p>
+<p>
+  <center><a href="tags.common.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.common.html');</script></body>
+</html>

@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-notification in Common</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-notification</b> in Common</code></font>
+    </p><p><b>Brief</b></p>
+<p>The notification.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-notification</b> id=&quot;<i>text</i>&quot; var=&quot;<i>text</i>&quot; target=&quot;<i>text</i>&quot; allow-hide-after=&quot;<i>number</i>&quot; auto-hide-after=&quot;<i>number</i>&quot; height=&quot;<i>number</i>&quot; width=&quot;<i>number</i>&quot; hide-on-click=&quot;<i>true|false</i>&quot; disable-animation=&quot;<i>true|false</i>&quot; stacking=&quot;<i>up|right|left|down</i>&quot; pinned=&quot;<i>true|false</i>&quot; position-left=&quot;<i>number</i>&quot; position-top=&quot;<i>number</i>&quot; position-right=&quot;<i>number</i>&quot; position-bottom=&quot;<i>number</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The tag identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>var</code></td>
+    <td class="tmain" width="69%"><p>The name of the variable to which the associated <code>kendoNotification</code> object is stored.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>target</code></td>
+    <td class="tmain" width="69%"><p>If notifications need to be pushed into a specific tag, the identifier of such tag must be set here with '#' prefix.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>allow-hide-after</code></td>
+    <td class="tmain" width="69%"><p>Time in milliseconds after which the user can hide the notification.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-hide-after</code></td>
+    <td class="tmain" width="69%"><p>Time in milliseconds after which the notification is automatically hidden.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>height</code></td>
+    <td class="tmain" width="69%"><p>The height of a notification.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>width</code></td>
+    <td class="tmain" width="69%"><p>The width of a notification.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>hide-on-click</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether notification will be hidden on click.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>disable-animation</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the animation needs to be disabled.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>stacking</code></td>
+    <td class="tmain" width="69%"><p>The direction in which notification will be stacked.</p>
+<p>The attribute can take one of the following values: up, right, left, down</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>pinned</code></td>
+    <td class="tmain" width="69%"><p>Determines whether the popup notifications will move together with the other page content during scrolling.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>position-left</code></td>
+    <td class="tmain" width="69%"><p>Determines the pixel position of the first popup notification with regard to the viewport's left edge.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>position-top</code></td>
+    <td class="tmain" width="69%"><p>Determines the pixel position of the first popup notification with regard to the viewport's top edge.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>position-right</code></td>
+    <td class="tmain" width="69%"><p>Determines the pixel position of the first popup notification with regard to the viewport's right edge.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>position-bottom</code></td>
+    <td class="tmain" width="69%"><p>Determines the pixel position of the first popup notification with regard to the viewport's bottom edge.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>See also <a href="https://docs.telerik.com/kendo-ui/controls/layout/notification/overview" target="_blank">Notification Overview</a></p><p>Declared in <a href="tags.common.html">Common</a></p>
+<p>
+  <center><a href="tags.common.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.common.html');</script></body>
+</html>

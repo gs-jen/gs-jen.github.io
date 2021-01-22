@@ -1,0 +1,378 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Common</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tags <b>Common</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p></p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Tags</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-barcode.html">x-barcode</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Show a bar code on the screen</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-base.html">x-base</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The base class for all visual tags in the library.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-bundle.html">x-bundle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Includes a bundle to the page.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-button.html">x-button</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A button</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-button-group.html">x-button-group</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-button-group-item.html">x-button-group-item</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>One item inside a button group.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-col.html">x-col</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A bootstrap layout column</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-lib-includes.html">x-lib-includes</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tag adds references to JQuery, Kendo and tag library's styles and scripts.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-link.html">x-link</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The link</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-menu.html">x-menu</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The menu</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-menuitem.html">x-menuitem</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The menu item without the target defined.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-menuitem-action.html">x-menuitem-action</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The menu item that targets to an action.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-menuitem-submenu.html">x-menuitem-submenu</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The menu item which consists of other menu items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-menuitem-url.html">x-menuitem-url</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The menu item that targets to an URL</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-message.html">x-message</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A message for a control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-notification.html">x-notification</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The notification.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-partial.html">x-partial</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Includes a partial view.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-popup.html">x-popup</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The pop-up window simulation.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-qrcode.html">x-qrcode</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Show a QR code on the screen</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-row.html">x-row</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A bootstrap layout row</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-script.html">x-script</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A script.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-script-bundle.html">x-script-bundle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A tag to gather all enclosed scripts in one place.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-splitter.html">x-splitter</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The splitter layout</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-splitter-pane.html">x-splitter-pane</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>One pane inside the splitter.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-tab.html">x-tab</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>One tab in a tab strip.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-tabstrip.html">x-tabstrip</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A tabstrip.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-template.html">x-template</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An HTML-based template script.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="tags.common.x-video.html">x-video</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="tags.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

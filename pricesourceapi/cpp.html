@@ -1,0 +1,320 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>C++ API</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>C++ API</b></font>
+    </p><p>The C++ library is designed to provide access to
+price history archive from Native applications for
+Win32, Win64, Linux64, MacOS64, Android and iOS platforms.</p>
+<p>It may also be used to create interop libraries for the languages
+and/or development environments which aren't currently supported (e.g. Go).</p>
+<p>To start using the library in your native application:</p><ul class="main">
+  <li><p>Add the following includes to your source code:<br>
+<code>#include &quot;pricearchivehistory.h&quot;</code><br>
+<code>#include &quot;pricearchiveclient.h&quot;</code></p></li>
+  <li><p>Add the following libraries to your project:
+<code>PriceArchiveHistory.lib</code>, <code>PriceArchiveClient.lib</code>.</p></li>
+  <li><p>Begin with creating a client object using
+<a href="PriceArchiveClientFactory.html"><code>PriceArchiveClientFactory</code></a>
+class.</p></li>
+</ul><p>Important note:</p>
+<p>All the date/time values in the library are treated in Ole date/time format.</p>
+<p>MSDN: An OLE Automation date is implemented as a floating-point number whose integral component is the number of days before or after midnight, 30 December 1899, and whose fractional component represents the time on that day divided by 24. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25.</p>
+<p>See also
+<a href="https://docs.microsoft.com/en-us/dotnet/api/system.datetime.tooadate?view=netcore-3.1#:~:text=An%20OLE%20Automation%20date%20is,that%20day%20divided%20by%2024." target="_blank">Microsoft on Ole Automation date format</a></p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Classes</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="ATask.html">ATask</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The base class for all tasks.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="DateUtils.html">DateUtils</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The class to manipulate with OleAutomation date.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IBar.html">IBar</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The class represents one bar of the prices.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IBarHistory.html">IBarHistory</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A history of the price bars</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="ICandle.html">ICandle</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The class represents a candle</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetInstrumentsTask.html">IGetInstrumentsTask</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The task to get the list of the instruments.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetInstrumentsTaskCallback.html">IGetInstrumentsTaskCallback</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The callback for a get instrument list task.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetPricesRangeTask.html">IGetPricesRangeTask</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The task to get the range of the prices available.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetPricesRangeTaskCallback.html">IGetPricesRangeTaskCallback</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The callback for the get prices range task.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetPricesTask.html">IGetPricesTask</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The task to get the prices.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IGetPricesTaskCallback.html">IGetPricesTaskCallback</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The callback to task to get the prices.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IInstruments.html">IInstruments</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>A list of instruments.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IPriceArchiveClient.html">IPriceArchiveClient</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The client class which is used to communicate to the price archive server.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="IPricesRange.html">IPricesRange</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The range of the prices available.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="ITimeframe.html">ITimeframe</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The class keeps and manipulates the timeframe identifier.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="PriceArchiveClientFactory.html">PriceArchiveClientFactory</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The factory for the price archive client object.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="PriceHistoryArchiveException.html">PriceHistoryArchiveException</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p></p>
+    </td>
+  </tr>
+</table>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Enumerations</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%">
+      <p><a href="TimeframeUnit.html">TimeframeUnit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Units of timeframe duration measurement.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="index.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

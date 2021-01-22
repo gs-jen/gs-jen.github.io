@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-static in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-static</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The non-editable static text control.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-static</b> messages=&quot;<i>string[]|IEnumerable&lt;string&gt;</i>&quot; static-type=&quot;<i><u>static</u>|success|information|error</i>&quot; icon=&quot;<i>iconclass</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>messages</code></td>
+    <td class="tmain" width="69%"><p>The attribute message is used when multiple text lines are desired to be specified as static message. The value of this attribute
+may be either <code>IEnumerable&lt;string&gt;</code> or <code>string[]</code></p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>static-type</code></td>
+    <td class="tmain" width="69%"><p>The attribute defines the look of the static control. It will look as a text or will be a colored full-width information block.
+The default value of this attribute is <code>static</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>icon</code></td>
+    <td class="tmain" width="69%"><p>The attribute defines the icon to be displayed.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/styles-and-layout/icons-web" target="_blank">Kendo UI icons</a> and
+<a href="https://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp" target="_blank">Bootstrap glyphicons</a>
+for available icons.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-hide</code></td>
+    <td class="tmain" width="69%"><p>The attribute defines the tag must be hidden in case there is no tag content.</p>
+<p>The attribute is <code>false</code> by default for a static and <code>true</code> by default for block types.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>The static content is made of (in the order specified):</p><ul class="main">
+  <li><p>icon</p></li>
+  <li><p>value or messages text</p></li>
+  <li><p>x-static tag content text</p></li>
+</ul><p>All attributes described in <a href="tags.form.x-form-control.html"><code>x-form-control</code></a> base tag can also be applied to this tag.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

@@ -1,0 +1,256 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-grid-column in Grid</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-grid-column</b> in Grid</code></font>
+    </p><p><b>Brief</b></p>
+<p>The definition of a grid column.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-grid-column</b> title=&quot;<i>text</i>&quot; field=&quot;<i>text</i>&quot; format=&quot;<i>text</i>&quot; template=&quot;<i>text</i>&quot; sortable=&quot;<i>true|false</i>&quot; filterable=&quot;<i>true|false</i>&quot; class=&quot;<i>text</i>&quot; row-class=&quot;<i>text</i>&quot; header-class=&quot;<i>text</i>&quot; width=&quot;<i>text</i>&quot; sort-by-default=&quot;<i>no|asc|desc</i>&quot; can-unsort=&quot;<i>true|false</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>title</code></td>
+    <td class="tmain" width="69%"><p>The title to be displayed in the grid header.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>field</code></td>
+    <td class="tmain" width="69%"><p>The associated field.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>format</code></td>
+    <td class="tmain" width="69%"><p>The format.
+see <a href="https://docs.telerik.com/kendo-ui/framework/globalization" target="_blank">Globalization in Kendo UI documentation</a>
+for more details about formatting.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>class</code></td>
+    <td class="tmain" width="69%"><p>The class to be applied to the column.</p>
+<p>The option can be used, for example, to set text alignment or to hide column on lower resolution using <code>hidden-*</code> bootstrap tag.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>row-class</code></td>
+    <td class="tmain" width="69%"><p>The class to be applied to column in data rows.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>header-class</code></td>
+    <td class="tmain" width="69%"><p>The class to be applied to column in header data rows.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>width</code></td>
+    <td class="tmain" width="69%"><p>The width of the column in percents or in pixels.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>sortable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the column is sortable.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>sort-by-default</code></td>
+    <td class="tmain" width="69%"><p>The flag indicates sort order by default.
+The attribute can take one of the following values: no, asc, desc</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>can-unsort</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether data can be un-sorted.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>If the data inside of the column requires special formatting use a template (see <a href="tags.common.x-script.html"><code>x-script</code></a>).</p><div id="open22" style="display:none">
+  <p>Template: Generate link to the edit of the item inside of the column&nbsp;<a href="javascript: showdiv('close22'); hidediv('open22');" onclick="javascript: showdiv('close22'); hidediv('open22');">[show]</a></p>
+</div>
+<div id="close22" style="display:inline">
+  <p>Template: Generate link to the edit of the item inside of the column&nbsp;<a href="javascript: showdiv('open22'); hidediv('close22');" onclick="javascript: showdiv('open22'); hidediv('close22');">[hide]</a></p>
+  <pre class="example" id="example22"><code>&lt;x-grid-column title=&quot;Name&quot;&gt;
+    &lt;x-script role=&quot;template&quot; template-parameter-name=&quot;m&quot;&gt;
+        &lt;script&gt;
+            return '&lt;a href=&quot;@Url.Action(&quot;Edit&quot;)?id=' + m.ID ! +'&quot;&gt;'
+                + m.Name
+                + '&lt;/a&gt;';
+        &lt;/script&gt;
+    &lt;/x-script&gt;
+&lt;/x-grid-column&gt;</code></pre>
+</div><p>To define filtration, use two scripts with custom role names: <code>filter-operators</code> and <code>filter-ui</code>. The first is used to
+limit the number of filter operators that may be used to define the filter and the second is used to provide a custom control
+to enter a filter value.</p>
+<p>See more about filter ui here: <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/columns.filterable.ui" target="_blank">Columns filterable UI</a>.</p>
+<p>See more about operators here: <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/filterable.operators" target="_blank">Filterable operators</a>.</p><div id="open23" style="display:none">
+  <p>Template: Generate link to the edit of the item inside of the column&nbsp;<a href="javascript: showdiv('close23'); hidediv('open23');" onclick="javascript: showdiv('close23'); hidediv('open23');">[show]</a></p>
+</div>
+<div id="close23" style="display:inline">
+  <p>Template: Generate link to the edit of the item inside of the column&nbsp;<a href="javascript: showdiv('open23'); hidediv('close23');" onclick="javascript: showdiv('open23'); hidediv('close23');">[hide]</a></p>
+  <pre class="example" id="example23"><code>&lt;x-grid-column title=&quot;Good&quot; field=&quot;@(nameof(GridTransactionModel.GoodName))&quot; sortable=&quot;true&quot; can-unsort=&quot;false&quot; width=&quot;60%&quot; sort-by-default=&quot;@(Model.SortOrder == nameof(GridTransactionModel.GoodName) ? (Model.SortDir == &quot;asc&quot; ? KendoSortOrder.asc : KendoSortOrder.desc) : KendoSortOrder.no)&quot;&gt;
+   &lt;x-script script-role=&quot;byname&quot; script-role-name=&quot;filter-ui&quot;&gt;
+       &lt;script&gt;
+           var goods = @Html.Raw(Model.Goods.ToJScript());
+           e.kendoDropDownList({
+               dataValueField : '@(nameof(Good.Name))',
+               dataTextField : '@(nameof(Good.Name))',
+               dataSource : goods,
+               optionLabel: 'Select...'
+           });
+       &lt;/script&gt;
+   &lt;/x-script&gt;
+   &lt;x-script script-role=&quot;byname&quot; script-role-name=&quot;filter-operators&quot;&gt;
+       &lt;script&gt;
+           { string : { eq : &quot;Equals&quot;, neq : &quot;Not Equals&quot;} }
+       &lt;/script&gt;
+   &lt;/x-script&gt;
+&lt;/x-grid-column&gt;</code></pre>
+</div><p>To define editing, use two scripts with custom role names: <code>editable</code> and <code>editor</code>.</p>
+<p>See more about filter ui here: <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/columns.editable" target="_blank">columns.editable</a>.</p>
+<p>See more about filter ui here: <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/columns.editor" target="_blank">columns.editor</a>.</p>
+<p>To define a custom column, use script <code>byname custom</code>. The script content is not to be expected a function body, it will be placed &quot;as is&quot;
+into the array of the columns during the configuration.  For more teails about column configuration see
+<a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/columns" target="_blank">columns.editor</a>.</p><p>Declared in <a href="tags.grid.html">Grid</a></p>
+<p>
+  <center><a href="tags.grid.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.grid.html');</script></body>
+</html>

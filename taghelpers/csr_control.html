@@ -1,0 +1,314 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>control</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>control</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>Common properties for all control definitions</p>
+    <p><b>Details</b></p><p>See also
+<a href="button.html"><code>button</code></a>, <a href="checkbox.html"><code>checkbox</code></a>,
+<a href="dateinput.html"><code>dateinput</code></a>, <a href="editable-select.html"><code>editable-select</code></a>,
+<a href="label.html"><code>label</code></a>, <a href="numericinput.html"><code>numericinput</code></a>,
+<a href="password.html"><code>password</code></a>, <a href="select.html"><code>select</code></a>,
+<a href="static.html"><code>static</code></a>, <a href="textarea.html"><code>textarea</code></a> and
+<a href="textinput.html"><code>textinput</code></a> for details
+about properties associated with <a href="csr_control.type.html">specific type</a> of the control.</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Properties</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.autofocus.html">autofocus</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating whether the control must be focused when the form is displayed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.buttons.html">buttons</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An array of buttons to be added after the control into the same cell of the layout</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.change.html">change</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function to be called when the value is changed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.class.html">class</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The space separated list of classes to apply</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.disabled.html">disabled</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating whether the control is disabled.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.id.html">id</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The control identifier.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.keydown.html">keydown</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function to be called when key is pressed when the control is in focus</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.keyup.html">keyup</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function to be called when key is released when the control is in focus</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.label.html">label</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The control label to be displayed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.name.html">name</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The name of the control</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.placeholder.html">placeholder</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The text to be displayed in place of an empty control value.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.readonly.html">readonly</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating that the control is read only.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.style.html">style</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The semicolon separated list of styles to apply.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.suppresslabel.html">suppresslabel</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating whether the label must not be displayed and the layout space for the label must not be reserved.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.tooltip.html">tooltip</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The tooltip to display</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.type.html">type</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The type of the control</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.validators.html">validators</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The array of the control validators</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.visible.html">visible</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating whether control is visible</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="csr_control.width.html">width</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The width of the control.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="csr.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

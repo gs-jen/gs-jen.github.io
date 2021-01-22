@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-scheduler in Scheduler</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-scheduler</b> in Scheduler</code></font>
+    </p><p><b>Brief</b></p>
+<p>The scheduler.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-scheduler</b> id=&quot;<i>text</i>&quot; date=&quot;<i>DateTime</i>&quot; editable=&quot;<i>true|false</i>&quot; start-time=&quot;<i>DateTime</i>&quot; end-time=&quot;<i>DateTime</i>&quot; max-time=&quot;<i>DateTime</i>&quot; min-time=&quot;<i>DateTime</i>&quot; time-zone=&quot;<i>text</i>&quot; major-tick=&quot;<i>number</i>&quot; minor-tick-count=&quot;<i>number</i>&quot; show-work-hours=&quot;<i>true|false</i>&quot; selectable=&quot;<i>true|false</i>&quot; height=&quot;<i>number</i>&quot; var=&quot;<i>text</i>&quot; tasks=&quot;IEnumerable&lt;<a href="Gehtsoft.TagHelpers.SchedulerTask.html"><code>SchedulerTask</code></a>&gt;&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The identifier of the scheduler control.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>date</code></td>
+    <td class="tmain" width="69%"><p>The initial date displayed.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>editable</code></td>
+    <td class="tmain" width="69%"><p>Either <code>false</code> (default value) to make the whole control non-editable or nothing.</p>
+<p>To make the control editable use <a href="tags.scheduler.x-scheduler-editable.html"><code>x-scheduler-editable</code></a> tag.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>start-time</code></td>
+    <td class="tmain" width="69%"><p>The start time of the week and day views.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>end-time</code></td>
+    <td class="tmain" width="69%"><p>The end time of the week and day views.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>min-time</code></td>
+    <td class="tmain" width="69%"><p>The minimum date which can be selected via the scheduler navigation.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>max-time</code></td>
+    <td class="tmain" width="69%"><p>The maximum date which can be selected via the scheduler navigation.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>time-zone</code></td>
+    <td class="tmain" width="69%"><p>The timezone which the scheduler will use to display the scheduler appointment dates.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>major-tick</code></td>
+    <td class="tmain" width="69%"><p>The number of minutes represented by a major tick.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>minor-tick-count</code></td>
+    <td class="tmain" width="69%"><p>The number of time slots to display per major tick.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>show-work-hours</code></td>
+    <td class="tmain" width="69%"><p>If set to true the view will be initially shown in business hours mode.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>selectable</code></td>
+    <td class="tmain" width="69%"><p>If set to true the user would be able to select scheduler cells and events.</p>
+<p>To track selection you can either use <code>change</code> event of the control or
+attack a click event to elements with 'k-event' style in <code>dataBound</code> event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>height</code></td>
+    <td class="tmain" width="69%"><p>Height of the scheduler in pixels.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>var</code></td>
+    <td class="tmain" width="69%"><p>The variable name to store a <code>kendoScheduler</code> object.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tasks</code></td>
+    <td class="tmain" width="69%"><p>A local definition of the data source for a scheduler.</p>
+<p>The value must be an instance of <code>IEnumerable&lt;<a href="Gehtsoft.TagHelpers.SchedulerTask.html"><code>SchedulerTask</code></a>&gt;</code></p></td>
+  </tr>
+</table><p><b>Details</b></p><p>The scheduler can display various calendar and time line views with the events assigned to day and/or specific time of the day.</p>
+<p>Use one or more <a href="tags.scheduler.x-scheduler-view.html"><code>x-scheduler-view</code></a> tags to configure scheduler views.</p>
+<p>The control throws <code>change</code> and <code>dataBound</code> events.</p>
+<p>For the templates that may be defined the in the object see <a href="tags.scheduler.x-scheduler-view.html"><code>x-scheduler-view</code></a> tag.</p>
+<p>To provide the data use either <code>tasks</code> attribute or add <a href="tags.transport.x-server-datasource.html"><code>x-server-datasource</code></a>
+tag to connect the control to remote data.</p>
+<p>To properly provide the data for the scheduler, the application must implement the action that takes
+<a href="KendoUI.DataRequest.DataSourceRequest.html"><code>DataSourceRequest</code></a> parameter, an two optional DateTime parameters in case
+<code>server-filtering</code> attribute of the transport is set and which returns an array of the task event
+objects as json in the <code>data</code>field of the return object.</p>
+<p>To return a error, just return a json object which has a single string field named <code>errors</code>.</p><div id="open24" style="display:inline">
+  <p>Action Example&nbsp;<a href="javascript: showdiv('close24'); hidediv('open24');" onclick="javascript: showdiv('close24'); hidediv('open24');">[show]</a></p>
+</div>
+<div id="close24" style="display:none">
+  <p>Action Example&nbsp;<a href="javascript: showdiv('open24'); hidediv('close24');" onclick="javascript: showdiv('open24'); hidediv('close24');">[hide]</a></p>
+  <pre class="example" id="example24"><code>public IActionResult SchedulerData(DataSourceRequest rq, DateTime? start, DateTime? end)
+{
+    try
+    {
+        IEnumerable&lt;SchedulerTask&gt; tasks = Dao.GetTasks(start, end);
+        return Content(JsonConvert.SerializeObject(new {data = gDefaultTaskView},
+                                                   Formatting.None,
+                                                   new RecurrenceRuleJsonConverter(),
+                                                   new RecurrenceExceptionJsonConverter()),
+                       &quot;application/json&quot; );
+ 
+    }
+    catch (DaoException e)
+    {
+        return Json(new {errors = &quot;Internal error&quot;});
+    }
+}</code></pre>
+</div><p>See also <a href="https://docs.telerik.com/kendo-ui/controls/scheduling/scheduler/overview" target="_blank">Scheduler Overview</a>.</p>
+<p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p><p>Declared in <a href="tags.scheduler.html">Scheduler</a></p>
+<p>
+  <center><a href="tags.scheduler.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.scheduler.html');</script></body>
+</html>

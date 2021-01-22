@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-listbox in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-listbox</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The listbox control.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-listbox</b> options=&quot;object&quot; draggable=&quot;<i>true|false</i>&quot; var=&quot;<i>text</i>&quot; connect-with=&quot;<i>text</i>&quot; post=&quot;<i>none|selection|content</i>&quot; validator-get-value=&quot;<i>text</i>&quot; ajax-set-value=&quot;<i>text</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>options</code></td>
+    <td class="tmain" width="69%"><p>This attribute is used only when the post mode of the tag is <code>none</code> or <code>selection</code>.</p>
+<p>The attribute value must be the programmatic data provider for the options which either</p>
+<p>1) must implement a <a href="Gehtsoft.TagHelpers.ISelectSource.html"><code>ISelectSource</code></a> interface.</p>
+<p>or</p>
+<p>2) must be an array or a list of objects which are marked up with proper <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonPropertyAttribute.htm" target="_blank"><code>JsonPropetry</code></a>
+attributes and defines at least two json attributes: <code>value</code> and <code>text</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>draggable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the content of the list box may be dragged.</p>
+<p>The <a href="tags.form.x-listbox-dropsource.html"><code>x-listbox-dropsource</code></a> to define the listbox which is the source of the drag and drop operation.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>var</code></td>
+    <td class="tmain" width="69%"><p>The name of the variable to store <code>kendoListBox</code> object.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>connect-with</code></td>
+    <td class="tmain" width="69%"><p>The identifier of listbox to be connected to (for handling toolbar-defined operations), see <a href="tags.form.x-listbox-toolbar.html"><code>x-listbox-toolbar</code></a>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>post</code></td>
+    <td class="tmain" width="69%"><p>The mode on what the listbox control must post as the part of the form (or save to javascript object for ajax forms).</p>
+<p>The attribute can take one of the following values:</p>
+<p><code>none</code> - the control posts nothing.</p>
+<p><code>selection</code> - the control posts the value of the currently selected item.</p>
+<p><code>content</code> - the control posts the array of value and text pairs of all object inside the listbox</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>The control supports <code>change</code>, <code>template</code>, <code>drag.placeholder</code>,
+<code>drag.hint</code>, <code>drag.start</code>, <code>drag.end</code>, <code>drag</code>, <code>drop</code>, <code>add</code>, <code>reorder</code>, <code>remove</code>
+(all except the first two are specified as <code>byname</code>) events).</p>
+<p>The tag may consists of the following tags:</p>
+<p><a href="tags.form.x-listbox-dropsource.html"><code>x-listbox-dropsource</code></a>, <a href="tags.form.x-listbox-toolbar.html"><code>x-listbox-toolbar</code></a>.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/controls/editors/listbox/overview" target="_blank">ListBox Overview</a> and
+<a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/listbox" target="_blank">JQuery API for ListBox</a>.</p>
+<p>All attributes described in <a href="tags.form.x-form-control.html"><code>x-form-control</code></a> base tag can also be applied to this tag.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

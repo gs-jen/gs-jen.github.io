@@ -1,0 +1,285 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Gehtsoft.PriceArchive.JSClient.GetPrices</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>public method <b>Gehtsoft.PriceArchive.JSClient.GetPrices</b></code></font>
+    </p><p><b>Brief</b></p>
+<p>Returns the price history</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td>JavaScript</td>
+  </tr>
+  <tr>
+    <td><code>Gehtsoft.PriceArchive.JSClient.<b>GetPrices</b> (callback, instrument, timeframe, from, to)</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>instrument</code></td>
+    <td class="tmain" width="69%"><p>The name of the instrument.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>timeframe</code></td>
+    <td class="tmain" width="69%"><p>The timeframe (in from of &quot;Nt&quot; where N is the length, and t is the timeframe type, e.g. 1m).</p>
+<p>Following timeframes are supported: 1m, 2m, 3m, 5m, 6m, 10m, 15m, 20m, 30m, 1h, 2h, 3h, 4h, 6h, 12h, 1d, 1m, 1y</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>from</code></td>
+    <td class="tmain" width="69%"><p>The date and time to get the prices from</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>to</code></td>
+    <td class="tmain" width="69%"><p>The date and time to get the prices to</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>callback</code></td>
+    <td class="tmain" width="69%"><p>The callback will be called when the method is complete and must be a function accepting an object which has the following properties:</p><table class="tmain" width="100%">
+  <tr>
+    <td class="tmain" width="30%"><p>Code</p></td>
+    <td class="tmain"><p>The error code or <code>0</code> if the operation was successful</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Error</p></td>
+    <td class="tmain"><p>The error message in case the operation wasn't successful</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bars</p></td>
+    <td class="tmain"><p>An array of the objects representing the price bars</p>
+<p>See below for the bar object description.</p></td>
+  </tr>
+</table><p>A history is represented as the object with the following properties</p><table class="tmain" width="100%">
+  <tr>
+    <td class="tmain" width="30%"><p>Instrument</p></td>
+    <td class="tmain"><p>The instrument name.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Timeframe</p></td>
+    <td class="tmain"><p>The name of the timeframe</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Precision</p></td>
+    <td class="tmain"><p>The number of significant digits after the decimal point</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>PipSize</p></td>
+    <td class="tmain"><p>The minimum change of the price</p>
+<p>Note: don't be confused by the description, some markets have sub-pip price change,
+e.g. 1/10 of a pip.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bars</p></td>
+    <td class="tmain"><p>An array of the objects representing the price bars</p>
+<p>See below for the bar object description.</p></td>
+  </tr>
+</table><p>Each bar is represented as the object with the following properties:</p><table class="tmain" width="100%">
+  <tr>
+    <td class="tmain" width="30%"><p>Start</p></td>
+    <td class="tmain"><p>The date and time when the bar started.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bid.Open</p></td>
+    <td class="tmain"><p>Open (the first) bid price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bid.High</p></td>
+    <td class="tmain"><p>Highest (maximum) bid price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bid.Low</p></td>
+    <td class="tmain"><p>Lowest (minimum) bid price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bid.Close</p></td>
+    <td class="tmain"><p>Close (the last) bid price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Bid.Volume</p></td>
+    <td class="tmain"><p>The volume of the trades.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ask.Open</p></td>
+    <td class="tmain"><p>Open (the first) ask price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ask.High</p></td>
+    <td class="tmain"><p>Highest (maximum) ask price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ask.Low</p></td>
+    <td class="tmain"><p>Lowest (minimum) ask price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ask.Close</p></td>
+    <td class="tmain"><p>Close (the last) ask price of a bar.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ask.Volume</p></td>
+    <td class="tmain"><p>The volume of the trades.</p></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p><b>Details</b></p><p>Example:</p><p>Get the price data</p>
+<pre class="example" id="example15"><code class="js">client.GetPrices(function (result) {
+   if (result.Code == 0) {
+       console.log(result.History.Instrument, result.History.Timeframe, result.History.Precision, result.History.PipSize);
+       for (let i = 0; i &lt; result.History.Bars.length; i++) {
+          let bar = result.History.Bars[i];
+          console.log(bar.Start, bar.Bid.Open, bar.Bid.High, bar.Bid.Low, bar.Bid.Close, bar.Ask.Open, bar.Ask.High, bar.Ask.Low, bar.Ask.Close);
+      }
+   } else {
+       console.log(&quot;Can't get instrument data&quot;);
+       console.log(result.Message);
+   }
+}, &quot;EURUSD&quot;, &quot;1m&quot;, &quot;2010-09-01 00:00&quot;, &quot;2010-09-02 00:00&quot;);</code></pre><p>Declared in <a href="Gehtsoft.PriceArchive.JSClient.html">Gehtsoft.PriceArchive.JSClient</a></p>
+<p>
+  <center><a href="Gehtsoft.PriceArchive.JSClient.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'Gehtsoft.PriceArchive.JSClient.html');</script></body>
+</html>

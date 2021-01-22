@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-text-editor-command in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-text-editor-command</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The text editor command</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-text-editor-command</b> tool=&quot;<i>custom|bold|italic|underline|strikethrough|subscript|superscript|fontName|fontSize|foreColor|backColor|justifyLeft|justifyCenter|justifyRight|justifyFull|insertUnorderedList|insertOrderedList|indent|outdent|createLink|unlink|insertImage|insertFile|tableWizard|createTable|addColumnLeft|addColumnRight|addRowAbove|addRowBelow|deleteRow|deleteColumn|formatting|cleanFormatting|insertHtml|viewHtml|print|pdf</i>&quot; custom-name=&quot;<i>text</i>&quot; tooltip=&quot;<i>text</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tool</code></td>
+    <td class="tmain" width="69%"><p>The name of the tool.</p>
+<p>The attribute can take one of the following values: <code>custom</code>, <code>bold</code>, <code>italic</code>, <code>underline</code>, <code>strikethrough</code>, <code>subscript</code>, <code>superscript</code>, <code>fontName</code>, <code>fontSize</code>, <code>foreColor</code>, <code>backColor</code>, <code>justifyLeft</code>, <code>justifyCenter</code>, <code>justifyRight</code>, <code>justifyFull</code>, <code>insertUnorderedList</code>, <code>insertOrderedList</code>, <code>indent</code>, <code>outdent</code>, <code>createLink</code>, <code>unlink</code>, <code>insertImage</code>, <code>insertFile</code>, <code>tableWizard</code>, <code>createTable</code>, <code>addColumnLeft</code>, <code>addColumnRight</code>, <code>addRowAbove</code>, <code>addRowBelow</code>, <code>deleteRow</code>, <code>deleteColumn</code>, <code>formatting</code>, <code>cleanFormatting</code>, <code>insertHtml</code>, <code>viewHtml</code>, <code>print</code>, <code>pdf</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>custom-name</code></td>
+    <td class="tmain" width="69%"><p>The name of the tool in case the <code>custom</code> tool name is used.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tooltip</code></td>
+    <td class="tmain" width="69%"><p>The tooltip.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>The tag may be used only inside <a href="tags.form.x-text-editor.html"><code>x-text-editor</code></a> tag.</p>
+<p>Some commands, e.g. <code>insertHtml</code> may require one or more <a href="tags.form.x-text-editor-command-item.html"><code>x-text-editor-command-item</code></a> specified
+inside the command tag.</p>
+<p>Custom commands may have <code>template</code> and <code>exec</code> (use <code>byname</code> type) scripts embed.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-server-parameter in Transport</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-server-parameter</b> in Transport</code></font>
+    </p><p><b>Brief</b></p>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-server-parameter</b> operation=&quot;<i>read|create|update|destroy</i>&quot; parameter-name=&quot;<i>text</i>&quot; value=&quot;<i>object</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>operation</code></td>
+    <td class="tmain" width="69%"><p>The name of the operation to which the parameter is set. You can omit the parameter to apply parameter to all operations.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>parameter-name</code></td>
+    <td class="tmain" width="69%"><p>The name of the parameter. You can omit the parameter name and then provide completely custom logic in the associated event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>value</code></td>
+    <td class="tmain" width="69%"><p>The constant value to assign.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>There are three options how parameter may be defined:</p><ul class="main">
+  <li><p>If <code>parameter-name</code> and <code>value</code> is set - the parameter with the specified name and value will be added.</p><div id="open25" style="display:none">
+  <p>Example&nbsp;<a href="javascript: showdiv('close25'); hidediv('open25');" onclick="javascript: showdiv('close25'); hidediv('open25');">[show]</a></p>
+</div>
+<div id="close25" style="display:inline">
+  <p>Example&nbsp;<a href="javascript: showdiv('open25'); hidediv('close25');" onclick="javascript: showdiv('open25'); hidediv('close25');">[hide]</a></p>
+  <pre class="example" id="example25"><code>&lt;x-server-parameter operation=&quot;read&quot; parameter-name=&quot;test&quot; value=&quot;123&quot;  /&gt;</code></pre>
+</div></li>
+  <li><p>If <code>parameter-name</code> is set and a <code>dataBound</code> script is added to the tag - the parameter
+with the specified name will be added. The value will be taken by executing the function with the body
+specified in the <a href="tags.common.x-script.html"><code>x-script</code></a>. The function has no parameters.</p><div id="open26" style="display:none">
+  <p>Example&nbsp;<a href="javascript: showdiv('close26'); hidediv('open26');" onclick="javascript: showdiv('close26'); hidediv('open26');">[show]</a></p>
+</div>
+<div id="close26" style="display:inline">
+  <p>Example&nbsp;<a href="javascript: showdiv('open26'); hidediv('close26');" onclick="javascript: showdiv('open26'); hidediv('close26');">[hide]</a></p>
+  <pre class="example" id="example26"><code>&lt;x-server-parameter operation=&quot;read&quot; parameter-name=&quot;test&quot; &gt;
+ &lt;x-script script-role=&quot;databound&quot;&gt;
+  &lt;script&gt;
+   return $('#grid').data('kendoGrid').dataSource.page();
+  &lt;/script&gt;
+ &lt;/x-script&gt;
+&lt;/x-server-parameter&gt;</code></pre>
+</div></li>
+  <li><p>If <code>parameter-name</code> is <b>not</b> set and a <code>dataBound</code> script is added to the tag, the code specified
+in the <a href="tags.common.x-script.html"><code>x-script</code></a> tag will be executed. The code can access two values: <code>data</code> - the object that
+consists of other parameter and <code>operation</code> which is the name of the operation.</p><div id="open27" style="display:none">
+  <p>Example&nbsp;<a href="javascript: showdiv('close27'); hidediv('open27');" onclick="javascript: showdiv('close27'); hidediv('open27');">[show]</a></p>
+</div>
+<div id="close27" style="display:inline">
+  <p>Example&nbsp;<a href="javascript: showdiv('open27'); hidediv('close27');" onclick="javascript: showdiv('open27'); hidediv('close27');">[hide]</a></p>
+  <pre class="example" id="example27"><code>&lt;x-server-parameter&gt;
+ &lt;x-script script-role=&quot;databound&quot;&gt;
+  &lt;script&gt;
+   if (operation !=='read' &amp; data.models !== null)
+       return { models: kendo.stringify(options.models) };
+  &lt;/script&gt;
+ &lt;/x-script&gt;
+&lt;/x-server-parameter&gt;</code></pre>
+</div></li>
+</ul><p>The tag may be used inside of <a href="tags.transport.x-server-transport.html"><code>x-server-transport</code></a> tag only.</p><p>Declared in <a href="tags.transport.html">Transport</a></p>
+<p>
+  <center><a href="tags.transport.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.transport.html');</script></body>
+</html>

@@ -1,0 +1,330 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Tag Library Functions</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>functions <b>Tag Library Functions</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The list of JavaScript functions available</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Functions</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_addErrorFor.html">tagHelper_addErrorFor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds the error message to the element specified.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_ajaxPost.html">tagHelper_ajaxPost</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Posts the form content to the server.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_clearForm.html">tagHelper_clearForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Clears all fields in the form</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_enableValidationFor.html">tagHelper_enableValidationFor</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Enables or disables validation for the specified element.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_formToJson.html">tagHelper_formToJson</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Reads the form and saves the result to JavaScript object.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_getForm.html">tagHelper_getForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Gets the form from the server.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_hideAllErrors.html">tagHelper_hideAllErrors</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function hides all errors on the form</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_isFormClear.html">tagHelper_isFormClear</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Checks whether all values in the form are clear.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_jsonToForm.html">tagHelper_jsonToForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Fills the form from a JavaScript object.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_loadForm.html">tagHelper_loadForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Loads the form into the local session storage.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_manageArea.html">tagHelper_manageArea</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Manages the status of all form controls inside the area</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_saveForm.html">tagHelper_saveForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Saves the form into the local session storage.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_setValue.html">tagHelper_setValue</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function sets value of a form element</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_setValueByName.html">tagHelper_setValueByName</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function sets value of a form element by its name</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelper_validateForm.html">tagHelper_validateForm</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Validate the form specified.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.taghelpers_addHidden.html">taghelpers_addHidden</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a hidden control to the form or replaces the value of an existing control.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.tagHelpers_formNavigateHelper.html">tagHelpers_formNavigateHelper</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The function to be used to navigate in order to support link guards.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.treeView.hasSelection.html">treeView.hasSelection</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An extension method of kendoTreeView that returns the flag indicating whether an item is selected.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.treeView.scrollIntoView.html">treeView.scrollIntoView</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An extension method of kendoTreeView that scrolls the tree view content so selected item gets into view.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.treeView.selectedItem.html">treeView.selectedItem</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An extension method of kendoTreeView that returns the item selected.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.treeView.selectedItemId.html">treeView.selectedItemId</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An extension method of kendoTreeView that returns the id of the item selected.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="jsfunc.treeView.selectItem.html">treeView.selectItem</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>An extension method of kendoTreeView that selects the item by its identifier.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="tags.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

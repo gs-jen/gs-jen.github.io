@@ -1,0 +1,306 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>SchedulerTask</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>SchedulerTask</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The base class for scheduler tag data</p>
+    <p><b>Details</b></p><p>The scheduler task is a C# object used to handle, serialize to Json and deserealize from Json
+the event (aka tasks) objects used by <a href="tags.scheduler.x-scheduler.html"><code>x-scheduler</code></a>.</p>
+<p>Use <code>Newtonsoft.Json</code> to serialize the object into Json and back. Please note that
+such conversion requires specifying two type converters <code>RecurrenceRuleJsonConverter</code> and <code>RecurrenceExceptionJsonConverter</code>, e.g.</p><div id="open28" style="display:none">
+  <p>Serializing into Json&nbsp;<a href="javascript: showdiv('close28'); hidediv('open28');" onclick="javascript: showdiv('close28'); hidediv('open28');">[show]</a></p>
+</div>
+<div id="close28" style="display:inline">
+  <p>Serializing into Json&nbsp;<a href="javascript: showdiv('open28'); hidediv('close28');" onclick="javascript: showdiv('open28'); hidediv('close28');">[hide]</a></p>
+  <pre class="example" id="example28"><code>IEnumerable&lt;SchedulerTask&gt; Tasks;
+...
+JsonConvert.SerializeObject(Tasks, Formatting.Indented, new RecurrenceRuleJsonConverter(), new RecurrenceExceptionJsonConverter()).</code></pre>
+</div><p>The json object required by the scheduler control has at least the following fields:</p><table class="tmain">
+  <tr>
+    <td class="thdr" width="20%"><p>Name</p></td>
+    <td class="thdr" width="20%"><p>Type</p></td>
+    <td class="thdr"><p>Description</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>id</p></td>
+    <td class="tmain"><p>any</p></td>
+    <td class="tmain"><p>The unique event identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>title</p></td>
+    <td class="tmain"><p>string</p></td>
+    <td class="tmain"><p>The name of the event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>description</p></td>
+    <td class="tmain"><p>string</p></td>
+    <td class="tmain"><p>The detailed description of the event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>start</p></td>
+    <td class="tmain"><p>date</p></td>
+    <td class="tmain"><p>The date and time when the event starts.</p>
+<p>For recurrent event the date is the date of the first occurrence and the time
+is the time when each occurrence starts.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>end</p></td>
+    <td class="tmain"><p>date</p></td>
+    <td class="tmain"><p>The date and time when the event ends.</p>
+<p>Note: This value must be set even if the event is marked as all day event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>recurrenceRule</p></td>
+    <td class="tmain"><p>string</p></td>
+    <td class="tmain"><p>In case the event is recurrent, the field contains a recurrence rule in iCal format.</p>
+<p>See section 3.3.10 of <a href="https://tools.ietf.org/html/rfc5545#section-3.3.10" target="_blank">RFC 5545</a> for details.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>recurrenceException</p></td>
+    <td class="tmain"><p>string</p></td>
+    <td class="tmain"><p>In case there are some dates are excepted from recurrence, the field contains a comma-separated list of
+these dates in ISO format</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>isAllDay</p></td>
+    <td class="tmain"><p>boolean</p></td>
+    <td class="tmain"><p>The flag indicating that the event is an all day long event.</p></td>
+  </tr>
+</table><p>The type defined in the <code>Gehtsoft.HtmlHelpers.dll</code> assembly.
+The namespace is <a href="Gehtsoft.TagHelpers.html"><code>Gehtsoft.TagHelpers</code></a>.</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Properties</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.AllDayEvent.0.html">AllDayEvent</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The flag indicating whether the event takes all day long.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.Description.0.html">Description</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The more detailed task description.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.End.0.html">End</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The date and time of when the task ends.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.EndTimeZone.0.html">EndTimeZone</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The name of the timezone of the time when the task ends.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.Id.0.html">Id</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The task identifier.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.OwnerID.0.html">OwnerID</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The identifier of the task owner (if any).</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.RecurrenceExceptions.0.html">RecurrenceExceptions</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The list of the dates that are excepted from the recurrence.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.RecurrenceRule.0.html">RecurrenceRule</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The rule on how the task is recurred.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.Start.0.html">Start</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The date and time of when the task begins.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.StartTimeZone.0.html">StartTimeZone</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The name of the timezone of the time when the task begins.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="Gehtsoft.TagHelpers.SchedulerTask.Title.0.html">Title</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>The task title.</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="Gehtsoft.TagHelpers.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

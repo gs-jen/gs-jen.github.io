@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-grid in Grid</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-grid</b> in Grid</code></font>
+    </p><p><b>Brief</b></p>
+<p>The grid.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-grid</b> id=&quot;<i>text</i>&quot; var=&quot;<i>text</i>&quot; editable=&quot;<i>none|incell|inline</i>&quot; selectable=&quot;<i>true|false</i>&quot; sortable=&quot;<i>true|false</i>&quot; filterable=&quot;<i>true|false</i>&quot; pageable=&quot;<i>true|false</i>&quot; height=&quot;<i>number</i>&quot; show-header=&quot;<i>true|false</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The identifier of the grid.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>var</code></td>
+    <td class="tmain" width="69%"><p>The variable to place kendoGrid object during the initialization.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>editable</code></td>
+    <td class="tmain" width="69%"><p>The value indicating whether the grid data can be edited.
+The attribute can take one of the following values: none, incell (edit each value individually), inline (edit whole row via command).</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>selectable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether a row of the grid may be selected.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>sortable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the grid can be sorted.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>filterable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the grid can be filtered.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>pageable</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the grid data are paginated.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>height</code></td>
+    <td class="tmain" width="69%"><p>The height of the grid in pixels or percents.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>show-header</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the header needs to be displayed.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>Use <a href="tags.grid.x-grid-column.html"><code>x-grid-column</code></a> tags inside this tag to define grid columns.</p>
+<p>Use <a href="tags.transport.x-server-datasource.html"><code>x-server-datasource</code></a> tags inside this tag to define grid data source.</p>
+<p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p>
+<p>The grid supports following events:</p>
+<p><code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/change" target="_blank">change</a></code>,
+<code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/databound" target="_blank">dataBound</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/beforeedit" target="_blank">beforeEdit</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/edit" target="_blank">edit</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/cellclose" target="_blank">cellClose</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/cancel" target="_blank">cancel</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/save" target="_blank">save</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/remove" target="_blank">remove</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/navigate" target="_blank">navigate</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/page" target="_blank">page</a></code>,
+<code>byname</code> <code><a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/events/filter" target="_blank">filter</a></code>,</p>
+<p>To define a toolbar, use custom script <code>byname toolbar</code>. The content of the script is not expected to be a function
+body, it will be put into toolbar property initialization &quot;as is&quot;.</p>
+<p>See also about <a href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/toolbar" target="_blank">toolbar</a>.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/controls/data-management/grid/overview" target="_blank">Grid Overview</a>.</p><p>Declared in <a href="tags.grid.html">Grid</a></p>
+<p>
+  <center><a href="tags.grid.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.grid.html');</script></body>
+</html>

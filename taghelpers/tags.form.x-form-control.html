@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-form-control in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-form-control</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The common attributes for all form controls.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b><i>x-form-control </i></b> id=&quot;<i>text</i>&quot; label=&quot;<i>text</i>&quot; tooltip=&quot;<i>text</i>&quot; placeholder=&quot;<i>text</i>&quot; suppress-label=&quot;<i>true|false</i>&quot; auto-focus=&quot;<i>true|false</i>&quot; disabled=&quot;<i>true|false</i>&quot; hidden=&quot;<i>true|false</i>&quot; in-validation-name=&quot;<i>text</i>&quot; whole-row=&quot;<i>true|false</i>&quot; for=&quot;<i>ModelExpression</i>&quot; name=&quot;<i>text</i>&quot; value=&quot;<i>text</i>&quot; read-only=&quot;<i>true|false</i>&quot; width=&quot;<i>text</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The control identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>label</code></td>
+    <td class="tmain" width="69%"><p>The control label.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tooltip</code></td>
+    <td class="tmain" width="69%"><p>The control tooltip.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>placeholder</code></td>
+    <td class="tmain" width="69%"><p>The control placeholder (the text to be shown when no data is selected);</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>suppress-label</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the label must not be displayed.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>auto-focus</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the control must get the focus when the page is opened.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>disabled</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the control is disabled.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>hidden</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the control is not displayed.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>in-validation-name</code></td>
+    <td class="tmain" width="69%"><p>The name of the control for <code>reference</code> function in the validation (see <a href="tags.form.x-validate.html"><code>x-validate</code></a>).
+If the value is not set, the value of the <code>name</code> attribute is used.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>whole-row</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the control takes both columns in two-column form layout.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>for</code></td>
+    <td class="tmain" width="69%"><p>The model expression that is bound to the control. If this attribute is set, <code>name</code> and <code>value</code> attributes must not be used.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>name</code></td>
+    <td class="tmain" width="69%"><p>The control name.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>value</code></td>
+    <td class="tmain" width="69%"><p>The control value.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>read-only</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the control is read-only.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>width</code></td>
+    <td class="tmain" width="69%"><p>Width of the control in pixels or in percents.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>This is a pseudo-tag and cannot be used in actual templates. Instead, all attributes described in this tag may be used in the tags derived from this tag.</p>
+<p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

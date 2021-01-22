@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>Multiple Fields in Form via CSR Example</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Multiple Fields in Form via CSR Example</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The article describes how to create a form with dynamic number of answers on one question.</p>
+    <p><b>Details</b></p><p><b>Problem Statement</b></p>
+<p>This function is designed primarily to support the forms that needs dynamic adding and removing
+of similar edit controls or groups of edit controls, for example:</p>
+<p>Fist Name: John<br>
+Nick Name: Big Horn [x]<br>
+Nick Name: Good Guy [+] [x]<br>
+Last Name: Doe<br></p>
+<p>Where it may be multiple nick names and so edit control for a nick name
+is followed by two buttons [+] to add another value and [x] to delete a value.</p>
+<p>This requires extensive logic on the client side and this is where
+<code>client-side</code> rendering comes to play.</p>
+<p>Let's do such form step-by-step.</p>
+<p>First, let's create response object. Pay attention that the
+nick name property is a <b>list</b> of the values.</p><div id="open6" style="display:none">
+  <p>Response&nbsp;<a href="javascript: showdiv('close6'); hidediv('open6');" onclick="javascript: showdiv('close6'); hidediv('open6');">[show]</a></p>
+</div>
+<div id="close6" style="display:inline">
+  <p>Response&nbsp;<a href="javascript: showdiv('open6'); hidediv('close6');" onclick="javascript: showdiv('open6'); hidediv('close6');">[hide]</a></p>
+  <pre class="example" id="example6"><code class="cs"> public class CsrResponse
+ {
+     public string FirstName { get; set; }
+     public IList&lt;string&gt; NickName { get; set; } = new List&lt;string&gt;();
+     public string LastName { get; set; }
+ }</code></pre>
+</div><p>Then, let's create model, which is quite typical for any form made with tag helper:</p><div id="open7" style="display:none">
+  <p>Response&nbsp;<a href="javascript: showdiv('close7'); hidediv('open7');" onclick="javascript: showdiv('close7'); hidediv('open7');">[show]</a></p>
+</div>
+<div id="close7" style="display:inline">
+  <p>Response&nbsp;<a href="javascript: showdiv('open7'); hidediv('close7');" onclick="javascript: showdiv('open7'); hidediv('close7');">[hide]</a></p>
+  <pre class="example" id="example7"><code class="cs"> public class CsrModel
+ {
+     public IStructValidationResult Errors { get; set; }
+     public IBaseValidator Validator { get; set; }
+     public CsrResponse Response { get; set; }
+ }</code></pre>
+</div><p>Then add validator. Pay attention that we use <code>RuleForAll</code> method instead of <code>RuleFor</code> in order
+to validate each element of the collection.</p><div id="open8" style="display:none">
+  <p>Response&nbsp;<a href="javascript: showdiv('close8'); hidediv('open8');" onclick="javascript: showdiv('close8'); hidediv('open8');">[show]</a></p>
+</div>
+<div id="close8" style="display:inline">
+  <p>Response&nbsp;<a href="javascript: showdiv('open8'); hidediv('close8');" onclick="javascript: showdiv('open8'); hidediv('close8');">[hide]</a></p>
+  <pre class="example" id="example8"><code class="cs"> public class CsrValidator : AbstractValidator&lt;CsrResponse&gt;
+ {
+     public CsrValidator()
+     {
+         RuleFor(m =&gt; m.FirstName).NotNullOrEmpty().WithMessage(&quot;First name must be set&quot;);
+         RuleForAll(m =&gt; m.NickName).Must(v =&gt; string.IsNullOrEmpty(v) || v.Length &gt; 3).WithMessage(&quot;Nickname length must be at least two characters long&quot;).ServerOnly();
+         RuleFor(m =&gt; m.LastName).NotNullOrEmpty().WithMessage(&quot;Last name must be set&quot;);
+     }
+ }</code></pre>
+</div><p>Then create actions to show initial form and to handle the response.
+Pay attention on the loop that removes empty values from the list.</p><div id="open9" style="display:none">
+  <p>Actions&nbsp;<a href="javascript: showdiv('close9'); hidediv('open9');" onclick="javascript: showdiv('close9'); hidediv('open9');">[show]</a></p>
+</div>
+<div id="close9" style="display:inline">
+  <p>Actions&nbsp;<a href="javascript: showdiv('open9'); hidediv('close9');" onclick="javascript: showdiv('open9'); hidediv('close9');">[hide]</a></p>
+  <pre class="example" id="example9"><code class="cs"> public IActionResult CsrForm()
+ {
+     CsrModel model = new CsrModel()
+     {
+         Errors = null,
+         Validator = new CsrValidator(),
+         Response = new CsrResponse()
+     };
+     return View(model);
+ }
+ 
+ [HttpPost]
+ public IActionResult CsrForm(CsrResponse response)
+ {
+     CsrModel model = new CsrModel()
+     {
+         Errors = null,
+         Validator = new CsrValidator(),
+         Response = response
+     };
+ 
+     for (int i = 0; i &lt; response.NickName.Count; i++)
+     {
+         if (string.IsNullOrEmpty(response.NickName[i]))
+         {
+             response.NickName.RemoveAt(i);
+             i--;
+         }
+     }
+ 
+ 
+     var e = model.Validator.Validate(response);
+     if (!e.IsValid)
+         model.Errors = e.ToFormErrors();
+ 
+     return View(model);
+ }</code></pre>
+</div><p>Now let's start to create view. First, create form and fields that will be generated on
+the server-side.</p><div id="open10" style="display:none">
+  <p>View Part I&nbsp;<a href="javascript: showdiv('close10'); hidediv('open10');" onclick="javascript: showdiv('close10'); hidediv('open10');">[show]</a></p>
+</div>
+<div id="close10" style="display:inline">
+  <p>View Part I&nbsp;<a href="javascript: showdiv('open10'); hidediv('close10');" onclick="javascript: showdiv('open10'); hidediv('close10');">[hide]</a></p>
+  <pre class="example" id="example10"><code class="cshtml"> &lt;x-form id=&quot;form1&quot; for=&quot;@Model.Response&quot;
+         mode=&quot;twocolumn&quot; action=&quot;@Url.Action(&quot;CsrForm&quot;)&quot; method=&quot;post&quot;
+         container-width=&quot;10&quot; body-width=&quot;12&quot; label-column-width=&quot;2&quot;
+         title=&quot;Name Form&quot; block=&quot;true&quot; style=&quot;margin-top: 1em;&quot;&gt;
+     &lt;x-form-errors support-on-client-validation=&quot;true&quot; validator=&quot;@(new ValidatorToModelConverter(Model.Validator))&quot; /&gt;
+     &lt;x-edit id=&quot;FirstName&quot; for=&quot;@Model.Response.FirstName&quot; label=&quot;First Name:&quot;/&gt;
+     &lt;x-edit id=&quot;LastName&quot; for=&quot;@Model.Response.LastName&quot; label=&quot;Last Name:&quot;/&gt;
+     &lt;x-form-group whole-row=&quot;true&quot; style=&quot;text-align: center;&quot;&gt;
+         &lt;x-button label=&quot;Submit&quot; role=&quot;submit&quot; /&gt;
+     &lt;/x-form-group&gt;
+ &lt;/x-form&gt;</code></pre>
+</div><p>Now is when the real coding begins. Prepare form initialization script.</p>
+<p>First of all, let's save existing nickname values and any errors
+related to nicknames that comes from the server.</p>
+<p>Pay attention on the names. You can choose any identifiers you like, but name must always be the name
+of the property in response followed by the index in square brackets.</p><div id="open11" style="display:none">
+  <p>View Part II&nbsp;<a href="javascript: showdiv('close11'); hidediv('open11');" onclick="javascript: showdiv('close11'); hidediv('open11');">[show]</a></p>
+</div>
+<div id="close11" style="display:inline">
+  <p>View Part II&nbsp;<a href="javascript: showdiv('open11'); hidediv('close11');" onclick="javascript: showdiv('open11'); hidediv('close11');">[hide]</a></p>
+  <pre class="example" id="example11"><code class="js"> var nicknames = [
+     @for (int i = 0; i &lt; Model.Response.NickName.Count; i++)
+     {
+         @: '@(Model.Response.NickName[i])',
+     }
+ ];
+ var nicknameErrors = [
+     @for (int i = 0; i &lt; Model.Response.NickName.Count; i++)
+     {
+         string name = &quot;NickName[&quot; + i + &quot;]&quot;;
+         string id = &quot;NickName&quot; + i;
+         if (Model.Errors != null &amp; Model.Errors.HasErrors(name))
+         {
+             var errors = Model.Errors.Errors(name);
+             foreach (string error in errors)
+             {
+               @: {id: '@id', error : '@error'},
+             }
+         }
+     }
+ ];</code></pre>
+</div><p>Then, let's save form layout object to a variable</p><div id="open12" style="display:none">
+  <p>View Part III&nbsp;<a href="javascript: showdiv('close12'); hidediv('open12');" onclick="javascript: showdiv('close12'); hidediv('open12');">[show]</a></p>
+</div>
+<div id="close12" style="display:inline">
+  <p>View Part III&nbsp;<a href="javascript: showdiv('open12'); hidediv('close12');" onclick="javascript: showdiv('open12'); hidediv('close12');">[hide]</a></p>
+  <pre class="example" id="example12"><code class="js">var layout = $('#form1').data('csr_layout').layout;</code></pre>
+</div><p>Then let's suppose that we would have a function <code>AddNickName</code> that adds
+a nickname control and initialize the form with initial value and errors.</p><div id="open13" style="display:none">
+  <p>View Part IV&nbsp;<a href="javascript: showdiv('close13'); hidediv('open13');" onclick="javascript: showdiv('close13'); hidediv('open13');">[show]</a></p>
+</div>
+<div id="close13" style="display:inline">
+  <p>View Part IV&nbsp;<a href="javascript: showdiv('open13'); hidediv('close13');" onclick="javascript: showdiv('open13'); hidediv('close13');">[hide]</a></p>
+  <pre class="example" id="example13"><code class="js"> var after = 'FirstName';
+ for (var i = 0; i &lt; nicknames.length; i++) {
+     AddNickName(after, i, nicknames[i]);
+     after = 'NickName' + i;
+ }
+ if (nicknames.length == 0) {
+     AddNickName(after, 0, '');
+ }
+ for (var i = 0; i &lt; nicknameErrors.length; i++) {
+     tagHelper_addErrorFor(nicknameErrors[i].id, nicknameErrors[i].error);
+ }
+ csr_updateButtonsForAttr(/^NickName\[\d+\]$/, 'name', undefined);</code></pre>
+</div><p>Now we have an interesting function <code>csr_updateButtonsForAttr</code>. What does it do?</p><ul class="main">
+  <li><p>Ok, it supposes that there are a set of controls whose names matches the mask. In our cases it will
+find all controls to edit NickName</p></li>
+  <li><p>Then, it supposes that EACH of these controls is followed by two buttons. One button has class
+<code>x-plus-button</code> and is intended to add a new control to the end.  The other button has class
+<code>x-x-button</code> and is intended to delete a value.</p></li>
+  <li><p>So, first of all. Because we are going to add new element at the end,
+<code>+</code> button must be visible for the last visible instance of the  control. <code>x</code> button must be visible
+at every element.</p></li>
+  <li><p>Second, we would need to know whether a particular control is the last of visible controls among all controls
+for NickName to create new controls after the last one.</p></li>
+</ul><p>Actually, this is exactly what the function <code>csr_updateButtonsForAttr</code> do. It find all
+controls that matches the mask specified, determines which is the last visible amount them all and hides
+associated buttons with class <code>x-plus-button</code> for all other matching controls.</p>
+<p>Then it applies <code>'last-visible'</code> data and assigns <code>'true'</code> value for the last visible matching control and
+<code>'false'</code> for the rest.</p>
+<p>So, now let's create the controls. Let's skip defining the buttons for now.</p>
+<p>Please pay attention that we create a javascript version of the validator. Please be aware that,
+we can use the validator in order to get validation function body in JavaScript.</p>
+<p>Also, pay attention at hidden control that we have to insert before our control. This control
+is required because we would have omissions amount indexes, for example only NickName[1], NickName[5] and NickName[8]
+would post their value. Without that hidden control the default ASP.NET binder would stop binding
+as soon as a first omission in the index sequence happens.
+See more about that <a href="https://stackoverflow.com/questions/8598214/mvc3-non-sequential-indices-and-defaultmodelbinder" target="_blank">at stackoverflow</a>.</p><div id="open14" style="display:none">
+  <p>View Part VI&nbsp;<a href="javascript: showdiv('close14'); hidediv('open14');" onclick="javascript: showdiv('close14'); hidediv('open14');">[show]</a></p>
+</div>
+<div id="close14" style="display:inline">
+  <p>View Part VI&nbsp;<a href="javascript: showdiv('open14'); hidediv('close14');" onclick="javascript: showdiv('open14'); hidediv('close14');">[hide]</a></p>
+  <pre class="example" id="example14"><code class="js"> function AddNickName(after, index, value) {
+     var id = 'NickName' + index;
+     var control = {
+         id: id,
+         type: 'textinput',
+         name: 'NickName[' + index + ']',
+         label: &quot;Nick Name&quot;,
+         value: value,
+         data: {
+             id: 'index',
+             value: index
+         },
+         validators: [
+            csr_createValidator(
+                   function (r, v) { return jsv_isempty(v) || jsv_length(v) &gt; 2 },
+                   'Must be 3 characters or longer', false)
+         ],
+         buttons: []
+     };
+     var row = layout.addRow(after);
+     row.addControl(control);
+     $('#' + id).before($('&lt;input type=&quot;hidden&quot; name=&quot;NickName.Index&quot; value=&quot;' + index + '&quot;&gt;&lt;/input&gt;'));
+ }</code></pre>
+</div><p>Now let's add <code>+</code> button.</p><div id="open15" style="display:none">
+  <p>View Part VII&nbsp;<a href="javascript: showdiv('close15'); hidediv('open15');" onclick="javascript: showdiv('close15'); hidediv('open15');">[show]</a></p>
+</div>
+<div id="close15" style="display:inline">
+  <p>View Part VII&nbsp;<a href="javascript: showdiv('open15'); hidediv('close15');" onclick="javascript: showdiv('open15'); hidediv('close15');">[hide]</a></p>
+  <pre class="example" id="example15"><code class="js"> ...
+ buttons: [
+     //A button to add a new value (will be available for the last only)
+     {
+         type: &quot;button&quot;,
+         role: &quot;button&quot;,
+         class: &quot;x-plus-button&quot;,
+         label: &quot;+&quot;,
+         click: function () {
+             var last = csr_getLastByName(/^NickName\[\d+\]$/, 'form1');
+             var index = last.data('index');
+             AddNickName(last, index + 1, '');
+             csr_updateButtonsForAttr(/^NickName\[\d+\]$/, 'name', undefined);
+         }
+     },
+ ]</code></pre>
+</div><p>And <code>x</code> button.</p><div id="open16" style="display:none">
+  <p>View Part VIII&nbsp;<a href="javascript: showdiv('close16'); hidediv('open16');" onclick="javascript: showdiv('close16'); hidediv('open16');">[show]</a></p>
+</div>
+<div id="close16" style="display:inline">
+  <p>View Part VIII&nbsp;<a href="javascript: showdiv('open16'); hidediv('close16');" onclick="javascript: showdiv('open16'); hidediv('close16');">[hide]</a></p>
+  <pre class="example" id="example16"><code class="js"> ...
+ buttons: [
+     //A button to add a new value (will be available for the last only)
+     {
+       ...
+     },
+ //a button to delete value. will clear value and hide it if it is not last
+ {
+     type: &quot;button&quot;,
+     role: &quot;button&quot;,
+     class: &quot;x-x-button&quot;,
+     label: &quot;x&quot;,
+     data: {
+         id: 'parent',
+         value: id
+     },
+     click: function (e) {
+         var id = $(e.event.target).data('parent');
+         var el = $('#' + id);
+         el.data('ajaxSpec').setvalue(null);
+         if (el.attr('last-visible') != 'true')
+             csr_showTwoColumnRow(id, false);
+         csr_updateButtonsForAttr(/^NickName\[\d+\]$/, 'name', undefined);
+     }
+ }
+ ]
+
+</code></pre>
+</div><p>
+      <center><a href="csr.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

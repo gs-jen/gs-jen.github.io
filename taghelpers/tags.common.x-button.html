@@ -1,0 +1,223 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-button in Common</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-button</b> in Common</code></font>
+    </p><p><b>Brief</b></p>
+<p>A button</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-button</b> role=&quot;<i>submit|button|link|action</i>&quot; primary=&quot;<i>true|false</i>&quot; id=&quot;<i>text</i>&quot; disabled=&quot;<i>true|false</i>&quot; href=&quot;<i>text</i>&quot; target=&quot;<i>text</i>&quot; label=&quot;<i>text</i>&quot; tool-tip=&quot;<i>text</i>&quot; sprite=&quot;<i>text</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>role</code></td>
+    <td class="tmain" width="69%"><p>The button role.</p>
+<p>The attribute can take one of the following values: submit, button, link, action (call script)</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>primary</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the button is a primary button.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The button identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>disabled</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the button is disabled.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>href</code></td>
+    <td class="tmain" width="69%"><p>The URL to navigate for <code>link</code> buttons.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>target</code></td>
+    <td class="tmain" width="69%"><p>The target where to navigate for <code>link</code> buttons (<code>_self</code> by default).</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>label</code></td>
+    <td class="tmain" width="69%"><p>The button text.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tool-tip</code></td>
+    <td class="tmain" width="69%"><p>The button tool tip.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>sprite</code></td>
+    <td class="tmain" width="69%"><p>A sprite to display before the icon label.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/styles-and-layout/icons-web" target="_blank">Kendo UI icons</a> and
+<a href="https://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp" target="_blank">Bootstrap glyphicons</a>
+for available icons.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p>
+<p>The control supports following event scripts: <code>click</code>.</p>
+<p>Note that the button is <b>not</b> a form control and aren't processed using form layout engine. To properly layout buttons inside the form
+you can either put buttons into <a href="tags.form.x-form-group.html"><code>x-form-group</code></a> control or use <a href="tags.common.x-row.html"><code>x-row</code></a> and
+<a href="tags.common.x-col.html"><code>x-col</code></a> tags for layout buttons manually.</p>
+<p><b>What If Spites Aren't Displayed</b></p>
+<p>Add following styles to the page stylesheet:</p><div id="open17" style="display:none">
+  <p>Style&nbsp;<a href="javascript: showdiv('close17'); hidediv('open17');" onclick="javascript: showdiv('close17'); hidediv('open17');">[show]</a></p>
+</div>
+<div id="close17" style="display:inline">
+  <p>Style&nbsp;<a href="javascript: showdiv('open17'); hidediv('close17');" onclick="javascript: showdiv('open17'); hidediv('close17');">[hide]</a></p>
+  <pre class="example" id="example17"><code>.k-sprite {
+    text-indent: 0;
+    font-size: 16px;
+    height: 24px;
+    line-height: normal;
+}</code></pre>
+</div><p>See also <a href="https://docs.telerik.com/kendo-ui/controls/navigation/button/overview" target="_blank">Button Overview</a>.</p><p>Declared in <a href="tags.common.html">Common</a></p>
+<p>
+  <center><a href="tags.common.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.common.html');</script></body>
+</html>

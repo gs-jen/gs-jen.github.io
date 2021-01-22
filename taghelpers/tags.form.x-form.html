@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-form in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-form</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The form.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-form</b> container-width=&quot;<i>number</i>&quot; action=&quot;<i>text</i>&quot; method=&quot;<i>post|get|ajax|ajaxManual</i>&quot; title=&quot;<i>text</i>&quot; mode=&quot;<i>inline|horizontal|twocolumn|custom</i>&quot; id=&quot;<i>text</i>&quot; for=&quot;<i>modelExpression</i>&quot; name-prefix=&quot;<i>text</i>&quot; label-column-width=&quot;<i>number</i>&quot; control-column-width=&quot;<i>number</i>&quot; body-width=&quot;<i>number</i>&quot; block=&quot;<i>true|false</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>container-width</code></td>
+    <td class="tmain" width="69%"><p>The width of container in bootstrap columns.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>action</code></td>
+    <td class="tmain" width="69%"><p>The URL to post or get form data to.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>method</code></td>
+    <td class="tmain" width="69%"><p>The form post method.</p>
+<p>See below for ajax form discussion.</p>
+<p>The attribute can take one of the following values: post, get, ajax or ajaxManual</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>title</code></td>
+    <td class="tmain" width="69%"><p>The form title.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>mode</code></td>
+    <td class="tmain" width="69%"><p>The form layout mode.</p>
+<p>The attribute can take one of the following values: <code>inline</code>, <code>horizontal</code>, <code>twocolumn</code>, <code>custom</code></p>
+<p>In <code>inline</code> mode all the controls are placed in one line. This mode is useful for filters over grids.</p>
+<p>In <code>horizontal</code> mode all the controls are located inside of explicitly defined rows and columns, one control in a column, with labels
+above the control. row must be always declared. If column is not declared, a column with maximum width is automatically created.</p>
+<p>In <code>twocolumn</code> mode the labels are located at the left side of the form and the control are located in the right side of the form,
+one control in a row. The rows don't have to be declared implicitly.</p>
+<p>In case of <code>custom</code> mode is used, an implementation of layout engine must be set in <code>layout-engine</code> property.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>id</code></td>
+    <td class="tmain" width="69%"><p>The form identifier.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>for</code></td>
+    <td class="tmain" width="69%"><p>The ModelExpression of the form response object.</p>
+<p>If this attribute is not used, the form will behave as a regular ASP.NET form, where the response object and the form page model object
+has the same type.</p>
+<p>Using this attribute allows the developer to separate the model and the response object in order to keep the form supplementary information
+and the form input data separately or, say, to make multiple forms on one page.</p>
+<p>The attribute MUST be used for any from that consists of embedded forms.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>label-column-width</code></td>
+    <td class="tmain" width="69%"><p>The width of the label column for <code>twocolumn</code> layout. The value is the bootstrap columns (1..12)</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>control-column-width</code></td>
+    <td class="tmain" width="69%"><p>The width of the control column for <code>twocolumn</code> layout. The value is the bootstrap columns (1..12)</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>body-width</code></td>
+    <td class="tmain" width="69%"><p>The width of the form body in the bootstrap columns (1...12).</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>block</code></td>
+    <td class="tmain" width="69%"><p>The flag indicating whether the form must have a <code>k-block</code> style.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p><b>Form Validation</b></p>
+<p>To show the server-generated form errors use <a href="tags.form.x-form-errors.html"><code>x-form-errors</code></a> tags.</p>
+<p>To provide the client-side validation use <a href="tags.form.x-form-errors.html"><code>x-form-errors</code></a> tag with <code>support-on-client-validation</code>
+attribute and then provide <a href="tags.form.x-validate.html"><code>x-validate</code></a> tags for each control and for the form in whole.</p>
+<p>If client side validation is enabled, the form be automatically validated before sending to the server.</p>
+<p><b>Protecting Changed Data</b></p>
+<p>To prevent buttons and links inside the form from navigating out of the form when the form data is changed use
+<a href="tags.form.x-link-guard.html"><code>x-link-guard</code></a> tag.</p>
+<p><b>Ajax Forms</b></p>
+<p>Ajax forms uses ajax methods instead of simply posting the form as a query string to the server.</p>
+<p>Ajax form has some limitations, for example, all the control names must be a legal name for a javascript object property name, i.e.
+names such as &quot;a.b&quot; or &quot;a[0]&quot; which are supported for regular forms aren't allowed.</p>
+<p>If <code>ajax</code> method is used, the form is posted via ajax and as a Json object. No navigation out of the page which consists of the form happen
+in this case.</p>
+<p>If <code>ajaxManual</code> method is used, no action is taken by default. You can use library <a href="jsfunc.html"><code>Java Script functions</code></a>
+to get the values from the server (<a href="jsfunc.tagHelper_getForm.html"><code>tagHelper_getForm</code></a>) or from the local storage
+(<a href="jsfunc.tagHelper_loadForm.html"><code>tagHelper_loadForm</code></a>), to post values to the server (<a href="jsfunc.tagHelper_ajaxPost.html"><code>tagHelper_ajaxPost</code></a>)
+or to save the values locally (<a href="jsfunc.tagHelper_saveForm.html"><code>tagHelper_saveForm</code></a>) or even simply get
+form as javascript object using <a href="jsfunc.tagHelper_formToJson.html"><code>tagHelper_formToJson</code></a> call.</p>
+<p><b>Form events</b></p>
+<p>The form may have two event handler: <code>submit</code> and <code>error</code>.</p>
+<p>All attributes described in <a href="tags.common.x-base.html"><code>x-base</code></a> base tag can also be applied to this tag.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

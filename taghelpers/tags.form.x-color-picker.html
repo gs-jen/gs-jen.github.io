@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-color-picker in Form</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-color-picker</b> in Form</code></font>
+    </p><p><b>Brief</b></p>
+<p>The color picker form control.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-color-picker</b> palette=&quot;<i>websafe|basic|custom</i>&quot; icon=&quot;<i>text</i>&quot; hue-buttons=&quot;<i>true|false</i>&quot; clear-button=&quot;<i>true|false</i>&quot; preview=&quot;<i>true|false</i>&quot; palette-columns=&quot;<i>number</i>&quot; tile-size=&quot;<i>number</i>&quot; tile-width=&quot;<i>number</i>&quot; tile-height=&quot;<i>number</i>&quot; var=&quot;<i>text</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>value</code></td>
+    <td class="tmain" width="69%"><p>A bound value of the control may be an integer, a string in HTML color format (e.g. <code>#rrggbb</code> where rr, gg and bb are red, green and blue
+components in a hexadecimal 00-ff format, or a <code>System.Drawing.Color</code> object.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>palette</code></td>
+    <td class="tmain" width="69%"><p>The palette.</p>
+<p>If no palette set, a hue picker is used.</p>
+<p>Predefined <code>websafe</code> (232 colors) or <code>basic</code> (16 colors) palettes may be used.</p>
+<p>Also, a custom palette as a comma-separated list of colors may be set, e.g. <code>#ff0000,#00ff00,#0000ff</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>icon</code></td>
+    <td class="tmain" width="69%"><p>The icon to be displayed on the control.
+See also <a href="https://docs.telerik.com/kendo-ui/styles-and-layout/icons-web" target="_blank">Kendo UI icons</a> and</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>hue-buttons</code></td>
+    <td class="tmain" width="69%"><p>The flag which turns apply and cancel buttons at hue selector on or off.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>clear-button</code></td>
+    <td class="tmain" width="69%"><p>The flag sets whether the clear button will exist.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>preview</code></td>
+    <td class="tmain" width="69%"><p>The flag sets whether the preview will appear on hue selector.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>palette-columns</code></td>
+    <td class="tmain" width="69%"><p>The number of columns for palettes except hue.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tile-size</code></td>
+    <td class="tmain" width="69%"><p>A size of a square tile for all palettes except hue. The default size is 14.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tile-width</code></td>
+    <td class="tmain" width="69%"><p>The width of a rectangular tile for all palettes except hue. The default size is 14.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>tile-height</code></td>
+    <td class="tmain" width="69%"><p>The height of a rectangular tile for all palettes except hue. The default size is 14.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>var</code></td>
+    <td class="tmain" width="69%"><p>The name of the jscript variable to put an associated kendo object to.</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>All attributes described in <a href="tags.form.x-form-control.html"><code>x-form-control</code></a> base tag can also be applied to this tag.</p>
+<p>See also <a href="https://docs.telerik.com/kendo-ui/controls/editors/colorpicker/overview" target="_blank">Color Picker Overview</a>.</p>
+<p>Use <a href="tags.common.x-message.html"><code>x-message</code></a> tag to set custom text for the messages.</p><p>Declared in <a href="tags.form.html">Form</a></p>
+<p>
+  <center><a href="tags.form.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.form.html');</script></body>
+</html>

@@ -1,0 +1,304 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <title>x-scheduler-view in Scheduler</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>tag <b>x-scheduler-view</b> in Scheduler</code></font>
+    </p><p><b>Brief</b></p>
+<p>The definition of one view inside of the scheduler tag.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td><code>&lt;<b>x-scheduler-view</b> name=&quot;<i>text</i>&quot; title=&quot;<i>text</i>&quot; view-type=&quot;<i>day|week|workWeek|month|agenda|timeline|timelineWeek|timelineWorkWeek|timelineMonth</i>&quot; all-day-slot=&quot;<i>true|false</i>&quot; column-width=&quot;<i>number</i>&quot; editable=&quot;<i>true|false</i>&quot; no-create=&quot;<i>true|false</i>&quot; no-change=&quot;<i>true|false</i>&quot; no-delete=&quot;<i>true|false</i>&quot; start-time=&quot;&quot; end-time=&quot;&quot; event-height=&quot;<i>number</i>&quot; major-tick=&quot;<i>none|day|week</i>&quot; minor-tick-count=&quot;<i>number</i>&quot; selected=&quot;<i>true|false</i>&quot; selected-date-format=&quot;<i>text</i>&quot; selected-short-date-format=&quot;<i>text</i>&quot; show-work-hours=&quot;<i>true|false</i>&quot; work-week-start=&quot;<i>number</i>&quot; work-week-end=&quot;<i>number</i>&quot; /&gt;</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>name</code></td>
+    <td class="tmain" width="69%"><p>The (internal) name of the view.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>title</code></td>
+    <td class="tmain" width="69%"><p>The user-friendly title of the view displayed by the scheduler.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>view-type</code></td>
+    <td class="tmain" width="69%"><p>The type of the view. The built-in views are: &quot;day&quot;, &quot;week&quot;, &quot;workWeek&quot;, &quot;month&quot;, &quot;agenda&quot;, &quot;timeline&quot;, &quot;timelineWeek&quot;, &quot;timelineWorkWeek&quot; and &quot;timelineMonth&quot;.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>all-day-slot</code></td>
+    <td class="tmain" width="69%"><p>If set to true the scheduler will display a slot for &quot;all day&quot; events.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>column-width</code></td>
+    <td class="tmain" width="69%"><p>The width of the table columns in timeline views. Value is treated as pixels.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>editable</code></td>
+    <td class="tmain" width="69%"><p>Either <code>false</code> (default value) to make the view not editable or nothing.</p>
+<p>To make the view editable use <a href="tags.scheduler.x-scheduler-editable.html"><code>x-scheduler-editable</code></a> tag.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>start-time</code></td>
+    <td class="tmain" width="69%"><p>The start time of the view. The scheduler will display events starting after the startTime.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>end-time</code></td>
+    <td class="tmain" width="69%"><p>The end time of the view. The scheduler will display events ending before the endTime.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>event-height</code></td>
+    <td class="tmain" width="69%"><p>The height of the scheduler event rendered in month and timeline views.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>major-tick</code></td>
+    <td class="tmain" width="69%"><p>The number of minutes represented by a major tick for day and week view.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>minor-tick-count</code></td>
+    <td class="tmain" width="69%"><p>The number of time slots to display per major tick.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>selected</code></td>
+    <td class="tmain" width="69%"><p>If set to true the view will be initially selected by the scheduler widget.</p>
+<p>If more than one view is selected then last of them will prevail.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>selected-date-format</code></td>
+    <td class="tmain" width="69%"><p>The format used to display the selected date.</p>
+<p>For Kendo date formats
+see <a href="https://docs.telerik.com/kendo-ui/framework/globalization/dateformatting" target="_blank">Date formatting in Kendo UI documentation</a></p>
+<p>Contains two placeholders - &quot;{0}&quot; and &quot;{1}&quot; which represent the start and end date displayed by the view e.g. <code>{0:dd-MM-yyyy}</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>selected-short-date-format</code></td>
+    <td class="tmain" width="69%"><p>The format used to display the selected date when viewport is narrow, and the date is displayed in short (&quot;d&quot;) format by default.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>show-work-hours</code></td>
+    <td class="tmain" width="69%"><p>If set to true the view will be initially shown in business hours mode.</p>
+<p>The showWorkHours option is supported when views.type is set to &quot;day&quot; or &quot;week&quot;.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>work-week-start</code></td>
+    <td class="tmain" width="69%"><p>The start of working week (index based).</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>work-week-end</code></td>
+    <td class="tmain" width="69%"><p>The end of working week (index based).</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>Also you can apply the following templates to a view (and to a whole <a href="tags.scheduler.x-scheduler.html"><code>x-scheduler</code></a> as well). If
+there is no special note about template parameter, the template parameter is an
+event object (for the details on the event object see <a href="Gehtsoft.TagHelpers.SchedulerTask.html"><code>SchedulerTask</code></a> documentation).</p><table class="tmain">
+  <tr>
+    <td class="thdr" width="20%"><p>Template name</p></td>
+    <td class="thdr"><p>Description</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>allDayEventTemplate</p></td>
+    <td class="tmain"><p>The template used to render the &quot;all day&quot; scheduler event.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>allDaySlotTemplate</p></td>
+    <td class="tmain"><p>The template used to render the all day slot cell.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the slot date.<br>
+<code>resources()</code> - returns the relevant resources for the current slot.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>dateHeaderTemplate</p></td>
+    <td class="tmain"><p>The template used to render the date header cells.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the major tick date.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>dayTemplate</p></td>
+    <td class="tmain"><p>The template used to render the day slots in month view.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the major tick date.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>eventDateTemplate</p></td>
+    <td class="tmain"><p>The template used by the agenda view to render the date of the scheduler events.
+The template used to render the date header cells.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the event date.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>eventTemplate</p></td>
+    <td class="tmain"><p>The template used by the view to render the scheduler events.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>eventTimeTemplate</p></td>
+    <td class="tmain"><p>The template used by the agenda view to render the time of the scheduler events.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>majorTimeHeaderTemplate</p></td>
+    <td class="tmain"><p>The template used to render the major ticks.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the major tick date.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>minorTimeHeaderTemplate</p></td>
+    <td class="tmain"><p>The template used to render the minor ticks.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the minor tick date/time.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>slotTemplate</p></td>
+    <td class="tmain"><p>The template used to render the time slot cells.</p>
+<p>The template argument has the following parameters:<br>
+<code>date</code> - represents the slot date/time.
+<code>resources()</code> - associated resources.</p></td>
+  </tr>
+</table><p>Declared in <a href="tags.scheduler.html">Scheduler</a></p>
+<p>
+  <center><a href="tags.scheduler.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'tags.scheduler.html');</script></body>
+</html>

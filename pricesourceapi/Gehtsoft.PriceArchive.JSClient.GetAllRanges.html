@@ -1,0 +1,220 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Gehtsoft.PriceArchive.JSClient.GetAllRanges</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>public method <b>Gehtsoft.PriceArchive.JSClient.GetAllRanges</b></code></font>
+    </p><p><b>Brief</b></p>
+<p>Returns the range of the price data available for each instrument</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td>JavaScript</td>
+  </tr>
+  <tr>
+    <td><code>Gehtsoft.PriceArchive.JSClient.<b>GetAllRanges</b> (callback)</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>callback</code></td>
+    <td class="tmain" width="69%"><p>The callback will be called when the method is complete and must be a function accepting an object which has the following properties:</p><table class="tmain" width="100%">
+  <tr>
+    <td class="tmain" width="30%"><p>Code</p></td>
+    <td class="tmain"><p>The error code or <code>0</code> if the operation was successful</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Error</p></td>
+    <td class="tmain"><p>The error message in case the operation wasn't successful</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Ranges</p></td>
+    <td class="tmain"><p>An array of the objects representing instruments and their ranges.</p>
+<p>See below for the range object description.</p></td>
+  </tr>
+</table><p>Each range is represented as the object with the following properties:</p><table class="tmain" width="100%">
+  <tr>
+    <td class="tmain" width="30%"><p>Instrument</p></td>
+    <td class="tmain"><p>The name of the instrument</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>Timeframe</p></td>
+    <td class="tmain"><p>The name of the timeframe for which the data is available.</p>
+<p>Note: if a group of timeframes has the same range, e.g. 1m, 5m, 15m and so on, only
+the shortest time frame will be represented in the list.</p>
+<p>E.g. if the answer consists of 1m and 1h timeframes only, that means that all
+timeframes longer than 1m and shorter than 1h (1m, 5m, 15m, 30m) will have one range of the data, and all timeframes
+longer than 1h (1h, 2h, 6h, 12h, 1d...) will have the other range.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>From</p></td>
+    <td class="tmain"><p>The date and time the price data is available from.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30%"><p>To</p></td>
+    <td class="tmain"><p>The date and time the price data is available to.</p></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p><b>Details</b></p><p>Example:</p><p>Get the range of the data available</p>
+<pre class="example" id="example13"><code class="js"> client.GetAllRanges(function (result) {
+     if (result.Code == 0) {
+         for (let i = 0; i &lt; result.Ranges.length; i++)  {
+            let range = result.Ranges[i];
+            console.log(range.Instrument, range.Timeframe, range.From, range.To);
+         }
+     } else {
+         console.log(&quot;Can't get instrument data&quot;);
+         console.log(result.Message);
+     }
+});</code></pre><p>Declared in <a href="Gehtsoft.PriceArchive.JSClient.html">Gehtsoft.PriceArchive.JSClient</a></p>
+<p>
+  <center><a href="Gehtsoft.PriceArchive.JSClient.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'Gehtsoft.PriceArchive.JSClient.html');</script></body>
+</html>
