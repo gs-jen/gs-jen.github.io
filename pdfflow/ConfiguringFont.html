@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
   <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
     <title>Configuring Font</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
@@ -130,7 +130,7 @@ and Korean. CID fonts require particular encodings that can be specified using t
 <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseSimplified.html"><code>FontNamesChineseSimplified</code></a>, <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseTraditional.html"><code>FontNamesChineseTraditional</code></a>,
 <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesKorean.html"><code>FontNamesKorean</code></a>, <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesJapanese.html"><code>FontNamesJapanese</code></a> for the corresponding
 multibyte fonts.<br>
-For example,</p><pre class="example" id="example85"><code>    FontBuilder fontZapf = FontBuilder.New().SetName(FontNames.ZapfDingbats);</code></pre><p>To print <i>Symbol</i> and <i>ZapfDingbats</i> characters, you can use HEX codes, keyboard keys, or ANSI codes (see examples 7 and 8 below).
+For example,</p><pre class="example" id="example83"><code>    FontBuilder fontZapf = FontBuilder.New().SetName(FontNames.ZapfDingbats);</code></pre><p>To print <i>Symbol</i> and <i>ZapfDingbats</i> characters, you can use HEX codes, keyboard keys, or ANSI codes (see examples 7 and 8 below).
 You can find a list of Symbol and ZapfDingbats character codes, for example, at
 <a href="https://help.adobe.com/en_US/framemaker/2015/using/using-framemaker-2015/Appendix/frm_character_sets_cs/frm_character_sets_cs-5.htm" target="_blank">Adobe</a>.</p>
 <p>In addition to these fonts, you can use external <i>TrueType</i> and <i>Type1</i> fonts. The widely used TrueType fonts are stored in <code>.ttf</code> files.
@@ -194,7 +194,7 @@ and in the corresponding element's builders)</p></td>
 <p><b>Supported Encodings</b></p>
 <p>You can set <i>single-byte</i> and <i>multibyte</i> encodings. The currently supported single-byte encodings are listed in
 <a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNames.html"><code>EncodingNames</code></a>. Use this class to get the correct names of single-byte encodings:<br>
-For example,</p><pre class="example" id="example86"><code>    section.AddParagraph(&quot;Text&quot;).SetFontEncodingName(EncodingNames.ISO8859_4);</code></pre><p>Methods of <a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNames.html"><code>EncodingNames</code></a> are available both to <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>
+For example,</p><pre class="example" id="example84"><code>    section.AddParagraph(&quot;Text&quot;).SetFontEncodingName(EncodingNames.ISO8859_4);</code></pre><p>Methods of <a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNames.html"><code>EncodingNames</code></a> are available both to <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>
 and <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>.</p>
 <p>The currently supported multibyte encodings for the supported <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseSimplified.html"> Chinese Simplified</a>,
 <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseTraditional.html">Chinese Traditional</a>, <a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesKorean.html">Korean</a>,
@@ -209,25 +209,25 @@ You can use these classes to get the correct names of the corresponding encoding
 <p>To use a built-in font, do one of the following:</p><ul class="main">
   <li><p>Call the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.SetName.ou4.html"><code>FontBuilder.SetName</code></a> to specify the font name
 and then call the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.SetSize.wa5.html"><code>FontBuilder.SetSize</code></a> to specify the font size.<br>
-For example,</p><pre class="example" id="example87"><code>    var font = FontBuilder.New();
+For example,</p><pre class="example" id="example85"><code>    var font = FontBuilder.New();
     font.SetName(&quot;Times&quot;).SetSize(12);</code></pre></li>
   <li><p>Call the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.With.euG.html"><code>FontBuilder.With</code></a> to specify the font name and font size at once.<br>
-For example,</p><pre class="example" id="example88"><code>title=
+For example,</p><pre class="example" id="example86"><code>title=
     font.With(&quot;Times&quot;, 12);</code></pre></li>
   <li><p>Call the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.With.euG.html"><code>FontBuilder.With</code></a> specifying the font name with the help of
 the <a href="Gehtsoft.PDFFlow.Models.Shared.FontNames.html"><code>FontNames</code></a> class.<br>
-For example,</p><pre class="example" id="example89"><code>    font.With(FontNames.Times, 12);</code></pre></li>
+For example,</p><pre class="example" id="example87"><code>    font.With(FontNames.Times, 12);</code></pre></li>
 </ul><p>To quickly apply a built-in font, you can use the <a href="Gehtsoft.PDFFlow.Utils.Fonts.html"><code>Fonts</code></a> class to choose the font and specify its size.
-For example,</p><pre class="example" id="example90"><code>    Fonts.Helvetica(12)</code></pre><p><br><br>
+For example,</p><pre class="example" id="example88"><code>    Fonts.Helvetica(12)</code></pre><p><br><br>
 <b>Using External Fonts</b></p>
 <p>To use an external font in your document, specify the path to the font file in the <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.SetPath.1PB.html"><code>FontBuilder.SetPath</code></a> method.<br>
-For example,</p><pre class="example" id="example91"><code>    font.SetPath(Path.Combine(&quot;Fonts&quot;, &quot;DejaVuSerif.ttf&quot;))</code></pre><p>If the font file requires a particular encoding, specify it using the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.SetEncodingName.ntD.html"><code>FontBuilder.SetEncodingName</code></a>.
+For example,</p><pre class="example" id="example89"><code>    font.SetPath(Path.Combine(&quot;Fonts&quot;, &quot;DejaVuSerif.ttf&quot;))</code></pre><p>If the font file requires a particular encoding, specify it using the method <a href="Gehtsoft.PDFFlow.Builder.FontBuilder.SetEncodingName.ntD.html"><code>FontBuilder.SetEncodingName</code></a>.
 If you want to use a Type1 font, you should specify the path to the <code>.afm</code> font file, but the <code>.pfb</code> file of the font must have the same name and be located
 in the same folder.</p>
 <p><br><br>
 <b>Configuring Fonts Using Styles</b></p>
 <p>Configuring the font with the help of styles allows you to define the font for an entire document or for its elements of a particular type.<br>
-For example:</p><pre class="example" id="example92"><code>    var styleDocument = StyleBuilder.New()
+For example:</p><pre class="example" id="example90"><code>    var styleDocument = StyleBuilder.New()
                .SetFont(Fonts.Times(12));
     var styleHeader = StyleBuilder.New(styleDocument)
                .SetFontBold();
@@ -247,12 +247,12 @@ will be written to the section style. Similar methods are available for differen
 <p><a href="AddingTable.html">Adding Table</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
 <p><br><br>
-<b>Examples</b></p><div id="open93" style="display:none">
-  <p>Example 1. Use a built-in font&nbsp;<a href="javascript: showdiv('close93'); hidediv('open93');" onclick="javascript: showdiv('close93'); hidediv('open93');">[show]</a></p>
+<b>Examples</b></p><div id="open91" style="display:none">
+  <p>Example 1. Use a built-in font&nbsp;<a href="javascript: showdiv('close91'); hidediv('open91');" onclick="javascript: showdiv('close91'); hidediv('open91');">[show]</a></p>
 </div>
-<div id="close93" style="display:inline">
-  <p>Example 1. Use a built-in font&nbsp;<a href="javascript: showdiv('open93'); hidediv('close93');" onclick="javascript: showdiv('open93'); hidediv('close93');">[hide]</a></p>
-  <pre class="example" id="example93"><code>            //Create a font:
+<div id="close91" style="display:inline">
+  <p>Example 1. Use a built-in font&nbsp;<a href="javascript: showdiv('open91'); hidediv('close91');" onclick="javascript: showdiv('open91'); hidediv('close91');">[hide]</a></p>
+  <pre class="example" id="example91"><code>            //Create a font:
             var font = Fonts.Times(12)
                 .SetColor(Color.Blue)
                 .SetBold()
@@ -270,12 +270,12 @@ will be written to the section style. Similar methods are available for differen
  
   <img src="img/font-ex2.png">
  <a href="pdf/Sample_SetFont2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open94" style="display:none">
-  <p>Example 2. Use a built-in font&nbsp;<a href="javascript: showdiv('close94'); hidediv('open94');" onclick="javascript: showdiv('close94'); hidediv('open94');">[show]</a></p>
+</div><div id="open92" style="display:none">
+  <p>Example 2. Use a built-in font&nbsp;<a href="javascript: showdiv('close92'); hidediv('open92');" onclick="javascript: showdiv('close92'); hidediv('open92');">[show]</a></p>
 </div>
-<div id="close94" style="display:inline">
-  <p>Example 2. Use a built-in font&nbsp;<a href="javascript: showdiv('open94'); hidediv('close94');" onclick="javascript: showdiv('open94'); hidediv('close94');">[hide]</a></p>
-  <pre class="example" id="example94"><code>            //Create a document:
+<div id="close92" style="display:inline">
+  <p>Example 2. Use a built-in font&nbsp;<a href="javascript: showdiv('open92'); hidediv('close92');" onclick="javascript: showdiv('open92'); hidediv('close92');">[hide]</a></p>
+  <pre class="example" id="example92"><code>            //Create a document:
             DocumentBuilder.New()
                .AddSection()
                    .AddParagraph(&quot;Typewriter old font text.&quot;)
@@ -292,12 +292,12 @@ will be written to the section style. Similar methods are available for differen
  
  <img src="img/font-ex4.png">
  <a href="pdf/Sample_SetFont4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open95" style="display:none">
-  <p>Example 3. Use a Type1 external font&nbsp;<a href="javascript: showdiv('close95'); hidediv('open95');" onclick="javascript: showdiv('close95'); hidediv('open95');">[show]</a></p>
+</div><div id="open93" style="display:none">
+  <p>Example 3. Use a Type1 external font&nbsp;<a href="javascript: showdiv('close93'); hidediv('open93');" onclick="javascript: showdiv('close93'); hidediv('open93');">[show]</a></p>
 </div>
-<div id="close95" style="display:inline">
-  <p>Example 3. Use a Type1 external font&nbsp;<a href="javascript: showdiv('open95'); hidediv('close95');" onclick="javascript: showdiv('open95'); hidediv('close95');">[hide]</a></p>
-  <pre class="example" id="example95"><code>            //Set the path to the .afm file:
+<div id="close93" style="display:inline">
+  <p>Example 3. Use a Type1 external font&nbsp;<a href="javascript: showdiv('open93'); hidediv('close93');" onclick="javascript: showdiv('open93'); hidediv('close93');">[hide]</a></p>
+  <pre class="example" id="example93"><code>            //Set the path to the .afm file:
             string cyklopItalicFilePath = Path.Combine(&quot;Content&quot;, &quot;Font&quot;, &quot;cyklopi.afm&quot;);
             //You need two files: cyklopi.afm and cyklopi.pfb in the same folder.
             //Create a Type1 font from the file:
@@ -316,12 +316,12 @@ will be written to the section style. Similar methods are available for differen
  
  <img src="img/font-ex3.png">
  <a href="pdf/Sample_SetFont3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open96" style="display:none">
-  <p>Example 4. Use a TTF external font&nbsp;<a href="javascript: showdiv('close96'); hidediv('open96');" onclick="javascript: showdiv('close96'); hidediv('open96');">[show]</a></p>
+</div><div id="open94" style="display:none">
+  <p>Example 4. Use a TTF external font&nbsp;<a href="javascript: showdiv('close94'); hidediv('open94');" onclick="javascript: showdiv('close94'); hidediv('open94');">[show]</a></p>
 </div>
-<div id="close96" style="display:inline">
-  <p>Example 4. Use a TTF external font&nbsp;<a href="javascript: showdiv('open96'); hidediv('close96');" onclick="javascript: showdiv('open96'); hidediv('close96');">[hide]</a></p>
-  <pre class="example" id="example96"><code>            //Create a font:
+<div id="close94" style="display:inline">
+  <p>Example 4. Use a TTF external font&nbsp;<a href="javascript: showdiv('open94'); hidediv('close94');" onclick="javascript: showdiv('open94'); hidediv('close94');">[hide]</a></p>
+  <pre class="example" id="example94"><code>            //Create a font:
             var path = Path.Combine(&quot;Font&quot;, &quot;DejaVuSerif-BoldItalic.ttf&quot;);
             var font = FontBuilder.New().FromFile(path, 16);
             //Create a document:
@@ -336,12 +336,12 @@ will be written to the section style. Similar methods are available for differen
  
   <img src="img/font-ex6.png">
  <a href="pdf/Sample_SetFont6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open97" style="display:none">
-  <p>Example 5. Use different fonts in paragraphs: external, default, and built-in&nbsp;<a href="javascript: showdiv('close97'); hidediv('open97');" onclick="javascript: showdiv('close97'); hidediv('open97');">[show]</a></p>
+</div><div id="open95" style="display:none">
+  <p>Example 5. Use different fonts in paragraphs: external, default, and built-in&nbsp;<a href="javascript: showdiv('close95'); hidediv('open95');" onclick="javascript: showdiv('close95'); hidediv('open95');">[show]</a></p>
 </div>
-<div id="close97" style="display:inline">
-  <p>Example 5. Use different fonts in paragraphs: external, default, and built-in&nbsp;<a href="javascript: showdiv('open97'); hidediv('close97');" onclick="javascript: showdiv('open97'); hidediv('close97');">[hide]</a></p>
-  <pre class="example" id="example97"><code>            //Create a font:
+<div id="close95" style="display:inline">
+  <p>Example 5. Use different fonts in paragraphs: external, default, and built-in&nbsp;<a href="javascript: showdiv('open95'); hidediv('close95');" onclick="javascript: showdiv('open95'); hidediv('close95');">[hide]</a></p>
+  <pre class="example" id="example95"><code>            //Create a font:
             var fontCourier = FontBuilder.New()
                 .SetName(&quot;Courier&quot;)
                 .SetBold()
@@ -366,12 +366,12 @@ will be written to the section style. Similar methods are available for differen
  
   <img src="img/font-ex5.png">
  <a href="pdf/Sample_SetFont5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open98" style="display:none">
-  <p>Example 6. Apply styles with different font settings&nbsp;<a href="javascript: showdiv('close98'); hidediv('open98');" onclick="javascript: showdiv('close98'); hidediv('open98');">[show]</a></p>
+</div><div id="open96" style="display:none">
+  <p>Example 6. Apply styles with different font settings&nbsp;<a href="javascript: showdiv('close96'); hidediv('open96');" onclick="javascript: showdiv('close96'); hidediv('open96');">[show]</a></p>
 </div>
-<div id="close98" style="display:inline">
-  <p>Example 6. Apply styles with different font settings&nbsp;<a href="javascript: showdiv('open98'); hidediv('close98');" onclick="javascript: showdiv('open98'); hidediv('close98');">[hide]</a></p>
-  <pre class="example" id="example98"><code>            //Create styles:
+<div id="close96" style="display:inline">
+  <p>Example 6. Apply styles with different font settings&nbsp;<a href="javascript: showdiv('open96'); hidediv('close96');" onclick="javascript: showdiv('open96'); hidediv('close96');">[hide]</a></p>
+  <pre class="example" id="example96"><code>            //Create styles:
             var styleDocument = StyleBuilder.New()
                 .SetFont(Fonts.Times(12))
                 .SetFontColor(Color.Blue);
@@ -389,12 +389,12 @@ will be written to the section style. Similar methods are available for differen
  
  <img src="img/font-ex1.png">
  <a href="pdf/Sample_SetFont1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open99" style="display:none">
-  <p>Example 7. Use the built-in Zapf Dingbats font&nbsp;<a href="javascript: showdiv('close99'); hidediv('open99');" onclick="javascript: showdiv('close99'); hidediv('open99');">[show]</a></p>
+</div><div id="open97" style="display:none">
+  <p>Example 7. Use the built-in Zapf Dingbats font&nbsp;<a href="javascript: showdiv('close97'); hidediv('open97');" onclick="javascript: showdiv('close97'); hidediv('open97');">[show]</a></p>
 </div>
-<div id="close99" style="display:inline">
-  <p>Example 7. Use the built-in Zapf Dingbats font&nbsp;<a href="javascript: showdiv('open99'); hidediv('close99');" onclick="javascript: showdiv('open99'); hidediv('close99');">[hide]</a></p>
-  <pre class="example" id="example99"><code>            FontBuilder fontZapf8 = FontBuilder.New().SetName(FontNames.ZapfDingbats).SetSize(8);
+<div id="close97" style="display:inline">
+  <p>Example 7. Use the built-in Zapf Dingbats font&nbsp;<a href="javascript: showdiv('open97'); hidediv('close97');" onclick="javascript: showdiv('open97'); hidediv('close97');">[hide]</a></p>
+  <pre class="example" id="example97"><code>            FontBuilder fontZapf8 = FontBuilder.New().SetName(FontNames.ZapfDingbats).SetSize(8);
             FontBuilder fontZapf14 = FontBuilder.New().SetName(FontNames.ZapfDingbats).SetSize(14);
             DocumentBuilder.New()
                 .AddSection()
@@ -442,12 +442,12 @@ will be written to the section style. Similar methods are available for differen
  
  <img src="img/font-ex7.png">
  <a href="pdf/Sample_SetFont7.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open100" style="display:none">
-  <p>Example 8. Use the built-in Symbol font&nbsp;<a href="javascript: showdiv('close100'); hidediv('open100');" onclick="javascript: showdiv('close100'); hidediv('open100');">[show]</a></p>
+</div><div id="open98" style="display:none">
+  <p>Example 8. Use the built-in Symbol font&nbsp;<a href="javascript: showdiv('close98'); hidediv('open98');" onclick="javascript: showdiv('close98'); hidediv('open98');">[show]</a></p>
 </div>
-<div id="close100" style="display:inline">
-  <p>Example 8. Use the built-in Symbol font&nbsp;<a href="javascript: showdiv('open100'); hidediv('close100');" onclick="javascript: showdiv('open100'); hidediv('close100');">[hide]</a></p>
-  <pre class="example" id="example100"><code>            FontBuilder fontSymbol = FontBuilder.New().SetName(FontNames.Symbol);
+<div id="close98" style="display:inline">
+  <p>Example 8. Use the built-in Symbol font&nbsp;<a href="javascript: showdiv('open98'); hidediv('close98');" onclick="javascript: showdiv('open98'); hidediv('close98');">[hide]</a></p>
+  <pre class="example" id="example98"><code>            FontBuilder fontSymbol = FontBuilder.New().SetName(FontNames.Symbol);
             DocumentBuilder.New()
                 .AddSection()
                     .SetStyleFont(fontSymbol)
@@ -475,23 +475,23 @@ will be written to the section style. Similar methods are available for differen
  
  <img src="img/font-ex8.png">
  <a href="pdf/Sample_SetFont8.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open101" style="display:none">
-  <p>Example 9. Set single-byte encoding&nbsp;<a href="javascript: showdiv('close101'); hidediv('open101');" onclick="javascript: showdiv('close101'); hidediv('open101');">[show]</a></p>
+</div><div id="open99" style="display:none">
+  <p>Example 9. Set single-byte encoding&nbsp;<a href="javascript: showdiv('close99'); hidediv('open99');" onclick="javascript: showdiv('close99'); hidediv('open99');">[show]</a></p>
 </div>
-<div id="close101" style="display:inline">
-  <p>Example 9. Set single-byte encoding&nbsp;<a href="javascript: showdiv('open101'); hidediv('close101');" onclick="javascript: showdiv('open101'); hidediv('close101');">[hide]</a></p>
-  <pre class="example" id="example101"><code> <img src="img/font-ex9-code.png">
+<div id="close99" style="display:inline">
+  <p>Example 9. Set single-byte encoding&nbsp;<a href="javascript: showdiv('open99'); hidediv('close99');" onclick="javascript: showdiv('open99'); hidediv('close99');">[hide]</a></p>
+  <pre class="example" id="example99"><code> <img src="img/font-ex9-code.png">
  
  <b>The above code will generate the following:</b>
  
  <img src="img/font-ex9.png">
  <a href="pdf/Sample_SetFont9.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open102" style="display:none">
-  <p>Example 10. Set multibyte encoding&nbsp;<a href="javascript: showdiv('close102'); hidediv('open102');" onclick="javascript: showdiv('close102'); hidediv('open102');">[show]</a></p>
+</div><div id="open100" style="display:none">
+  <p>Example 10. Set multibyte encoding&nbsp;<a href="javascript: showdiv('close100'); hidediv('open100');" onclick="javascript: showdiv('close100'); hidediv('open100');">[show]</a></p>
 </div>
-<div id="close102" style="display:inline">
-  <p>Example 10. Set multibyte encoding&nbsp;<a href="javascript: showdiv('open102'); hidediv('close102');" onclick="javascript: showdiv('open102'); hidediv('close102');">[hide]</a></p>
-  <pre class="example" id="example102"><code> <img src="img/font-ex10-code.png">
+<div id="close100" style="display:inline">
+  <p>Example 10. Set multibyte encoding&nbsp;<a href="javascript: showdiv('open100'); hidediv('close100');" onclick="javascript: showdiv('open100'); hidediv('close100');">[hide]</a></p>
+  <pre class="example" id="example100"><code> <img src="img/font-ex10-code.png">
  
  <b>The above code will generate the following:</b>
  

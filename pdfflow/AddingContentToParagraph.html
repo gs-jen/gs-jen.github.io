@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
   <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
     <title>Adding Content to Paragraph</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
@@ -163,7 +163,7 @@ For more information on adding and configuring images, see <a href="AddingImage.
 <p>You can configure font and background settings for particular text elements and URLs within a paragraph using methods of
 <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>.</p>
 <p>In the following example, a paragraph with the blue background contains four elements, and the third element
-has the red background:</p><pre class="example" id="example62"><code>            SectionBuilder s = builder.AddSection();
+has the red background:</p><pre class="example" id="example60"><code>            SectionBuilder s = builder.AddSection();
             ParagraphBuilder p = s.AddParagraph();
             p.SetBackColor(Color.Blue);
             p.SetFontColor(Color.White);
@@ -196,12 +196,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
 <p><a href="AddingTabulations.html">Adding Tabulations</a></p>
 <p><a href="AddingImage.html">Adding Image</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
-<p><b>Examples</b></p><div id="open63" style="display:none">
-  <p>Example 1. Add a text with different font settings and background color&nbsp;<a href="javascript: showdiv('close63'); hidediv('open63');" onclick="javascript: showdiv('close63'); hidediv('open63');">[show]</a></p>
+<p><b>Examples</b></p><div id="open61" style="display:none">
+  <p>Example 1. Add a text with different font settings and background color&nbsp;<a href="javascript: showdiv('close61'); hidediv('open61');" onclick="javascript: showdiv('close61'); hidediv('open61');">[show]</a></p>
 </div>
-<div id="close63" style="display:inline">
-  <p>Example 1. Add a text with different font settings and background color&nbsp;<a href="javascript: showdiv('open63'); hidediv('close63');" onclick="javascript: showdiv('open63'); hidediv('close63');">[hide]</a></p>
-  <pre class="example" id="example63"><code>            DocumentBuilder.New()
+<div id="close61" style="display:inline">
+  <p>Example 1. Add a text with different font settings and background color&nbsp;<a href="javascript: showdiv('open61'); hidediv('close61');" onclick="javascript: showdiv('open61'); hidediv('close61');">[hide]</a></p>
+  <pre class="example" id="example61"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddParagraph().AddText(&quot;Underline text, &quot;)
                          .SetUnderline(Stroke.Double, Color.Blue)
@@ -217,12 +217,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex2.png">
  <a href="pdf/Sample_AddingContentToParagraph2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open64" style="display:none">
-  <p>Example 2. Add an URL&nbsp;<a href="javascript: showdiv('close64'); hidediv('open64');" onclick="javascript: showdiv('close64'); hidediv('open64');">[show]</a></p>
+</div><div id="open62" style="display:none">
+  <p>Example 2. Add an URL&nbsp;<a href="javascript: showdiv('close62'); hidediv('open62');" onclick="javascript: showdiv('close62'); hidediv('open62');">[show]</a></p>
 </div>
-<div id="close64" style="display:inline">
-  <p>Example 2. Add an URL&nbsp;<a href="javascript: showdiv('open64'); hidediv('close64');" onclick="javascript: showdiv('open64'); hidediv('close64');">[hide]</a></p>
-  <pre class="example" id="example64"><code>            DocumentBuilder.New()
+<div id="close62" style="display:inline">
+  <p>Example 2. Add an URL&nbsp;<a href="javascript: showdiv('open62'); hidediv('close62');" onclick="javascript: showdiv('open62'); hidediv('close62');">[hide]</a></p>
+  <pre class="example" id="example62"><code>            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph()
                         .AddTextToParagraph(&quot;GS PDFFlow Library learn more: &quot;)
@@ -233,12 +233,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex4.png">
  <a href="pdf/Sample_AddingContentToParagraph4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open65" style="display:none">
-  <p>Example 3. Add an URL with a custom display text&nbsp;<a href="javascript: showdiv('close65'); hidediv('open65');" onclick="javascript: showdiv('close65'); hidediv('open65');">[show]</a></p>
+</div><div id="open63" style="display:none">
+  <p>Example 3. Add an URL with a custom display text&nbsp;<a href="javascript: showdiv('close63'); hidediv('open63');" onclick="javascript: showdiv('close63'); hidediv('open63');">[show]</a></p>
 </div>
-<div id="close65" style="display:inline">
-  <p>Example 3. Add an URL with a custom display text&nbsp;<a href="javascript: showdiv('open65'); hidediv('close65');" onclick="javascript: showdiv('open65'); hidediv('close65');">[hide]</a></p>
-  <pre class="example" id="example65"><code>            DocumentBuilder.New()
+<div id="close63" style="display:inline">
+  <p>Example 3. Add an URL with a custom display text&nbsp;<a href="javascript: showdiv('open63'); hidediv('close63');" onclick="javascript: showdiv('open63'); hidediv('close63');">[hide]</a></p>
+  <pre class="example" id="example63"><code>            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph()
                         .AddTextToParagraph(&quot;GS PDFFlow Library learn more: &quot;)
@@ -250,12 +250,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex3.png">
  <a href="pdf/Sample_AddingContentToParagraph3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open66" style="display:none">
-  <p>Example 4. Add a page number to a paragraph&nbsp;<a href="javascript: showdiv('close66'); hidediv('open66');" onclick="javascript: showdiv('close66'); hidediv('open66');">[show]</a></p>
+</div><div id="open64" style="display:none">
+  <p>Example 4. Add a page number to a paragraph&nbsp;<a href="javascript: showdiv('close64'); hidediv('open64');" onclick="javascript: showdiv('close64'); hidediv('open64');">[show]</a></p>
 </div>
-<div id="close66" style="display:inline">
-  <p>Example 4. Add a page number to a paragraph&nbsp;<a href="javascript: showdiv('open66'); hidediv('close66');" onclick="javascript: showdiv('open66'); hidediv('close66');">[hide]</a></p>
-  <pre class="example" id="example66"><code>            DocumentBuilder.New()
+<div id="close64" style="display:inline">
+  <p>Example 4. Add a page number to a paragraph&nbsp;<a href="javascript: showdiv('open64'); hidediv('close64');" onclick="javascript: showdiv('open64'); hidediv('close64');">[hide]</a></p>
+  <pre class="example" id="example64"><code>            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph()
                         .AddTextToParagraph(&quot;Page: &quot;)
@@ -266,12 +266,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex5.png">
  <a href="pdf/Sample_AddingContentToParagraph5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open67" style="display:none">
-  <p>Example 5. Add a page number with the numeration started from a specified number&nbsp;<a href="javascript: showdiv('close67'); hidediv('open67');" onclick="javascript: showdiv('close67'); hidediv('open67');">[show]</a></p>
+</div><div id="open65" style="display:none">
+  <p>Example 5. Add a page number with the numeration started from a specified number&nbsp;<a href="javascript: showdiv('close65'); hidediv('open65');" onclick="javascript: showdiv('close65'); hidediv('open65');">[show]</a></p>
 </div>
-<div id="close67" style="display:inline">
-  <p>Example 5. Add a page number with the numeration started from a specified number&nbsp;<a href="javascript: showdiv('open67'); hidediv('close67');" onclick="javascript: showdiv('open67'); hidediv('close67');">[hide]</a></p>
-  <pre class="example" id="example67"><code>            DocumentBuilder.New()
+<div id="close65" style="display:inline">
+  <p>Example 5. Add a page number with the numeration started from a specified number&nbsp;<a href="javascript: showdiv('open65'); hidediv('close65');" onclick="javascript: showdiv('open65'); hidediv('close65');">[hide]</a></p>
+  <pre class="example" id="example65"><code>            DocumentBuilder.New()
                 .AddSection()
                     .SetPageNumberStart(10)
                     .AddParagraph().AddPageNumber(&quot;Page: &quot;)
@@ -281,12 +281,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex7.png">
  <a href="pdf/Sample_AddingContentToParagraph7.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open68" style="display:none">
-  <p>Example 6. Add a page number with a specified numbering style&nbsp;<a href="javascript: showdiv('close68'); hidediv('open68');" onclick="javascript: showdiv('close68'); hidediv('open68');">[show]</a></p>
+</div><div id="open66" style="display:none">
+  <p>Example 6. Add a page number with a specified numbering style&nbsp;<a href="javascript: showdiv('close66'); hidediv('open66');" onclick="javascript: showdiv('close66'); hidediv('open66');">[show]</a></p>
 </div>
-<div id="close68" style="display:inline">
-  <p>Example 6. Add a page number with a specified numbering style&nbsp;<a href="javascript: showdiv('open68'); hidediv('close68');" onclick="javascript: showdiv('open68'); hidediv('close68');">[hide]</a></p>
-  <pre class="example" id="example68"><code>            DocumentBuilder.New()
+<div id="close66" style="display:inline">
+  <p>Example 6. Add a page number with a specified numbering style&nbsp;<a href="javascript: showdiv('open66'); hidediv('close66');" onclick="javascript: showdiv('open66'); hidediv('close66');">[hide]</a></p>
+  <pre class="example" id="example66"><code>            DocumentBuilder.New()
                 .AddSection()
                     .SetNumerationStyle(NumerationStyle.UpperRoman)
                     .SetPageNumberStart(4)
@@ -299,12 +299,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
   <img src="img/add-content-ex8.png">
   <a href="pdf/Sample_AddingContentToParagraph8.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open69" style="display:none">
-  <p>Example 7. Add a page number with an offset&nbsp;<a href="javascript: showdiv('close69'); hidediv('open69');" onclick="javascript: showdiv('close69'); hidediv('open69');">[show]</a></p>
+</div><div id="open67" style="display:none">
+  <p>Example 7. Add a page number with an offset&nbsp;<a href="javascript: showdiv('close67'); hidediv('open67');" onclick="javascript: showdiv('close67'); hidediv('open67');">[show]</a></p>
 </div>
-<div id="close69" style="display:inline">
-  <p>Example 7. Add a page number with an offset&nbsp;<a href="javascript: showdiv('open69'); hidediv('close69');" onclick="javascript: showdiv('open69'); hidediv('close69');">[hide]</a></p>
-  <pre class="example" id="example69"><code>            string text = &quot;Some big paragraph of text ....&quot;;
+<div id="close67" style="display:inline">
+  <p>Example 7. Add a page number with an offset&nbsp;<a href="javascript: showdiv('open67'); hidediv('close67');" onclick="javascript: showdiv('open67'); hidediv('close67');">[hide]</a></p>
+  <pre class="example" id="example67"><code>            string text = &quot;Some big paragraph of text ....&quot;;
             DocumentBuilder.New()
             .AddSection().SetSize(500, 250)
             .AddParagraph()
@@ -318,12 +318,12 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
  
  <img src="img/add-content-ex6.png">
  <a href="pdf/Sample_AddingContentToParagraph6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open70" style="display:none">
-  <p>Example 8. Add content to a paragraph with applying a style&nbsp;<a href="javascript: showdiv('close70'); hidediv('open70');" onclick="javascript: showdiv('close70'); hidediv('open70');">[show]</a></p>
+</div><div id="open68" style="display:none">
+  <p>Example 8. Add content to a paragraph with applying a style&nbsp;<a href="javascript: showdiv('close68'); hidediv('open68');" onclick="javascript: showdiv('close68'); hidediv('open68');">[show]</a></p>
 </div>
-<div id="close70" style="display:inline">
-  <p>Example 8. Add content to a paragraph with applying a style&nbsp;<a href="javascript: showdiv('open70'); hidediv('close70');" onclick="javascript: showdiv('open70'); hidediv('close70');">[hide]</a></p>
-  <pre class="example" id="example70"><code>            //Set the path to the image file:
+<div id="close68" style="display:inline">
+  <p>Example 8. Add content to a paragraph with applying a style&nbsp;<a href="javascript: showdiv('open68'); hidediv('close68');" onclick="javascript: showdiv('open68'); hidediv('close68');">[hide]</a></p>
+  <pre class="example" id="example68"><code>            //Set the path to the image file:
             var imagePath = Path.Combine(System.Environment.CurrentDirectory,
                                          &quot;imageFile.png&quot;);
             //Define the style:
