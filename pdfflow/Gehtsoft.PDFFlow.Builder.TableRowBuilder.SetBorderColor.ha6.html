@@ -1,6 +1,6 @@
 <html>
   <head>
-    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>TableRowBuilder.SetBorderColor</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
@@ -117,7 +117,7 @@ function showdiv( divname )
     <p>
       <font size="+1"><code>public method <b>TableRowBuilder.SetBorderColor</b></code></font>
     </p><p><b>Brief</b></p>
-<p>Method sets table row border color</p>
+<p>Sets the color for each side of the table row border.</p>
 <table class="tmain" width="100%">
   <tr>
     <td class="thdr"><b>Declaration</b></td>
@@ -140,21 +140,29 @@ function showdiv( divname )
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>colorLeft</code></td>
-    <td class="tmain" width="69%"><p>Color left</p></td>
+    <td class="tmain" width="69%"><p>The left border side color.</p></td>
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>colorTop</code></td>
-    <td class="tmain" width="69%"><p>Color top</p></td>
+    <td class="tmain" width="69%"><p>The top border side color.</p></td>
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>colorRight</code></td>
-    <td class="tmain" width="69%"><p>Color right</p></td>
+    <td class="tmain" width="69%"><p>The right border side color.</p></td>
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>colorBottom</code></td>
-    <td class="tmain" width="69%"><p>Color bottom</p></td>
+    <td class="tmain" width="69%"><p>The bottom border side color.</p></td>
   </tr>
-</table><p>Declared in <a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html">TableRowBuilder</a></p>
+</table><p><b>Details</b></p><p>The color can be specified using a system-defined color (for example,
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.Yellow.TZ4.html"><code>Color.Yellow</code></a>),
+can be translated from an HTML color code using the method
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.FromHtml.mO8.html"><code>Color.FromHtml</code></a>,
+or created from RGBA values using the method
+<a href="Gehtsoft.PDFFlow.Models.Shared.Color.FromRgba.SJA.html"><code>Color.FromRgba</code></a>.<br>
+The RGBA red, green, blue, and alpha components must have values between <code>0.0f</code> (0%, 0 byte value) and <code>1.0f</code>
+(100%, 255 byte value). The alpha component is optional, its value is <code>1.0f</code> by default, which means that the color
+is fully opaque.</p><p>Declared in <a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html">TableRowBuilder</a></p>
 <p>
   <center><a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html">back</a></center>
 </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'Gehtsoft.PDFFlow.Builder.TableRowBuilder.html');</script></body>
