@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
   <head>
-    <META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Adding Table</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
@@ -172,29 +172,45 @@ The number of cells in the row must be equal to the number of columns in the tab
 <a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a> respectively.</p>
 <p><br>
 <b>Adding Content to the Table</b></p>
-<p>Table content is contained in cells. A cell can contain <a href="AddingParagraph.html">paragraphs</a> and nested tables.</p>
-<p>To add a paragraph to a cell:</p><ul class="main">
-  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraph</code></a> or
-<a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraphToCell</code></a> methods.</p></li>
-</ul><p>To nest a table in a cell, you can use one of the following options:</p><ul class="main">
-  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.AddTable.2y7.html"><code>AddTable</code></a> method.</p><pre class="example" id="example28"><code>   myTableCellBuilder.AddTable(...)</code></pre></li>
+<p>Table content is contained in cells. A cell can contain <a href="AddingParagraph.html">paragraphs</a>, <a href="AddingImage.html">images</a>, and nested tables.</p>
+<p>To add a paragraph to a cell, you can use one of the following options:</p><ul class="main">
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraph</code></a> methods, it will return an instance of
+<a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.</p><pre class="example" id="example28"><code>   myTableCellBuilder.AddParagraph(....)</code></pre></li>
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableCellExtensions.html"><code>AddParagraphToCell</code></a> methods, it will return the current
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a>.</p></li>
+</ul><p>For more on working with paragraphs, see <a href="AddingParagraph.html">Adding Paragraph</a>.</p>
+<p>To add an image to a cell, you can use one of the following options:</p><ul class="main">
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.ImageExtensions.html"><code>AddImage</code></a> methods, it will return an instance of
+<a href="Gehtsoft.PDFFlow.Builder.ImageBuilder.html"><code>ImageBuilder</code></a>.</p><pre class="example" id="example29"><code>   myTableCellBuilder.AddImage(....)</code></pre></li>
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.ImageExtensions.html"><code>AddImageToCell</code></a> methods, it will return the current
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a>.</p></li>
+</ul><p>For more on working with images, see <a href="AddingImage.html">Adding Image</a>.</p>
+<p>To nest a table in a cell, you can use one of the following options:</p><ul class="main">
+  <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.AddTable.2y7.html"><code>AddTable</code></a> method.</p><pre class="example" id="example30"><code>   myTableCellBuilder.AddTable(...)</code></pre></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.New.927.html"><code>TableBuilder.New</code></a> method and pass the instance of
-<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a> you want to nest this table in.</p><pre class="example" id="example29"><code>   var myTable1 = TableBuilder.New(myCellBuilder)</code></pre></li>
+<a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a> you want to nest this table in.</p><pre class="example" id="example31"><code>   var myTable1 = TableBuilder.New(myCellBuilder)</code></pre></li>
 </ul><p><br><br>
 <b>Configuring Table Borders</b></p>
 <p>In the default table style, table borders have the following parameters: <code>stroke = Solid</code>, <code>color = Black</code>, <code>width = 0.5f</code>.
-Table borders can be configured for each cell, for each row (i.e. for every cell of the row), and for a whole table.
-You can set the width, height, and stroke style for each border side.
-If you set one or two of the parameters, the other parameter or parameters will have the values set on a higher level - on the row level for a cell,
+Table borders can be configured for each cell, for each row (i.e. for all cells in the row), and for a whole table (i.e. for all cells in the table). <br>
+You can configure borders using one of the <code>SetBorder</code> methods:</p><ul class="main">
+  <li><p><code>SetBorder(Stroke stroke, Color color, float width)</code> to set the border stroke style, color, and width.</p></li>
+  <li><p><code>SetBorder(Stroke strokeStyle, Color color)</code> to set the border stroke style and color.</p></li>
+  <li><p><code>SetBorder(Stroke strokeStyle)</code> to set the border stroke style. Use <code>SetBorder()</code> without the parameter to reset the default border
+settings for the cell or row, for example, if they were redefined by the style applied on a higher level (the row for a cell, the table for a row).</p></li>
+  <li><p><code>SetBorder(Action&lt;BorderBuilder&gt; borderConfigure)</code> to set border using a configuration action.</p></li>
+</ul><p>You can also set the width, height, and stroke style for all border sides or for each border side using the methods <code>SetBorderStroke</code>, <code>SetBorderColor</code>,
+and <code>SetBorderWidth</code> for a cell, for a row, or for a table.</p>
+<p>If you set one or two of the parameters, the other parameter or parameters will have the values set on a higher level - on the row level for a cell,
 on the table level for a row, and in the default table style for a table.
 For example, if you set only the border width for an entire table, the table will have the default border stroke style and color;
 if you set only the border stroke style for a row in this table, the row will have the border width set for the table and the default border color;
-if you set only the border color for a cell in this row, the cell will have the border width set for the table and the border stroke style set for the row.</p><div id="open30" style="display:none">
-  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('close30'); hidediv('open30');" onclick="javascript: showdiv('close30'); hidediv('open30');">[show]</a></p>
+if you set only the border color for a cell in this row, the cell will have the border width set for the table and the border stroke style set for the row.</p><div id="open32" style="display:none">
+  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('close32'); hidediv('open32');" onclick="javascript: showdiv('close32'); hidediv('open32');">[show]</a></p>
 </div>
-<div id="close30" style="display:inline">
-  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('open30'); hidediv('close30');" onclick="javascript: showdiv('open30'); hidediv('close30');">[hide]</a></p>
-  <pre class="example" id="example30"><code>            DocumentBuilder.New()
+<div id="close32" style="display:inline">
+  <p>Example 1. Setting table borders&nbsp;<a href="javascript: showdiv('open32'); hidediv('close32');" onclick="javascript: showdiv('open32'); hidediv('close32');">[hide]</a></p>
+  <pre class="example" id="example32"><code>            DocumentBuilder.New()
                 .AddSection()
                     .AddTable()
                         .SetBorderWidth(2.0f)
@@ -209,12 +225,12 @@ if you set only the border color for a cell in this row, the cell will have the 
                         .SetBorderColor(Color.Red)
             .ToDocument()
             .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><div id="open31" style="display:inline">
-  <p>Example 1. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('close31'); hidediv('open31');" onclick="javascript: showdiv('close31'); hidediv('open31');">[show]</a></p>
+</div><div id="open33" style="display:inline">
+  <p>Example 1a. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('close33'); hidediv('open33');" onclick="javascript: showdiv('close33'); hidediv('open33');">[show]</a></p>
 </div>
-<div id="close31" style="display:none">
-  <p>Example 1. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('open31'); hidediv('close31');" onclick="javascript: showdiv('open31'); hidediv('close31');">[hide]</a></p>
-  <pre class="example" id="example31"><code>            DocumentBuilder.New()
+<div id="close33" style="display:none">
+  <p>Example 1a. Setting table borders (using configuration actions)&nbsp;<a href="javascript: showdiv('open33'); hidediv('close33');" onclick="javascript: showdiv('open33'); hidediv('close33');">[hide]</a></p>
+  <pre class="example" id="example33"><code>            DocumentBuilder.New()
             .AddSectionToDocument(sectionBuilder =&gt;
             {
                 sectionBuilder.AddTable(tableBuilder =&gt;
@@ -243,12 +259,12 @@ if you set only the border color for a cell in this row, the cell will have the 
 <p>Note that if any of these three border parameters are not set for a cell, row or table by direct formatting,
 but these parameters are specified in a style is applied to the cell, row or table, the values will be taken
 from the style of the corresponding element, if specified, or from a style of a higher level element.
-So the following code will generate the same document because the border width will be taken from the table style:</p><div id="open32" style="display:none">
-  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('close32'); hidediv('open32');" onclick="javascript: showdiv('close32'); hidediv('open32');">[show]</a></p>
+So the following code will generate the same document because the border width will be taken from the table style:</p><div id="open34" style="display:none">
+  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('close34'); hidediv('open34');" onclick="javascript: showdiv('close34'); hidediv('open34');">[show]</a></p>
 </div>
-<div id="close32" style="display:inline">
-  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('open32'); hidediv('close32');" onclick="javascript: showdiv('open32'); hidediv('close32');">[hide]</a></p>
-  <pre class="example" id="example32"><code>            DocumentBuilder.New()
+<div id="close34" style="display:inline">
+  <p>Example 2. Taking border parameters from a style&nbsp;<a href="javascript: showdiv('open34'); hidediv('close34');" onclick="javascript: showdiv('open34'); hidediv('close34');">[hide]</a></p>
+  <pre class="example" id="example34"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddTable()
                     .ApplyStyle(StyleSheet.DefaultTableStyleBuilder().SetBorderWidth(2.0f))
@@ -263,12 +279,12 @@ So the following code will generate the same document because the border width w
                             .SetBorderColor(Color.Red)
             .ToDocument()
             .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><div id="open33" style="display:inline">
-  <p>Example 2. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('close33'); hidediv('open33');" onclick="javascript: showdiv('close33'); hidediv('open33');">[show]</a></p>
+</div><div id="open35" style="display:inline">
+  <p>Example 2a. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('close35'); hidediv('open35');" onclick="javascript: showdiv('close35'); hidediv('open35');">[show]</a></p>
 </div>
-<div id="close33" style="display:none">
-  <p>Example 2. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('open33'); hidediv('close33');" onclick="javascript: showdiv('open33'); hidediv('close33');">[hide]</a></p>
-  <pre class="example" id="example33"><code>            DocumentBuilder.New()
+<div id="close35" style="display:none">
+  <p>Example 2a. Taking border parameters from a style (using configuration actions)&nbsp;<a href="javascript: showdiv('open35'); hidediv('close35');" onclick="javascript: showdiv('open35'); hidediv('close35');">[hide]</a></p>
+  <pre class="example" id="example35"><code>            DocumentBuilder.New()
             .AddSectionToDocument(sectionBuilder =&gt;
             {
                 sectionBuilder.AddTable(tableBuilder =&gt;
@@ -320,7 +336,7 @@ using the <code>SetBackColor</code> methods of
 <p>When you create a table with specifying column span and row span, make sure that the number of cells in each table row
 with taking into account the column span parameter is equal the number of cells in the table.
 You may have to add empty cells for correct table generation.</p>
-<p>For example, you create a table with two columns and add the same number of rows to the first table row:</p><pre class="example" id="example34"><code>    section.AddTable(tableBuilder =&gt;
+<p>For example, you create a table with two columns and add the same number of rows to the first table row:</p><pre class="example" id="example36"><code>    section.AddTable(tableBuilder =&gt;
     {
         tableBuilder.AddColumn()
                     .AddColumn();
@@ -329,11 +345,11 @@ You may have to add empty cells for correct table generation.</p>
              rowBuilder.AddCellToRow(&quot;cell1.1&quot;);
              rowBuilder.AddCellToRow(&quot;cell1.2&quot;);
         });
-    .....</code></pre><p>In the second row, a cell with <code>colspan = 2 </code> spans two columns:</p><pre class="example" id="example35"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
+    .....</code></pre><p>In the second row, a cell with <code>colspan = 2 </code> spans two columns:</p><pre class="example" id="example37"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
         {
              rowBuilder.AddCellToRow(&quot;cell2.1-2&quot;, 2);
         });</code></pre><p>In the third row, a cell with <code>rowspan = 2 </code> spans two rows, but the number of cells in the lower row must be equal to the
-number of columns in the table, so it is necessary to add an empty cell:</p><pre class="example" id="example36"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
+number of columns in the table, so it is necessary to add an empty cell:</p><pre class="example" id="example38"><code>        tableBuilder.AddRowToTable(rowBuilder =&gt;
         {
              rowBuilder.AddCell(&quot;cell3-4.1&quot;, 1, 2);
              rowBuilder.AddCell(&quot;cell3.2&quot;);
@@ -357,7 +373,7 @@ such a table is added in the beginning of a document, its first page will be emp
 the second and third pages (the first book spread).</p>
 <p>You can create a table on more than two pages. To create such a table, it is necessary to specify the number of columns
 to show on each page using the method <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetMultipageSpread.V45.html"><code>SetMultipageSpread</code></a>.</p>
-<p>For example, for a table containing 12 columns, calling</p><pre class="example" id="example37"><code>    mytable.SetMultipageSpread(4, 3, 5)</code></pre><p>will make the first four columns rendered on the first page, the following three columns - on the second page, and the
+<p>For example, for a table containing 12 columns, calling</p><pre class="example" id="example39"><code>    mytable.SetMultipageSpread(4, 3, 5)</code></pre><p>will make the first four columns rendered on the first page, the following three columns - on the second page, and the
 remaining five - on the third page. If some of the table rows do not fit into one page, they will continue on the fourth page for the first four columns,
 on the fifth page for the following three columns, and on the sixth page for the remaining five columns.</p>
 <p>You can also make the library automatically calculate whether a table fits into the page or not and continue the table on the next page or a number of pages if necessary.
@@ -366,13 +382,16 @@ For this, enable the automatic multi-page spread mode using the method <a href="
 <p><b>See also</b></p>
 <p><a href="AddingSection.html">Adding Section</a></p>
 <p><a href="AddingRepeatingArea.html">Adding Repeating Area</a></p>
+<p><a href="AddingParagraph.html">Adding Paragraph</a></p>
+<p><a href="AddingImage.html">Adding Image</a></p>
+<p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
 <p><br><br>
-<b>Examples</b></p><div id="open38" style="display:none">
-  <p>Example 3. Add simple table to a section&nbsp;<a href="javascript: showdiv('close38'); hidediv('open38');" onclick="javascript: showdiv('close38'); hidediv('open38');">[show]</a></p>
+<b>Examples</b></p><div id="open40" style="display:none">
+  <p>Example 3. Add a simple table to a section&nbsp;<a href="javascript: showdiv('close40'); hidediv('open40');" onclick="javascript: showdiv('close40'); hidediv('open40');">[show]</a></p>
 </div>
-<div id="close38" style="display:inline">
-  <p>Example 3. Add simple table to a section&nbsp;<a href="javascript: showdiv('open38'); hidediv('close38');" onclick="javascript: showdiv('open38'); hidediv('close38');">[hide]</a></p>
-  <pre class="example" id="example38"><code>            DocumentBuilder.New()
+<div id="close40" style="display:inline">
+  <p>Example 3. Add a simple table to a section&nbsp;<a href="javascript: showdiv('open40'); hidediv('close40');" onclick="javascript: showdiv('open40'); hidediv('close40');">[hide]</a></p>
+  <pre class="example" id="example40"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddParagraph(&quot;Simple table&quot;)
                 .SetBold()
@@ -400,13 +419,18 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                     .AddCellToRow(&quot;Illinois&quot;)
                     .AddCellToRow(&quot;2,693,976&quot;)
             .ToDocument()
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><div id="open39" style="display:inline">
-  <p>Example 3. Add simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('close39'); hidediv('open39');" onclick="javascript: showdiv('close39'); hidediv('open39');">[show]</a></p>
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/configure-table-ex1.png">
+  <a href="pdf/Sample_ConfiguringTable1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open41" style="display:inline">
+  <p>Example 3a. Add a simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('close41'); hidediv('open41');" onclick="javascript: showdiv('close41'); hidediv('open41');">[show]</a></p>
 </div>
-<div id="close39" style="display:none">
-  <p>Example 3. Add simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('open39'); hidediv('close39');" onclick="javascript: showdiv('open39'); hidediv('close39');">[hide]</a></p>
-  <pre class="example" id="example39"><code>            DocumentBuilder.New()
+<div id="close41" style="display:none">
+  <p>Example 3a. Add a simple table to a section (using configuration actions)&nbsp;<a href="javascript: showdiv('open41'); hidediv('close41');" onclick="javascript: showdiv('open41'); hidediv('close41');">[hide]</a></p>
+  <pre class="example" id="example41"><code>            DocumentBuilder.New()
             .AddSectionToDocument(sectionBuilder =&gt;
             {
                 sectionBuilder.AddParagraph(&quot;Simple table&quot;).SetBold().SetMarginBottom(5);
@@ -441,15 +465,18 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                     tableBuilder.SetWidth(300);
                 });
             })
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><p><b>The above code will generate the following:</b></p>
-<p><img src="img/configure-table-ex1.png">
-<a href="pdf/Sample_ConfiguringTable1.pdf" target="_blank">See the document</a></p><div id="open40" style="display:none">
-  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('close40'); hidediv('open40');" onclick="javascript: showdiv('close40'); hidediv('open40');">[show]</a></p>
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/configure-table-ex1.png">
+  <a href="pdf/Sample_ConfiguringTable1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open42" style="display:none">
+  <p>Example 4. Add a simple table to a repeating area:&nbsp;<a href="javascript: showdiv('close42'); hidediv('open42');" onclick="javascript: showdiv('close42'); hidediv('open42');">[show]</a></p>
 </div>
-<div id="close40" style="display:inline">
-  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('open40'); hidediv('close40');" onclick="javascript: showdiv('open40'); hidediv('close40');">[hide]</a></p>
-  <pre class="example" id="example40"><code>            DocumentBuilder.New()
+<div id="close42" style="display:inline">
+  <p>Example 4. Add a simple table to a repeating area:&nbsp;<a href="javascript: showdiv('open42'); hidediv('close42');" onclick="javascript: showdiv('open42'); hidediv('close42');">[hide]</a></p>
+  <pre class="example" id="example42"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddHeaderToBothPages(100)
                 .AddParagraphToRepeatingArea(&quot;Repeating header with table&quot;)
@@ -465,13 +492,18 @@ For this, enable the automatic multi-page spread mode using the method <a href="
             .ToSection()
                 .AddParagraph(&quot;Main flow of the document&quot;)
             .ToDocument()
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><div id="open41" style="display:inline">
-  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('close41'); hidediv('open41');" onclick="javascript: showdiv('close41'); hidediv('open41');">[show]</a></p>
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/table_in_repeating_area.png">
+  <a href="pdf/Sample_ConfiguringTable8.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open43" style="display:inline">
+  <p>Example 4a. Add simple table to a repeating area (using configuration actions):&nbsp;<a href="javascript: showdiv('close43'); hidediv('open43');" onclick="javascript: showdiv('close43'); hidediv('open43');">[show]</a></p>
 </div>
-<div id="close41" style="display:none">
-  <p>Example 4. Add simple table to a repeating area:&nbsp;<a href="javascript: showdiv('open41'); hidediv('close41');" onclick="javascript: showdiv('open41'); hidediv('close41');">[hide]</a></p>
-  <pre class="example" id="example41"><code>            DocumentBuilder.New()
+<div id="close43" style="display:none">
+  <p>Example 4a. Add simple table to a repeating area (using configuration actions):&nbsp;<a href="javascript: showdiv('open43'); hidediv('close43');" onclick="javascript: showdiv('open43'); hidediv('close43');">[hide]</a></p>
+  <pre class="example" id="example43"><code>            DocumentBuilder.New()
             .AddSectionToDocument(sectionBuilder =&gt;
             {
                 sectionBuilder.AddHeaderToBothPages(100, headerBuilder =&gt;
@@ -497,15 +529,18 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                 });
                 sectionBuilder.AddParagraph(&quot;Main flow of the document&quot;);
             })
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><p><b>The above code will generate the following:</b></p>
-<p><img src="img/table_in_repeating_area.png">
-<a href="pdf/Sample_ConfiguringTable8.pdf" target="_blank">See the document</a></p><div id="open42" style="display:none">
-  <p>Example 5. Add simple table with image:&nbsp;<a href="javascript: showdiv('close42'); hidediv('open42');" onclick="javascript: showdiv('close42'); hidediv('open42');">[show]</a></p>
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/table_in_repeating_area.png">
+  <a href="pdf/Sample_ConfiguringTable8.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open44" style="display:none">
+  <p>Example 5. Add an image to a cell:&nbsp;<a href="javascript: showdiv('close44'); hidediv('open44');" onclick="javascript: showdiv('close44'); hidediv('open44');">[show]</a></p>
 </div>
-<div id="close42" style="display:inline">
-  <p>Example 5. Add simple table with image:&nbsp;<a href="javascript: showdiv('open42'); hidediv('close42');" onclick="javascript: showdiv('open42'); hidediv('close42');">[hide]</a></p>
-  <pre class="example" id="example42"><code>            DocumentBuilder.New()
+<div id="close44" style="display:inline">
+  <p>Example 5. Add an image to a cell:&nbsp;<a href="javascript: showdiv('open44'); hidediv('close44');" onclick="javascript: showdiv('open44'); hidediv('close44');">[hide]</a></p>
+  <pre class="example" id="example44"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddTable()
                 .AddColumnToTable().AddColumnToTable()
@@ -514,15 +549,18 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                     .AddCell()
                         .AddImage(&quot;imageFile.png&quot;)
             .ToDocument()
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><p><b>The above code will generate the following:</b></p>
-<p><img src="img/configure-table-ex12.png">
-<a href="pdf/Sample_ConfiguringTable12.pdf" target="_blank">See the document</a></p><div id="open43" style="display:none">
-  <p>Example 6. Add image with formating:&nbsp;<a href="javascript: showdiv('close43'); hidediv('open43');" onclick="javascript: showdiv('close43'); hidediv('open43');">[show]</a></p>
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/configure-table-ex12.png">
+  <a href="pdf/Sample_ConfiguringTable12.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open45" style="display:none">
+  <p>Example 6. Add an image with formatting to a cell:&nbsp;<a href="javascript: showdiv('close45'); hidediv('open45');" onclick="javascript: showdiv('close45'); hidediv('open45');">[show]</a></p>
 </div>
-<div id="close43" style="display:inline">
-  <p>Example 6. Add image with formating:&nbsp;<a href="javascript: showdiv('open43'); hidediv('close43');" onclick="javascript: showdiv('open43'); hidediv('close43');">[hide]</a></p>
-  <pre class="example" id="example43"><code>            DocumentBuilder.New()
+<div id="close45" style="display:inline">
+  <p>Example 6. Add an image with formatting to a cell:&nbsp;<a href="javascript: showdiv('open45'); hidediv('close45');" onclick="javascript: showdiv('open45'); hidediv('close45');">[hide]</a></p>
+  <pre class="example" id="example45"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddTable()
                 .AddColumnToTable().AddColumnToTable()
@@ -534,11 +572,14 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                             .SetBorder(Stroke.Dotted, Color.Blue, 1.4f)
                             .SetMargins(10)
             .ToDocument()
-            .Build(&quot;Result.pdf&quot;);</code></pre>
-</div><p><b>The above code will generate the following:</b></p>
-<p><img src="img/configure-table-ex13.png">
-<a href="pdf/Sample_ConfiguringTable13.pdf" target="_blank">See the document</a></p><p>Example 7. Table with colspan and rowspan:</p>
-<pre class="example" id="example44"><code>            DocumentBuilder.New()
+            .Build(&quot;Result.pdf&quot;);
+ 
+  <b>The above code will generate the following:</b>
+ 
+  <img src="img/configure-table-ex13.png">
+  <a href="pdf/Sample_ConfiguringTable13.pdf" target="_blank">See the document</a></code></pre>
+</div><p>Example 7. Add a table with colspan and rowspan:</p>
+<pre class="example" id="example46"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddParagraph(&quot;Table with colspan and rowspan:&quot;)
                     .SetBold()
@@ -603,12 +644,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  <b>The above code will generate the following:</b>
  
  <img src="img/configure-table-ex2.png">
- <a href="pdf/Sample_ConfiguringTable2.pdf" target="_blank">See the document</a></code></pre><div id="open45" style="display:none">
-  <p>Example 8. Add a complex table with images and tables inside:&nbsp;<a href="javascript: showdiv('close45'); hidediv('open45');" onclick="javascript: showdiv('close45'); hidediv('open45');">[show]</a></p>
+ <a href="pdf/Sample_ConfiguringTable2.pdf" target="_blank">See the document</a></code></pre><div id="open47" style="display:none">
+  <p>Example 8. Add a complex table with images and nested tables&nbsp;<a href="javascript: showdiv('close47'); hidediv('open47');" onclick="javascript: showdiv('close47'); hidediv('open47');">[show]</a></p>
 </div>
-<div id="close45" style="display:inline">
-  <p>Example 8. Add a complex table with images and tables inside:&nbsp;<a href="javascript: showdiv('open45'); hidediv('close45');" onclick="javascript: showdiv('open45'); hidediv('close45');">[hide]</a></p>
-  <pre class="example" id="example45"><code>   <b>//Create data structures for tables to avoid a lot of code and to use cycles instead</b>
+<div id="close47" style="display:inline">
+  <p>Example 8. Add a complex table with images and nested tables&nbsp;<a href="javascript: showdiv('open47'); hidediv('close47');" onclick="javascript: showdiv('open47'); hidediv('close47');">[hide]</a></p>
+  <pre class="example" id="example47"><code>   <b>//Create data structures for tables to avoid a lot of code and to use cycles instead</b>
    <b>//In a real application, you can get data from an external source, database or .json file</b>
    <b>//Define two structures in your 'Program' class, somewhere outside of methods:</b>
         internal struct Game
@@ -725,12 +766,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex3.png">
  <a href="pdf/Sample_ConfiguringTable3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open46" style="display:none">
-  <p>Example 9. Add a table with data from data source:&nbsp;<a href="javascript: showdiv('close46'); hidediv('open46');" onclick="javascript: showdiv('close46'); hidediv('open46');">[show]</a></p>
+</div><div id="open48" style="display:none">
+  <p>Example 9. Add a table with data from data source&nbsp;<a href="javascript: showdiv('close48'); hidediv('open48');" onclick="javascript: showdiv('close48'); hidediv('open48');">[show]</a></p>
 </div>
-<div id="close46" style="display:inline">
-  <p>Example 9. Add a table with data from data source:&nbsp;<a href="javascript: showdiv('open46'); hidediv('close46');" onclick="javascript: showdiv('open46'); hidediv('close46');">[hide]</a></p>
-  <pre class="example" id="example46"><code>        public static void CreateExample()
+<div id="close48" style="display:inline">
+  <p>Example 9. Add a table with data from data source&nbsp;<a href="javascript: showdiv('open48'); hidediv('close48');" onclick="javascript: showdiv('open48'); hidediv('close48');">[hide]</a></p>
+  <pre class="example" id="example48"><code>        public static void CreateExample()
         {
             string simpleJSON = @&quot;[
                 {
@@ -757,12 +798,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex9.png">
  <a href="pdf/Sample_ConfiguringTable9.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open47" style="display:none">
-  <p>Example 10. Add a table with an image column:&nbsp;<a href="javascript: showdiv('close47'); hidediv('open47');" onclick="javascript: showdiv('close47'); hidediv('open47');">[show]</a></p>
+</div><div id="open49" style="display:none">
+  <p>Example 10. Add a table with an image column&nbsp;<a href="javascript: showdiv('close49'); hidediv('open49');" onclick="javascript: showdiv('close49'); hidediv('open49');">[show]</a></p>
 </div>
-<div id="close47" style="display:inline">
-  <p>Example 10. Add a table with an image column:&nbsp;<a href="javascript: showdiv('open47'); hidediv('close47');" onclick="javascript: showdiv('open47'); hidediv('close47');">[hide]</a></p>
-  <pre class="example" id="example47"><code>        public static void CreateExample()
+<div id="close49" style="display:inline">
+  <p>Example 10. Add a table with an image column&nbsp;<a href="javascript: showdiv('open49'); hidediv('close49');" onclick="javascript: showdiv('open49'); hidediv('close49');">[hide]</a></p>
+  <pre class="example" id="example49"><code>        public static void CreateExample()
         {
             string simpleJSON = @&quot;[
                 {
@@ -796,12 +837,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex10.png">
  <a href="pdf/Sample_ConfiguringTable10.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open48" style="display:none">
-  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('close48'); hidediv('open48');" onclick="javascript: showdiv('close48'); hidediv('open48');">[show]</a></p>
+</div><div id="open50" style="display:none">
+  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('close50'); hidediv('open50');" onclick="javascript: showdiv('close50'); hidediv('open50');">[show]</a></p>
 </div>
-<div id="close48" style="display:inline">
-  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('open48'); hidediv('close48');" onclick="javascript: showdiv('open48'); hidediv('close48');">[hide]</a></p>
-  <pre class="example" id="example48"><code>            var builder = DocumentBuilder.New();
+<div id="close50" style="display:inline">
+  <p>Example 11. Add a multipage spread table&nbsp;<a href="javascript: showdiv('open50'); hidediv('close50');" onclick="javascript: showdiv('open50'); hidediv('close50');">[hide]</a></p>
+  <pre class="example" id="example50"><code>            var builder = DocumentBuilder.New();
             TableBuilder t = builder.AddSection().AddTable()
                 .SetMultipageSpread(4, 3)
                 .AddColumnToTable(&quot;100pt&quot;, 100).AddColumnToTable(&quot;50pt&quot;, 50)
@@ -824,12 +865,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex6.png">
  <a href="pdf/Sample_ConfiguringTable6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open49" style="display:inline">
-  <p>Example 12. Add a multipage spread table (using actions)&nbsp;<a href="javascript: showdiv('close49'); hidediv('open49');" onclick="javascript: showdiv('close49'); hidediv('open49');">[show]</a></p>
+</div><div id="open51" style="display:inline">
+  <p>Example 11a. Add a multipage spread table (using configuration actions)&nbsp;<a href="javascript: showdiv('close51'); hidediv('open51');" onclick="javascript: showdiv('close51'); hidediv('open51');">[show]</a></p>
 </div>
-<div id="close49" style="display:none">
-  <p>Example 12. Add a multipage spread table (using actions)&nbsp;<a href="javascript: showdiv('open49'); hidediv('close49');" onclick="javascript: showdiv('open49'); hidediv('close49');">[hide]</a></p>
-  <pre class="example" id="example49"><code>            DocumentBuilder.New().AddSectionToDocument(sectionBuilder =&gt;
+<div id="close51" style="display:none">
+  <p>Example 11a. Add a multipage spread table (using configuration actions)&nbsp;<a href="javascript: showdiv('open51'); hidediv('close51');" onclick="javascript: showdiv('open51'); hidediv('close51');">[hide]</a></p>
+  <pre class="example" id="example51"><code>            DocumentBuilder.New().AddSectionToDocument(sectionBuilder =&gt;
             {
                 sectionBuilder.AddTable(t =&gt;
                 {
@@ -864,12 +905,12 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex7.png">
  <a href="pdf/Sample_ConfiguringTable7.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open50" style="display:none">
-  <p>Example 13. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('close50'); hidediv('open50');" onclick="javascript: showdiv('close50'); hidediv('open50');">[show]</a></p>
+</div><div id="open52" style="display:none">
+  <p>Example 12. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('close52'); hidediv('open52');" onclick="javascript: showdiv('close52'); hidediv('open52');">[show]</a></p>
 </div>
-<div id="close50" style="display:inline">
-  <p>Example 13. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('open50'); hidediv('close50');" onclick="javascript: showdiv('open50'); hidediv('close50');">[hide]</a></p>
-  <pre class="example" id="example50"><code>            var builder = DocumentBuilder.New();
+<div id="close52" style="display:inline">
+  <p>Example 12. Add a multipage spread table with the enabled automatic multipage spread mode&nbsp;<a href="javascript: showdiv('open52'); hidediv('close52');" onclick="javascript: showdiv('open52'); hidediv('close52');">[hide]</a></p>
+  <pre class="example" id="example52"><code>            var builder = DocumentBuilder.New();
                     TableBuilder t = builder
                         .AddSection()
                         .AddTable()
