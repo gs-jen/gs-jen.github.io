@@ -117,7 +117,7 @@ function showdiv( divname )
     <p>
       <font size="+1"><code>public method <b>FontBuilder.FromFile</b></code></font>
     </p><p><b>Brief</b></p>
-<p>Imports a font from a TTF file.</p>
+<p>Loads a font of a specified size from a TTF or AFM font file.</p>
 <table class="tmain" width="100%">
   <tr>
     <td class="thdr"><b>Declaration</b></td>
@@ -140,7 +140,8 @@ function showdiv( divname )
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>path</code></td>
-    <td class="tmain" width="69%"><p>A path to the font file.</p></td>
+    <td class="tmain" width="69%"><p>A path to the font file.<br>
+To load a Type1 font, its AFM and PFB files must be located in the same folder.</p></td>
   </tr>
   <tr>
     <td class="tmain_nw" width="31%"><code>size</code></td>

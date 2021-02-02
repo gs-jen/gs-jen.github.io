@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Quick Start (DRAFT)</title><script language="javascript" type="text/javascript">
+    <title>Quick Start</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
     document.getElementById( divname ).style.display = 'none';
@@ -115,137 +115,256 @@ function showdiv( divname )
 </style></head>
   <body>
     <p>
-      <font size="+1"><b>Quick Start (DRAFT)</b></font>
+      <font size="+1"><b>Quick Start</b></font>
     </p>
     <p><b>Brief</b></p>
     <p>The article describes how to quickly create your first PDF document.</p>
     <p><b>Details</b></p><p>To create a new document:</p><ol class="main">
-  <li><p><a href="HowToStart.html">Add the PDF Flow Library to your project</a>.</p></li>
+  <li><p><a href="InstallingPDFFlowLibrary.html">Add the PDFFlow library to your project</a>.</p></li>
   <li><p>Create a new document builder using the method <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.New.DlG.html"><code>DocumentBuilder.New</code></a>.</p></li>
-  <li><p><a href="howToConfigureSection.html">Add a section or several sections</a> to the document.</p></li>
+  <li><p><a href="AddingSection.html">Add a section or several sections</a> to the document.</p></li>
   <li><p>Add content to each section:</p></li>
   <ul class="main">
-    <li><p><a href="howToConfigureParagraph.html">Add a paragraph</a>.</p></li>
-    <li><p><a href="howToConfigureImage.html">Add an image</a>.</p></li>
-    <li><p><a href="howToConfigureTable.html">Add a table</a>.</p></li>
-    <li><p><a href="howToCreateMultilevelList.html">Add a multilevel list</a>.</p></li>
-    <li><p><a href="howToConfigureRepeatingArea.html">Add repeating areas</a> to the section, for example, a header and a footer.</p></li>
-    <li><p><a href="howToCreateLine.html">Add a line</a>.</p></li>
+    <li><p><a href="AddingParagraph.html">Add a paragraph</a>.</p></li>
+    <li><p><a href="AddingImage.html">Add an image</a>.</p></li>
+    <li><p><a href="AddingTable.html">Add a table</a>.</p></li>
+    <li><p><a href="CreatingMultilevelList.html">Add a multilevel list</a>.</p></li>
+    <li><p><a href="AddingRepeatingArea.html">Add repeating areas</a> to the section, for example, a header and a footer.</p></li>
+    <li><p><a href="AddingLine.html">Add a line</a>.</p></li>
   </ul>
-  <li><p><a href="howToCreateTableOfContent.html">Create a table of content</a> for the document.</p></li>
+  <li><p><a href="CreatingTableOfContent.html">Create a table of content</a> for the document.</p></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.AN.html"><code>DocumentBuilder.Build(fileName)</code></a> method
 or the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.8J2.html"><code>DocumentBuilder.Build(outputStream)</code></a> method to generate the document.</p></li>
 </ol><p><br><br>
 <b>See also</b><br>
-For more information, see <a href="howToCreate.html">Creating Document</a> and the other articles.</p>
+For more information, see <a href="CreatingDocument.html">Creating Document</a> and the other articles.</p>
 <p><br><br>
-<b>Examples</b></p><div id="open1" style="display:none">
-  <p>Example 1. Create a new PDF document&nbsp;<a href="javascript: showdiv('close1'); hidediv('open1');" onclick="javascript: showdiv('close1'); hidediv('open1');">[show]</a></p>
+<b>Examples</b></p><div id="open11" style="display:none">
+  <p>Example 1. Create a new PDF document&nbsp;<a href="javascript: showdiv('close11'); hidediv('open11');" onclick="javascript: showdiv('close11'); hidediv('open11');">[show]</a></p>
 </div>
-<div id="close1" style="display:inline">
-  <p>Example 1. Create a new PDF document&nbsp;<a href="javascript: showdiv('open1'); hidediv('close1');" onclick="javascript: showdiv('open1'); hidediv('close1');">[hide]</a></p>
-  <pre class="example" id="example1"><code>    <b>// New document:</b>
+<div id="close11" style="display:inline">
+  <p>Example 1. Create a new PDF document&nbsp;<a href="javascript: showdiv('open11'); hidediv('close11');" onclick="javascript: showdiv('open11'); hidediv('close11');">[hide]</a></p>
+  <pre class="example" id="example11"><code>    Color colorDarkBlue = Color.FromRgba(0, 125.0/255.0, 181.0/255.0);
+    Color colorLightBlue = Color.FromRgba(0, 175.0/255.0, 245.0/255.0);
+ 
+    <b>// Create a document builder:</b>
  
     DocumentBuilder builder = DocumentBuilder.New();
  
-    <b>// Create section builder and customize the section:</b>
+    <b>// Create a section builder and customize the section:</b>
  
-    var sectionBuilder = builder.AddSection()
-        // Customize settings:
-        .SetMargins(20).SetSize(PaperSize.A4).SetOrientation(PageOrientation.Landscape)
-        .SetNumerationStyle(NumerationStyle.Arabic);
+    var sectionBuilder =
+        builder
+            .AddSection()
+                // Customize settings:
+                .SetMargins(horizontal: 30, vertical: 10)
+                .SetSize(PaperSize.A4)
+                .SetOrientation(PageOrientation.Landscape)
+                .SetNumerationStyle(NumerationStyle.Arabic);
  
-    <b>// Create paragraph builder to customize paragraph and add content to it:</b>
+    <b>// Table Of Content item:</b>
  
     sectionBuilder
-        .AddParagraph(
-            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&quot;)
-        .SetAlignment(HorizontalAlignment.Left).SetFirstLineIndent(20).SetJustifyAlignment(true).SetMargins(10)
-        .SetFont(Fonts.Courier(16)).SetFontColor(Color.Red).SetBold().SetBackColor(Color.Green)
-        .SetBorderStroke(Stroke.Solid).SetBorderWidth(3).SetBorderColor(Color.FromRgba(0.6, 0.4, 0.7))
-        .SetOutline()
-        .AddText(
-            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&quot;)
-        .SetBackColor(Color.Yellow).SetStrikethrough(Stroke.Solid, Color.Blue);
+        .AddParagraph(&quot;Adding Paragraph&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
  
-    <b>// Add tabulation:</b>
+    <b>// Create a paragraph builder to customize a paragraph and add content to it:</b>
  
-    sectionBuilder.AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;RIGHT300&quot;)
-        .AddTabulation(300, TabulationType.Right);
+    sectionBuilder
+        .AddParagraph(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &quot;)
+            .SetBackColor(colorLightBlue)
+            .SetFirstLineIndent(20)
+            .SetJustifyAlignment(true)
+            .SetFont(Fonts.Courier(16)).SetFontColor(colorDarkBlue).SetBold()
+            .SetBorderStroke(Stroke.Dotted).SetBorderWidth(3).SetBorderColor(colorDarkBlue)
+            .AddText(&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit&quot;)
+                .SetBackColor(colorDarkBlue)
+                .SetFontColor(Color.White)
+                .SetStrikethrough(Stroke.Solid, Color.Gray)
+        .ToParagraph()
+            .AddText(&quot;. Lorem ipsum dolor sit amet, consectetur adipiscing elit&quot;);
  
-    <b>// Add image:</b>
+    <b>// Table Of Content item:</b>
  
-    string image1 = &quot;C:\path\to\file1.jpg&quot;;
+    sectionBuilder
+        .AddParagraph(&quot;Using Tabulation&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
  
-    sectionBuilder.AddImage(image1).SetScale(ScalingMode.UserDefined).SetSize(100, 100)
-        .SetBorderStroke(Stroke.Dotted);
+    <b>// Add a tabulation:</b>
  
-    <b>// Add inline image:</b>
+    sectionBuilder
+        .AddParagraph()
+            .AddTabSymbol()
+            .AddTextToParagraph(&quot;RIGHT300&quot;)
+            .AddTabulation(300, TabulationType.Right)
+    .ToSection()
+        .AddParagraph()
+            .AddTabSymbol()
+            .AddTextToParagraph(&quot;LEFT300&quot;)
+            .AddTabulation(300, TabulationType.Left)
+    .ToSection()
+        .AddParagraph()
+            .AddTabSymbol()
+            .AddTextToParagraph(&quot;CENTER300&quot;)
+            .AddTabulation(300, TabulationType.Center);
  
-    string imageSmile = &quot;C:\path\to\file2.png&quot;;
-    sectionBuilder.AddParagraph(&quot;Inline &quot;).SetAlignment(HorizontalAlignment.Left)
-        .AddInlineImageToParagraph(imageSmile, 15, 15, ScalingMode.UserDefined).AddText(&quot; image&quot;);
+    <b>// Table Of Content item:</b>
  
-    <b>// Add table:</b>
+    sectionBuilder
+        .AddParagraph(&quot;Adding Image&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
+ 
+    <b>// Add an image:</b>
+ 
+    string image1 = &quot;C:\path\to\logo.png&quot;;
+ 
+    sectionBuilder
+        .AddImage(image1)
+            .SetScale(ScalingMode.UserDefined)
+            .SetWidth(300);
+ 
+    <b>// Table Of Content item:</b>
+ 
+    sectionBuilder
+        .AddParagraph(&quot;Adding Inline Image&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
+ 
+    <b>// Add an inline image:</b>
+ 
+    string imageSmile = &quot;C:\path\to\map_pin.png&quot;;
+    sectionBuilder
+		.AddParagraph(&quot;Inline &quot;)
+		.SetAlignment(HorizontalAlignment.Right)
+       .AddInlineImageToParagraph(imageSmile, 35, 30, ScalingMode.UserDefined)
+		.AddText(&quot; image&quot;);
+ 
+ 
+    <b>// Table Of Content item:</b>
+    sectionBuilder
+        .AddParagraph(&quot;Adding Table&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
+ 
+    <b>// Add a table:</b>
  
     TableBuilder table = sectionBuilder.AddTable()
         .AddColumnPercentToTable(&quot;Name&quot;, 25f)
         .AddColumnPercentToTable(&quot;Description&quot;, 50f)
         .AddColumnPercentToTable(&quot;Date&quot;, 25)
-        .SetAltRowStyleBackColor(Color.Gray)
-        .SetHeaderRowColor(Color.Red);
+        .SetAltRowStyleBackColor(colorLightBlue)
+        .SetHeaderRowColor(colorDarkBlue);
     table
         .AddRow()
-        .AddCellToRow(&quot;Keanu Reeves&quot;)
-        .AddCellToRow(&quot;Canadian actor. Born in Beirut and raised in Toronto.&quot;)
-        .AddCellToRow(&quot;2 September, 1964&quot;);
+        	.AddCellToRow(&quot;Keanu Reeves&quot;)
+        	.AddCellToRow(&quot;Canadian actor. Born in Beirut and raised in Toronto.&quot;)
+        	.AddCellToRow(&quot;2 September, 1964&quot;);
     table
         .AddRow()
-        .AddCellToRow(&quot;John Roe&quot;)
+            .AddCellToRow(&quot;John Roe&quot;)
             .AddCell(&quot;INFORMATION IS UNAVAILABLE!&quot;, colSpan: 2)
             .SetHorizontalAlignment(HorizontalAlignment.Center);
     table
         .AddRow()
             .AddCell(&quot;Daneliya Tuleshova&quot;)
-            .SetBackColor(Color.Yellow)
         .ToRow()
-        .AddCellToRow(&quot;Kazakh singer.&quot;)
-        .AddCellToRow(&quot;18 July, 2006&quot;);
+        	.AddCellToRow(&quot;Kazakh singer.&quot;)
+        	.AddCellToRow(&quot;18 July, 2006&quot;);
  
-    <b>// Add MultiLevel list:</b>
+    <b>// Table Of Content item:</b>
+    sectionBuilder
+        .AddParagraph(&quot;Adding MultiLevel list&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
+ 
+    <b>// Add a multilevel list:</b>
  
     FontBuilder font = Fonts.Times(14f);
     float leftIndent = 20f;
  
-    sectionBuilder.AddParagraph(&quot;Level = 0. Item 1.&quot;).SetAlignment(HorizontalAlignment.Left).SetFont(font)
-        .SetListBulleted(ListBullet.Bullet, 0, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 0. Item 2.&quot;).SetAlignment(HorizontalAlignment.Left).SetFont(font)
-        .SetListBulleted(ListBullet.Bullet, 0, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 1. Item 1.&quot;).SetFont(font).SetFontSize(16)
+    sectionBuilder
+        .AddParagraph(&quot;Level = 0. Item 1.&quot;)
+            .SetAlignment(HorizontalAlignment.Left)
+            .SetFont(font)
+            .SetFontSize(16)
+            .SetListBulleted(ListBullet.Bullet, 0, leftIndent);
+    sectionBuilder
+        .AddParagraph(&quot;Level = 1. Item 1.&quot;)
+        .SetFont(font)
         .SetListNumbered(NumerationStyle.Arabic, 1, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 2. Item 1.&quot;).SetFont(font).SetFontSize(12)
+    sectionBuilder
+        .AddParagraph(&quot;Level = 2. Item 1.&quot;)
+        .SetFont(font)
+        .SetFontSize(10)
         .SetListNumbered(NumerationStyle.UpperLatin, 2, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 2. Item 2.&quot;).SetFont(font).SetFontSize(12)
+    sectionBuilder
+        .AddParagraph(&quot;Level = 2. Item 2.&quot;)
+        .SetFont(font)
+        .SetFontSize(10)
         .SetListNumbered(NumerationStyle.UpperLatin, 2, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 1. Item 2.&quot;).SetAlignment(HorizontalAlignment.Left).SetFont(font)
-        .SetFontSize(16).SetListNumbered(NumerationStyle.Arabic, 1, leftIndent);
-    sectionBuilder.AddParagraph(&quot;Level = 0. Item 3.&quot;).SetAlignment(HorizontalAlignment.Left).SetFont(font)
+    sectionBuilder
+        .AddParagraph(&quot;Level = 1. Item 2.&quot;)
+        .SetAlignment(HorizontalAlignment.Left)
+        .SetFont(font)
+        .SetListNumbered(NumerationStyle.Arabic, 1, leftIndent);
+    sectionBuilder
+        .AddParagraph(&quot;Level = 0. Item 2.&quot;)
+        .SetAlignment(HorizontalAlignment.Left)
+        .SetFont(font)
+        .SetFontSize(16)
         .SetListBulleted(ListBullet.Bullet, 0, leftIndent);
  
-    <b>// Add line:</b>
+    <b>// Table Of Content item:</b>
+    sectionBuilder
+        .AddParagraph(&quot;Adding Line&quot;)
+            .SetMarginTop(15)
+            .SetFontColor(Color.Gray)
+            .SetAlignment(HorizontalAlignment.Center)
+            .SetOutline();
  
-    sectionBuilder.AddLine().SetWidth(1f).SetLength(300).SetColor(Color.Blue).SetStroke(Stroke.Dashed)
-        /*.SetMargins(top: 0, left: 0, right: 0, bottom: 30)*/;
-    sectionBuilder.AddLine().SetWidth(5f).SetColor(Color.Red).SetStroke(Stroke.Double)
-        .SetMarginTop(30f);
+    <b>// Add a line:</b>
  
-    <b>// Add footer with right-alignment page number:</b>
+    sectionBuilder
+        .AddLine(XUnit.FromPercent(30))
+        .SetWidth(3f)
+        .SetColor(colorDarkBlue)
+        .SetStroke(Stroke.Dashed)
+        .SetAlignment(HorizontalAlignment.Center)
+    .ToSection()
+        .AddLine()
+        .SetWidth(6f)
+        .SetColor(colorLightBlue)
+        .SetStroke(Stroke.Solid)
+        .SetMarginTop(15f);
+ 
+    <b>// Add a footer with a right-aligned page number:</b>
  
     RepeatingAreaBuilder footer = sectionBuilder.AddFooterToBothPages(40f);
     footer
         .AddParagraph()
         .SetAlignment(HorizontalAlignment.Right)
-        .AddPageNumber();
+        .AddPageNumber(customText: &quot;Page #&quot;);
+ 
+    <b>// Show Table Of Content:</b>
+ 
+    builder
+        .AddOutline(&quot;TABLE OF CONTENT&quot;)
+            .SetSpacingUnderline(Stroke.Dotted, colorDarkBlue);
  
     <b>// Build a document:</b>
  
@@ -254,7 +373,10 @@ For more information, see <a href="howToCreate.html">Creating Document</a> and t
  
     <b>The above code will generate the following:</b>
  
-    <img src="img/quick-start-ex1.png"></code></pre>
+    <img src="img/quick-start-ex1.jpg">
+    <img src="img/quick-start-ex2.jpg">
+ 
+    <a href="pdf/_Sample_QuickStart1.pdf" target="_blank">See the document</a></code></pre>
 </div><p>
       <center><a href="tutorials.html">back</a></center>
     </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
