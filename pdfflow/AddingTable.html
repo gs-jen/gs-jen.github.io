@@ -148,10 +148,56 @@ to add a table, configure the table and add content to it inside this method.</p
 to add a table, configure the table and add content to it inside this method.</p><pre class="example" id="example24"><code>   myRepeatingAreaBuilder.AddTableToRepeatingArea(...)</code></pre></li>
 </ul><p><br>
 <b>Configuring the Table</b></p>
-<p>When you add a table and do not specify any style or formatting for it, it will be created with default formatting settings defined in the default table style.
-For details about formatting and styles, see the <a href="FormattingAndStyles.html">Formatting and Styles</a> article.</p>
+<p>When you add a table and do not specify any style or formatting for it, it will be created with default formatting settings defined in the default table style.</p>
+<p>Each table has the following formatting:</p><table class="tmain">
+  <tr>
+    <td class="thdr"><p>Parameter</p></td>
+    <td class="thdr"><p>Default value</p></td>
+    <td class="thdr"><p>Methods for configuration (available in <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.html"><code>TableBuilder</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.TableRowBuilder.html"><code>TableRowBuilder</code></a>, and <a href="Gehtsoft.PDFFlow.Builder.TableCellBuilder.html"><code>TableCellBuilder</code></a>)</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Borders</p></td>
+    <td class="tmain"><p><code>Solid</code>, <code>Black</code>, <code>0.5f</code></p></td>
+    <td class="tmain"><p><code>SetBorder</code>, <code>SetBorderStroke</code>, <code>SetBorderWidth</code>, <code>SetBorderColor</code></p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Font</p></td>
+    <td class="tmain"><p><code>Helvetica</code>, <code>11f</code>, <code>Black</code></p></td>
+    <td class="tmain"><p><code>SetFont</code>, <code>SetFontName</code>, <code>SetFontSize</code>, <code>SetFontColor</code>.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Text overflow action</p></td>
+    <td class="tmain"><p><code>Truncate</code></p></td>
+    <td class="tmain"><p><code>SetTextOverflowAction</code></p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Alignment</p></td>
+    <td class="tmain"><p>Left</p></td>
+    <td class="tmain"><p><code>SetAlignment</code></p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Background color</p></td>
+    <td class="tmain"><p>No color</p></td>
+    <td class="tmain"><p><code>SetBackColor</code></p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Page break</p></td>
+    <td class="tmain"><p>No page break</p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetPageBreak.hE6.html"><code>SetPageBreak</code></a></p></td>
+  </tr>
+</table><p>For details about formatting and styles, see the <a href="FormattingAndStyles.html">Formatting and Styles</a> article.</p>
 <p>The style and formatting for an entire table can be configured using methods of the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.html"><code>TableBuilder</code></a> class.</p>
-<p>For example:</p><pre class="example" id="example25"><code>   myTableBuilder.SetContentRowStyleHorizontalAlignment(HorizontalAlignment.Center)</code></pre><p><br>
+<p>For example:</p><pre class="example" id="example25"><code>   myTableBuilder.SetContentRowStyleHorizontalAlignment(HorizontalAlignment.Center)</code></pre><p><b>Page Break</b></p>
+<p>When you need to start a table from a new page, insert a page break before the table using the method <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetPageBreak.hE6.html"><code>SetPageBreak()</code></a>.
+If you call this method without the parameter, the table will start from the next page or remain on the current page if it is located at the beginning of the page.
+You can specify the page from which the table will start in the method parameter. The available options are:</p><ul class="main">
+  <li><p><i>NextPage</i> (the default page break) - the table starts from the next page or remains on the current page if it is located at the beginning of the page.</p></li>
+  <li><p><i>NextEvenPage</i> - the table starts from the next even page or remains on the current page if it is located at the beginning of an even page.</p></li>
+  <li><p><i>NextOddPage</i> - the table starts from the next odd page or remains on the current page if it is located at the beginning of an odd page.</p></li>
+</ul><p>The available page breaks are listed in the <a href="Gehtsoft.PDFFlow.Models.Enumerations.PageBreak.html"><code>PageBreak</code></a> enumeration.</p>
+<p>See Example 14 below for a code illustration.</p>
+<p><br>
 <b>Adding and Configuring Columns, Rows, and Cells</b></p>
 <p>After you add a table to a section or repeating area, you should add columns, rows and cells to the table by following these steps:</p><ol class="main">
   <li><p>Add columns to the table using one of the following options:</p><ul class="main">
@@ -360,11 +406,12 @@ number of columns in the table, so it is necessary to add an empty cell:</p><pre
              rowBuilder.AddCell();
              rowBuilder.AddCell(&quot;cell4.2&quot;);
         });
-    });</code></pre><p><br><br>
+    });</code></pre><p>See Example 7 below for a code illustration.</p>
+<p><br><br>
 <b>Image Columns</b></p>
 <p>When you need to create a column with a certain image in each cell of this column (for example, a column with check boxes that the user should select on a form),
 you can specify this image in the method <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddImageColumn.0SE.html"><code>AddImageColumn</code></a> or
-<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddImageColumnToTable.7OC.html"><code>AddImageColumnToTable</code></a>. See Example 6 below.</p>
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddImageColumnToTable.7OC.html"><code>AddImageColumnToTable</code></a>. See Example 10 below for a code illustration.</p>
 <p><br><br>
 <b>Multipage Tables</b></p>
 <p>When you create a table that spreads to two pages, it is supposed that you expect to get a book spread table, that is,
@@ -378,6 +425,7 @@ remaining five - on the third page. If some of the table rows do not fit into on
 on the fifth page for the following three columns, and on the sixth page for the remaining five columns.</p>
 <p>You can also make the library automatically calculate whether a table fits into the page or not and continue the table on the next page or a number of pages if necessary.
 For this, enable the automatic multi-page spread mode using the method <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.SetAutomaticMultipageSpreadMode.dU1.html"><code>SetAutomaticMultipageSpreadMode</code></a>.</p>
+<p>See Examples 11 and 12 below for code illustrations.</p>
 <p><br><br></p>
 <p><b>See also</b></p>
 <p><a href="AddingSection.html">Adding Section</a></p>
@@ -678,7 +726,7 @@ For this, enable the automatic multi-page spread mode using the method <a href="
         {
             var folderPath = Environment.CurrentDirectory;
             var imgPath = Path.Combine(folderPath, &quot;Content&quot;, &quot;Images&quot;);
-            //Fill data for the table
+            <b>// Fill data for the table</b>
             Game[] games =
             {
                new Game(&quot;2018 Winter Olympics&quot;,
@@ -706,14 +754,14 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                       new CountryResult(&quot;Canada&quot;, new int[] { 10, 10, 5 })
                   })
             };
-            // Create a document and add a section to it
+            <b>// Create a document and add a section to it</b>
             var document = DocumentBuilder.New();
             var section = document.AddSection()
                 .AddParagraph(&quot;Complex table with images and table in table:&quot;)
                 .SetBold()
                 .SetMarginBottom(5)
                 .ToSection();
-            //Add a table to the section
+            <b>// Add a table to the section</b>
             var outerTableBuilder = section.AddTable()
                .SetHeaderRowStyleMinHeight(20)
                .SetHeaderRowStyleBackColor(Color.Gray)
@@ -721,7 +769,7 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                .AddColumnPercentToTable(&quot;Logo&quot;, 25)
                .AddColumnPercent(&quot;Winners&quot;, 50)
                .ToTable();
-               //Fill the table with the data
+             <b>// Fill the table with the data</b>
             foreach (Game game in games)
             {
                 var cell = outerTableBuilder.AddRow()
@@ -920,7 +968,7 @@ For this, enable the automatic multi-page spread mode using the method <a href="
                         .AddColumnToTable(&quot;50pt&quot;, 50)
                         .AddColumnToTable(&quot;200pt&quot;, 200)
                         .AddColumnToTable(&quot;150pt&quot;, 150)
-            	         // The last two columns do not fit into the first page, so they will be rendered on the second page:
+         	           <b>// The last two columns do not fit into the first page, so they will be rendered on the second page:</b>
                         .AddColumnToTable(&quot;300pt&quot;, 300)
                         .AddColumnToTable(&quot;100pt&quot;, 100);
             for (int i = 1; i &lt;= 20; i++)
@@ -939,6 +987,88 @@ For this, enable the automatic multi-page spread mode using the method <a href="
  
  <img src="img/configure-table-ex11.png">
  <a href="pdf/Sample_ConfiguringTable11.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open53" style="display:none">
+  <p>Example 13. Add complex table with content part.&nbsp;<a href="javascript: showdiv('close53'); hidediv('open53');" onclick="javascript: showdiv('close53'); hidediv('open53');">[show]</a></p>
+</div>
+<div id="close53" style="display:inline">
+  <p>Example 13. Add complex table with content part.&nbsp;<a href="javascript: showdiv('open53'); hidediv('close53');" onclick="javascript: showdiv('open53'); hidediv('close53');">[hide]</a></p>
+  <pre class="example" id="example53"><code>        public static void BuildDocument()
+        {
+            var builder = DocumentBuilder.New();
+ 
+            var table = DocumentBuilder.New()
+                .AddSection()
+                    .AddTable().SetWidth(250)
+                        .AddColumnToTable()
+                        .AddRow()
+                            .AddCell(&quot;City information&quot;)
+                                .SetHorizontalAlignment(HorizontalAlignment.Center)
+                    .ToTable();
+            AddTablePartToCell(table.AddRow().AddCell());
+            table.AddRow()
+                    .AddCell(&quot;Complex table is completed.&quot;)
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+        }
+ 
+        private static void AddTablePartToCell(TableCellBuilder cell)
+        {
+            cell.AddTable()
+            .SetWidth(XUnit.FromPercent(100))
+            .AddColumnPercentToTable(&quot;&quot;, 50)
+            .AddColumnPercentToTable(&quot;&quot;, 25)
+            .AddColumnPercentToTable(&quot;&quot;, 25)
+            .AddRow()
+                .AddCell()
+                    .SetRowSpan(4)
+                    .AddImageToCell(&quot;smile-emoji.png&quot;).ToRow()
+                .AddCellToRow(&quot;New York&quot;)
+                .AddCellToRow(&quot;New York&quot;).ToTable()
+            .AddRow()
+                .AddCellToRow()
+                .AddCellToRow(&quot;Los Angeles&quot;)
+                .AddCellToRow(&quot;California&quot;).ToTable()
+            .AddRow()
+                .AddCellToRow()
+                .AddCellToRow(&quot;Chicago&quot;)
+                .AddCellToRow(&quot;Illinois&quot;).ToTable()
+            .AddRow()
+                .AddCellToRow()
+                .AddCell(&quot;\n&quot;).SetColSpan(2)
+                          .SetPadding(0, 32);
+        }
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex14.png">
+ <a href="pdf/Sample_ConfiguringTable14.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open54" style="display:none">
+  <p>Example 14. Add tables with page breaks&nbsp;<a href="javascript: showdiv('close54'); hidediv('open54');" onclick="javascript: showdiv('close54'); hidediv('open54');">[show]</a></p>
+</div>
+<div id="close54" style="display:inline">
+  <p>Example 14. Add tables with page breaks&nbsp;<a href="javascript: showdiv('open54'); hidediv('close54');" onclick="javascript: showdiv('open54'); hidediv('close54');">[hide]</a></p>
+  <pre class="example" id="example54"><code>            .AddSection()
+                .SetSize(PaperSize.C6)
+                .AddTable()
+                    .SetPageBreak(PageBreak.NextPage)
+                    .AddColumnToTable().AddRow().AddCell(&quot;Table1 has to be left at the same page&quot;)
+            .ToSection()
+                .AddTable()
+                    .SetPageBreak(PageBreak.NextOddPage)
+                    .AddColumnToTable().AddRow().AddCell(&quot;Table2 has to be started from page #3&quot;)
+            .ToSection()
+                .AddTable()
+                    .SetPageBreak(PageBreak.NextEvenPage)
+                    .AddColumnToTable().AddRow().AddCell(&quot;Table3 has to be started from page #4&quot;)
+            .ToSection()
+                .AddFooterToBothPages(20)
+                    .AddParagraph()
+                        .AddPageNumber(&quot;Page #&quot;)
+        .ToDocument()
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/configure-table-ex15.png">
+ <a href="pdf/Sample_ConfiguringTable15.pdf" target="_blank">See the document</a></code></pre>
 </div><p>
       <center><a href="tutorials.html">back</a></center>
     </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>

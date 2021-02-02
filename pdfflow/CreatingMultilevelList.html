@@ -130,6 +130,8 @@ The available numbering styles are: Arabic numbers, lower and upper Roman number
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetListBulleted.mi8.html"><code>ParagraphBuilder.SetListBulleted</code></a> method.
 For each item, you can specify the bullet symbol, the level of the list, and the left indent.
 The available bullet symbols are a bullet and a dash (see the <a href="Gehtsoft.PDFFlow.Models.Enumerations.ListBullet.html"><code>ListBullet</code></a> enumeration).</p>
+<p>The default level left indent for a multilevel list is <code>20f</code>, the default numbering style of a numbered list is <code>Arabic</code>,
+the default bullet symbol is <code>Bullet</code>.</p>
 <p>You can configure the formatting settings of list items directly or apply a style to them using methods of
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.
 You can also set a style for all lists in the section using the
@@ -144,12 +146,12 @@ and its automatic numeration will start from the beginning.</p>
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
-<p><b>Examples</b></p><div id="open71" style="display:none">
-  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('close71'); hidediv('open71');" onclick="javascript: showdiv('close71'); hidediv('open71');">[show]</a></p>
+<p><b>Examples</b></p><div id="open74" style="display:none">
+  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('close74'); hidediv('open74');" onclick="javascript: showdiv('close74'); hidediv('open74');">[show]</a></p>
 </div>
-<div id="close71" style="display:inline">
-  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('open71'); hidediv('close71');" onclick="javascript: showdiv('open71'); hidediv('close71');">[hide]</a></p>
-  <pre class="example" id="example71"><code>            var latin = NumerationStyle.LowerLatin;
+<div id="close74" style="display:inline">
+  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('open74'); hidediv('close74');" onclick="javascript: showdiv('open74'); hidediv('close74');">[hide]</a></p>
+  <pre class="example" id="example74"><code>            var latin = NumerationStyle.LowerLatin;
             DocumentBuilder.New()
             .AddSection()
                 .AddParagraph(&quot;Level 0, Item 1&quot;).SetListNumbered().ToSection()
@@ -163,12 +165,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex1.png">
  <a href="pdf/Sample_CreatingMultilevelList1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open72" style="display:inline">
-  <p>Example 2. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('close72'); hidediv('open72');" onclick="javascript: showdiv('close72'); hidediv('open72');">[show]</a></p>
+</div><div id="open75" style="display:inline">
+  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('close75'); hidediv('open75');" onclick="javascript: showdiv('close75'); hidediv('open75');">[show]</a></p>
 </div>
-<div id="close72" style="display:none">
-  <p>Example 2. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('open72'); hidediv('close72');" onclick="javascript: showdiv('open72'); hidediv('close72');">[hide]</a></p>
-  <pre class="example" id="example72"><code>    var document = DocumentBuilder.New();
+<div id="close75" style="display:none">
+  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('open75'); hidediv('close75');" onclick="javascript: showdiv('open75'); hidediv('close75');">[hide]</a></p>
+  <pre class="example" id="example75"><code>    var document = DocumentBuilder.New();
     document.AddSectionToDocument(sectionBuilder =&gt;
         {
             sectionBuilder
@@ -205,12 +207,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex1.png">
  <a href="pdf/Sample_CreatingMultilevelList2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open73" style="display:none">
-  <p>Example 3. Create a bulleted list&nbsp;<a href="javascript: showdiv('close73'); hidediv('open73');" onclick="javascript: showdiv('close73'); hidediv('open73');">[show]</a></p>
+</div><div id="open76" style="display:none">
+  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('close76'); hidediv('open76');" onclick="javascript: showdiv('close76'); hidediv('open76');">[show]</a></p>
 </div>
-<div id="close73" style="display:inline">
-  <p>Example 3. Create a bulleted list&nbsp;<a href="javascript: showdiv('open73'); hidediv('close73');" onclick="javascript: showdiv('open73'); hidediv('close73');">[hide]</a></p>
-  <pre class="example" id="example73"><code>            DocumentBuilder.New()
+<div id="close76" style="display:inline">
+  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('open76'); hidediv('close76');" onclick="javascript: showdiv('open76'); hidediv('close76');">[hide]</a></p>
+  <pre class="example" id="example76"><code>            DocumentBuilder.New()
             .AddSection()
             .AddParagraph(&quot;Level 0, Item 1&quot;)
                 .SetFontColor(Color.Red)
@@ -235,12 +237,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex3.png">
  <a href="pdf/Sample_CreatingMultilevelList3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open74" style="display:none">
-  <p>Example 4. Set level indent values&nbsp;<a href="javascript: showdiv('close74'); hidediv('open74');" onclick="javascript: showdiv('close74'); hidediv('open74');">[show]</a></p>
+</div><div id="open77" style="display:none">
+  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('close77'); hidediv('open77');" onclick="javascript: showdiv('close77'); hidediv('open77');">[show]</a></p>
 </div>
-<div id="close74" style="display:inline">
-  <p>Example 4. Set level indent values&nbsp;<a href="javascript: showdiv('open74'); hidediv('close74');" onclick="javascript: showdiv('open74'); hidediv('close74');">[hide]</a></p>
-  <pre class="example" id="example74"><code>            DocumentBuilder.New()
+<div id="close77" style="display:inline">
+  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('open77'); hidediv('close77');" onclick="javascript: showdiv('open77'); hidediv('close77');">[hide]</a></p>
+  <pre class="example" id="example77"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddParagraph(&quot;Level 0, Item 1. Shifted by 5 points&quot;)
                     .SetListBulleted(ListBullet.Bullet, 0, 5).ToSection()
@@ -258,12 +260,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex4.png">
  <a href="pdf/Sample_CreatingMultilevelList4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open75" style="display:none">
-  <p>Example 5. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('close75'); hidediv('open75');" onclick="javascript: showdiv('close75'); hidediv('open75');">[show]</a></p>
+</div><div id="open78" style="display:none">
+  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('close78'); hidediv('open78');" onclick="javascript: showdiv('close78'); hidediv('open78');">[show]</a></p>
 </div>
-<div id="close75" style="display:inline">
-  <p>Example 5. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('open75'); hidediv('close75');" onclick="javascript: showdiv('open75'); hidediv('close75');">[hide]</a></p>
-  <pre class="example" id="example75"><code>            var latin = NumerationStyle.LowerLatin;
+<div id="close78" style="display:inline">
+  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('open78'); hidediv('close78');" onclick="javascript: showdiv('open78'); hidediv('close78');">[hide]</a></p>
+  <pre class="example" id="example78"><code>            var latin = NumerationStyle.LowerLatin;
             var arabic = NumerationStyle.Arabic;
             DocumentBuilder.New()
             .AddSection()
@@ -297,12 +299,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex5.png">
  <a href="pdf/Sample_CreatingMultilevelList5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open76" style="display:none">
-  <p>Example 6. Add a list to a table&nbsp;<a href="javascript: showdiv('close76'); hidediv('open76');" onclick="javascript: showdiv('close76'); hidediv('open76');">[show]</a></p>
+</div><div id="open79" style="display:none">
+  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('close79'); hidediv('open79');" onclick="javascript: showdiv('close79'); hidediv('open79');">[show]</a></p>
 </div>
-<div id="close76" style="display:inline">
-  <p>Example 6. Add a list to a table&nbsp;<a href="javascript: showdiv('open76'); hidediv('close76');" onclick="javascript: showdiv('open76'); hidediv('close76');">[hide]</a></p>
-  <pre class="example" id="example76"><code>            DocumentBuilder.New()
+<div id="close79" style="display:inline">
+  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('open79'); hidediv('close79');" onclick="javascript: showdiv('open79'); hidediv('close79');">[hide]</a></p>
+  <pre class="example" id="example79"><code>            DocumentBuilder.New()
             .AddSection()
                 .AddTable()
                     .AddColumnToTable().AddColumnToTable()
@@ -323,12 +325,12 @@ and its automatic numeration will start from the beginning.</p>
  
  <img src="img/multilevel-list-ex6.png">
  <a href="pdf/Sample_CreatingMultilevelList6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open77" style="display:none">
-  <p>Example 7. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('close77'); hidediv('open77');" onclick="javascript: showdiv('close77'); hidediv('open77');">[show]</a></p>
+</div><div id="open80" style="display:none">
+  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('close80'); hidediv('open80');" onclick="javascript: showdiv('close80'); hidediv('open80');">[show]</a></p>
 </div>
-<div id="close77" style="display:inline">
-  <p>Example 7. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('open77'); hidediv('close77');" onclick="javascript: showdiv('open77'); hidediv('close77');">[hide]</a></p>
-  <pre class="example" id="example77"><code>            <b>// Set a style for all lists in the section: numbered, font color red:</b>
+<div id="close80" style="display:inline">
+  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('open80'); hidediv('close80');" onclick="javascript: showdiv('open80'); hidediv('close80');">[hide]</a></p>
+  <pre class="example" id="example80"><code>            <b>// Set a style for all lists in the section: numbered, font color red:</b>
             StyleBuilder listStyleInCurrentSection = StyleSheet.DefaultListNumberedBuilder().SetFontColor(Color.Red);
             StyleBuilder styleBlue = StyleBuilder.New().SetFontColor(Color.Blue);
             StyleBuilder styleListBold = StyleBuilder.New(StyleSheet.DefaultListNumberedBuilder()).SetFontBold();

@@ -1,7 +1,7 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>InlineImageBuilder.SetPageBreak</title><script language="javascript" type="text/javascript">
+    <title>InvalidImageWidth</title><script language="javascript" type="text/javascript">
 function hidediv( divname )
 {
     document.getElementById( divname ).style.display = 'none';
@@ -115,35 +115,17 @@ function showdiv( divname )
 </style></head>
   <body>
     <p>
-      <font size="+1"><code>public method <b>InlineImageBuilder.SetPageBreak</b></code></font>
-    </p><p><b>Brief</b></p>
-<p>Sets the page break for the inline image.</p>
-<table class="tmain" width="100%">
-  <tr>
-    <td class="thdr"><b>Declaration</b></td>
-  </tr>
-  <tr>
-    <td class="tmain"><table class="decl">
-  <tr>
-    <td colspan="2">C#</td>
-  </tr>
-  <tr>
-    <td width="1%" nowrap valign="top"><code><a href="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html">Gehtsoft.PDFFlow.Builder.InlineImageBuilder</a>&nbsp;</code></td>
-    <td width="99%" valign="top"><code><b>SetPageBreak</b> (<a href="Gehtsoft.PDFFlow.Models.Enumerations.PageBreak.html">Gehtsoft.PDFFlow.Models.Enumerations.PageBreak</a> pageBreak) </code></td>
-  </tr>
-</table></td>
-  </tr>
-</table><p></p>
-<table class="tmain" width="100%">
-  <tr>
-    <td colspan="2" class="thdr"><b>Parameters</b></td>
-  </tr>
-  <tr>
-    <td class="tmain_nw" width="31%"><code>pageBreak</code></td>
-    <td class="tmain" width="69%"><p>The page break.</p></td>
-  </tr>
-</table><p>Declared in <a href="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html">InlineImageBuilder</a></p>
-<p>
-  <center><a href="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html">back</a></center>
-</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html');</script></body>
+      <font size="+1"><b>InvalidImageWidth</b></font>
+    </p><p><b>Exception type:</b><br>
+<a href="Gehtsoft.PDFFlow.Models.Exceptions.NotEnoughSpaceException.html"><code>NotEnoughSpaceException</code></a><br></p>
+<p><b>May occur:</b><br>
+When adding an image.<br></p>
+<p><b>Cause:</b><br>
+The width of the image is larger than the available space in the section. The image must fit into the section.<br></p>
+<p><b>Method(s):</b><br>
+<a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.AN.html"><code>DocumentBuilder.Build(string)</code></a>,
+<a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.8J2.html"><code>DocumentBuilder.Build(Stream)</code></a>,
+<code>DocumentBuilder.AddSection</code>, <code>DocumentBuilder.AddSectionToDocument</code></p><p>
+      <center><a href="Exceptions.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
 </html>

@@ -149,6 +149,33 @@
         </UL>
     
         </UL>
+    <li><object type="text/sitemap"><param name="Name" value="Exceptions"><param name="Local" value="Exceptions.html"></object><a href="Exceptions.html">Exceptions</a>
+    
+        <UL>
+            <li><object type="text/sitemap"><param name="Name" value="UnsupportedNumerationStyle"><param name="Local" value="UnsupportedNumerationStyle.html"></object><a href="UnsupportedNumerationStyle.html">UnsupportedNumerationStyle</a>
+    <li><object type="text/sitemap"><param name="Name" value="ApplyingStyleAfterFormattingError"><param name="Local" value="ApplyingStyleAfterFormattingError.html"></object><a href="ApplyingStyleAfterFormattingError.html">ApplyingStyleAfterFormattingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="ApplyingRowStyleAfterFormattingError"><param name="Local" value="ApplyingRowStyleAfterFormattingError.html"></object><a href="ApplyingRowStyleAfterFormattingError.html">ApplyingRowStyleAfterFormattingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="AddNewPageError"><param name="Local" value="AddNewPageError.html"></object><a href="AddNewPageError.html">AddNewPageError</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidFontFilePath"><param name="Local" value="InvalidFontFilePath.html"></object><a href="InvalidFontFilePath.html">InvalidFontFilePath</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidPath"><param name="Local" value="InvalidPath.html"></object><a href="InvalidPath.html">InvalidPath</a>
+    <li><object type="text/sitemap"><param name="Name" value="TableLayoutingError"><param name="Local" value="TableLayoutingError.html"></object><a href="TableLayoutingError.html">TableLayoutingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="CellsNumberNotEqualToColumns"><param name="Local" value="CellsNumberNotEqualToColumns.html"></object><a href="CellsNumberNotEqualToColumns.html">CellsNumberNotEqualToColumns</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidPageSize"><param name="Local" value="InvalidPageSize.html"></object><a href="InvalidPageSize.html">InvalidPageSize</a>
+    <li><object type="text/sitemap"><param name="Name" value="ParagraphTabulationError"><param name="Local" value="ParagraphTabulationError.html"></object><a href="ParagraphTabulationError.html">ParagraphTabulationError</a>
+    <li><object type="text/sitemap"><param name="Name" value="EmptyTabulationPosition"><param name="Local" value="EmptyTabulationPosition.html"></object><a href="EmptyTabulationPosition.html">EmptyTabulationPosition</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidInlineImageSize"><param name="Local" value="InvalidInlineImageSize.html"></object><a href="InvalidInlineImageSize.html">InvalidInlineImageSize</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidInlineImageWidth"><param name="Local" value="InvalidInlineImageWidth.html"></object><a href="InvalidInlineImageWidth.html">InvalidInlineImageWidth</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidImageWidth"><param name="Local" value="InvalidImageWidth.html"></object><a href="InvalidImageWidth.html">InvalidImageWidth</a>
+    <li><object type="text/sitemap"><param name="Name" value="NullArgument"><param name="Local" value="NullArgument.html"></object><a href="NullArgument.html">NullArgument</a>
+    <li><object type="text/sitemap"><param name="Name" value="NoImageSource"><param name="Local" value="NoImageSource.html"></object><a href="NoImageSource.html">NoImageSource</a>
+    <li><object type="text/sitemap"><param name="Name" value="PropertyCopyingError"><param name="Local" value="PropertyCopyingError.html"></object><a href="PropertyCopyingError.html">PropertyCopyingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidTabulationPercentage"><param name="Local" value="InvalidTabulationPercentage.html"></object><a href="InvalidTabulationPercentage.html">InvalidTabulationPercentage</a>
+    <li><object type="text/sitemap"><param name="Name" value="TextOverflowError"><param name="Local" value="TextOverflowError.html"></object><a href="TextOverflowError.html">TextOverflowError</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidImagePath"><param name="Local" value="InvalidImagePath.html"></object><a href="InvalidImagePath.html">InvalidImagePath</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidListBulletType"><param name="Local" value="InvalidListBulletType.html"></object><a href="InvalidListBulletType.html">InvalidListBulletType</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidListNumerationStyle"><param name="Local" value="InvalidListNumerationStyle.html"></object><a href="InvalidListNumerationStyle.html">InvalidListNumerationStyle</a>
+    
+        </UL>
     
         </UL>
     
