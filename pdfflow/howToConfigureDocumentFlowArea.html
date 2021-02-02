@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Adding Document Flow Area</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Adding Document Flow Area</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The article describes how to add and configure a document flow area.</p>
+    <p><b>Details</b></p><p><i>Document flow area</i> defines the area where all elements of a section except <a href="howToConfigureRepeatingArea.html">repeating areas</a>
+are located on a page.
+It is a box of specified width and height located at a specified distance from the left and top margins of the section.
+A document flow area cannot overlap repeating areas.
+You need to add a document flow area only if you add a repeating area by coordinates, or if you want the content of your document
+to have different positions on odd and even pages.
+<br><br>
+A document flow area can be set for both odd and even pages of the section and for its odd and even pages separately:</p><ul class="main">
+  <li><p>To place the section content in a specified area on both odd and even pages, use
+the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToBothPages.wj.html"><code>AddDocumentFlowAreaToBothPages</code></a> method.</p></li>
+  <li><p>To place the section content in a specified area on odd or even pages, use
+the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToOddPage.Kr.html"><code>AddDocumentFlowAreaToOddPage</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToEvenPage.dB9.html"><code>AddDocumentFlowAreaToEvenPage</code></a> methods respectively.</p></li>
+</ul><p>If a document flow area is specified only for odd or only for even pages, the alternate pages will be empty.
+<br>
+<br><br>
+For each section, you can specify either one document flow area for both odd and even pages
+(<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToBothPages.wj.html"><code>AddDocumentFlowAreaToBothPages</code></a>), or one document flow area for
+odd pages (<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToOddPage.Kr.html"><code>AddDocumentFlowAreaToOddPage</code></a>) and one document flow area for even pages
+(<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.AddDocumentFlowAreaToEvenPage.dB9.html"><code>AddDocumentFlowAreaToEvenPage</code></a>).</p>
+<p><b>See also</b></p>
+<p><a href="howToConfigureSection.html">Adding Section</a></p>
+<p><a href="howToConfigureRepeatingArea.html">Adding Repeating Areas</a></p>
+<p><b>Examples</b></p><div id="open105" style="display:none">
+  <p>Example 1. Add different document flow areas for odd and even pages&nbsp;<a href="javascript: showdiv('close105'); hidediv('open105');" onclick="javascript: showdiv('close105'); hidediv('open105');">[show]</a></p>
+</div>
+<div id="close105" style="display:inline">
+  <p>Example 1. Add different document flow areas for odd and even pages&nbsp;<a href="javascript: showdiv('open105'); hidediv('close105');" onclick="javascript: showdiv('open105'); hidediv('close105');">[hide]</a></p>
+  <pre class="example" id="example105"><code>    string text = &quot;Some big paragraph of text ....&quot;;
+    //Create a document builder:
+    DocumentBuilder.New()
+    .AddSection()
+        .AddDocumentFlowAreaToOddPage(20, 20, 200, 200)
+        .AddDocumentFlowAreaToEvenPage(530, 350, 200, 200)
+        .AddParagraph(text)
+    .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configuring-document-flow_area-ex1.png">
+ <a href="pdf/Sample_ConfigureDocumentFlowArea1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open106" style="display:none">
+  <p>Example 2. Add a document flow area for both odd and even pages&nbsp;<a href="javascript: showdiv('close106'); hidediv('open106');" onclick="javascript: showdiv('close106'); hidediv('open106');">[show]</a></p>
+</div>
+<div id="close106" style="display:inline">
+  <p>Example 2. Add a document flow area for both odd and even pages&nbsp;<a href="javascript: showdiv('open106'); hidediv('close106');" onclick="javascript: showdiv('open106'); hidediv('close106');">[hide]</a></p>
+  <pre class="example" id="example106"><code>    string text = &quot;Some big paragraph of text ....&quot;;
+    //Create a document builder:
+    DocumentBuilder.New()
+    .AddSection()
+        .AddDocumentFlowAreaToBothPages(115, 150, 522, 272)
+        .AddParagraph(text)
+    .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configuring-document-flow-area-ex2.png">
+ <a href="pdf/Sample_ConfigureDocumentFlowArea2.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open107" style="display:none">
+  <p>Example 3. Add a document flow area for even pages&nbsp;<a href="javascript: showdiv('close107'); hidediv('open107');" onclick="javascript: showdiv('close107'); hidediv('open107');">[show]</a></p>
+</div>
+<div id="close107" style="display:inline">
+  <p>Example 3. Add a document flow area for even pages&nbsp;<a href="javascript: showdiv('open107'); hidediv('close107');" onclick="javascript: showdiv('open107'); hidediv('close107');">[hide]</a></p>
+  <pre class="example" id="example107"><code>    string text = &quot;Some big paragraph of text ....&quot;;
+    //Create a document builder:
+    DocumentBuilder.New()
+    .AddSection()
+        .AddDocumentFlowAreaToEvenPage(115, 150, 522, 272)
+        .AddParagraph(text)
+    .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configuring-document-flow-area-ex3.png">
+ <a href="pdf/Sample_ConfigureDocumentFlowArea3.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open108" style="display:none">
+  <p>Example 4. Add a document flow area for odd pages&nbsp;<a href="javascript: showdiv('close108'); hidediv('open108');" onclick="javascript: showdiv('close108'); hidediv('open108');">[show]</a></p>
+</div>
+<div id="close108" style="display:inline">
+  <p>Example 4. Add a document flow area for odd pages&nbsp;<a href="javascript: showdiv('open108'); hidediv('close108');" onclick="javascript: showdiv('open108'); hidediv('close108');">[hide]</a></p>
+  <pre class="example" id="example108"><code>    string text = &quot;Some big paragraph of text ....&quot;;
+    //Create a document builder:
+    DocumentBuilder.New()
+    .AddSection()
+        .AddDocumentFlowAreaToOddPage(115, 150, 522, 272)
+        .AddParagraph(text)
+    .ToDocument().Build(&quot;Result.pdf&quot;);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/configuring-document-flow-area-ex4.png">
+ <a href="pdf/Sample_ConfigureDocumentFlowArea4.pdf" target="_blank">See the document</a></code></pre>
+</div><p>
+      <center><a href="tutorials.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

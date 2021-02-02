@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Creating Document</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Creating Document</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The article describes how to create a PDF document.</p>
+    <p><b>Details</b></p><p>You can create a PDF document, add one or more sections to the document and configure them, and build the document using the
+<a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"><code>DocumentBuilder</code></a> class.</p>
+<p>Note that to create documents using the PDFFlow library, you should use a number of namespaces in your project.<br>
+<code>using</code> <a href="Gehtsoft.PDFFlow.Builder.html"><code>Gehtsoft.PDFFlow.Builder;</code></a> is the main directive that allows you to call <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"><code>DocumentBuilder</code></a>
+and other builders and their methods to add sections and content to a document. This directive is required for all applications. The other directives are additional.<br>
+The directive <code>using</code> <a href="Gehtsoft.PDFFlow.Models.Enumerations.html"><code>Gehtsoft.PDFFlow.Models.Enumerations;</code></a> allows you to use the standard enumerations to set method parameters.<br>
+The directive <code>using</code> <a href="Gehtsoft.PDFFlow.Models.Shared.html"><code>Gehtsoft.PDFFlow.Models.Shared;</code></a> allows you to use common data structures.<br>
+The directive <code>using</code> <a href="Gehtsoft.PDFFlow.Utils.html"><code>Gehtsoft.PDFFlow.Utils;</code></a> allows you to use methods for quick creation of most used fonts.<br>
+The directive <code>using</code> <a href="Gehtsoft.PDFFlow.UserUtils.html"><code>Gehtsoft.PDFFlow.UserUtils;</code></a> allows you to use methods of helper classes for creation of styles based on default styles, defining the appropriate page size, and changing the numbering style.
+<br><br></p>
+<p>To create a PDF document:</p><ol class="main">
+  <li><p>Create a document builder using the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.New.DlG.html"><code>DocumentBuilder.New()</code></a> method.</p></li>
+  <li><p><a href="howToConfigureSection.html">Add sections</a> to the document.</p>
+<p>You can create several sections in one document.
+Each section may contain several pages, they will be generated automatically depending on the content.<br>
+You can add various content to a section, including <a href="howToAddContent.html">paragraphs</a>, <a href="howToConfigureImage.html">images</a>,
+<a href="howToConfigureTable.html">tables</a>, <a href="howToCreateLine.html">lines</a> and <a href="howToConfigureRepeatingArea.html">repeating areas</a>.
+For a full list of available content items, see the article <a href="howToConfigureSection.html">Adding Section</a>.</p></li>
+  <li><p>Generate a PDF document using the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.AN.html"><code>DocumentBuilder.Build(fileName)</code></a> or
+<a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.Build.8J2.html"><code>DocumentBuilder.Build(outputStream)</code></a> method.</p></li>
+</ol><p>If you do not specify formatting settings for your document or its elements, they will have values defined by the default style.
+You can create a style and apply it to an entire document and set the style for all paragraphs, images, lines, lists, tables in the document
+using the corresponding methods of <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"><code>DocumentBuilder</code></a>. Styles can be also set for document elements on a section level,
+for paragraph elements on a paragraph level, and for particular content elements.
+For details about working with styles, see the article <a href="howToConfigureFormatting.html">Formatting and Styles</a>.</p>
+<p><b>See also</b></p>
+<p><a href="howToConfigureSection.html">Adding Section</a></p>
+<p><a href="howToConfigureFormatting.html">Formatting and Styles</a></p>
+<p><b>Examples</b></p><div id="open6" style="display:none">
+  <p>Example 1. Create a document (variant 1)&nbsp;<a href="javascript: showdiv('close6'); hidediv('open6');" onclick="javascript: showdiv('close6'); hidediv('open6');">[show]</a></p>
+</div>
+<div id="close6" style="display:inline">
+  <p>Example 1. Create a document (variant 1)&nbsp;<a href="javascript: showdiv('open6'); hidediv('close6');" onclick="javascript: showdiv('open6'); hidediv('close6');">[hide]</a></p>
+  <pre class="example" id="example6"><code>            <b>//Create a document builder:</b>
+            DocumentBuilder.New()
+            <b>//Add sections and sections content:</b>
+            .AddSection()
+                .AddParagraph(&quot;Hello World!&quot;)
+            <b>//Build a file:</b>
+            .ToDocument().Build(&quot;Result.pdf&quot;);
+
+ <b>The above code will generate the following:</b>
+ <img src="img/create-doc-ex1.png">
+ <a href="pdf/Sample_CreatingDocument1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open7" style="display:inline">
+  <p>Example 2. Create a document (variant 2)&nbsp;<a href="javascript: showdiv('close7'); hidediv('open7');" onclick="javascript: showdiv('close7'); hidediv('open7');">[show]</a></p>
+</div>
+<div id="close7" style="display:none">
+  <p>Example 2. Create a document (variant 2)&nbsp;<a href="javascript: showdiv('open7'); hidediv('close7');" onclick="javascript: showdiv('open7'); hidediv('close7');">[hide]</a></p>
+  <pre class="example" id="example7"><code>            <b>//Set the path to the current directory and output file:</b>
+            var folderPath = Environment.CurrentDirectory;
+            var filePath = Path.Combine(folderPath, &quot;Result.pdf&quot;);
+            if (File.Exists(filePath))
+                File.Delete(filePath);
+
+            <b>//Create a document builder:</b>
+            var document = DocumentBuilder.New();
+
+            <b>//Add sections and sections content:</b>
+            document.AddSection(section =&gt;
+            {
+                section.AddParagraph(&quot;Hello World!&quot;);
+            });
+            <b>//Build a file:</b>
+            document.Build(filePath);
+ 
+ <b>The above code will generate the following:</b>
+ <img src="img/create-doc-ex1.png">
+ <a href="pdf/Sample_CreatingDocument1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open8" style="display:none">
+  <p>Example 3. Create a document with writing results to a stream (variant 1)&nbsp;<a href="javascript: showdiv('close8'); hidediv('open8');" onclick="javascript: showdiv('close8'); hidediv('open8');">[show]</a></p>
+</div>
+<div id="close8" style="display:inline">
+  <p>Example 3. Create a document with writing results to a stream (variant 1)&nbsp;<a href="javascript: showdiv('open8'); hidediv('close8');" onclick="javascript: showdiv('open8'); hidediv('close8');">[hide]</a></p>
+  <pre class="example" id="example8"><code>            //Set the stream:
+            var myStream = new FileStream(&quot;Result.pdf&quot;, FileMode.Create);
+            <b>//Create a document builder:</b>
+            DocumentBuilder.New()
+            <b>//Add sections and sections content:</b>
+            .AddSection()
+                .AddParagraph(&quot;Hello World!&quot;)
+            <b>//Build a file:</b>
+            .ToDocument().Build(myStream);
+            myStream.Close();
+
+ <b>The above code will generate the following:</b>
+ <img src="img/create-doc-ex1.png">
+ <a href="pdf/Sample_CreatingDocument1.pdf" target="_blank">See the document</a></code></pre>
+</div><div id="open9" style="display:inline">
+  <p>Example 4. Create a document with writing results to a stream (variant 2)&nbsp;<a href="javascript: showdiv('close9'); hidediv('open9');" onclick="javascript: showdiv('close9'); hidediv('open9');">[show]</a></p>
+</div>
+<div id="close9" style="display:none">
+  <p>Example 4. Create a document with writing results to a stream (variant 2)&nbsp;<a href="javascript: showdiv('open9'); hidediv('close9');" onclick="javascript: showdiv('open9'); hidediv('close9');">[hide]</a></p>
+  <pre class="example" id="example9"><code>            <b>//Set the path to the current directory and output file:</b>
+            var folderPath = Environment.CurrentDirectory;
+            var filePath = Path.Combine(folderPath, &quot;Result.pdf&quot;);
+            if (File.Exists(filePath))
+                File.Delete(filePath);
+
+            //Set the stream:
+            var myStream = new FileStream(filePath, FileMode.Create);
+
+            <b>//Create a document builder:</b>
+            var document = DocumentBuilder.New();
+
+            <b>//Add sections and sections content:</b>
+            document.AddSectionToDocument(section =&gt;
+            {
+                section.AddParagraph(&quot;Hello World!&quot;);
+            });
+
+            <b>//Build a file:</b>
+            document.Build(myStream);
+            myStream.Close();
+
+ <b>The above code will generate the following:</b>
+ <img src="img/create-doc-ex1.png">
+ <a href="pdf/Sample_CreatingDocument1.pdf" target="_blank">See the document</a></code></pre>
+</div><p>
+      <center><a href="tutorials.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

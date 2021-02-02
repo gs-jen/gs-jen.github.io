@@ -8,23 +8,22 @@
             <li><object type="text/sitemap"><param name="Name" value="Tutorials"><param name="Local" value="tutorials.html"></object><a href="tutorials.html">Tutorials</a>
     
         <UL>
-            <li><object type="text/sitemap"><param name="Name" value="Beginner's Guide"><param name="Local" value="BeginnersGuide.html"></object><a href="BeginnersGuide.html">Beginner's Guide</a>
-    <li><object type="text/sitemap"><param name="Name" value="Quick Start"><param name="Local" value="QuickStart.html"></object><a href="QuickStart.html">Quick Start</a>
-    <li><object type="text/sitemap"><param name="Name" value="Installing PDFFlow Library"><param name="Local" value="InstallingPDFFlowLibrary.html"></object><a href="InstallingPDFFlowLibrary.html">Installing PDFFlow Library</a>
-    <li><object type="text/sitemap"><param name="Name" value="Creating Document"><param name="Local" value="CreatingDocument.html"></object><a href="CreatingDocument.html">Creating Document</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Section"><param name="Local" value="AddingSection.html"></object><a href="AddingSection.html">Adding Section</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Table"><param name="Local" value="AddingTable.html"></object><a href="AddingTable.html">Adding Table</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Paragraph"><param name="Local" value="AddingParagraph.html"></object><a href="AddingParagraph.html">Adding Paragraph</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Content to Paragraph"><param name="Local" value="AddingContentToParagraph.html"></object><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a>
-    <li><object type="text/sitemap"><param name="Name" value="Creating Multilevel List"><param name="Local" value="CreatingMultilevelList.html"></object><a href="CreatingMultilevelList.html">Creating Multilevel List</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Tabulations"><param name="Local" value="AddingTabulations.html"></object><a href="AddingTabulations.html">Adding Tabulations</a>
-    <li><object type="text/sitemap"><param name="Name" value="Configuring Font"><param name="Local" value="ConfiguringFont.html"></object><a href="ConfiguringFont.html">Configuring Font</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Line"><param name="Local" value="AddingLine.html"></object><a href="AddingLine.html">Adding Line</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Image"><param name="Local" value="AddingImage.html"></object><a href="AddingImage.html">Adding Image</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Repeating Area"><param name="Local" value="AddingRepeatingArea.html"></object><a href="AddingRepeatingArea.html">Adding Repeating Area</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Document Flow Area"><param name="Local" value="AddingDocumentFlowArea.html"></object><a href="AddingDocumentFlowArea.html">Adding Document Flow Area</a>
-    <li><object type="text/sitemap"><param name="Name" value="Creating Table of Content"><param name="Local" value="CreatingTableOfContent.html"></object><a href="CreatingTableOfContent.html">Creating Table of Content</a>
-    <li><object type="text/sitemap"><param name="Name" value="Formatting and Styles"><param name="Local" value="FormattingAndStyles.html"></object><a href="FormattingAndStyles.html">Formatting and Styles</a>
+            <li><object type="text/sitemap"><param name="Name" value="Quick Start (DRAFT)"><param name="Local" value="quickStart.html"></object><a href="quickStart.html">Quick Start (DRAFT)</a>
+    <li><object type="text/sitemap"><param name="Name" value="Installing PDFFlow Library (DRAFT)"><param name="Local" value="HowToStart.html"></object><a href="HowToStart.html">Installing PDFFlow Library (DRAFT)</a>
+    <li><object type="text/sitemap"><param name="Name" value="Creating Document"><param name="Local" value="howToCreate.html"></object><a href="howToCreate.html">Creating Document</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Section"><param name="Local" value="howToConfigureSection.html"></object><a href="howToConfigureSection.html">Adding Section</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Table"><param name="Local" value="howToConfigureTable.html"></object><a href="howToConfigureTable.html">Adding Table</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Paragraph"><param name="Local" value="howToConfigureParagraph.html"></object><a href="howToConfigureParagraph.html">Adding Paragraph</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Content to Paragraph"><param name="Local" value="howToAddContent.html"></object><a href="howToAddContent.html">Adding Content to Paragraph</a>
+    <li><object type="text/sitemap"><param name="Name" value="Creating Multilevel List"><param name="Local" value="howToCreateMultilevelList.html"></object><a href="howToCreateMultilevelList.html">Creating Multilevel List</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Tabulations"><param name="Local" value="howToAddTabulations.html"></object><a href="howToAddTabulations.html">Adding Tabulations</a>
+    <li><object type="text/sitemap"><param name="Name" value="Configuring Font"><param name="Local" value="howToConfigureFont.html"></object><a href="howToConfigureFont.html">Configuring Font</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Line"><param name="Local" value="howToCreateLine.html"></object><a href="howToCreateLine.html">Adding Line</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Image"><param name="Local" value="howToConfigureImage.html"></object><a href="howToConfigureImage.html">Adding Image</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Repeating Area"><param name="Local" value="howToConfigureRepeatingArea.html"></object><a href="howToConfigureRepeatingArea.html">Adding Repeating Area</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Document Flow Area"><param name="Local" value="howToConfigureDocumentFlowArea.html"></object><a href="howToConfigureDocumentFlowArea.html">Adding Document Flow Area</a>
+    <li><object type="text/sitemap"><param name="Name" value="Creating Table of Content"><param name="Local" value="howToCreateTableOfContent.html"></object><a href="howToCreateTableOfContent.html">Creating Table of Content</a>
+    <li><object type="text/sitemap"><param name="Name" value="Formatting and Styles"><param name="Local" value="howToConfigureFormatting.html"></object><a href="howToConfigureFormatting.html">Formatting and Styles</a>
     
         </UL>
     <li><object type="text/sitemap"><param name="Name" value="Namespace Gehtsoft.PDFFlow.Builder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.html"></object><a href="Gehtsoft.PDFFlow.Builder.html">Namespace Gehtsoft.PDFFlow.Builder</a>
@@ -110,16 +109,7 @@
         <UL>
             <li><object type="text/sitemap"><param name="Name" value="Box"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.Box.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.Box.html">Box</a>
     <li><object type="text/sitemap"><param name="Name" value="Color"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.Color.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.Color.html">Color</a>
-    <li><object type="text/sitemap"><param name="Name" value="EncodingNames"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.EncodingNames.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNames.html">EncodingNames</a>
-    <li><object type="text/sitemap"><param name="Name" value="EncodingNamesChineseSimplified"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesChineseSimplified.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesChineseSimplified.html">EncodingNamesChineseSimplified</a>
-    <li><object type="text/sitemap"><param name="Name" value="EncodingNamesChineseTraditional"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesChineseTraditional.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesChineseTraditional.html">EncodingNamesChineseTraditional</a>
-    <li><object type="text/sitemap"><param name="Name" value="EncodingNamesJapanese"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesJapanese.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesJapanese.html">EncodingNamesJapanese</a>
-    <li><object type="text/sitemap"><param name="Name" value="EncodingNamesKorean"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesKorean.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.EncodingNamesKorean.html">EncodingNamesKorean</a>
     <li><object type="text/sitemap"><param name="Name" value="FontNames"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.FontNames.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.FontNames.html">FontNames</a>
-    <li><object type="text/sitemap"><param name="Name" value="FontNamesChineseSimplified"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseSimplified.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseSimplified.html">FontNamesChineseSimplified</a>
-    <li><object type="text/sitemap"><param name="Name" value="FontNamesChineseTraditional"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseTraditional.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesChineseTraditional.html">FontNamesChineseTraditional</a>
-    <li><object type="text/sitemap"><param name="Name" value="FontNamesJapanese"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.FontNamesJapanese.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesJapanese.html">FontNamesJapanese</a>
-    <li><object type="text/sitemap"><param name="Name" value="FontNamesKorean"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.FontNamesKorean.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.FontNamesKorean.html">FontNamesKorean</a>
     <li><object type="text/sitemap"><param name="Name" value="XSize"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.XSize.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.XSize.html">XSize</a>
     <li><object type="text/sitemap"><param name="Name" value="XUnit"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.XUnit.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.XUnit.html">XUnit</a>
     <li><object type="text/sitemap"><param name="Name" value="XUnitParser"><param name="Local" value="Gehtsoft.PDFFlow.Models.Shared.XUnitParser.html"></object><a href="Gehtsoft.PDFFlow.Models.Shared.XUnitParser.html">XUnitParser</a>
@@ -147,33 +137,6 @@
             <li><object type="text/sitemap"><param name="Name" value="Fonts"><param name="Local" value="Gehtsoft.PDFFlow.Utils.Fonts.html"></object><a href="Gehtsoft.PDFFlow.Utils.Fonts.html">Fonts</a>
     
         </UL>
-    
-        </UL>
-    <li><object type="text/sitemap"><param name="Name" value="Exceptions"><param name="Local" value="Exceptions.html"></object><a href="Exceptions.html">Exceptions</a>
-    
-        <UL>
-            <li><object type="text/sitemap"><param name="Name" value="UnsupportedNumerationStyle"><param name="Local" value="UnsupportedNumerationStyle.html"></object><a href="UnsupportedNumerationStyle.html">UnsupportedNumerationStyle</a>
-    <li><object type="text/sitemap"><param name="Name" value="ApplyingStyleAfterFormattingError"><param name="Local" value="ApplyingStyleAfterFormattingError.html"></object><a href="ApplyingStyleAfterFormattingError.html">ApplyingStyleAfterFormattingError</a>
-    <li><object type="text/sitemap"><param name="Name" value="ApplyingRowStyleAfterFormattingError"><param name="Local" value="ApplyingRowStyleAfterFormattingError.html"></object><a href="ApplyingRowStyleAfterFormattingError.html">ApplyingRowStyleAfterFormattingError</a>
-    <li><object type="text/sitemap"><param name="Name" value="AddNewPageError"><param name="Local" value="AddNewPageError.html"></object><a href="AddNewPageError.html">AddNewPageError</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidFontFilePath"><param name="Local" value="InvalidFontFilePath.html"></object><a href="InvalidFontFilePath.html">InvalidFontFilePath</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidPath"><param name="Local" value="InvalidPath.html"></object><a href="InvalidPath.html">InvalidPath</a>
-    <li><object type="text/sitemap"><param name="Name" value="TableLayoutingError"><param name="Local" value="TableLayoutingError.html"></object><a href="TableLayoutingError.html">TableLayoutingError</a>
-    <li><object type="text/sitemap"><param name="Name" value="CellsNumberNotEqualToColumns"><param name="Local" value="CellsNumberNotEqualToColumns.html"></object><a href="CellsNumberNotEqualToColumns.html">CellsNumberNotEqualToColumns</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidPageSize"><param name="Local" value="InvalidPageSize.html"></object><a href="InvalidPageSize.html">InvalidPageSize</a>
-    <li><object type="text/sitemap"><param name="Name" value="ParagraphTabulationError"><param name="Local" value="ParagraphTabulationError.html"></object><a href="ParagraphTabulationError.html">ParagraphTabulationError</a>
-    <li><object type="text/sitemap"><param name="Name" value="EmptyTabulationPosition"><param name="Local" value="EmptyTabulationPosition.html"></object><a href="EmptyTabulationPosition.html">EmptyTabulationPosition</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidInlineImageSize"><param name="Local" value="InvalidInlineImageSize.html"></object><a href="InvalidInlineImageSize.html">InvalidInlineImageSize</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidInlineImageWidth"><param name="Local" value="InvalidInlineImageWidth.html"></object><a href="InvalidInlineImageWidth.html">InvalidInlineImageWidth</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidImageWidth"><param name="Local" value="InvalidImageWidth.html"></object><a href="InvalidImageWidth.html">InvalidImageWidth</a>
-    <li><object type="text/sitemap"><param name="Name" value="NullArgument"><param name="Local" value="NullArgument.html"></object><a href="NullArgument.html">NullArgument</a>
-    <li><object type="text/sitemap"><param name="Name" value="NoImageSource"><param name="Local" value="NoImageSource.html"></object><a href="NoImageSource.html">NoImageSource</a>
-    <li><object type="text/sitemap"><param name="Name" value="PropertyCopyingError"><param name="Local" value="PropertyCopyingError.html"></object><a href="PropertyCopyingError.html">PropertyCopyingError</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidTabulationPercentage"><param name="Local" value="InvalidTabulationPercentage.html"></object><a href="InvalidTabulationPercentage.html">InvalidTabulationPercentage</a>
-    <li><object type="text/sitemap"><param name="Name" value="TextOverflowError"><param name="Local" value="TextOverflowError.html"></object><a href="TextOverflowError.html">TextOverflowError</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidImagePath"><param name="Local" value="InvalidImagePath.html"></object><a href="InvalidImagePath.html">InvalidImagePath</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidListBulletType"><param name="Local" value="InvalidListBulletType.html"></object><a href="InvalidListBulletType.html">InvalidListBulletType</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidListNumerationStyle"><param name="Local" value="InvalidListNumerationStyle.html"></object><a href="InvalidListNumerationStyle.html">InvalidListNumerationStyle</a>
     
         </UL>
     
