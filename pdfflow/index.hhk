@@ -1546,12 +1546,6 @@
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="InlineImageBuilder.SetPageBreak">
-              <param name="Name" value="InlineImageBuilder.SetPageBreak">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.SetPageBreak.sHA.html">
-              </object>
-    
-    <li><object type="text/sitemap">
               <param name="Keyword" value="InlineImageBuilder.SetScale">
               <param name="Name" value="InlineImageBuilder.SetScale">
               <param name="Local" value="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.SetScale.dB7.html">
@@ -6991,6 +6985,144 @@
               <param name="Keyword" value="Fonts.Times">
               <param name="Name" value="Fonts.Times">
               <param name="Local" value="Gehtsoft.PDFFlow.Utils.Fonts.Times.SLC.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Exceptions">
+              <param name="Name" value="Exceptions">
+              <param name="Local" value="Exceptions.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="UnsupportedNumerationStyle">
+              <param name="Name" value="UnsupportedNumerationStyle">
+              <param name="Local" value="UnsupportedNumerationStyle.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="ApplyingStyleAfterFormattingError">
+              <param name="Name" value="ApplyingStyleAfterFormattingError">
+              <param name="Local" value="ApplyingStyleAfterFormattingError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="ApplyingRowStyleAfterFormattingError">
+              <param name="Name" value="ApplyingRowStyleAfterFormattingError">
+              <param name="Local" value="ApplyingRowStyleAfterFormattingError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="AddNewPageError">
+              <param name="Name" value="AddNewPageError">
+              <param name="Local" value="AddNewPageError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidFontFilePath">
+              <param name="Name" value="InvalidFontFilePath">
+              <param name="Local" value="InvalidFontFilePath.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidPath">
+              <param name="Name" value="InvalidPath">
+              <param name="Local" value="InvalidPath.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="TableLayoutingError">
+              <param name="Name" value="TableLayoutingError">
+              <param name="Local" value="TableLayoutingError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="CellsNumberNotEqualToColumns">
+              <param name="Name" value="CellsNumberNotEqualToColumns">
+              <param name="Local" value="CellsNumberNotEqualToColumns.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidPageSize">
+              <param name="Name" value="InvalidPageSize">
+              <param name="Local" value="InvalidPageSize.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="ParagraphTabulationError">
+              <param name="Name" value="ParagraphTabulationError">
+              <param name="Local" value="ParagraphTabulationError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="EmptyTabulationPosition">
+              <param name="Name" value="EmptyTabulationPosition">
+              <param name="Local" value="EmptyTabulationPosition.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidInlineImageSize">
+              <param name="Name" value="InvalidInlineImageSize">
+              <param name="Local" value="InvalidInlineImageSize.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidInlineImageWidth">
+              <param name="Name" value="InvalidInlineImageWidth">
+              <param name="Local" value="InvalidInlineImageWidth.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidImageWidth">
+              <param name="Name" value="InvalidImageWidth">
+              <param name="Local" value="InvalidImageWidth.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="NullArgument">
+              <param name="Name" value="NullArgument">
+              <param name="Local" value="NullArgument.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="NoImageSource">
+              <param name="Name" value="NoImageSource">
+              <param name="Local" value="NoImageSource.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PropertyCopyingError">
+              <param name="Name" value="PropertyCopyingError">
+              <param name="Local" value="PropertyCopyingError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidTabulationPercentage">
+              <param name="Name" value="InvalidTabulationPercentage">
+              <param name="Local" value="InvalidTabulationPercentage.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="TextOverflowError">
+              <param name="Name" value="TextOverflowError">
+              <param name="Local" value="TextOverflowError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidImagePath">
+              <param name="Name" value="InvalidImagePath">
+              <param name="Local" value="InvalidImagePath.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidListBulletType">
+              <param name="Name" value="InvalidListBulletType">
+              <param name="Local" value="InvalidListBulletType.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidListNumerationStyle">
+              <param name="Name" value="InvalidListNumerationStyle">
+              <param name="Local" value="InvalidListNumerationStyle.html">
               </object>
     
 </UL>

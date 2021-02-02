@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Exceptions</title><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><b>Exceptions</b></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The section contains descriptions of exceptions that can be thrown by the PDFFlow library.</p>
+    <p><b>Details</b></p>
+    <p></p>
+    <table class="tmain" width="100%">
+      <tr>
+        <td colspan="2" class="thdr"><b>Articles</b></td>
+      </tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="UnsupportedNumerationStyle.html">UnsupportedNumerationStyle</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="ApplyingStyleAfterFormattingError.html">ApplyingStyleAfterFormattingError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="ApplyingRowStyleAfterFormattingError.html">ApplyingRowStyleAfterFormattingError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="AddNewPageError.html">AddNewPageError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidFontFilePath.html">InvalidFontFilePath</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidPath.html">InvalidPath</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="TableLayoutingError.html">TableLayoutingError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="CellsNumberNotEqualToColumns.html">CellsNumberNotEqualToColumns</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidPageSize.html">InvalidPageSize</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="ParagraphTabulationError.html">ParagraphTabulationError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="EmptyTabulationPosition.html">EmptyTabulationPosition</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidInlineImageSize.html">InvalidInlineImageSize</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidInlineImageWidth.html">InvalidInlineImageWidth</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidImageWidth.html">InvalidImageWidth</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="NullArgument.html">NullArgument</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="NoImageSource.html">NoImageSource</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="PropertyCopyingError.html">PropertyCopyingError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidTabulationPercentage.html">InvalidTabulationPercentage</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="TextOverflowError.html">TextOverflowError</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidImagePath.html">InvalidImagePath</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidListBulletType.html">InvalidListBulletType</a></p>
+    <p></p>
+  </td>
+</tr><tr>
+  <td colspan="2" class="tmain">
+    <p><a href="InvalidListNumerationStyle.html">InvalidListNumerationStyle</a></p>
+    <p></p>
+  </td>
+</tr></table>
+    <p>
+      <center><a href="index.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

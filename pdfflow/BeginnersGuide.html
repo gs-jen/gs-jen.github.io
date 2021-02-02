@@ -164,7 +164,7 @@ The paragraph is located strictly in the provided area and never extends beyond 
 in a cell to print the paragraph, you can set the TextOverflowAction option that defines the action for the paragraph in the
 case of insufficient space:</p><pre class="example" id="example3"><code>    var documentBuilder = DocumentBuilder.New();
     var sectionBuilder = documentBuilder.AddSection();
-    // Table with one cell, 150pt in width and 100pt in height
+ <b>// Table with one cell, 150pt in width and 100pt in height</b>
     var tableBuilder = documentBuilder.AddTable(150f);
     tableBuilder
         .AddRow()
