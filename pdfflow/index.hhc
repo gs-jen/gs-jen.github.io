@@ -14,6 +14,7 @@
     <li><object type="text/sitemap"><param name="Name" value="Creating Document"><param name="Local" value="CreatingDocument.html"></object><a href="CreatingDocument.html">Creating Document</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Section"><param name="Local" value="AddingSection.html"></object><a href="AddingSection.html">Adding Section</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Table"><param name="Local" value="AddingTable.html"></object><a href="AddingTable.html">Adding Table</a>
+    <li><object type="text/sitemap"><param name="Name" value="Layouting Using Tables"><param name="Local" value="LayoutingUsingTables.html"></object><a href="LayoutingUsingTables.html">Layouting Using Tables</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Paragraph"><param name="Local" value="AddingParagraph.html"></object><a href="AddingParagraph.html">Adding Paragraph</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Content to Paragraph"><param name="Local" value="AddingContentToParagraph.html"></object><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a>
     <li><object type="text/sitemap"><param name="Name" value="Creating Multilevel List"><param name="Local" value="CreatingMultilevelList.html"></object><a href="CreatingMultilevelList.html">Creating Multilevel List</a>
@@ -32,7 +33,9 @@
         <UL>
             <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
         <UL>
-            <li><object type="text/sitemap"><param name="Name" value="BorderBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BorderBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BorderBuilder.html">BorderBuilder</a>
+            <li><object type="text/sitemap"><param name="Name" value="BarcodeExtensions"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html"></object><a href="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html">BarcodeExtensions</a>
+    <li><object type="text/sitemap"><param name="Name" value="BarcodeInlineBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html">BarcodeInlineBuilder</a>
+    <li><object type="text/sitemap"><param name="Name" value="BorderBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BorderBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BorderBuilder.html">BorderBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="DocumentBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html">DocumentBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="FontBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.FontBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.FontBuilder.html">FontBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="FormattedTextElementBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html">FormattedTextElementBuilder</a>
@@ -64,7 +67,8 @@
         <UL>
             <li><object type="text/sitemap"><param name="Name" value="Enumerations"></object>Enumerations
         <UL>
-            <li><object type="text/sitemap"><param name="Name" value="HorizontalAlignment"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html">HorizontalAlignment</a>
+            <li><object type="text/sitemap"><param name="Name" value="BarcodeType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html">BarcodeType</a>
+    <li><object type="text/sitemap"><param name="Name" value="HorizontalAlignment"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html">HorizontalAlignment</a>
     <li><object type="text/sitemap"><param name="Name" value="Inherit"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.Inherit.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.Inherit.html">Inherit</a>
     <li><object type="text/sitemap"><param name="Name" value="LayoutAreaType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.LayoutAreaType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.LayoutAreaType.html">LayoutAreaType</a>
     <li><object type="text/sitemap"><param name="Name" value="LayoutPageType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.LayoutPageType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.LayoutPageType.html">LayoutPageType</a>
@@ -158,7 +162,7 @@
     <li><object type="text/sitemap"><param name="Name" value="AddNewPageError"><param name="Local" value="AddNewPageError.html"></object><a href="AddNewPageError.html">AddNewPageError</a>
     <li><object type="text/sitemap"><param name="Name" value="InvalidFontFilePath"><param name="Local" value="InvalidFontFilePath.html"></object><a href="InvalidFontFilePath.html">InvalidFontFilePath</a>
     <li><object type="text/sitemap"><param name="Name" value="InvalidPath"><param name="Local" value="InvalidPath.html"></object><a href="InvalidPath.html">InvalidPath</a>
-    <li><object type="text/sitemap"><param name="Name" value="TableLayoutingError"><param name="Local" value="TableLayoutingError.html"></object><a href="TableLayoutingError.html">TableLayoutingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_TableLayoutingError"><param name="Local" value="Internal_TableLayoutingError.html"></object><a href="Internal_TableLayoutingError.html">Internal_TableLayoutingError</a>
     <li><object type="text/sitemap"><param name="Name" value="CellsNumberNotEqualToColumns"><param name="Local" value="CellsNumberNotEqualToColumns.html"></object><a href="CellsNumberNotEqualToColumns.html">CellsNumberNotEqualToColumns</a>
     <li><object type="text/sitemap"><param name="Name" value="InvalidPageSize"><param name="Local" value="InvalidPageSize.html"></object><a href="InvalidPageSize.html">InvalidPageSize</a>
     <li><object type="text/sitemap"><param name="Name" value="ParagraphTabulationError"><param name="Local" value="ParagraphTabulationError.html"></object><a href="ParagraphTabulationError.html">ParagraphTabulationError</a>
@@ -168,12 +172,31 @@
     <li><object type="text/sitemap"><param name="Name" value="InvalidImageWidth"><param name="Local" value="InvalidImageWidth.html"></object><a href="InvalidImageWidth.html">InvalidImageWidth</a>
     <li><object type="text/sitemap"><param name="Name" value="NullArgument"><param name="Local" value="NullArgument.html"></object><a href="NullArgument.html">NullArgument</a>
     <li><object type="text/sitemap"><param name="Name" value="NoImageSource"><param name="Local" value="NoImageSource.html"></object><a href="NoImageSource.html">NoImageSource</a>
-    <li><object type="text/sitemap"><param name="Name" value="PropertyCopyingError"><param name="Local" value="PropertyCopyingError.html"></object><a href="PropertyCopyingError.html">PropertyCopyingError</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_PropertyCopyingError"><param name="Local" value="Internal_PropertyCopyingError.html"></object><a href="Internal_PropertyCopyingError.html">Internal_PropertyCopyingError</a>
     <li><object type="text/sitemap"><param name="Name" value="InvalidTabulationPercentage"><param name="Local" value="InvalidTabulationPercentage.html"></object><a href="InvalidTabulationPercentage.html">InvalidTabulationPercentage</a>
     <li><object type="text/sitemap"><param name="Name" value="TextOverflowError"><param name="Local" value="TextOverflowError.html"></object><a href="TextOverflowError.html">TextOverflowError</a>
     <li><object type="text/sitemap"><param name="Name" value="InvalidImagePath"><param name="Local" value="InvalidImagePath.html"></object><a href="InvalidImagePath.html">InvalidImagePath</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidListBulletType"><param name="Local" value="InvalidListBulletType.html"></object><a href="InvalidListBulletType.html">InvalidListBulletType</a>
-    <li><object type="text/sitemap"><param name="Name" value="InvalidListNumerationStyle"><param name="Local" value="InvalidListNumerationStyle.html"></object><a href="InvalidListNumerationStyle.html">InvalidListNumerationStyle</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_InvalidListBulletType"><param name="Local" value="Internal_InvalidListBulletType.html"></object><a href="Internal_InvalidListBulletType.html">Internal_InvalidListBulletType</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_InvalidListNumerationStyle"><param name="Local" value="Internal_InvalidListNumerationStyle.html"></object><a href="Internal_InvalidListNumerationStyle.html">Internal_InvalidListNumerationStyle</a>
+    <li><object type="text/sitemap"><param name="Name" value="WrongAlignment"><param name="Local" value="WrongAlignment.html"></object><a href="WrongAlignment.html">WrongAlignment</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidItemNumberRoman"><param name="Local" value="InvalidItemNumberRoman.html"></object><a href="InvalidItemNumberRoman.html">InvalidItemNumberRoman</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidItemNumberCyrillic"><param name="Local" value="InvalidItemNumberCyrillic.html"></object><a href="InvalidItemNumberCyrillic.html">InvalidItemNumberCyrillic</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidItemNumberLatin"><param name="Local" value="InvalidItemNumberLatin.html"></object><a href="InvalidItemNumberLatin.html">InvalidItemNumberLatin</a>
+    <li><object type="text/sitemap"><param name="Name" value="TransparentColorError"><param name="Local" value="TransparentColorError.html"></object><a href="TransparentColorError.html">TransparentColorError</a>
+    <li><object type="text/sitemap"><param name="Name" value="UnsupportedImageFormat"><param name="Local" value="UnsupportedImageFormat.html"></object><a href="UnsupportedImageFormat.html">UnsupportedImageFormat</a>
+    <li><object type="text/sitemap"><param name="Name" value="WrongScalingMode"><param name="Local" value="WrongScalingMode.html"></object><a href="WrongScalingMode.html">WrongScalingMode</a>
+    <li><object type="text/sitemap"><param name="Name" value="NoUserDefinedSize"><param name="Local" value="NoUserDefinedSize.html"></object><a href="NoUserDefinedSize.html">NoUserDefinedSize</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidHTMLColorCode"><param name="Local" value="InvalidHTMLColorCode.html"></object><a href="InvalidHTMLColorCode.html">InvalidHTMLColorCode</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidRGBAValue"><param name="Local" value="InvalidRGBAValue.html"></object><a href="InvalidRGBAValue.html">InvalidRGBAValue</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidColor"><param name="Local" value="InvalidColor.html"></object><a href="InvalidColor.html">InvalidColor</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_FieldGetterError"><param name="Local" value="Internal_FieldGetterError.html"></object><a href="Internal_FieldGetterError.html">Internal_FieldGetterError</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_PropertyGetterError"><param name="Local" value="Internal_PropertyGetterError.html"></object><a href="Internal_PropertyGetterError.html">Internal_PropertyGetterError</a>
+    <li><object type="text/sitemap"><param name="Name" value="MeasurementUnitError"><param name="Local" value="MeasurementUnitError.html"></object><a href="MeasurementUnitError.html">MeasurementUnitError</a>
+    <li><object type="text/sitemap"><param name="Name" value="UnsupportedMeasurementUnit"><param name="Local" value="UnsupportedMeasurementUnit.html"></object><a href="UnsupportedMeasurementUnit.html">UnsupportedMeasurementUnit</a>
+    <li><object type="text/sitemap"><param name="Name" value="InvalidXUnitParsingFormat"><param name="Local" value="InvalidXUnitParsingFormat.html"></object><a href="InvalidXUnitParsingFormat.html">InvalidXUnitParsingFormat</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_NoConstructor"><param name="Local" value="Internal_NoConstructor.html"></object><a href="Internal_NoConstructor.html">Internal_NoConstructor</a>
+    <li><object type="text/sitemap"><param name="Name" value="Internal_NegativeWidthError"><param name="Local" value="Internal_NegativeWidthError.html"></object><a href="Internal_NegativeWidthError.html">Internal_NegativeWidthError</a>
+    <li><object type="text/sitemap"><param name="Name" value="TotalPercentageExceeding100"><param name="Local" value="TotalPercentageExceeding100.html"></object><a href="TotalPercentageExceeding100.html">TotalPercentageExceeding100</a>
     
         </UL>
     

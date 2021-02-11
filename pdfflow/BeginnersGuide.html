@@ -260,24 +260,13 @@ document flow area when you need to reduce the area for printing the document co
 <p>For more on adding document flow areas, see the <a href="AddingDocumentFlowArea.html">Adding Document Flow Area</a> article.</p>
 <p><b>Advanced layouting using tables</b></p>
 <p>When you need to place elements in one line, not one after another, we recommend using a table for this purpose.
-Here's an example of a complex real document that was created using our library - Boarding Pass:</p>
-<p><img src="img/BoardingTableSchema.png"></p>
-<p>Please pay your attention to the area marked by a green rectangle.
-It is a table with a complex structure - it contains two nested tables - marked in red and dark-yellow.
-These tables are nested inside the cells of the main table that contains two columns (75% and 25% width respectively).</p>
-<p>So, if you want to create a complex block of content where some of the elements are located on the same level, not after one another,
-create a table and nest other tables in it, if necessary.
-If you need to place one element so that it occupies two cells, as in the red table in the Boarding Pass,
-you can merge the cells (specifying col span or row span).</p>
-<p>But it is important to note that all elements in any cell are placed after one another in any case.
-A clear example of this behavior is the placement of the texts:
-&quot;Passenger name&quot;,
-&quot;PAVEL REMPEL&quot;.</p>
+If you want to create a complex block of content where some of the elements are located on the same level, not after one another,
+create a table and nest other tables in it, if necessary. If you need to place one element so that it occupies two cells,
+you can merge the cells (specifying colspan or rowspan).</p>
+<p>But it is important to note that all elements in any cell are placed after one another in any case.</p>
+<p>For more on adding layouting using tables, see the <a href="LayoutingUsingTables.html">Layouting Using Tables</a> article.</p>
 <p><b>Margins and paddings</b></p>
-<p>You can set the distance of an element from its parent element (container) or from its neighboring elements.
-For example, look at the first row of the green table. The text &quot;PAVEL REMPEL&quot; is located at a distance from the text &quot;Passenger name&quot;
-and from the following border.
-This distance is specified with the help of margins - the top and bottom margins are set for the paragraph &quot;PAVEL REMPEL&quot;.</p>
+<p>You can set the distance of an element from its parent element (container) or from its neighboring elements.</p>
 <p>The margin is an area around an element, the padding is the area between the borders of a container and its elements.
 A container is an element that can contain other elements. Examples of containers are a section, a repeating area, and a table cell.</p><p>
       <center><a href="tutorials.html">back</a></center>

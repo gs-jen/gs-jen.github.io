@@ -144,17 +144,17 @@ or one of the <code>AddText</code> and <code>AddTextToParagraph</code> methods o
 </ul><p><br><br>
 <b>Create Lines Using Tabulations</b></p>
 <p>You can create lines, underlines and signature lines using tabulations with the <code>BottomLine</code> leading.
-For example, you can create a line with length = 100% of the paragraph width, the tabulation position of 100% and the tabulation type <code>Right</code>:</p><pre class="example" id="example81"><code>	s.AddParagraph().AddTabSymbol().AddTabulationInPercent(100, TabulationType.Right, TabulationLeading.BottomLine);</code></pre><p><br>
+For example, you can create a line with length = 100% of the paragraph width, the tabulation position of 100% and the tabulation type <code>Right</code>:</p><pre class="example" id="example86"><code>	s.AddParagraph().AddTabSymbol().AddTabulationInPercent(100, TabulationType.Right, TabulationLeading.BottomLine);</code></pre><p><br>
 <b>See also</b></p>
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a></p>
 <p><br>
-<b>Examples</b></p><div id="open82" style="display:none">
-  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('close82'); hidediv('open82');" onclick="javascript: showdiv('close82'); hidediv('open82');">[show]</a></p>
+<b>Examples</b></p><div id="open87" style="display:none">
+  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('close87'); hidediv('open87');" onclick="javascript: showdiv('close87'); hidediv('open87');">[show]</a></p>
 </div>
-<div id="close82" style="display:inline">
-  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('open82'); hidediv('close82');" onclick="javascript: showdiv('open82'); hidediv('close82');">[hide]</a></p>
-  <pre class="example" id="example82"><code>   DocumentBuilder
+<div id="close87" style="display:inline">
+  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('open87'); hidediv('close87');" onclick="javascript: showdiv('open87'); hidediv('close87');">[hide]</a></p>
+  <pre class="example" id="example87"><code>   DocumentBuilder
        .New()
        .AddSection()
            .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;LEFT300&quot;).AddTabulation(300, TabulationType.Left)
@@ -169,12 +169,12 @@ For example, you can create a line with length = 100% of the paragraph width, th
  
  <img src="img/tabulation-ex2.png">
  <a href="pdf/Sample_AddingTabulation1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open83" style="display:none">
-  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('close83'); hidediv('open83');" onclick="javascript: showdiv('close83'); hidediv('open83');">[show]</a></p>
+</div><div id="open88" style="display:none">
+  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('close88'); hidediv('open88');" onclick="javascript: showdiv('close88'); hidediv('open88');">[show]</a></p>
 </div>
-<div id="close83" style="display:inline">
-  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('open83'); hidediv('close83');" onclick="javascript: showdiv('open83'); hidediv('close83');">[hide]</a></p>
-  <pre class="example" id="example83"><code>   DocumentBuilder
+<div id="close88" style="display:inline">
+  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('open88'); hidediv('close88');" onclick="javascript: showdiv('open88'); hidediv('close88');">[hide]</a></p>
+  <pre class="example" id="example88"><code>   DocumentBuilder
        .New()
        .AddSection()
            .AddParagraph(&quot;TEXT&quot;, addTabulationSymbol: true)
@@ -195,12 +195,12 @@ For example, you can create a line with length = 100% of the paragraph width, th
  
  <img src="img/tabulation-ex3.png">
  <a href="pdf/Sample_AddingTabulation2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open84" style="display:none">
-  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('close84'); hidediv('open84');" onclick="javascript: showdiv('close84'); hidediv('open84');">[show]</a></p>
+</div><div id="open89" style="display:none">
+  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('close89'); hidediv('open89');" onclick="javascript: showdiv('close89'); hidediv('open89');">[show]</a></p>
 </div>
-<div id="close84" style="display:inline">
-  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('open84'); hidediv('close84');" onclick="javascript: showdiv('open84'); hidediv('close84');">[hide]</a></p>
-  <pre class="example" id="example84"><code>   DocumentBuilder
+<div id="close89" style="display:inline">
+  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('open89'); hidediv('close89');" onclick="javascript: showdiv('open89'); hidediv('close89');">[hide]</a></p>
+  <pre class="example" id="example89"><code>   DocumentBuilder
        .New()
        .AddSection()
            .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;LEFT75%&quot;).AddTabulationInPercent(75, TabulationType.Left)
@@ -214,12 +214,12 @@ For example, you can create a line with length = 100% of the paragraph width, th
  
  <img src="img/tabulation-ex4.png">
  <a href="pdf/Sample_AddingTabulation3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open85" style="display:none">
-  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('close85'); hidediv('open85');" onclick="javascript: showdiv('close85'); hidediv('open85');">[show]</a></p>
+</div><div id="open90" style="display:none">
+  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('close90'); hidediv('open90');" onclick="javascript: showdiv('close90'); hidediv('open90');">[show]</a></p>
 </div>
-<div id="close85" style="display:inline">
-  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('open85'); hidediv('close85');" onclick="javascript: showdiv('open85'); hidediv('close85');">[hide]</a></p>
-  <pre class="example" id="example85"><code>    DocumentBuilder
+<div id="close90" style="display:inline">
+  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('open90'); hidediv('close90');" onclick="javascript: showdiv('open90'); hidediv('close90');">[hide]</a></p>
+  <pre class="example" id="example90"><code>    DocumentBuilder
         .New()
         .AddSection()
             .AddParagraph()
@@ -233,12 +233,12 @@ For example, you can create a line with length = 100% of the paragraph width, th
  
  <img src="img/tabulation-ex5.png">
  <a href="pdf/Sample_AddingTabulation4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open86" style="display:none">
-  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('close86'); hidediv('open86');" onclick="javascript: showdiv('close86'); hidediv('open86');">[show]</a></p>
+</div><div id="open91" style="display:none">
+  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('close91'); hidediv('open91');" onclick="javascript: showdiv('close91'); hidediv('open91');">[show]</a></p>
 </div>
-<div id="close86" style="display:inline">
-  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('open86'); hidediv('close86');" onclick="javascript: showdiv('open86'); hidediv('close86');">[hide]</a></p>
-  <pre class="example" id="example86"><code>    DocumentBuilder
+<div id="close91" style="display:inline">
+  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('open91'); hidediv('close91');" onclick="javascript: showdiv('open91'); hidediv('close91');">[hide]</a></p>
+  <pre class="example" id="example91"><code>    DocumentBuilder
         .New()
         .AddSection()
             .AddParagraph()
@@ -258,12 +258,12 @@ For example, you can create a line with length = 100% of the paragraph width, th
  
  <img src="img/tabulation-ex6.png">
  <a href="pdf/Sample_AddingTabulation5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open87" style="display:none">
-  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('close87'); hidediv('open87');" onclick="javascript: showdiv('close87'); hidediv('open87');">[show]</a></p>
+</div><div id="open92" style="display:none">
+  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('close92'); hidediv('open92');" onclick="javascript: showdiv('close92'); hidediv('open92');">[show]</a></p>
 </div>
-<div id="close87" style="display:inline">
-  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('open87'); hidediv('close87');" onclick="javascript: showdiv('open87'); hidediv('close87');">[hide]</a></p>
-  <pre class="example" id="example87"><code>    DocumentBuilder
+<div id="close92" style="display:inline">
+  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('open92'); hidediv('close92');" onclick="javascript: showdiv('open92'); hidediv('close92');">[hide]</a></p>
+  <pre class="example" id="example92"><code>    DocumentBuilder
         .New()
         .AddSection()
             .AddTable()

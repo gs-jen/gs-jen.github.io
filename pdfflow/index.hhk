@@ -52,6 +52,12 @@
               </object>
     
     <li><object type="text/sitemap">
+              <param name="Keyword" value="Layouting Using Tables">
+              <param name="Name" value="Layouting Using Tables">
+              <param name="Local" value="LayoutingUsingTables.html">
+              </object>
+    
+    <li><object type="text/sitemap">
               <param name="Keyword" value="Adding Paragraph">
               <param name="Name" value="Adding Paragraph">
               <param name="Local" value="AddingParagraph.html">
@@ -121,6 +127,132 @@
               <param name="Keyword" value="Namespace Gehtsoft.PDFFlow.Builder">
               <param name="Name" value="Namespace Gehtsoft.PDFFlow.Builder">
               <param name="Local" value="Gehtsoft.PDFFlow.Builder.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions">
+              <param name="Name" value="BarcodeExtensions">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
+              <param name="Name" value="BarcodeExtensions.AddBarcode">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.Xx4.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
+              <param name="Name" value="BarcodeExtensions.AddBarcode">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.Xs3.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
+              <param name="Name" value="BarcodeExtensions.AddBarcode">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.bEA.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.iiC.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.2V5.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.7l3.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder">
+              <param name="Name" value="BarcodeInlineBuilder">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginBottom">
+              <param name="Name" value="BarcodeInlineBuilder.SetMarginBottom">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginBottom.VMC.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginLeft">
+              <param name="Name" value="BarcodeInlineBuilder.SetMarginLeft">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginLeft.gd5.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginRight">
+              <param name="Name" value="BarcodeInlineBuilder.SetMarginRight">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginRight.T91.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMargins">
+              <param name="Name" value="BarcodeInlineBuilder.SetMargins">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMargins.F3D.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMargins">
+              <param name="Name" value="BarcodeInlineBuilder.SetMargins">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMargins.237.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginTop">
+              <param name="Name" value="BarcodeInlineBuilder.SetMarginTop">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginTop.Lq6.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToArea">
+              <param name="Name" value="BarcodeInlineBuilder.ToArea">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToArea.R2C.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToCell">
+              <param name="Name" value="BarcodeInlineBuilder.ToCell">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToCell.eZ1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToDocument">
+              <param name="Name" value="BarcodeInlineBuilder.ToDocument">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToDocument.kWA.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToParagraph">
+              <param name="Name" value="BarcodeInlineBuilder.ToParagraph">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToParagraph.PJ3.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToRow">
+              <param name="Name" value="BarcodeInlineBuilder.ToRow">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToRow.zkG.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToSection">
+              <param name="Name" value="BarcodeInlineBuilder.ToSection">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToSection.ZqD.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeInlineBuilder.ToTable">
+              <param name="Name" value="BarcodeInlineBuilder.ToTable">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToTable.kr2.html">
               </object>
     
     <li><object type="text/sitemap">
@@ -5122,6 +5254,30 @@
               </object>
     
     <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeType">
+              <param name="Name" value="BarcodeType">
+              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeType.EAN_13">
+              <param name="Name" value="BarcodeType.EAN_13">
+              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.EAN_13.2S2.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeType.EAN_8">
+              <param name="Name" value="BarcodeType.EAN_8">
+              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.EAN_8.J82.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="BarcodeType.UPC_A">
+              <param name="Name" value="BarcodeType.UPC_A">
+              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.UPC_A.Ex.html">
+              </object>
+    
+    <li><object type="text/sitemap">
               <param name="Keyword" value="HorizontalAlignment">
               <param name="Name" value="HorizontalAlignment">
               <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html">
@@ -7030,9 +7186,9 @@
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="TableLayoutingError">
-              <param name="Name" value="TableLayoutingError">
-              <param name="Local" value="TableLayoutingError.html">
+              <param name="Keyword" value="Internal_TableLayoutingError">
+              <param name="Name" value="Internal_TableLayoutingError">
+              <param name="Local" value="Internal_TableLayoutingError.html">
               </object>
     
     <li><object type="text/sitemap">
@@ -7090,9 +7246,9 @@
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="PropertyCopyingError">
-              <param name="Name" value="PropertyCopyingError">
-              <param name="Local" value="PropertyCopyingError.html">
+              <param name="Keyword" value="Internal_PropertyCopyingError">
+              <param name="Name" value="Internal_PropertyCopyingError">
+              <param name="Local" value="Internal_PropertyCopyingError.html">
               </object>
     
     <li><object type="text/sitemap">
@@ -7114,15 +7270,129 @@
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="InvalidListBulletType">
-              <param name="Name" value="InvalidListBulletType">
-              <param name="Local" value="InvalidListBulletType.html">
+              <param name="Keyword" value="Internal_InvalidListBulletType">
+              <param name="Name" value="Internal_InvalidListBulletType">
+              <param name="Local" value="Internal_InvalidListBulletType.html">
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="InvalidListNumerationStyle">
-              <param name="Name" value="InvalidListNumerationStyle">
-              <param name="Local" value="InvalidListNumerationStyle.html">
+              <param name="Keyword" value="Internal_InvalidListNumerationStyle">
+              <param name="Name" value="Internal_InvalidListNumerationStyle">
+              <param name="Local" value="Internal_InvalidListNumerationStyle.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="WrongAlignment">
+              <param name="Name" value="WrongAlignment">
+              <param name="Local" value="WrongAlignment.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidItemNumberRoman">
+              <param name="Name" value="InvalidItemNumberRoman">
+              <param name="Local" value="InvalidItemNumberRoman.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidItemNumberCyrillic">
+              <param name="Name" value="InvalidItemNumberCyrillic">
+              <param name="Local" value="InvalidItemNumberCyrillic.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidItemNumberLatin">
+              <param name="Name" value="InvalidItemNumberLatin">
+              <param name="Local" value="InvalidItemNumberLatin.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="TransparentColorError">
+              <param name="Name" value="TransparentColorError">
+              <param name="Local" value="TransparentColorError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="UnsupportedImageFormat">
+              <param name="Name" value="UnsupportedImageFormat">
+              <param name="Local" value="UnsupportedImageFormat.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="WrongScalingMode">
+              <param name="Name" value="WrongScalingMode">
+              <param name="Local" value="WrongScalingMode.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="NoUserDefinedSize">
+              <param name="Name" value="NoUserDefinedSize">
+              <param name="Local" value="NoUserDefinedSize.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidHTMLColorCode">
+              <param name="Name" value="InvalidHTMLColorCode">
+              <param name="Local" value="InvalidHTMLColorCode.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidRGBAValue">
+              <param name="Name" value="InvalidRGBAValue">
+              <param name="Local" value="InvalidRGBAValue.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidColor">
+              <param name="Name" value="InvalidColor">
+              <param name="Local" value="InvalidColor.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Internal_FieldGetterError">
+              <param name="Name" value="Internal_FieldGetterError">
+              <param name="Local" value="Internal_FieldGetterError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Internal_PropertyGetterError">
+              <param name="Name" value="Internal_PropertyGetterError">
+              <param name="Local" value="Internal_PropertyGetterError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="MeasurementUnitError">
+              <param name="Name" value="MeasurementUnitError">
+              <param name="Local" value="MeasurementUnitError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="UnsupportedMeasurementUnit">
+              <param name="Name" value="UnsupportedMeasurementUnit">
+              <param name="Local" value="UnsupportedMeasurementUnit.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="InvalidXUnitParsingFormat">
+              <param name="Name" value="InvalidXUnitParsingFormat">
+              <param name="Local" value="InvalidXUnitParsingFormat.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Internal_NoConstructor">
+              <param name="Name" value="Internal_NoConstructor">
+              <param name="Local" value="Internal_NoConstructor.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Internal_NegativeWidthError">
+              <param name="Name" value="Internal_NegativeWidthError">
+              <param name="Local" value="Internal_NegativeWidthError.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="TotalPercentageExceeding100">
+              <param name="Name" value="TotalPercentageExceeding100">
+              <param name="Local" value="TotalPercentageExceeding100.html">
               </object>
     
 </UL>
