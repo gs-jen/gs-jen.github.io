@@ -100,6 +100,12 @@
               </object>
     
     <li><object type="text/sitemap">
+              <param name="Keyword" value="Adding Barcodes and QR Codes">
+              <param name="Name" value="Adding Barcodes and QR Codes">
+              <param name="Local" value="AddingBarcodesAndQRCodes.html">
+              </object>
+    
+    <li><object type="text/sitemap">
               <param name="Keyword" value="Adding Repeating Area">
               <param name="Name" value="Adding Repeating Area">
               <param name="Local" value="AddingRepeatingArea.html">
@@ -127,132 +133,6 @@
               <param name="Keyword" value="Namespace Gehtsoft.PDFFlow.Builder">
               <param name="Name" value="Namespace Gehtsoft.PDFFlow.Builder">
               <param name="Local" value="Gehtsoft.PDFFlow.Builder.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions">
-              <param name="Name" value="BarcodeExtensions">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
-              <param name="Name" value="BarcodeExtensions.AddBarcode">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.Xx4.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
-              <param name="Name" value="BarcodeExtensions.AddBarcode">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.Xs3.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcode">
-              <param name="Name" value="BarcodeExtensions.AddBarcode">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcode.bEA.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.iiC.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.2V5.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Name" value="BarcodeExtensions.AddBarcodeToParagraph">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.AddBarcodeToParagraph.7l3.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder">
-              <param name="Name" value="BarcodeInlineBuilder">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginBottom">
-              <param name="Name" value="BarcodeInlineBuilder.SetMarginBottom">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginBottom.VMC.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginLeft">
-              <param name="Name" value="BarcodeInlineBuilder.SetMarginLeft">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginLeft.gd5.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginRight">
-              <param name="Name" value="BarcodeInlineBuilder.SetMarginRight">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginRight.T91.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMargins">
-              <param name="Name" value="BarcodeInlineBuilder.SetMargins">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMargins.F3D.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMargins">
-              <param name="Name" value="BarcodeInlineBuilder.SetMargins">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMargins.237.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.SetMarginTop">
-              <param name="Name" value="BarcodeInlineBuilder.SetMarginTop">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.SetMarginTop.Lq6.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToArea">
-              <param name="Name" value="BarcodeInlineBuilder.ToArea">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToArea.R2C.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToCell">
-              <param name="Name" value="BarcodeInlineBuilder.ToCell">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToCell.eZ1.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToDocument">
-              <param name="Name" value="BarcodeInlineBuilder.ToDocument">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToDocument.kWA.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToParagraph">
-              <param name="Name" value="BarcodeInlineBuilder.ToParagraph">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToParagraph.PJ3.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToRow">
-              <param name="Name" value="BarcodeInlineBuilder.ToRow">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToRow.zkG.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToSection">
-              <param name="Name" value="BarcodeInlineBuilder.ToSection">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToSection.ZqD.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeInlineBuilder.ToTable">
-              <param name="Name" value="BarcodeInlineBuilder.ToTable">
-              <param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.ToTable.kr2.html">
               </object>
     
     <li><object type="text/sitemap">
@@ -5251,30 +5131,6 @@
               <param name="Keyword" value="Namespace Gehtsoft.PDFFlow.Models.Enumerations">
               <param name="Name" value="Namespace Gehtsoft.PDFFlow.Models.Enumerations">
               <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeType">
-              <param name="Name" value="BarcodeType">
-              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeType.EAN_13">
-              <param name="Name" value="BarcodeType.EAN_13">
-              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.EAN_13.2S2.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeType.EAN_8">
-              <param name="Name" value="BarcodeType.EAN_8">
-              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.EAN_8.J82.html">
-              </object>
-    
-    <li><object type="text/sitemap">
-              <param name="Keyword" value="BarcodeType.UPC_A">
-              <param name="Name" value="BarcodeType.UPC_A">
-              <param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.UPC_A.Ex.html">
               </object>
     
     <li><object type="text/sitemap">

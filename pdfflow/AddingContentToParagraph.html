@@ -128,6 +128,7 @@ add inline images to them using methods of <a href="Gehtsoft.PDFFlow.Builder.Ima
   <li><p><b>Page numbers</b></p></li>
   <li><p><b>Tabulations</b></p></li>
   <li><p><b>Inline images</b></p></li>
+  <li><p><b>Barcodes</b></p></li>
 </ul><p>You can add formatted text, URLs, page numbers, and tabulations using corresponding methods of <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.html"><code>ParagraphExtensions</code></a>
 and configure font and background settings of these elements using methods of <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>.</p>
 <p><b>Formatted text</b></p>
@@ -155,9 +156,15 @@ You can set the number from which the page numbering should start and the number
 For details on how to add tabulations, see the <a href="AddingTabulations.html">Adding Tabulations</a> article.</p>
 <p><b>Inline images</b></p>
 <p>You can add an inline image to a paragraph using one of the <code>AddInlineImage</code> (return an instance of <a href="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html"><code>InlineImageBuilder</code></a>)
-or <code>AddInlineImageToParagraph</code> (return an instance of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>) methods of <a href="Gehtsoft.PDFFlow.Builder.ImageExtensions.html"><code>ImageExtensions</code></a>.
+or <code>AddInlineImageToParagraph</code> (return an instance of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>) methods of the <a href="Gehtsoft.PDFFlow.Builder.ImageExtensions.html"><code>ImageExtensions</code></a> class.
 Settings of an inline image can be configured using methods of <a href="Gehtsoft.PDFFlow.Builder.InlineImageBuilder.html"><code>InlineImageBuilder</code></a>.
-For more information on adding and configuring images, see <a href="AddingImage.html">Adding Image</a>.</p>
+For more information on adding and configuring images, see the <a href="AddingImage.html">Adding Image</a> article.</p>
+<p><b>Barcodes</b></p>
+<p>You can add a barcode to a paragraph using one of the <code>AddBarcode</code> (return an instance of <code>BarcodeInlineBuilder</code>)
+or <code>AddBarcodeToParagraph</code> (return an instance of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>) methods of the
+<code>BarcodeExtensions</code> class.
+Margin settings of a barcode can be configured using methods of the <code>BarcodeInlineBuilder</code> class.
+For more information on adding and configuring barcodes, see the <a href="AddingBarcodesAndQRCodes.html">Adding Barcodes and QR Codes</a> article.</p>
 <p><br><br>
 <b>Configuring Paragraph Content</b></p>
 <p>You can configure font and background settings for particular text elements and URLs within a paragraph using methods of
@@ -195,6 +202,7 @@ For more on working with styles, see the article <a href="FormattingAndStyles.ht
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><a href="AddingTabulations.html">Adding Tabulations</a></p>
 <p><a href="AddingImage.html">Adding Image</a></p>
+<p><a href="AddingBarcode.html">Adding Barcode</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
 <p><b>Examples</b></p><div id="open71" style="display:none">
   <p>Example 1. Add a text with different font settings and background color&nbsp;<a href="javascript: showdiv('close71'); hidediv('open71');" onclick="javascript: showdiv('close71'); hidediv('open71');">[show]</a></p>

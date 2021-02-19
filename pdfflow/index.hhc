@@ -22,6 +22,7 @@
     <li><object type="text/sitemap"><param name="Name" value="Configuring Font"><param name="Local" value="ConfiguringFont.html"></object><a href="ConfiguringFont.html">Configuring Font</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Line"><param name="Local" value="AddingLine.html"></object><a href="AddingLine.html">Adding Line</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Image"><param name="Local" value="AddingImage.html"></object><a href="AddingImage.html">Adding Image</a>
+    <li><object type="text/sitemap"><param name="Name" value="Adding Barcodes and QR Codes"><param name="Local" value="AddingBarcodesAndQRCodes.html"></object><a href="AddingBarcodesAndQRCodes.html">Adding Barcodes and QR Codes</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Repeating Area"><param name="Local" value="AddingRepeatingArea.html"></object><a href="AddingRepeatingArea.html">Adding Repeating Area</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Document Flow Area"><param name="Local" value="AddingDocumentFlowArea.html"></object><a href="AddingDocumentFlowArea.html">Adding Document Flow Area</a>
     <li><object type="text/sitemap"><param name="Name" value="Creating Table of Content"><param name="Local" value="CreatingTableOfContent.html"></object><a href="CreatingTableOfContent.html">Creating Table of Content</a>
@@ -33,9 +34,7 @@
         <UL>
             <li><object type="text/sitemap"><param name="Name" value="Classes"></object>Classes
         <UL>
-            <li><object type="text/sitemap"><param name="Name" value="BarcodeExtensions"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html"></object><a href="Gehtsoft.PDFFlow.Builder.BarcodeExtensions.html">BarcodeExtensions</a>
-    <li><object type="text/sitemap"><param name="Name" value="BarcodeInlineBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BarcodeInlineBuilder.html">BarcodeInlineBuilder</a>
-    <li><object type="text/sitemap"><param name="Name" value="BorderBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BorderBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BorderBuilder.html">BorderBuilder</a>
+            <li><object type="text/sitemap"><param name="Name" value="BorderBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.BorderBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.BorderBuilder.html">BorderBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="DocumentBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.html">DocumentBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="FontBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.FontBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.FontBuilder.html">FontBuilder</a>
     <li><object type="text/sitemap"><param name="Name" value="FormattedTextElementBuilder"><param name="Local" value="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"></object><a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html">FormattedTextElementBuilder</a>
@@ -67,8 +66,7 @@
         <UL>
             <li><object type="text/sitemap"><param name="Name" value="Enumerations"></object>Enumerations
         <UL>
-            <li><object type="text/sitemap"><param name="Name" value="BarcodeType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.BarcodeType.html">BarcodeType</a>
-    <li><object type="text/sitemap"><param name="Name" value="HorizontalAlignment"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html">HorizontalAlignment</a>
+            <li><object type="text/sitemap"><param name="Name" value="HorizontalAlignment"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.HorizontalAlignment.html">HorizontalAlignment</a>
     <li><object type="text/sitemap"><param name="Name" value="Inherit"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.Inherit.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.Inherit.html">Inherit</a>
     <li><object type="text/sitemap"><param name="Name" value="LayoutAreaType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.LayoutAreaType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.LayoutAreaType.html">LayoutAreaType</a>
     <li><object type="text/sitemap"><param name="Name" value="LayoutPageType"><param name="Local" value="Gehtsoft.PDFFlow.Models.Enumerations.LayoutPageType.html"></object><a href="Gehtsoft.PDFFlow.Models.Enumerations.LayoutPageType.html">LayoutPageType</a>
