@@ -127,12 +127,12 @@ in the corresponding default style.</p>
 or contain other containers. For example, a document itself is a container - it contains sections, sections are also containers -
 they can contain paragraphs, tables, images, etc.</p>
 <p>One element can be a container and a formatted element at the same time. For example, a paragraph - it has its own formatting
-and can contain other formatted elements.</p><div id="open153" style="display:inline">
-  <p><b>A full list of formatted elements and containers in a document structure</b>&nbsp;<a href="javascript: showdiv('close153'); hidediv('open153');" onclick="javascript: showdiv('close153'); hidediv('open153');">[show]</a></p>
+and can contain other formatted elements.</p><div id="open145" style="display:inline">
+  <p><b>A full list of formatted elements and containers in a document structure</b>&nbsp;<a href="javascript: showdiv('close145'); hidediv('open145');" onclick="javascript: showdiv('close145'); hidediv('open145');">[show]</a></p>
 </div>
-<div id="close153" style="display:none">
-  <p><b>A full list of formatted elements and containers in a document structure</b>&nbsp;<a href="javascript: showdiv('open153'); hidediv('close153');" onclick="javascript: showdiv('open153'); hidediv('close153');">[hide]</a></p>
-  <pre id="example153"><code>- Document (container)
+<div id="close145" style="display:none">
+  <p><b>A full list of formatted elements and containers in a document structure</b>&nbsp;<a href="javascript: showdiv('open145'); hidediv('close145');" onclick="javascript: showdiv('open145'); hidediv('close145');">[hide]</a></p>
+  <pre id="example145"><code>- Document (container)
     - Section (container/formatted element):
         - Paragraph (container/formatted element):
             - Formatted Text Element (formatted element)
@@ -173,29 +173,29 @@ When you apply a style to an element, the element will have the formatting setti
 <p><b>1. Format an element directly</b></p>
 <p>Formatting of an element is configured by methods of its builder.<br>
 For example, to set the following formatting: bold, font size 4, horizontally centered, top and bottom margins of 20 points -
-you can call the following <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a> methods:</p><pre class="example" id="example154"><code>   myParagraph.SetBold().SetFontSize(14).SetMarginTop(20).SetMarginBottom(20).SetHorizontalAlignment(HorizontalAlignment.Center);</code></pre><p>Some methods allow you to set the formatting when adding an element, for example, you can use the <a href="Gehtsoft.PDFFlow.Builder.LineExtensions.AddLine.cE4.html"><code>
-AddLine</code></a> method to add a line with the length 200 points, width 1 point, dashed, and blue:</p><pre class="example" id="example155"><code>   mySection.AddLine(200, 1, Stroke.Dashed, Color.Blue);</code></pre><p><b>2. Create a style</b></p>
+you can call the following <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a> methods:</p><pre class="example" id="example146"><code>   myParagraph.SetBold().SetFontSize(14).SetMarginTop(20).SetMarginBottom(20).SetHorizontalAlignment(HorizontalAlignment.Center);</code></pre><p>Some methods allow you to set the formatting when adding an element, for example, you can use the <a href="Gehtsoft.PDFFlow.Builder.LineExtensions.AddLine.cE4.html"><code>
+AddLine</code></a> method to add a line with the length 200 points, width 1 point, dashed, and blue:</p><pre class="example" id="example147"><code>   mySection.AddLine(200, 1, Stroke.Dashed, Color.Blue);</code></pre><p><b>2. Create a style</b></p>
 <p>It may be inconvenient to format elements directly when you need to use the same formatting for a number of formatted elements in a document.
 In this case, you can create a style and then apply it to the necessary elements or containers.<br>
-For example, you can create a style as follows:</p><pre class="example" id="example156"><code>   var paragraphStyleHeader1 = StyleBuilder.New().SetFontBold().SetFontSize(14).SetMarginTop(20).SetMarginBottom(20).SetHorizontalAlignment(HorizontalAlignment.Center);</code></pre><p><b>2.1.  Apply the style to a number of formatted elements of the same type</b></p>
+For example, you can create a style as follows:</p><pre class="example" id="example148"><code>   var paragraphStyleHeader1 = StyleBuilder.New().SetFontBold().SetFontSize(14).SetMarginTop(20).SetMarginBottom(20).SetHorizontalAlignment(HorizontalAlignment.Center);</code></pre><p><b>2.1.  Apply the style to a number of formatted elements of the same type</b></p>
 <p>If you need to use the same formatting for a number of formatted elements of the same type, you can apply the same style to these elements.<br></p>
-<p>For example, you can apply the created style to each paragraph that you need to make a heading:</p><pre class="example" id="example157"><code>   var chapterOneHeader = ParagraphBuilder.New().ApplyStyle(paragraphStyleHeader1);</code></pre><p><b>2.2. Apply the style to all formatted elements of the same type in a container</b></p>
+<p>For example, you can apply the created style to each paragraph that you need to make a heading:</p><pre class="example" id="example149"><code>   var chapterOneHeader = ParagraphBuilder.New().ApplyStyle(paragraphStyleHeader1);</code></pre><p><b>2.2. Apply the style to all formatted elements of the same type in a container</b></p>
 <p>If you need to apply the same style to all formatted elements of the same type in a container, you can apply the style on the corresponding level.<br>
 You can set a paragraph, image, line, and table style for a whole document, section, or repeating area.</p>
 <p>For example:</p>
 <p>To horizontally center all images in a section, you can apply the following style to all images on the section level by
-using the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetImageStyle.LXG.html"><code>SectionBuilder.SetImageStyle</code></a> method:</p><pre class="example" id="example158"><code>   mySection1.SetImageStyle(StyleBuilder.New().SetHorizontalAlignment(HorizontalAlignment.Center));</code></pre><p>To set the font size and color for all tables in the document, you can apply the following style to all tables on the document level by
-using the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.SetTableStyle.Gq.html"><code>DocumentBuilder.SetTableStyle</code></a> method:</p><pre class="example" id="example159"><code>   myDocument.SetTableStyle(StyleBuilder.New().SetFontSize(8).SetFontColor(Color.Blue));</code></pre><p>To set the background color for all paragraphs in repeating areas, you can apply the following style to all paragraphs on the repeating area level by
-using the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetParagraphStyle.wfA.html"><code>RepeatingAreaBuilder.SetParagraphStyle</code></a> method:</p><pre class="example" id="example160"><code>   myHeader.SetParagraphStyle(StyleBuilder.New().SetBackColor(Color.Gray));</code></pre><p>Note that if you set a style for an image on a container level, this style will be applied both to images and inline images.</p>
+using the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetImageStyle.LXG.html"><code>SectionBuilder.SetImageStyle</code></a> method:</p><pre class="example" id="example150"><code>   mySection1.SetImageStyle(StyleBuilder.New().SetHorizontalAlignment(HorizontalAlignment.Center));</code></pre><p>To set the font size and color for all tables in the document, you can apply the following style to all tables on the document level by
+using the <a href="Gehtsoft.PDFFlow.Builder.DocumentBuilder.SetTableStyle.Gq.html"><code>DocumentBuilder.SetTableStyle</code></a> method:</p><pre class="example" id="example151"><code>   myDocument.SetTableStyle(StyleBuilder.New().SetFontSize(8).SetFontColor(Color.Blue));</code></pre><p>To set the background color for all paragraphs in repeating areas, you can apply the following style to all paragraphs on the repeating area level by
+using the <a href="Gehtsoft.PDFFlow.Builder.RepeatingAreaBuilder.SetParagraphStyle.wfA.html"><code>RepeatingAreaBuilder.SetParagraphStyle</code></a> method:</p><pre class="example" id="example152"><code>   myHeader.SetParagraphStyle(StyleBuilder.New().SetBackColor(Color.Gray));</code></pre><p>Note that if you set a style for an image on a container level, this style will be applied both to images and inline images.</p>
 <p><b>2.3. Apply the style to all formatted elements in a container</b></p>
 <p>A style can be applied to all formatted elements in a container.<br>
 For example, to set the top margin of 20 points for all formatted elements of a section, you can apply the following style on the section level
-by using the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.ApplyStyle.Bm4.html"><code>SectionBuilder.ApplyStyle</code></a> method:</p><pre class="example" id="example161"><code>   mySection1.ApplyStyle(StyleBuilder.New().SetMarginTop(20));</code></pre><p><b>Inheritance of Styles</b></p>
+by using the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.ApplyStyle.Bm4.html"><code>SectionBuilder.ApplyStyle</code></a> method:</p><pre class="example" id="example153"><code>   mySection1.ApplyStyle(StyleBuilder.New().SetMarginTop(20));</code></pre><p><b>Inheritance of Styles</b></p>
 <p>Styles can be inherited. You can create a new style based on an existing style, including the default style, by changing the necessary
 formatting parameters. If any parameters are not specified in the new style, the corresponding parameters of the parent style are used.
 If these parameters are not specified in the parent style and it has a parent style - its parameters are used, and so on until there is no
 other parent style. In this case the default values of these parameters are used.<br>
-For example,</p><pre class="example" id="example162"><code>   var myDocumentStyle = StyleBuilder.New().SetFontSize(12).SetLineSpacing(2);
+For example,</p><pre class="example" id="example154"><code>   var myDocumentStyle = StyleBuilder.New().SetFontSize(12).SetLineSpacing(2);
    var myHeader1Style = StyleBuilder.New(myDocumentStyle).SetFontBold().SetFontSize(14).SetMarginTop(10).SetMarginBottom(10);
    ...
    mySectionBuilder.AddParagraph(...).ApplyStyle(myHeader1Style);</code></pre><p>The paragraph will have the font bold, size 14, top and bottom margins - 10, and line spacing 2.</p>
@@ -210,17 +210,17 @@ specified in a style:</p><ul class="main">
   <li><p>BackColor</p></li>
   <li><p>ListStyle (ListBullet, ListNumbered)</p></li>
   <li><p>ListLevelLeftIndent</p></li>
-</ul><p>For example,</p><pre class="example" id="example163"><code>   var myHeader2Style = StyleBuilder.New(myHeader1Style).SetFontColor(Color.Blue).SetMarginTop(Inherit.Parent).SetMarginBottom(Inherit.Parent);</code></pre><p>Note that borders, margins, and paddings are never inherited for a paragraph.</p>
+</ul><p>For example,</p><pre class="example" id="example155"><code>   var myHeader2Style = StyleBuilder.New(myHeader1Style).SetFontColor(Color.Blue).SetMarginTop(Inherit.Parent).SetMarginBottom(Inherit.Parent);</code></pre><p>Note that borders, margins, and paddings are never inherited for a paragraph.</p>
 <p><b>Defining the Final Values of Element Formatting Parameters</b></p>
 <p>The final values of element formatting parameters in a document are defined based on the styles and formatting applied to them on different levels
 as illustrated in the following diagram.</p>
 <p><img src="img/formatting-calculation.png"></p>
-<p><b>Examples</b></p><div id="open164" style="display:none">
-  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('close164'); hidediv('open164');" onclick="javascript: showdiv('close164'); hidediv('open164');">[show]</a></p>
+<p><b>Examples</b></p><div id="open156" style="display:none">
+  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('close156'); hidediv('open156');" onclick="javascript: showdiv('close156'); hidediv('open156');">[show]</a></p>
 </div>
-<div id="close164" style="display:inline">
-  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('open164'); hidediv('close164');" onclick="javascript: showdiv('open164'); hidediv('close164');">[hide]</a></p>
-  <pre class="example" id="example164"><code>         <b>//Create a style:</b>
+<div id="close156" style="display:inline">
+  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('open156'); hidediv('close156');" onclick="javascript: showdiv('open156'); hidediv('close156');">[hide]</a></p>
+  <pre class="example" id="example156"><code>         <b>//Create a style:</b>
             var styleHeader = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(16)
@@ -237,12 +237,12 @@ as illustrated in the following diagram.</p>
  
     <img src="img/howto-use-styles-ex1.png">
     <a href="pdf/Sample_HowToUseStyles1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open165" style="display:none">
-  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('close165'); hidediv('open165');" onclick="javascript: showdiv('close165'); hidediv('open165');">[show]</a></p>
+</div><div id="open157" style="display:none">
+  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('close157'); hidediv('open157');" onclick="javascript: showdiv('close157'); hidediv('open157');">[show]</a></p>
 </div>
-<div id="close165" style="display:inline">
-  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('open165'); hidediv('close165');" onclick="javascript: showdiv('open165'); hidediv('close165');">[hide]</a></p>
-  <pre class="example" id="example165"><code>         <b>//Create a style:</b>
+<div id="close157" style="display:inline">
+  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('open157'); hidediv('close157');" onclick="javascript: showdiv('open157'); hidediv('close157');">[hide]</a></p>
+  <pre class="example" id="example157"><code>         <b>//Create a style:</b>
             var styleMain = StyleBuilder.New()
             .SetFontName(FontNames.Helvetica)
             .SetFontSize(12);
@@ -259,12 +259,12 @@ as illustrated in the following diagram.</p>
  
     <img src="img/howto-use-styles-ex2.png">
     <a href="pdf/Sample_HowToUseStyles2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open166" style="display:none">
-  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('close166'); hidediv('open166');" onclick="javascript: showdiv('close166'); hidediv('open166');">[show]</a></p>
+</div><div id="open158" style="display:none">
+  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('close158'); hidediv('open158');" onclick="javascript: showdiv('close158'); hidediv('open158');">[show]</a></p>
 </div>
-<div id="close166" style="display:inline">
-  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('open166'); hidediv('close166');" onclick="javascript: showdiv('open166'); hidediv('close166');">[hide]</a></p>
-  <pre class="example" id="example166"><code>         <b>//Create styles for a document and for a paragraph:</b>
+<div id="close158" style="display:inline">
+  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('open158'); hidediv('close158');" onclick="javascript: showdiv('open158'); hidediv('close158');">[hide]</a></p>
+  <pre class="example" id="example158"><code>         <b>//Create styles for a document and for a paragraph:</b>
             var styleMain = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(12);
@@ -287,12 +287,12 @@ as illustrated in the following diagram.</p>
  
     <img src="img/howto-use-styles-ex3.png">
     <a href="pdf/Sample_HowToUseStyles3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open167" style="display:none">
-  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('close167'); hidediv('open167');" onclick="javascript: showdiv('close167'); hidediv('open167');">[show]</a></p>
+</div><div id="open159" style="display:none">
+  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('close159'); hidediv('open159');" onclick="javascript: showdiv('close159'); hidediv('open159');">[show]</a></p>
 </div>
-<div id="close167" style="display:inline">
-  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('open167'); hidediv('close167');" onclick="javascript: showdiv('open167'); hidediv('close167');">[hide]</a></p>
-  <pre class="example" id="example167"><code>         <b>//Create styles:</b>
+<div id="close159" style="display:inline">
+  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('open159'); hidediv('close159');" onclick="javascript: showdiv('open159'); hidediv('close159');">[hide]</a></p>
+  <pre class="example" id="example159"><code>         <b>//Create styles:</b>
             var styleSection = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(14);
@@ -315,12 +315,12 @@ as illustrated in the following diagram.</p>
  
     <img src="img/howto-use-styles-ex4.png">
     <a href="pdf/Sample_HowToUseStyles4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open168" style="display:none">
-  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('close168'); hidediv('open168');" onclick="javascript: showdiv('close168'); hidediv('open168');">[show]</a></p>
+</div><div id="open160" style="display:none">
+  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('close160'); hidediv('open160');" onclick="javascript: showdiv('close160'); hidediv('open160');">[show]</a></p>
 </div>
-<div id="close168" style="display:inline">
-  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('open168'); hidediv('close168');" onclick="javascript: showdiv('open168'); hidediv('close168');">[hide]</a></p>
-  <pre class="example" id="example168"><code>            var imagePath = &quot;imageFile.png&quot;;
+<div id="close160" style="display:inline">
+  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('open160'); hidediv('close160');" onclick="javascript: showdiv('open160'); hidediv('close160');">[hide]</a></p>
+  <pre class="example" id="example160"><code>            var imagePath = &quot;imageFile.png&quot;;
          <b>//Create a style for images:</b>
             var styleImage = StyleBuilder.New()
                 .SetBorder(0.75f, Stroke.Solid, Color.Blue)
@@ -341,12 +341,12 @@ as illustrated in the following diagram.</p>
  
     <img src="img/howto-use-styles-ex5.png">
     <a href="pdf/Sample_HowToUseStyles5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open169" style="display:none">
-  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('close169'); hidediv('open169');" onclick="javascript: showdiv('close169'); hidediv('open169');">[show]</a></p>
+</div><div id="open161" style="display:none">
+  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('close161'); hidediv('open161');" onclick="javascript: showdiv('close161'); hidediv('open161');">[show]</a></p>
 </div>
-<div id="close169" style="display:inline">
-  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('open169'); hidediv('close169');" onclick="javascript: showdiv('open169'); hidediv('close169');">[hide]</a></p>
-  <pre class="example" id="example169"><code>            var imagePath = &quot;imageFile.png&quot;;
+<div id="close161" style="display:inline">
+  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('open161'); hidediv('close161');" onclick="javascript: showdiv('open161'); hidediv('close161');">[hide]</a></p>
+  <pre class="example" id="example161"><code>            var imagePath = &quot;imageFile.png&quot;;
          <b>//Create a style:</b>
             var styleParent = StyleBuilder.New()
                 .SetFontColor(Color.Blue)

@@ -22,7 +22,6 @@
     <li><object type="text/sitemap"><param name="Name" value="Configuring Font"><param name="Local" value="ConfiguringFont.html"></object><a href="ConfiguringFont.html">Configuring Font</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Line"><param name="Local" value="AddingLine.html"></object><a href="AddingLine.html">Adding Line</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Image"><param name="Local" value="AddingImage.html"></object><a href="AddingImage.html">Adding Image</a>
-    <li><object type="text/sitemap"><param name="Name" value="Adding Barcodes and QR Codes"><param name="Local" value="AddingBarcodesAndQRCodes.html"></object><a href="AddingBarcodesAndQRCodes.html">Adding Barcodes and QR Codes</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Repeating Area"><param name="Local" value="AddingRepeatingArea.html"></object><a href="AddingRepeatingArea.html">Adding Repeating Area</a>
     <li><object type="text/sitemap"><param name="Name" value="Adding Document Flow Area"><param name="Local" value="AddingDocumentFlowArea.html"></object><a href="AddingDocumentFlowArea.html">Adding Document Flow Area</a>
     <li><object type="text/sitemap"><param name="Name" value="Creating Table of Content"><param name="Local" value="CreatingTableOfContent.html"></object><a href="CreatingTableOfContent.html">Creating Table of Content</a>

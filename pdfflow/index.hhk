@@ -100,12 +100,6 @@
               </object>
     
     <li><object type="text/sitemap">
-              <param name="Keyword" value="Adding Barcodes and QR Codes">
-              <param name="Name" value="Adding Barcodes and QR Codes">
-              <param name="Local" value="AddingBarcodesAndQRCodes.html">
-              </object>
-    
-    <li><object type="text/sitemap">
               <param name="Keyword" value="Adding Repeating Area">
               <param name="Name" value="Adding Repeating Area">
               <param name="Local" value="AddingRepeatingArea.html">
@@ -3487,6 +3481,12 @@
               <param name="Keyword" value="StyleBuilder.SetMarginTop">
               <param name="Name" value="StyleBuilder.SetMarginTop">
               <param name="Local" value="Gehtsoft.PDFFlow.Builder.StyleBuilder.SetMarginTop.db2.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="StyleBuilder.SetPadding">
+              <param name="Name" value="StyleBuilder.SetPadding">
+              <param name="Local" value="Gehtsoft.PDFFlow.Builder.StyleBuilder.SetPadding.LKG.html">
               </object>
     
     <li><object type="text/sitemap">
