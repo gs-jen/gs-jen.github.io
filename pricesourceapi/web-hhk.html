@@ -2,251 +2,108 @@
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Content</title><link rel="stylesheet" href="highlighter/default.css">
-<style type="text/css">a, p, h1, h2, h3, h4, h5, h6, table, td, tr, li, ul, ol {
-    font-family: Verdana, Trebuchet MS, Arial;
-}
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
 
-a, p, td, tr, ul, ol, li {
-    font-size: 12pt;
-}
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
 
-h3 {
-    font-size: 13pt;
-}
-
-h2 {
-    font-size: 13pt;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 14pt;
-    font-weight: bold;
-}
-
-body {
-    color: #444444;
-    background-color: white;
-}
-
-A:link {
-    color: #0065b3;
-    cursor: pointer;
-}
-
-A:visited {
-    color: #0068be;
-    cursor: pointer;
-}
-
-a.action {
-  background-color: #0065b3;
-  color: white;
-  font-size: 10pt;
-  padding: 2px 2px;
-  width: 50pt;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 3px;
-}
-
-.side-icon {
-    float: left;
-}
-
-a.action [class*="dripicons-"]:before {
-    padding: 0 2px 0 0;
-    font-size: 12pt;
-    vertical-align: text-bottom;
-}
-
-.side-icon:after {
-  content: "";
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  border-left: 1.5px solid white;
-  transform: translate(-50%);
-}
-
-a.actiontab {
-  font-size: 10pt;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 3px 3px 0 0;
-}
-
-pre, code, code a {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-    font-size: 12pt;
-}
-
-code.ctag {
-    background-color: #f1f1f1;
-    padding: .1em .2em;
-    border-radius: 3px;
-}
-
-pre {
-    background-color: white;
-}
-
-pre.example {
-    background-color: #f1f1f1;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 18pt;
-}
-
-ol {
-    list-style-type: decimal;
-    margin-left: 18pt;
-}
-
-ul.hhc {
-    list-style-type: none;
-    margin-left: 1em;
-    padding: 0;
-    padding-left: 0;
-    text-indent: 0;
-}
-
-li.hhc {
-    margin-left: 0;
-    padding: 0;
-    padding-left: 0;
-    text-indent: 0;
-}
-
-table {
-  border-spacing: 0;
-  border-color: #dfe3e7;
-}
-
-tr + tr td {
-   border-top: 0;
-}
-
-tr td + td {
-  border-left: 0;
-}
-
-td {
-  border: 1px solid;
-  border-color: #dfe3e7;
-}
-
-tr:first-child td:first-child {
-   border-radius: 0.2em 0 0 0;
-}
-
-tr:first-child td:last-child {
-  border-radius: 0 0.2em 0 0;
-}
-
-tr:first-child td:only-child {
-  border-radius: 0.2em 0.2em 0 0;
-}
-
-tr:last-child td:first-child {
-    border-radius: 0 0 0 0.2em;
-}
-
-tr:last-child td:last-child {
-    border-radius: 0 0 0.2em 0;
-}
-
-tr:last-child td:only-child {
-    border-radius: 0 0 0.2em 0.2em;
-}
-
-tr:only-child td:only-child {
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
-}
-
-tr:only-child td:first-child {
-   border-radius: 0.2em 0 0 0.2em;
-}
-
-tr:only-child td:last-child {
-  border-radius: 0 0.2em 0.2em 0;
-}
-
-
-td.tmain, td.tmain_nw, td.thdr {
-    background-color: rgb(255, 255, 255);
-    vertical-align: top;
-    padding: 3px;
-}
-
-td.tmain p, td.tmain_nw p, td.thdr p {
-    margin-top: 3pt;
-    margin-bottom: 3pt;
-}
-
-td.tmain_nw {
-    white-space: nowrap;
-}
-
-td.thdr {
-    background-color: #e3e3e3;
-}
-
-table.decl {
-    border: 0px none;
-    border: collapse;
-    background-color: rgb(192, 192, 192);
-    vertical-align: top;
-    padding: 3px;
-    width: 100%;
-}
-
-table.decl td {
-    border: 0px none;
-    border: collapse;
-    background-color: rgb(192, 192, 192);
-}
-
-div.note-quote {
-    border-left: 10px solid #ccc;
-    padding: 1em 10px .1em 10px;
-    margin: 1.5em 10px;
-    background-color: rgb(224, 224, 224);
-}
-
-div.note-note {
-    position: relative;
-    padding: .0rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-
-    color: #0c5460;
-    background-color: #d1ecf1;
-    border-color: #bee5eb;
-}
-
-div.note-warning {
-    position: relative;
-    padding: .0rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-
-    color: #fff;
-    background-color: #ff6358;
-}
-div.note-warning code.ctag {
-    color: black;
-}</style>
-<link rel="stylesheet" href="res/dripicons.css"></head>
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
   <body>
     <p><b>Keywords Index</b></p>
     
@@ -257,7 +114,7 @@ div.note-warning code.ctag {
             <ul class="hhc">
             
         
-        <li><a href="pricearchive.ATask.html">
+        <li><a href="ATask.html">
             ATask</a></li>
 
     
@@ -410,19 +267,19 @@ div.note-warning code.ctag {
             <ul class="hhc">
             
         
-        <li><a href="pricearchive.DateUtils.html">
+        <li><a href="DateUtils.html">
             DateUtils</a></li>
 
     
         
         
-        <li><a href="pricearchive.DateUtils.formatDate.html">
+        <li><a href="DateUtils.formatDate.html">
             DateUtils.formatDate</a></li>
 
     
         
         
-        <li><a href="pricearchive.DateUtils.parseDate.html">
+        <li><a href="DateUtils.parseDate.html">
             DateUtils.parseDate</a></li>
 
     
@@ -468,49 +325,49 @@ div.note-warning code.ctag {
             <ul class="hhc">
             
         
-        <li><a href="pricearchive.IBar.html">
+        <li><a href="IBar.html">
             IBar</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.getAsk.html">
+        <li><a href="IBar.getAsk.html">
             IBar.getAsk</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.getBid.html">
+        <li><a href="IBar.getBid.html">
             IBar.getBid</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.getEnd.html">
+        <li><a href="IBar.getEnd.html">
             IBar.getEnd</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.getStart.html">
+        <li><a href="IBar.getStart.html">
             IBar.getStart</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.update.html">
+        <li><a href="IBar.update.html">
             IBar.update</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBar.update.1.html">
+        <li><a href="IBar.update.1.html">
             IBar.update</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.html">
+        <li><a href="IBarHistory.html">
             IBarHistory</a></li>
 
     
@@ -570,7 +427,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.IBarHistory.find.html">
+        <li><a href="IBarHistory.find.html">
             IBarHistory.find</a></li>
 
     
@@ -582,97 +439,97 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.IBarHistory.getAskClose.html">
+        <li><a href="IBarHistory.getAskClose.html">
             IBarHistory.getAskClose</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getAskHigh.html">
+        <li><a href="IBarHistory.getAskHigh.html">
             IBarHistory.getAskHigh</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getAskLow.html">
+        <li><a href="IBarHistory.getAskLow.html">
             IBarHistory.getAskLow</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getAskOpen.html">
+        <li><a href="IBarHistory.getAskOpen.html">
             IBarHistory.getAskOpen</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getAskVolume.html">
+        <li><a href="IBarHistory.getAskVolume.html">
             IBarHistory.getAskVolume</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getBidClose.html">
+        <li><a href="IBarHistory.getBidClose.html">
             IBarHistory.getBidClose</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getBidHigh.html">
+        <li><a href="IBarHistory.getBidHigh.html">
             IBarHistory.getBidHigh</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getBidLow.html">
+        <li><a href="IBarHistory.getBidLow.html">
             IBarHistory.getBidLow</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getBidOpen.html">
+        <li><a href="IBarHistory.getBidOpen.html">
             IBarHistory.getBidOpen</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getBidVolume.html">
+        <li><a href="IBarHistory.getBidVolume.html">
             IBarHistory.getBidVolume</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getCount.html">
+        <li><a href="IBarHistory.getCount.html">
             IBarHistory.getCount</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getInstrument.html">
+        <li><a href="IBarHistory.getInstrument.html">
             IBarHistory.getInstrument</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getPipSize.html">
+        <li><a href="IBarHistory.getPipSize.html">
             IBarHistory.getPipSize</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getPrecision.html">
+        <li><a href="IBarHistory.getPrecision.html">
             IBarHistory.getPrecision</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getStartDate.html">
+        <li><a href="IBarHistory.getStartDate.html">
             IBarHistory.getStartDate</a></li>
 
     
         
         
-        <li><a href="pricearchive.IBarHistory.getTimeframe.html">
+        <li><a href="IBarHistory.getTimeframe.html">
             IBarHistory.getTimeframe</a></li>
 
     
@@ -684,133 +541,133 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.ICandle.html">
+        <li><a href="ICandle.html">
             ICandle</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getClose.html">
+        <li><a href="ICandle.getClose.html">
             ICandle.getClose</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getHigh.html">
+        <li><a href="ICandle.getHigh.html">
             ICandle.getHigh</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getLow.html">
+        <li><a href="ICandle.getLow.html">
             ICandle.getLow</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getOpen.html">
+        <li><a href="ICandle.getOpen.html">
             ICandle.getOpen</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getStart.html">
+        <li><a href="ICandle.getStart.html">
             ICandle.getStart</a></li>
 
     
         
         
-        <li><a href="pricearchive.ICandle.getVolume.html">
+        <li><a href="ICandle.getVolume.html">
             ICandle.getVolume</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetInstrumentsTask.html">
+        <li><a href="IGetInstrumentsTask.html">
             IGetInstrumentsTask</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetInstrumentsTaskCallback.html">
+        <li><a href="IGetInstrumentsTaskCallback.html">
             IGetInstrumentsTaskCallback</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetInstrumentsTaskCallback.onTaskCanceled.html">
+        <li><a href="IGetInstrumentsTaskCallback.onTaskCanceled.html">
             IGetInstrumentsTaskCallback.onTaskCanceled</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetInstrumentsTaskCallback.onTaskCompleted.html">
+        <li><a href="IGetInstrumentsTaskCallback.onTaskCompleted.html">
             IGetInstrumentsTaskCallback.onTaskCompleted</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetInstrumentsTaskCallback.onTaskFailed.html">
+        <li><a href="IGetInstrumentsTaskCallback.onTaskFailed.html">
             IGetInstrumentsTaskCallback.onTaskFailed</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesRangeTask.html">
+        <li><a href="IGetPricesRangeTask.html">
             IGetPricesRangeTask</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesRangeTaskCallback.html">
+        <li><a href="IGetPricesRangeTaskCallback.html">
             IGetPricesRangeTaskCallback</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesRangeTaskCallback.onTaskCanceled.html">
+        <li><a href="IGetPricesRangeTaskCallback.onTaskCanceled.html">
             IGetPricesRangeTaskCallback.onTaskCanceled</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesRangeTaskCallback.onTaskCompleted.html">
+        <li><a href="IGetPricesRangeTaskCallback.onTaskCompleted.html">
             IGetPricesRangeTaskCallback.onTaskCompleted</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesRangeTaskCallback.onTaskFailed.html">
+        <li><a href="IGetPricesRangeTaskCallback.onTaskFailed.html">
             IGetPricesRangeTaskCallback.onTaskFailed</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesTask.html">
+        <li><a href="IGetPricesTask.html">
             IGetPricesTask</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesTaskCallback.html">
+        <li><a href="IGetPricesTaskCallback.html">
             IGetPricesTaskCallback</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesTaskCallback.onTaskCanceled.html">
+        <li><a href="IGetPricesTaskCallback.onTaskCanceled.html">
             IGetPricesTaskCallback.onTaskCanceled</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesTaskCallback.onTaskCompleted.html">
+        <li><a href="IGetPricesTaskCallback.onTaskCompleted.html">
             IGetPricesTaskCallback.onTaskCompleted</a></li>
 
     
         
         
-        <li><a href="pricearchive.IGetPricesTaskCallback.onTaskFailed.html">
+        <li><a href="IGetPricesTaskCallback.onTaskFailed.html">
             IGetPricesTaskCallback.onTaskFailed</a></li>
 
     
@@ -930,19 +787,19 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.IInstruments.html">
+        <li><a href="IInstruments.html">
             IInstruments</a></li>
 
     
         
         
-        <li><a href="pricearchive.IInstruments.get.html">
+        <li><a href="IInstruments.get.html">
             IInstruments.get</a></li>
 
     
         
         
-        <li><a href="pricearchive.IInstruments.getCount.html">
+        <li><a href="IInstruments.getCount.html">
             IInstruments.getCount</a></li>
 
     
@@ -954,49 +811,49 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.IPriceArchiveClient.html">
+        <li><a href="IPriceArchiveClient.html">
             IPriceArchiveClient</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPriceArchiveClient.createGetInstrumentsTask.html">
+        <li><a href="IPriceArchiveClient.createGetInstrumentsTask.html">
             IPriceArchiveClient.createGetInstrumentsTask</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPriceArchiveClient.createGetPrices.html">
+        <li><a href="IPriceArchiveClient.createGetPrices.html">
             IPriceArchiveClient.createGetPrices</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPriceArchiveClient.createGetPricesRange.html">
+        <li><a href="IPriceArchiveClient.createGetPricesRange.html">
             IPriceArchiveClient.createGetPricesRange</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPriceArchiveClient.executeTask.html">
+        <li><a href="IPriceArchiveClient.executeTask.html">
             IPriceArchiveClient.executeTask</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPricesRange.html">
+        <li><a href="IPricesRange.html">
             IPricesRange</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPricesRange.getFrom.html">
+        <li><a href="IPricesRange.getFrom.html">
             IPricesRange.getFrom</a></li>
 
     
         
         
-        <li><a href="pricearchive.IPricesRange.getTo.html">
+        <li><a href="IPricesRange.getTo.html">
             IPricesRange.getTo</a></li>
 
     
@@ -1014,55 +871,55 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.ITimeframe.html">
+        <li><a href="ITimeframe.html">
             ITimeframe</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.compare.html">
+        <li><a href="ITimeframe.compare.html">
             ITimeframe.compare</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.getLength.html">
+        <li><a href="ITimeframe.getLength.html">
             ITimeframe.getLength</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.getLengthInSeconds.html">
+        <li><a href="ITimeframe.getLengthInSeconds.html">
             ITimeframe.getLengthInSeconds</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.getTimeframeEnd.html">
+        <li><a href="ITimeframe.getTimeframeEnd.html">
             ITimeframe.getTimeframeEnd</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.getTimeframeStart.html">
+        <li><a href="ITimeframe.getTimeframeStart.html">
             ITimeframe.getTimeframeStart</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.getUnit.html">
+        <li><a href="ITimeframe.getUnit.html">
             ITimeframe.getUnit</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.parse.html">
+        <li><a href="ITimeframe.parse.html">
             ITimeframe.parse</a></li>
 
     
         
         
-        <li><a href="pricearchive.ITimeframe.toString.html">
+        <li><a href="ITimeframe.toString.html">
             ITimeframe.toString</a></li>
 
     
@@ -1072,12 +929,6 @@ div.note-warning code.ctag {
             <p><b>J</b></p>
             <ul class="hhc">
             
-        
-        <li><a href="java.html">
-            Java API</a></li>
-
-    
-        
         
         <li><a href="js.html">
             JavaScript API</a></li>
@@ -1107,176 +958,8 @@ div.note-warning code.ctag {
             <ul class="hhc">
             
         
-        <li><a href="java.client.BarCollection.html">
-            PriceArchive.BarCollection</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.get.xu1.html">
-            PriceArchive.BarCollection.get</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.getInstrument.xu1.html">
-            PriceArchive.BarCollection.getInstrument</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.getPipSize.xu1.html">
-            PriceArchive.BarCollection.getPipSize</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.getPrecision.xu1.html">
-            PriceArchive.BarCollection.getPrecision</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.getStartHour.xu1.html">
-            PriceArchive.BarCollection.getStartHour</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.getTimeframe.xu1.html">
-            PriceArchive.BarCollection.getTimeframe</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.setStartHour.xu1.html">
-            PriceArchive.BarCollection.setStartHour</a></li>
-
-    
-        
-        
-        <li><a href="java.client.BarCollection.size.xu1.html">
-            PriceArchive.BarCollection.size</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.html">
-            PriceArchive.TickCollection</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.get.xu1.html">
-            PriceArchive.TickCollection.get</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.getInstrument.xu1.html">
-            PriceArchive.TickCollection.getInstrument</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.getPipSize.xu1.html">
-            PriceArchive.TickCollection.getPipSize</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.getPrecision.xu1.html">
-            PriceArchive.TickCollection.getPrecision</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.getTimeframe.xu1.html">
-            PriceArchive.TickCollection.getTimeframe</a></li>
-
-    
-        
-        
-        <li><a href="java.client.TickCollection.size.xu1.html">
-            PriceArchive.TickCollection.size</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.html">
             PriceArchiveClient</a></li>
-
-    
-        
-        
-        <li><a href="java.client.html">
-            PriceArchiveClient</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Bar.html">
-            PriceArchiveClient.Bar</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Bar.getAsk.3NE.html">
-            PriceArchiveClient.Bar.getAsk</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Bar.getBid.xUE.html">
-            PriceArchiveClient.Bar.getBid</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Bar.getEnd.KwE.html">
-            PriceArchiveClient.Bar.getEnd</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Bar.getStart.YHB.html">
-            PriceArchiveClient.Bar.getStart</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.html">
-            PriceArchiveClient.Candle</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.getClose.N97.html">
-            PriceArchiveClient.Candle.getClose</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.getHigh.GC9.html">
-            PriceArchiveClient.Candle.getHigh</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.getLow.fH5.html">
-            PriceArchiveClient.Candle.getLow</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.getOpen.d7B.html">
-            PriceArchiveClient.Candle.getOpen</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Candle.Volume.V67.html">
-            PriceArchiveClient.Candle.getVolume</a></li>
 
     
         
@@ -1287,25 +970,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="java.client.GetAllRanges.mx7.html">
-            PriceArchiveClient.GetAllRanges</a></li>
-
-    
-        
-        
-        <li><a href="java.client.GetBarPrices.mx7.html">
-            PriceArchiveClient.GetBarPrices</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.GetInstruments.af9.html">
-            PriceArchiveClient.GetInstruments</a></li>
-
-    
-        
-        
-        <li><a href="java.client.GetInstruments.af9.html">
             PriceArchiveClient.GetInstruments</a></li>
 
     
@@ -1323,25 +988,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="java.client.GetPricesRange.H0B.html">
-            PriceArchiveClient.GetPricesRange</a></li>
-
-    
-        
-        
-        <li><a href="java.client.GetTickPrices.mx7.html">
-            PriceArchiveClient.GetTickPrices</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.InstrumentRange.html">
-            PriceArchiveClient.InstrumentRange</a></li>
-
-    
-        
-        
-        <li><a href="java.client.InstrumentRange.html">
             PriceArchiveClient.InstrumentRange</a></li>
 
     
@@ -1353,19 +1000,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="java.client.InstrumentRange.Instrument.B4C.html">
-            PriceArchiveClient.InstrumentRange.Instrument</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.InstrumentRange.Range.1o3.html">
-            PriceArchiveClient.InstrumentRange.Range</a></li>
-
-    
-        
-        
-        <li><a href="java.client.InstrumentRange.Range.1o3.html">
             PriceArchiveClient.InstrumentRange.Range</a></li>
 
     
@@ -1377,19 +1012,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="java.client.InstrumentRange.Timeframe.6ND.html">
-            PriceArchiveClient.InstrumentRange.Timeframe</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient..ctor.Rf5.html">
-            PriceArchiveClient.PriceArchiveClient</a></li>
-
-    
-        
-        
-        <li><a href="java.client..ctor.Rf5.html">
             PriceArchiveClient.PriceArchiveClient</a></li>
 
     
@@ -1401,19 +1024,7 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="java.client.Range.html">
-            PriceArchiveClient.Range</a></li>
-
-    
-        
-        
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.Range.From.VI2.html">
-            PriceArchiveClient.Range.From</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Range.From.VI2.html">
             PriceArchiveClient.Range.From</a></li>
 
     
@@ -1421,198 +1032,6 @@ div.note-warning code.ctag {
         
         <li><a href="Gehtsoft.PriceArchive.Client.PriceArchiveClient.Range.To.lRB.html">
             PriceArchiveClient.Range.To</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Range.To.lRB.html">
-            PriceArchiveClient.Range.To</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.html">
-            PriceArchiveClient.Tick</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.getAsk.3NE.html">
-            PriceArchiveClient.Tick.getAsk</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.getAskVolume.3NE.html">
-            PriceArchiveClient.Tick.getAskVolume</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.getBid.xUE.html">
-            PriceArchiveClient.Tick.getBid</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.getBidVolume.xUE.html">
-            PriceArchiveClient.Tick.getBidVolume</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Tick.getStart.YHB.html">
-            PriceArchiveClient.Tick.getStart</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.html">
-            PriceArchiveClient.Timeframe</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.DAY.html">
-            PriceArchiveClient.Timeframe.DAY</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.FifteenMinutes.html">
-            PriceArchiveClient.Timeframe.FifteenMinutes</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.FiveMinutes.html">
-            PriceArchiveClient.Timeframe.FiveMinutes</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.getEndDate.html">
-            PriceArchiveClient.Timeframe.getEndDate</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.getLength.html">
-            PriceArchiveClient.Timeframe.getLength</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.getLengthInSeconds.html">
-            PriceArchiveClient.Timeframe.getLengthInSeconds</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.getStartDate.html">
-            PriceArchiveClient.Timeframe.getStartDate</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.getUnit.html">
-            PriceArchiveClient.Timeframe.getUnit</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.HOUR.html">
-            PriceArchiveClient.Timeframe.HOUR</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.MINUTE.html">
-            PriceArchiveClient.Timeframe.MINUTE</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.MONTH.html">
-            PriceArchiveClient.Timeframe.MONTH</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneDay.html">
-            PriceArchiveClient.Timeframe.OneDay</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneHour.html">
-            PriceArchiveClient.Timeframe.OneHour</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneMinute.html">
-            PriceArchiveClient.Timeframe.OneMinute</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneMonth.html">
-            PriceArchiveClient.Timeframe.OneMonth</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneTick.html">
-            PriceArchiveClient.Timeframe.OneTick</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.OneWeek.html">
-            PriceArchiveClient.Timeframe.OneWeek</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.Parse.gh6.html">
-            PriceArchiveClient.Timeframe.Parse</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.TenMinutes.html">
-            PriceArchiveClient.Timeframe.TenMinutes</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.ThirtyMinutes.html">
-            PriceArchiveClient.Timeframe.ThirtyMinutes</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.TICK.html">
-            PriceArchiveClient.Timeframe.TICK</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.Timeframe.ctor.Rf5.html">
-            PriceArchiveClient.Timeframe.Timeframe</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.toString.html">
-            PriceArchiveClient.Timeframe.toString</a></li>
-
-    
-        
-        
-        <li><a href="java.client.Timeframe.java.timeframe.WEEK.html">
-            PriceArchiveClient.Timeframe.WEEK</a></li>
 
     
         
@@ -1671,31 +1090,31 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.PriceArchiveClientFactory.html">
+        <li><a href="PriceArchiveClientFactory.html">
             PriceArchiveClientFactory</a></li>
 
     
         
         
-        <li><a href="pricearchive.PriceArchiveClientFactory.createPriceArchiveClient.html">
+        <li><a href="PriceArchiveClientFactory.createPriceArchiveClient.html">
             PriceArchiveClientFactory.createPriceArchiveClient</a></li>
 
     
         
         
-        <li><a href="pricearchive.PriceHistoryArchiveException.html">
+        <li><a href="PriceHistoryArchiveException.html">
             PriceHistoryArchiveException</a></li>
 
     
         
         
-        <li><a href="pricearchive.PriceHistoryArchiveException.getInfo.html">
+        <li><a href="PriceHistoryArchiveException.getInfo.html">
             PriceHistoryArchiveException.getInfo</a></li>
 
     
         
         
-        <li><a href="pricearchive.PriceHistoryArchiveException.PriceHistoryArchiveException.html">
+        <li><a href="PriceHistoryArchiveException.PriceHistoryArchiveException.html">
             PriceHistoryArchiveException.PriceHistoryArchiveException</a></li>
 
     
@@ -1904,55 +1323,55 @@ div.note-warning code.ctag {
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.html">
+        <li><a href="TimeframeUnit.html">
             TimeframeUnit</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Day.html">
+        <li><a href="TimeframeUnit.Day.html">
             TimeframeUnit.Day</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Hour.html">
+        <li><a href="TimeframeUnit.Hour.html">
             TimeframeUnit.Hour</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Minute.html">
+        <li><a href="TimeframeUnit.Minute.html">
             TimeframeUnit.Minute</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Month.html">
+        <li><a href="TimeframeUnit.Month.html">
             TimeframeUnit.Month</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Second.html">
+        <li><a href="TimeframeUnit.Second.html">
             TimeframeUnit.Second</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Tick.html">
+        <li><a href="TimeframeUnit.Tick.html">
             TimeframeUnit.Tick</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Week.html">
+        <li><a href="TimeframeUnit.Week.html">
             TimeframeUnit.Week</a></li>
 
     
         
         
-        <li><a href="pricearchive.TimeframeUnit.Year.html">
+        <li><a href="TimeframeUnit.Year.html">
             TimeframeUnit.Year</a></li>
 </ul></body>
 </html>
