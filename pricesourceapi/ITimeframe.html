@@ -1,0 +1,239 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ITimeframe</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>class <b>ITimeframe</b></code></font>
+    </p>
+    <p><b>Brief</b></p>
+    <p>The class keeps and manipulates the timeframe identifier.</p>
+    <p><b>Details</b></p><p>The timeframe is the fixed duration associated of a period of time.</p>
+<p>The timeframe is defined by two parameters - a unit (minute, hour...) and
+a duration.</p>
+<p>These periods are used to aggregate
+price data into <a href="IBar.html"><code>bars</code></a> and <a href="ICandle.html"><code>candles</code></a>.</p>
+<p>Note: Due to nature of the data being aggregated the timeframe duration must
+follow the following restriction - it must the whole number of period
+within one unit of the higher order unit. For example, it is possible to have only
+1 minute (60 bars in an hour), 2 minutes (30 bars in an hour),
+3 minutes (20 bars in an hour), 5 minutes (12 bars in an hour),
+6 minutes (10 bars in an hour), 10 minutes (6 bars in an hour),
+12 minutes (5 bars in an hour)
+15 minutes (4 bars in an hour), 20 minutes (3 bars in an hour), or
+30 minutes (2 bars in an hour) time frames.</p>
+<p>The timeframe may be represented by a string, the duration is put first and
+the unit is put second. The units are m for minutes, h for hours, d for days, w for weeks.</p><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Static Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.parse.html">parse</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Parses the string presentation of the time frame</p>
+    </td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Public Methods</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.compare.html">compare</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Compares the duration of this timeframe and another timeframe.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.getLength.html">getLength</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the duration</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.getLengthInSeconds.html">getLengthInSeconds</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the length of the period in seconds.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.getTimeframeEnd.html">getTimeframeEnd</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Calculates when a bar of this timeframe which contains the date specified would end</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.getTimeframeStart.html">getTimeframeStart</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Calculates when a bar of this timeframe which contains the date specified would start</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.getUnit.html">getUnit</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the unit</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain_nw">
+      <p><a href="ITimeframe.toString.html">toString</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Returns the string representation of a timeframe</p>
+    </td>
+  </tr>
+</table><p>
+      <center><a href="cpp.html">back</a></center>
+    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
+</html>

@@ -1,0 +1,241 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>IPriceArchiveClient.createGetPrices</title><script type="text/javascript">
+       if (!window.location.href.indexOf('mk:') == 0) {
+               var head = document.getElementsByTagName('head')[0];
+
+               var script1 = document.createElement('script');
+               script1.type = 'text/javascript';
+               script1.src = 'highlighter/highlight.pack.js';
+               head.appendChild(script1);
+
+               var script2 = document.createElement('script');
+               script2.type = 'text/javascript';
+               script2.src = 'highlighter/highlight.cshtml.js';
+               head.appendChild(script2);
+
+               window.onload=function() {
+                   hljs.registerLanguage('cshtml-razor', window.hljsDefineCshtmlRazor);
+                   x = document.querySelectorAll('pre code');
+                   for (var i = 0; i < x.length; i++) {
+                        if (x[i].hasAttribute('class')) {
+                            hljs.highlightBlock(x[i]);
+                       }
+                   }
+               };
+           }
+    </script><script language="javascript" type="text/javascript">
+function hidediv( divname )
+{
+    document.getElementById( divname ).style.display = 'none';
+}
+
+function showdiv( divname )
+{
+    document.getElementById( divname ).style.display = 'inline';
+}
+</script><link rel="stylesheet" href="highlighter/default.css">
+<style type="text/css">
+    body
+    {
+        color:#444444;
+        background-color:white;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+    }
+    A:link
+    {
+        color:#0068be;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    A:visited
+    {
+        color:#039CCF;
+        font-family:Trebuchet MS, Arial;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    p, h1, h2, h3, h4, h5, h6
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+
+    pre.example
+    {
+        background-color : #f1f1f1;
+    }
+
+    ul, ul.main
+    {
+        list-style-type : disc;
+        margin-left: 18pt;
+    }
+    ol, ol.main
+    {
+        list-style-type: decimal;
+        margin-left: 18pt;
+    }
+    li
+    {
+        font-family : Trebuchet MS, Arial;
+    }
+    ul.hhc
+    {
+        list-style-type : none;
+        margin-left : 1em;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    li.hhc
+    {
+        font-family : Trebuchet MS, Arial;
+        margin-left : 0;
+        padding : 0;
+        padding-left : 0;
+        text-indent : 0;
+    }
+    
+    table, table.tmain
+    {
+        font-size:10pt;
+        border-collapse : collapse;
+        border : 1px solid;
+        border-color : #dfe3e7;
+    }
+    td.tmain, td.tmain_nw, td.thdr
+    {
+        border : 1px solid;
+        border-color : #dfe3e7;
+        background-color : rgb(255, 255, 255);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+    }
+    td.tmain p, td.tmain_nw p, td.thdr p
+    {
+        margin-bottom : 6pt;
+    }
+    td.tmain_nw
+    {
+        white-space : nowrap;
+    }
+    td.thdr
+    {
+        font-size:10pt;
+        background-color : #f1f1f1;
+    }
+    table.decl
+    {
+        border : 0px none;
+        background-color : rgb(192, 192, 192);
+        vertical-align : top;
+        padding : 3px;
+        font-family : Trebuchet MS, Arial;
+        width : 100%;
+    }
+</style></head>
+  <body>
+    <p>
+      <font size="+1"><code>public method <b>IPriceArchiveClient.createGetPrices</b></code></font>
+    </p><p><b>Brief</b></p>
+<p>Creates a task to load the price history.</p>
+<table class="tmain" width="100%">
+  <tr>
+    <td class="thdr"><b>Declaration</b></td>
+  </tr>
+  <tr>
+    <td class="tmain"><table class="decl">
+  <tr>
+    <td colspan="2">C++</td>
+  </tr>
+  <tr>
+    <td width="1%" nowrap valign="top"><code>virtual&nbsp;std::shared_ptr&lt; <a href="IGetPricesTask.html">IGetPricesTask</a> &gt;&nbsp;</code></td>
+    <td width="99%" valign="top"><code><b>createGetPrices</b> (std::shared_ptr&lt; <a href="IGetPricesTaskCallback.html">IGetPricesTaskCallback</a> &gt; callback, const char * instrument, std::shared_ptr&lt; <a href="ITimeframe.html">ITimeframe</a> &gt; timeframe, DATE from, DATE to)  = 0</code></td>
+  </tr>
+</table></td>
+  </tr>
+</table><p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parameters</b></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>callback</code></td>
+    <td class="tmain" width="69%"><p>The callback to be executed when the task is successfully finished.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>instrument</code></td>
+    <td class="tmain" width="69%"><p>The name of the instrument for which the prices must be loaded.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>timeframe</code></td>
+    <td class="tmain" width="69%"><p>The timeframe.</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>from</code></td>
+    <td class="tmain" width="69%"><p>The date time to load prices from.</p>
+<p>The value is in Ole date time format</p></td>
+  </tr>
+  <tr>
+    <td class="tmain_nw" width="31%"><code>to</code></td>
+    <td class="tmain" width="69%"><p>The date time to load prices to.</p>
+<p>The value is in Ole date time format</p></td>
+  </tr>
+</table><p><b>Details</b></p><p>Use <a href="IPriceArchiveClient.executeTask.html"><code>executeTask()</code></a> to execute the task.</p><p>example</p>
+<pre class="example" id="example2"><code class="cpp">class GetPricesTaskCallback : public IGetPricesTaskCallback
+{
+ public:
+    virtual void onTaskCompleted(std::shared_ptr&lt;IGetPricesTask&gt; task, std::shared_ptr&lt;IBarHistory&gt; barHistory) override
+    {
+        double pipSize = barHistory-&gt;getPipSize();
+        double precision = barHistory-&gt;getPrecision();
+        const char *instrument = barHistory-&gt;getInstrument();
+ 
+        for (int i = 0; i &lt; barHistory-&gt;getCount(); ++i)
+        {
+            std::string dt;
+            DateUtils::formatDate(barHistory-&gt;getStartDate(i), &quot;%Y-%m-%d %H:%M&quot;, dt);
+            std::cout
+              &lt;&lt; &quot;start:  &quot;  &lt;&lt; dt &lt;&lt; std::endl
+              &lt;&lt; &quot;bid:  &quot;  &lt;&lt; std::endl
+              &lt;&lt; &quot; open:  &quot;  &lt;&lt; barHistory-&gt;getBidOpen(i)  &lt;&lt; std::endl
+              &lt;&lt; &quot; high:  &quot;  &lt;&lt; barHistory-&gt;getBidHigh(i)  &lt;&lt; std::endl
+              &lt;&lt; &quot; low:   &quot;  &lt;&lt; barHistory-&gt;getBidLow(i)   &lt;&lt; std::endl
+              &lt;&lt; &quot; close: &quot;  &lt;&lt; barHistory-&gt;getBidClose(i) &lt;&lt; std::endl
+              &lt;&lt; &quot;ask:  &quot;  &lt;&lt; std::endl
+              &lt;&lt; &quot; open:  &quot;  &lt;&lt; barHistory-&gt;getAskOpen(i)  &lt;&lt; std::endl
+              &lt;&lt; &quot; high:  &quot;  &lt;&lt; barHistory-&gt;getAskHigh(i)  &lt;&lt; std::endl
+              &lt;&lt; &quot; low:   &quot;  &lt;&lt; barHistory-&gt;getAskLow(i)   &lt;&lt; std::endl
+              &lt;&lt; &quot; close: &quot;  &lt;&lt; barHistory-&gt;getAskClose(i) &lt;&lt; std::endl;
+        }
+    }
+ 
+    virtual void onTaskCanceled(std::shared_ptr&lt;IGetPricesTask&gt; task) override
+    {
+        std::cout &lt;&lt;  &quot;The task was canceled&quot; &lt;&lt; std::endl;
+    }
+ 
+    virtual void onTaskFailed(std::shared_ptr&lt;IGetPricesTask&gt; task, const std::string &error) override
+    {
+        std::cout &lt;&lt;  &quot;The task was failed&quot; &lt;&lt; std::endl;
+    }
+};
+ 
+...
+const char *instrument = &quot;EURUSD&quot;;
+std::shared_ptr&lt;ITimeframe&gt; tf = std::shared_ptr&lt;ITimeframe&gt;(ITimeframe::parse(&quot;1m&quot;));
+const char *format = &quot;%Y-%m-%d %H:%M:%S&quot;;
+DATE from = DateUtils::parseDate(&quot;2000-05-04 00:00:00&quot;, format);
+DATE to = DateUtils::parseDate(&quot;2000-05-04 01:00:00&quot;, format);
+auto getPricesTaskCallback = std::make_shared&lt;GetPricesTaskCallback&gt;();
+auto getPricesTask = std::shared_ptr&lt;IGetPricesTask&gt;(priceArchiveClient-&gt;createGetPrices(getPricesTaskCallback, instrument, tf, from, to));
+std::string error;
+bool result = priceArchiveClient-&gt;executeTask(getPricesTask, error);</code></pre><p>Declared in <a href="IPriceArchiveClient.html">IPriceArchiveClient</a></p>
+<p>
+  <center><a href="IPriceArchiveClient.html">back</a></center>
+</p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href, 'IPriceArchiveClient.html');</script></body>
+</html>
