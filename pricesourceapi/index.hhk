@@ -18,511 +18,511 @@
     <li><object type="text/sitemap">
               <param name="Keyword" value="ATask">
               <param name="Name" value="ATask">
-              <param name="Local" value="ATask.html">
+              <param name="Local" value="pricearchive.ATask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="DateUtils">
               <param name="Name" value="DateUtils">
-              <param name="Local" value="DateUtils.html">
+              <param name="Local" value="pricearchive.DateUtils.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="DateUtils.formatDate">
               <param name="Name" value="DateUtils.formatDate">
-              <param name="Local" value="DateUtils.formatDate.html">
+              <param name="Local" value="pricearchive.DateUtils.formatDate.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="DateUtils.parseDate">
               <param name="Name" value="DateUtils.parseDate">
-              <param name="Local" value="DateUtils.parseDate.html">
+              <param name="Local" value="pricearchive.DateUtils.parseDate.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar">
               <param name="Name" value="IBar">
-              <param name="Local" value="IBar.html">
+              <param name="Local" value="pricearchive.IBar.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.getAsk">
               <param name="Name" value="IBar.getAsk">
-              <param name="Local" value="IBar.getAsk.html">
+              <param name="Local" value="pricearchive.IBar.getAsk.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.getBid">
               <param name="Name" value="IBar.getBid">
-              <param name="Local" value="IBar.getBid.html">
+              <param name="Local" value="pricearchive.IBar.getBid.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.getEnd">
               <param name="Name" value="IBar.getEnd">
-              <param name="Local" value="IBar.getEnd.html">
+              <param name="Local" value="pricearchive.IBar.getEnd.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.getStart">
               <param name="Name" value="IBar.getStart">
-              <param name="Local" value="IBar.getStart.html">
+              <param name="Local" value="pricearchive.IBar.getStart.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.update">
               <param name="Name" value="IBar.update">
-              <param name="Local" value="IBar.update.html">
+              <param name="Local" value="pricearchive.IBar.update.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBar.update">
               <param name="Name" value="IBar.update">
-              <param name="Local" value="IBar.update.1.html">
+              <param name="Local" value="pricearchive.IBar.update.1.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory">
               <param name="Name" value="IBarHistory">
-              <param name="Local" value="IBarHistory.html">
+              <param name="Local" value="pricearchive.IBarHistory.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.find">
               <param name="Name" value="IBarHistory.find">
-              <param name="Local" value="IBarHistory.find.html">
+              <param name="Local" value="pricearchive.IBarHistory.find.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getAskClose">
               <param name="Name" value="IBarHistory.getAskClose">
-              <param name="Local" value="IBarHistory.getAskClose.html">
+              <param name="Local" value="pricearchive.IBarHistory.getAskClose.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getAskHigh">
               <param name="Name" value="IBarHistory.getAskHigh">
-              <param name="Local" value="IBarHistory.getAskHigh.html">
+              <param name="Local" value="pricearchive.IBarHistory.getAskHigh.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getAskLow">
               <param name="Name" value="IBarHistory.getAskLow">
-              <param name="Local" value="IBarHistory.getAskLow.html">
+              <param name="Local" value="pricearchive.IBarHistory.getAskLow.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getAskOpen">
               <param name="Name" value="IBarHistory.getAskOpen">
-              <param name="Local" value="IBarHistory.getAskOpen.html">
+              <param name="Local" value="pricearchive.IBarHistory.getAskOpen.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getAskVolume">
               <param name="Name" value="IBarHistory.getAskVolume">
-              <param name="Local" value="IBarHistory.getAskVolume.html">
+              <param name="Local" value="pricearchive.IBarHistory.getAskVolume.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getBidClose">
               <param name="Name" value="IBarHistory.getBidClose">
-              <param name="Local" value="IBarHistory.getBidClose.html">
+              <param name="Local" value="pricearchive.IBarHistory.getBidClose.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getBidHigh">
               <param name="Name" value="IBarHistory.getBidHigh">
-              <param name="Local" value="IBarHistory.getBidHigh.html">
+              <param name="Local" value="pricearchive.IBarHistory.getBidHigh.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getBidLow">
               <param name="Name" value="IBarHistory.getBidLow">
-              <param name="Local" value="IBarHistory.getBidLow.html">
+              <param name="Local" value="pricearchive.IBarHistory.getBidLow.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getBidOpen">
               <param name="Name" value="IBarHistory.getBidOpen">
-              <param name="Local" value="IBarHistory.getBidOpen.html">
+              <param name="Local" value="pricearchive.IBarHistory.getBidOpen.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getBidVolume">
               <param name="Name" value="IBarHistory.getBidVolume">
-              <param name="Local" value="IBarHistory.getBidVolume.html">
+              <param name="Local" value="pricearchive.IBarHistory.getBidVolume.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getCount">
               <param name="Name" value="IBarHistory.getCount">
-              <param name="Local" value="IBarHistory.getCount.html">
+              <param name="Local" value="pricearchive.IBarHistory.getCount.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getInstrument">
               <param name="Name" value="IBarHistory.getInstrument">
-              <param name="Local" value="IBarHistory.getInstrument.html">
+              <param name="Local" value="pricearchive.IBarHistory.getInstrument.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getPipSize">
               <param name="Name" value="IBarHistory.getPipSize">
-              <param name="Local" value="IBarHistory.getPipSize.html">
+              <param name="Local" value="pricearchive.IBarHistory.getPipSize.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getPrecision">
               <param name="Name" value="IBarHistory.getPrecision">
-              <param name="Local" value="IBarHistory.getPrecision.html">
+              <param name="Local" value="pricearchive.IBarHistory.getPrecision.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getStartDate">
               <param name="Name" value="IBarHistory.getStartDate">
-              <param name="Local" value="IBarHistory.getStartDate.html">
+              <param name="Local" value="pricearchive.IBarHistory.getStartDate.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IBarHistory.getTimeframe">
               <param name="Name" value="IBarHistory.getTimeframe">
-              <param name="Local" value="IBarHistory.getTimeframe.html">
+              <param name="Local" value="pricearchive.IBarHistory.getTimeframe.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle">
               <param name="Name" value="ICandle">
-              <param name="Local" value="ICandle.html">
+              <param name="Local" value="pricearchive.ICandle.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getClose">
               <param name="Name" value="ICandle.getClose">
-              <param name="Local" value="ICandle.getClose.html">
+              <param name="Local" value="pricearchive.ICandle.getClose.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getHigh">
               <param name="Name" value="ICandle.getHigh">
-              <param name="Local" value="ICandle.getHigh.html">
+              <param name="Local" value="pricearchive.ICandle.getHigh.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getLow">
               <param name="Name" value="ICandle.getLow">
-              <param name="Local" value="ICandle.getLow.html">
+              <param name="Local" value="pricearchive.ICandle.getLow.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getOpen">
               <param name="Name" value="ICandle.getOpen">
-              <param name="Local" value="ICandle.getOpen.html">
+              <param name="Local" value="pricearchive.ICandle.getOpen.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getStart">
               <param name="Name" value="ICandle.getStart">
-              <param name="Local" value="ICandle.getStart.html">
+              <param name="Local" value="pricearchive.ICandle.getStart.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ICandle.getVolume">
               <param name="Name" value="ICandle.getVolume">
-              <param name="Local" value="ICandle.getVolume.html">
+              <param name="Local" value="pricearchive.ICandle.getVolume.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetInstrumentsTask">
               <param name="Name" value="IGetInstrumentsTask">
-              <param name="Local" value="IGetInstrumentsTask.html">
+              <param name="Local" value="pricearchive.IGetInstrumentsTask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetInstrumentsTaskCallback">
               <param name="Name" value="IGetInstrumentsTaskCallback">
-              <param name="Local" value="IGetInstrumentsTaskCallback.html">
+              <param name="Local" value="pricearchive.IGetInstrumentsTaskCallback.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetInstrumentsTaskCallback.onTaskCanceled">
               <param name="Name" value="IGetInstrumentsTaskCallback.onTaskCanceled">
-              <param name="Local" value="IGetInstrumentsTaskCallback.onTaskCanceled.html">
+              <param name="Local" value="pricearchive.IGetInstrumentsTaskCallback.onTaskCanceled.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetInstrumentsTaskCallback.onTaskCompleted">
               <param name="Name" value="IGetInstrumentsTaskCallback.onTaskCompleted">
-              <param name="Local" value="IGetInstrumentsTaskCallback.onTaskCompleted.html">
+              <param name="Local" value="pricearchive.IGetInstrumentsTaskCallback.onTaskCompleted.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetInstrumentsTaskCallback.onTaskFailed">
               <param name="Name" value="IGetInstrumentsTaskCallback.onTaskFailed">
-              <param name="Local" value="IGetInstrumentsTaskCallback.onTaskFailed.html">
+              <param name="Local" value="pricearchive.IGetInstrumentsTaskCallback.onTaskFailed.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesRangeTask">
               <param name="Name" value="IGetPricesRangeTask">
-              <param name="Local" value="IGetPricesRangeTask.html">
+              <param name="Local" value="pricearchive.IGetPricesRangeTask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesRangeTaskCallback">
               <param name="Name" value="IGetPricesRangeTaskCallback">
-              <param name="Local" value="IGetPricesRangeTaskCallback.html">
+              <param name="Local" value="pricearchive.IGetPricesRangeTaskCallback.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesRangeTaskCallback.onTaskCanceled">
               <param name="Name" value="IGetPricesRangeTaskCallback.onTaskCanceled">
-              <param name="Local" value="IGetPricesRangeTaskCallback.onTaskCanceled.html">
+              <param name="Local" value="pricearchive.IGetPricesRangeTaskCallback.onTaskCanceled.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesRangeTaskCallback.onTaskCompleted">
               <param name="Name" value="IGetPricesRangeTaskCallback.onTaskCompleted">
-              <param name="Local" value="IGetPricesRangeTaskCallback.onTaskCompleted.html">
+              <param name="Local" value="pricearchive.IGetPricesRangeTaskCallback.onTaskCompleted.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesRangeTaskCallback.onTaskFailed">
               <param name="Name" value="IGetPricesRangeTaskCallback.onTaskFailed">
-              <param name="Local" value="IGetPricesRangeTaskCallback.onTaskFailed.html">
+              <param name="Local" value="pricearchive.IGetPricesRangeTaskCallback.onTaskFailed.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesTask">
               <param name="Name" value="IGetPricesTask">
-              <param name="Local" value="IGetPricesTask.html">
+              <param name="Local" value="pricearchive.IGetPricesTask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesTaskCallback">
               <param name="Name" value="IGetPricesTaskCallback">
-              <param name="Local" value="IGetPricesTaskCallback.html">
+              <param name="Local" value="pricearchive.IGetPricesTaskCallback.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesTaskCallback.onTaskCanceled">
               <param name="Name" value="IGetPricesTaskCallback.onTaskCanceled">
-              <param name="Local" value="IGetPricesTaskCallback.onTaskCanceled.html">
+              <param name="Local" value="pricearchive.IGetPricesTaskCallback.onTaskCanceled.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesTaskCallback.onTaskCompleted">
               <param name="Name" value="IGetPricesTaskCallback.onTaskCompleted">
-              <param name="Local" value="IGetPricesTaskCallback.onTaskCompleted.html">
+              <param name="Local" value="pricearchive.IGetPricesTaskCallback.onTaskCompleted.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IGetPricesTaskCallback.onTaskFailed">
               <param name="Name" value="IGetPricesTaskCallback.onTaskFailed">
-              <param name="Local" value="IGetPricesTaskCallback.onTaskFailed.html">
+              <param name="Local" value="pricearchive.IGetPricesTaskCallback.onTaskFailed.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IInstruments">
               <param name="Name" value="IInstruments">
-              <param name="Local" value="IInstruments.html">
+              <param name="Local" value="pricearchive.IInstruments.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IInstruments.get">
               <param name="Name" value="IInstruments.get">
-              <param name="Local" value="IInstruments.get.html">
+              <param name="Local" value="pricearchive.IInstruments.get.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IInstruments.getCount">
               <param name="Name" value="IInstruments.getCount">
-              <param name="Local" value="IInstruments.getCount.html">
+              <param name="Local" value="pricearchive.IInstruments.getCount.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPriceArchiveClient">
               <param name="Name" value="IPriceArchiveClient">
-              <param name="Local" value="IPriceArchiveClient.html">
+              <param name="Local" value="pricearchive.IPriceArchiveClient.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPriceArchiveClient.createGetInstrumentsTask">
               <param name="Name" value="IPriceArchiveClient.createGetInstrumentsTask">
-              <param name="Local" value="IPriceArchiveClient.createGetInstrumentsTask.html">
+              <param name="Local" value="pricearchive.IPriceArchiveClient.createGetInstrumentsTask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPriceArchiveClient.createGetPrices">
               <param name="Name" value="IPriceArchiveClient.createGetPrices">
-              <param name="Local" value="IPriceArchiveClient.createGetPrices.html">
+              <param name="Local" value="pricearchive.IPriceArchiveClient.createGetPrices.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPriceArchiveClient.createGetPricesRange">
               <param name="Name" value="IPriceArchiveClient.createGetPricesRange">
-              <param name="Local" value="IPriceArchiveClient.createGetPricesRange.html">
+              <param name="Local" value="pricearchive.IPriceArchiveClient.createGetPricesRange.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPriceArchiveClient.executeTask">
               <param name="Name" value="IPriceArchiveClient.executeTask">
-              <param name="Local" value="IPriceArchiveClient.executeTask.html">
+              <param name="Local" value="pricearchive.IPriceArchiveClient.executeTask.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPricesRange">
               <param name="Name" value="IPricesRange">
-              <param name="Local" value="IPricesRange.html">
+              <param name="Local" value="pricearchive.IPricesRange.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPricesRange.getFrom">
               <param name="Name" value="IPricesRange.getFrom">
-              <param name="Local" value="IPricesRange.getFrom.html">
+              <param name="Local" value="pricearchive.IPricesRange.getFrom.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="IPricesRange.getTo">
               <param name="Name" value="IPricesRange.getTo">
-              <param name="Local" value="IPricesRange.getTo.html">
+              <param name="Local" value="pricearchive.IPricesRange.getTo.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe">
               <param name="Name" value="ITimeframe">
-              <param name="Local" value="ITimeframe.html">
+              <param name="Local" value="pricearchive.ITimeframe.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.parse">
               <param name="Name" value="ITimeframe.parse">
-              <param name="Local" value="ITimeframe.parse.html">
+              <param name="Local" value="pricearchive.ITimeframe.parse.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.compare">
               <param name="Name" value="ITimeframe.compare">
-              <param name="Local" value="ITimeframe.compare.html">
+              <param name="Local" value="pricearchive.ITimeframe.compare.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.getLength">
               <param name="Name" value="ITimeframe.getLength">
-              <param name="Local" value="ITimeframe.getLength.html">
+              <param name="Local" value="pricearchive.ITimeframe.getLength.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.getLengthInSeconds">
               <param name="Name" value="ITimeframe.getLengthInSeconds">
-              <param name="Local" value="ITimeframe.getLengthInSeconds.html">
+              <param name="Local" value="pricearchive.ITimeframe.getLengthInSeconds.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.getTimeframeEnd">
               <param name="Name" value="ITimeframe.getTimeframeEnd">
-              <param name="Local" value="ITimeframe.getTimeframeEnd.html">
+              <param name="Local" value="pricearchive.ITimeframe.getTimeframeEnd.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.getTimeframeStart">
               <param name="Name" value="ITimeframe.getTimeframeStart">
-              <param name="Local" value="ITimeframe.getTimeframeStart.html">
+              <param name="Local" value="pricearchive.ITimeframe.getTimeframeStart.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.getUnit">
               <param name="Name" value="ITimeframe.getUnit">
-              <param name="Local" value="ITimeframe.getUnit.html">
+              <param name="Local" value="pricearchive.ITimeframe.getUnit.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="ITimeframe.toString">
               <param name="Name" value="ITimeframe.toString">
-              <param name="Local" value="ITimeframe.toString.html">
+              <param name="Local" value="pricearchive.ITimeframe.toString.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="PriceArchiveClientFactory">
               <param name="Name" value="PriceArchiveClientFactory">
-              <param name="Local" value="PriceArchiveClientFactory.html">
+              <param name="Local" value="pricearchive.PriceArchiveClientFactory.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="PriceArchiveClientFactory.createPriceArchiveClient">
               <param name="Name" value="PriceArchiveClientFactory.createPriceArchiveClient">
-              <param name="Local" value="PriceArchiveClientFactory.createPriceArchiveClient.html">
+              <param name="Local" value="pricearchive.PriceArchiveClientFactory.createPriceArchiveClient.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="PriceHistoryArchiveException">
               <param name="Name" value="PriceHistoryArchiveException">
-              <param name="Local" value="PriceHistoryArchiveException.html">
+              <param name="Local" value="pricearchive.PriceHistoryArchiveException.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="PriceHistoryArchiveException.getInfo">
               <param name="Name" value="PriceHistoryArchiveException.getInfo">
-              <param name="Local" value="PriceHistoryArchiveException.getInfo.html">
+              <param name="Local" value="pricearchive.PriceHistoryArchiveException.getInfo.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="PriceHistoryArchiveException.PriceHistoryArchiveException">
               <param name="Name" value="PriceHistoryArchiveException.PriceHistoryArchiveException">
-              <param name="Local" value="PriceHistoryArchiveException.PriceHistoryArchiveException.html">
+              <param name="Local" value="pricearchive.PriceHistoryArchiveException.PriceHistoryArchiveException.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit">
               <param name="Name" value="TimeframeUnit">
-              <param name="Local" value="TimeframeUnit.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Day">
               <param name="Name" value="TimeframeUnit.Day">
-              <param name="Local" value="TimeframeUnit.Day.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Day.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Hour">
               <param name="Name" value="TimeframeUnit.Hour">
-              <param name="Local" value="TimeframeUnit.Hour.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Hour.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Minute">
               <param name="Name" value="TimeframeUnit.Minute">
-              <param name="Local" value="TimeframeUnit.Minute.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Minute.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Month">
               <param name="Name" value="TimeframeUnit.Month">
-              <param name="Local" value="TimeframeUnit.Month.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Month.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Second">
               <param name="Name" value="TimeframeUnit.Second">
-              <param name="Local" value="TimeframeUnit.Second.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Second.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Tick">
               <param name="Name" value="TimeframeUnit.Tick">
-              <param name="Local" value="TimeframeUnit.Tick.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Tick.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Week">
               <param name="Name" value="TimeframeUnit.Week">
-              <param name="Local" value="TimeframeUnit.Week.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Week.html">
               </object>
     
     <li><object type="text/sitemap">
               <param name="Keyword" value="TimeframeUnit.Year">
               <param name="Name" value="TimeframeUnit.Year">
-              <param name="Local" value="TimeframeUnit.Year.html">
+              <param name="Local" value="pricearchive.TimeframeUnit.Year.html">
               </object>
     
     <li><object type="text/sitemap">
@@ -1219,6 +1219,444 @@
               <param name="Keyword" value="Gehtsoft.PriceArchive.JSClient.JSClient">
               <param name="Name" value="Gehtsoft.PriceArchive.JSClient.JSClient">
               <param name="Local" value="Gehtsoft.PriceArchive.JSClient.JSClient.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="Java API">
+              <param name="Name" value="Java API">
+              <param name="Local" value="java.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection">
+              <param name="Name" value="PriceArchive.BarCollection">
+              <param name="Local" value="java.client.BarCollection.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.get">
+              <param name="Name" value="PriceArchive.BarCollection.get">
+              <param name="Local" value="java.client.BarCollection.get.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.getInstrument">
+              <param name="Name" value="PriceArchive.BarCollection.getInstrument">
+              <param name="Local" value="java.client.BarCollection.getInstrument.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.getPipSize">
+              <param name="Name" value="PriceArchive.BarCollection.getPipSize">
+              <param name="Local" value="java.client.BarCollection.getPipSize.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.getPrecision">
+              <param name="Name" value="PriceArchive.BarCollection.getPrecision">
+              <param name="Local" value="java.client.BarCollection.getPrecision.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.getStartHour">
+              <param name="Name" value="PriceArchive.BarCollection.getStartHour">
+              <param name="Local" value="java.client.BarCollection.getStartHour.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.getTimeframe">
+              <param name="Name" value="PriceArchive.BarCollection.getTimeframe">
+              <param name="Local" value="java.client.BarCollection.getTimeframe.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.setStartHour">
+              <param name="Name" value="PriceArchive.BarCollection.setStartHour">
+              <param name="Local" value="java.client.BarCollection.setStartHour.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.BarCollection.size">
+              <param name="Name" value="PriceArchive.BarCollection.size">
+              <param name="Local" value="java.client.BarCollection.size.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection">
+              <param name="Name" value="PriceArchive.TickCollection">
+              <param name="Local" value="java.client.TickCollection.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.get">
+              <param name="Name" value="PriceArchive.TickCollection.get">
+              <param name="Local" value="java.client.TickCollection.get.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.getInstrument">
+              <param name="Name" value="PriceArchive.TickCollection.getInstrument">
+              <param name="Local" value="java.client.TickCollection.getInstrument.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.getPipSize">
+              <param name="Name" value="PriceArchive.TickCollection.getPipSize">
+              <param name="Local" value="java.client.TickCollection.getPipSize.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.getPrecision">
+              <param name="Name" value="PriceArchive.TickCollection.getPrecision">
+              <param name="Local" value="java.client.TickCollection.getPrecision.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.getTimeframe">
+              <param name="Name" value="PriceArchive.TickCollection.getTimeframe">
+              <param name="Local" value="java.client.TickCollection.getTimeframe.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchive.TickCollection.size">
+              <param name="Name" value="PriceArchive.TickCollection.size">
+              <param name="Local" value="java.client.TickCollection.size.xu1.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient">
+              <param name="Name" value="PriceArchiveClient">
+              <param name="Local" value="java.client.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.PriceArchiveClient">
+              <param name="Name" value="PriceArchiveClient.PriceArchiveClient">
+              <param name="Local" value="java.client..ctor.Rf5.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.GetAllRanges">
+              <param name="Name" value="PriceArchiveClient.GetAllRanges">
+              <param name="Local" value="java.client.GetAllRanges.mx7.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.GetBarPrices">
+              <param name="Name" value="PriceArchiveClient.GetBarPrices">
+              <param name="Local" value="java.client.GetBarPrices.mx7.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.GetInstruments">
+              <param name="Name" value="PriceArchiveClient.GetInstruments">
+              <param name="Local" value="java.client.GetInstruments.af9.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.GetPricesRange">
+              <param name="Name" value="PriceArchiveClient.GetPricesRange">
+              <param name="Local" value="java.client.GetPricesRange.H0B.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.GetTickPrices">
+              <param name="Name" value="PriceArchiveClient.GetTickPrices">
+              <param name="Local" value="java.client.GetTickPrices.mx7.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Bar">
+              <param name="Name" value="PriceArchiveClient.Bar">
+              <param name="Local" value="java.client.Bar.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Bar.getAsk">
+              <param name="Name" value="PriceArchiveClient.Bar.getAsk">
+              <param name="Local" value="java.client.Bar.getAsk.3NE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Bar.getBid">
+              <param name="Name" value="PriceArchiveClient.Bar.getBid">
+              <param name="Local" value="java.client.Bar.getBid.xUE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Bar.getEnd">
+              <param name="Name" value="PriceArchiveClient.Bar.getEnd">
+              <param name="Local" value="java.client.Bar.getEnd.KwE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Bar.getStart">
+              <param name="Name" value="PriceArchiveClient.Bar.getStart">
+              <param name="Local" value="java.client.Bar.getStart.YHB.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle">
+              <param name="Name" value="PriceArchiveClient.Candle">
+              <param name="Local" value="java.client.Candle.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle.getClose">
+              <param name="Name" value="PriceArchiveClient.Candle.getClose">
+              <param name="Local" value="java.client.Candle.getClose.N97.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle.getHigh">
+              <param name="Name" value="PriceArchiveClient.Candle.getHigh">
+              <param name="Local" value="java.client.Candle.getHigh.GC9.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle.getLow">
+              <param name="Name" value="PriceArchiveClient.Candle.getLow">
+              <param name="Local" value="java.client.Candle.getLow.fH5.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle.getOpen">
+              <param name="Name" value="PriceArchiveClient.Candle.getOpen">
+              <param name="Local" value="java.client.Candle.getOpen.d7B.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Candle.getVolume">
+              <param name="Name" value="PriceArchiveClient.Candle.getVolume">
+              <param name="Local" value="java.client.Candle.Volume.V67.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.InstrumentRange">
+              <param name="Name" value="PriceArchiveClient.InstrumentRange">
+              <param name="Local" value="java.client.InstrumentRange.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.InstrumentRange.Instrument">
+              <param name="Name" value="PriceArchiveClient.InstrumentRange.Instrument">
+              <param name="Local" value="java.client.InstrumentRange.Instrument.B4C.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.InstrumentRange.Range">
+              <param name="Name" value="PriceArchiveClient.InstrumentRange.Range">
+              <param name="Local" value="java.client.InstrumentRange.Range.1o3.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.InstrumentRange.Timeframe">
+              <param name="Name" value="PriceArchiveClient.InstrumentRange.Timeframe">
+              <param name="Local" value="java.client.InstrumentRange.Timeframe.6ND.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Range">
+              <param name="Name" value="PriceArchiveClient.Range">
+              <param name="Local" value="java.client.Range.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Range.From">
+              <param name="Name" value="PriceArchiveClient.Range.From">
+              <param name="Local" value="java.client.Range.From.VI2.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Range.To">
+              <param name="Name" value="PriceArchiveClient.Range.To">
+              <param name="Local" value="java.client.Range.To.lRB.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick">
+              <param name="Name" value="PriceArchiveClient.Tick">
+              <param name="Local" value="java.client.Tick.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick.getAsk">
+              <param name="Name" value="PriceArchiveClient.Tick.getAsk">
+              <param name="Local" value="java.client.Tick.getAsk.3NE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick.getAskVolume">
+              <param name="Name" value="PriceArchiveClient.Tick.getAskVolume">
+              <param name="Local" value="java.client.Tick.getAskVolume.3NE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick.getBid">
+              <param name="Name" value="PriceArchiveClient.Tick.getBid">
+              <param name="Local" value="java.client.Tick.getBid.xUE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick.getBidVolume">
+              <param name="Name" value="PriceArchiveClient.Tick.getBidVolume">
+              <param name="Local" value="java.client.Tick.getBidVolume.xUE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Tick.getStart">
+              <param name="Name" value="PriceArchiveClient.Tick.getStart">
+              <param name="Local" value="java.client.Tick.getStart.YHB.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe">
+              <param name="Name" value="PriceArchiveClient.Timeframe">
+              <param name="Local" value="java.client.Timeframe.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.DAY">
+              <param name="Name" value="PriceArchiveClient.Timeframe.DAY">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.DAY.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.FifteenMinutes">
+              <param name="Name" value="PriceArchiveClient.Timeframe.FifteenMinutes">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.FifteenMinutes.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.FiveMinutes">
+              <param name="Name" value="PriceArchiveClient.Timeframe.FiveMinutes">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.FiveMinutes.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.HOUR">
+              <param name="Name" value="PriceArchiveClient.Timeframe.HOUR">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.HOUR.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.MINUTE">
+              <param name="Name" value="PriceArchiveClient.Timeframe.MINUTE">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.MINUTE.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.MONTH">
+              <param name="Name" value="PriceArchiveClient.Timeframe.MONTH">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.MONTH.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneDay">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneDay">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneDay.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneHour">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneHour">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneHour.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneMinute">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneMinute">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneMinute.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneMonth">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneMonth">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneMonth.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneTick">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneTick">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneTick.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.OneWeek">
+              <param name="Name" value="PriceArchiveClient.Timeframe.OneWeek">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.OneWeek.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.TenMinutes">
+              <param name="Name" value="PriceArchiveClient.Timeframe.TenMinutes">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.TenMinutes.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.ThirtyMinutes">
+              <param name="Name" value="PriceArchiveClient.Timeframe.ThirtyMinutes">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.ThirtyMinutes.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.TICK">
+              <param name="Name" value="PriceArchiveClient.Timeframe.TICK">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.TICK.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.WEEK">
+              <param name="Name" value="PriceArchiveClient.Timeframe.WEEK">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.WEEK.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.Parse">
+              <param name="Name" value="PriceArchiveClient.Timeframe.Parse">
+              <param name="Local" value="java.client.Timeframe.Parse.gh6.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.Timeframe">
+              <param name="Name" value="PriceArchiveClient.Timeframe.Timeframe">
+              <param name="Local" value="java.client.Timeframe.Timeframe.ctor.Rf5.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.getEndDate">
+              <param name="Name" value="PriceArchiveClient.Timeframe.getEndDate">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.getEndDate.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.getLength">
+              <param name="Name" value="PriceArchiveClient.Timeframe.getLength">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.getLength.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.getLengthInSeconds">
+              <param name="Name" value="PriceArchiveClient.Timeframe.getLengthInSeconds">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.getLengthInSeconds.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.getStartDate">
+              <param name="Name" value="PriceArchiveClient.Timeframe.getStartDate">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.getStartDate.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.getUnit">
+              <param name="Name" value="PriceArchiveClient.Timeframe.getUnit">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.getUnit.html">
+              </object>
+    
+    <li><object type="text/sitemap">
+              <param name="Keyword" value="PriceArchiveClient.Timeframe.toString">
+              <param name="Name" value="PriceArchiveClient.Timeframe.toString">
+              <param name="Local" value="java.client.Timeframe.java.timeframe.toString.html">
               </object>
     
 </UL>
