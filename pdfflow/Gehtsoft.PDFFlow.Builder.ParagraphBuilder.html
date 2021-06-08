@@ -1,148 +1,38 @@
-<html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>ParagraphBuilder</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><code>class <b>ParagraphBuilder</b></code></font>
-    </p>
-    <p></p>
-    <table class="tmain" width="100%">
-      <tr>
-        <td colspan="2" class="thdr"><b>Parents</b></td>
-      </tr>
-      <tr>
-        <td style="tmain" width="30"></td>
-        <td style="tmain"><code>object</code></td>
-      </tr>
-      <tr>
-        <td style="tmain" width="30"></td>
-        <td style="tmain"><code>Gehtsoft.PDFFlow.Models.Shared.IFont</code></td>
-      </tr>
-    </table>
-    <p><b>Brief</b></p>
-    <p>The class for adding and configuring paragraphs and their content.</p><p></p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>ParagraphBuilder</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1><code>class <b>ParagraphBuilder</b></code></h1>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parents</b></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30" style="border-right: none;"></td>
+    <td class="tmain" style="border-left: none;">
+      <p><code>object</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30" style="border-right: none;"></td>
+    <td class="tmain" style="border-left: none;">
+      <p><code>Gehtsoft.PDFFlow.Models.Shared.IFont</code></p>
+    </td>
+  </tr>
+</table>
+<h2>Brief</h2>
+<p>The class for adding and configuring paragraphs and their content.</p><p></p>
 <table class="tmain" width="100%">
   <tr>
     <td colspan="2" class="thdr"><b>Static Public Methods</b></td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.New.ii4.html">New</a></p>
     </td>
     <td class="tmain" width="69%">
-      <p>Creates a new instance of <code>ParagraphBuilder</code>.</p>
+      <p>Creates a new instance of <code class="ctag">ParagraphBuilder</code>.</p>
     </td>
   </tr>
 </table><p></p>
@@ -151,7 +41,7 @@ function showdiv( divname )
     <td colspan="2" class="thdr"><b>Public Properties</b></td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.Font.LvD.html">Font</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -164,7 +54,7 @@ function showdiv( divname )
     <td colspan="2" class="thdr"><b>Public Methods</b></td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ApplyStyle.wJD.html">ApplyStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -172,7 +62,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.BuildToSection.hP5.html">BuildToSection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -180,7 +70,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetAlignment.3I4.html">SetAlignment</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -188,7 +78,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBackColor.KXC.html">SetBackColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -196,7 +86,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBold.KzF.html">SetBold</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -204,7 +94,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorder.lV4.html">SetBorder</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -212,7 +102,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorder.MB8.html">SetBorder</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -220,7 +110,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorder.fX2.html">SetBorder</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -228,7 +118,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorder.JA3.html">SetBorder</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -236,7 +126,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderColor.d37.html">SetBorderColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -244,7 +134,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderColor.AuF.html">SetBorderColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -252,7 +142,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderStroke.p0B.html">SetBorderStroke</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -260,7 +150,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderStroke.ab.html">SetBorderStroke</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -268,7 +158,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderWidth.8zG.html">SetBorderWidth</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -276,7 +166,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderWidth.WPB.html">SetBorderWidth</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -284,7 +174,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetDateStyle.FjE.html">SetDateStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -292,7 +182,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFirstLineIndent.cVG.html">SetFirstLineIndent</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -300,7 +190,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFont.H2.html">SetFont</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -308,7 +198,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFontColor.IW2.html">SetFontColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -316,7 +206,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFontEncodingName.kl3.html">SetFontEncodingName</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -324,7 +214,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFontName.jYA.html">SetFontName</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -332,7 +222,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFontSize.1k8.html">SetFontSize</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -340,7 +230,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetInlineImageStyle.Ou4.html">SetInlineImageStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -348,7 +238,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetItalic.Nu5.html">SetItalic</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -356,7 +246,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetJustifyAlignment.BCD.html">SetJustifyAlignment</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -364,7 +254,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetKeepWithNext.3dE.html">SetKeepWithNext</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -372,7 +262,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetLineSpacing.PVF.html">SetLineSpacing</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -380,7 +270,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetList.BJE.html">SetList</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -388,7 +278,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetListBulleted.mi8.html">SetListBulleted</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -396,7 +286,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetListNumbered.TLB.html">SetListNumbered</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -404,7 +294,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginBottom.vyD.html">SetMarginBottom</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -412,7 +302,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginLeft.5c6.html">SetMarginLeft</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -420,7 +310,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginRight.8fD.html">SetMarginRight</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -428,7 +318,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMargins.9c.html">SetMargins</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -436,7 +326,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMargins.ysG.html">SetMargins</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -444,7 +334,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginTop.6iD.html">SetMarginTop</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -452,7 +342,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetOblique.i17.html">SetOblique</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -460,7 +350,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetOrphanMinimum.XWF.html">SetOrphanMinimum</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -468,7 +358,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetOutline.3gB.html">SetOutline</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -476,7 +366,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetPageBreak.TVA.html">SetPageBreak</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -484,7 +374,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetPageNumberStyle.Md1.html">SetPageNumberStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -492,7 +382,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethrough.QIA.html">SetStrikethrough</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -500,7 +390,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethrough.vk2.html">SetStrikethrough</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -508,7 +398,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethroughColor.jI5.html">SetStrikethroughColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -516,7 +406,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethroughStroke.Cu3.html">SetStrikethroughStroke</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -524,7 +414,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetTextDirection.lhB.html">SetTextDirection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -532,7 +422,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetTextElementStyle.GLC.html">SetTextElementStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -540,7 +430,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetTextOverflowAction.u.html">SetTextOverflowAction</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -548,7 +438,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderline.09C.html">SetUnderline</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -556,7 +446,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderline.Ri7.html">SetUnderline</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -564,7 +454,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderlineColor.oV8.html">SetUnderlineColor</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -572,7 +462,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderlineStroke.ur2.html">SetUnderlineStroke</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -580,7 +470,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUrlStyle.TTG.html">SetUrlStyle</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -588,7 +478,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetWidowMinimum.QwC.html">SetWidowMinimum</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -596,7 +486,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToArea.AL4.html">ToArea</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -604,7 +494,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToCell.T4F.html">ToCell</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -612,7 +502,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToDocument.b4D.html">ToDocument</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -620,7 +510,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToRow.zRE.html">ToRow</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -628,7 +518,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToSection.UpC.html">ToSection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -636,7 +526,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ToTable.GnG.html">ToTable</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -644,6 +534,5 @@ function showdiv( divname )
     </td>
   </tr>
 </table><p>
-      <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

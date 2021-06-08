@@ -1,125 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Adding Section</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Adding Section</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to add and configure a section.</p>
-    <p><b>Details</b></p><p>A section is a part of a document holding content and layout. A document may contain one or more sections. Each section may consist of several pages that will be generated automatically depending on the content.
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Adding Section</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Adding Section</h1>
+<h2>Brief</h2>
+<p>The article describes how to add and configure a section.</p>
+<h2>Details</h2><p>A section is a part of a document holding content and layout. A document may contain one or more sections. Each section may consist of several pages that will be generated automatically depending on the content.
 A new section starts on a new page.</p>
 <p>You can configure settings of a section using methods of the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a> class.</p>
 <p>Each section has the following settings:</p><table class="tmain">
@@ -130,33 +16,33 @@ A new section starts on a new page.</p>
   </tr>
   <tr>
     <td class="tmain"><p>Paper size</p></td>
-    <td class="tmain"><p><code>Letter</code></p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code>.SetSize</code> methods to set a custom
+    <td class="tmain"><p><code class="ctag">Letter</code></p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code class="ctag">.SetSize</code> methods to set a custom
 or a predefined paper size.</p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Page orientation</p></td>
-    <td class="tmain"><p><code>Landscape</code></p></td>
+    <td class="tmain"><p><code class="ctag">Landscape</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetOrientation.owE.html"><code>SetOrientation</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Page margins</p></td>
-    <td class="tmain"><p><code>20f</code></p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code>.SetMargins</code> methods</p></td>
+    <td class="tmain"><p><code class="ctag">20f</code></p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code class="ctag">.SetMargins</code> methods</p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Font</p></td>
-    <td class="tmain"><p><code>Helvetica</code>, <code>11f</code>, <code>Black</code></p></td>
+    <td class="tmain"><p><code class="ctag">Helvetica</code>, <code class="ctag">11f</code>, <code class="ctag">Black</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetStyleFont.VVF.html"><code>SetStyleFont</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Page numbering style</p></td>
-    <td class="tmain"><p><code>Arabic</code></p></td>
+    <td class="tmain"><p><code class="ctag">Arabic</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetNumerationStyle.uX1.html"><code>SetNumerationStyle</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Number to start the page numbering from</p></td>
-    <td class="tmain"><p><code>1</code></p></td>
+    <td class="tmain"><p><code class="ctag">1</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetPageNumberStart.XY1.html"><code>SetPageNumberStart</code></a></p></td>
   </tr>
 </table><p>You can add the following content to a section (see details in the corresponding articles):</p><ul class="main">
@@ -190,26 +76,25 @@ as soon as the document is built.</p></li>
 <p><a href="CreatingDocument.html">Creating Document</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
 <p><b>Examples</b></p><div id="open20" style="display:none">
-  <p>Example 1. Create and configure a section with a paragraph containing text&nbsp;<a href="javascript: showdiv('close20'); hidediv('open20');" onclick="javascript: showdiv('close20'); hidediv('open20');">[show]</a></p>
+  <p>Example 1. Create and configure a section with a paragraph containing text&nbsp;<a href="javascript: showdiv('close20'); hidediv('open20');" onclick="javascript: showdiv('close20'); hidediv('open20');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
 <div id="close20" style="display:inline">
-  <p>Example 1. Create and configure a section with a paragraph containing text&nbsp;<a href="javascript: showdiv('open20'); hidediv('close20');" onclick="javascript: showdiv('open20'); hidediv('close20');">[hide]</a></p>
-  <pre class="example" id="example20"><code>   <b>//Create a document builder:</b>
+  <p>Example 1. Create and configure a section with a paragraph containing text&nbsp;<a href="javascript: showdiv('open20'); hidediv('close20');" onclick="javascript: showdiv('open20'); hidediv('close20');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example20"><code class="csharp">   <b>//Create a document builder:</b>
    DocumentBuilder.New()
  
    <b>//Add a section and section content:</b>
    .AddSection()
            .SetMargins(50)
            .SetOrientation(PageOrientation.Portrait)
-           .AddParagraph(&quot;Lorem ipsum dolor sit amet&quot;)
+           .AddParagraph("Lorem ipsum dolor sit amet")
    <b>//Build a file:</b>
-   .ToDocument().Build(&quot;Result.pdf&quot;);
+   .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
- <img src="img/add-section-ex1.png">
  
- <a href="pdf/Sample_AddingSection1.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/add-section-ex1.png" width="800">
+ <a href="pdf/Sample_AddingSection1.pdf">See the document</a></code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

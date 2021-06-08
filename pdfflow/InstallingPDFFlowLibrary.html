@@ -1,133 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Installing PDFFlow Library</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Installing PDFFlow Library</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to install the PDFFlow library.</p>
-    <p><b>Details</b></p><p>You can install the PDFFlow library in a number of ways.</p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Installing PDFFlow Library</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Installing PDFFlow Library</h1>
+<h2>Brief</h2>
+<p>The article describes how to install the PDFFlow library.</p>
+<h2>Details</h2><p>You can install the PDFFlow library in a number of ways.</p>
 <p>Note that you can also install a separate free library for generating barcodes Gehtsoft PDFFlow Barcodes using the same instructions just
-replacing <code>Gehtsoft.PDFFlowLib</code> with <code>Gehtsoft.PDFFlow.Barcodes</code>.
+replacing <code class="ctag">Gehtsoft.PDFFlowLib</code> with <code class="ctag">Gehtsoft.PDFFlow.Barcodes</code>.
 <br><br>
 <b>dotnet CLI</b></p><ol class="main">
   <li><p>Open a command line and switch to the directory that contains your project file.</p></li>
-  <li><p>Use the following command to install a NuGet package:</p><pre class="example" id="example12"><code>    dotnet add package Gehtsoft.PDFFlowLib</code></pre></li>
+  <li><p>Use the following command to install a NuGet package:</p><pre class="example" id="example12"><code class="csharp">    dotnet add package Gehtsoft.PDFFlowLib</code></pre></li>
   <li><p>After the command completes, look at the project file to make sure the package was installed.<br>
-You can open the <code>.csproj</code> file to see the added reference:</p><pre class="example" id="example13"><code>   &lt;ItemGroup&gt;
+You can open the <code class="ctag">.csproj</code> file to see the added reference:</p><pre class="example" id="example13"><code class="csharp">   &lt;ItemGroup&gt;
       &lt;PackageReference Include=&quot;Gehtsoft.PDFFlowLib&quot; Version=&quot;2.0.0&quot; /&gt;
     &lt;/ItemGroup&gt;</code></pre></li>
 </ol><p><br>
@@ -135,51 +21,50 @@ You can open the <code>.csproj</code> file to see the added reference:</p><pre c
 <p><br><br>
 <b>Visual Studio NuGet Package Manager</b></p><ol class="main">
   <li><p>In <b>Solution Explorer</b>, right-click either <b>References</b> or a project and select <b>Manage NuGet Packages</b>.</p></li>
-  <li><p>Go to the <b>Browse</b> tab. Make sure that the current package source is <code>nuget.org</code> (on the upper right).
-Search for the <code>Gehtsoft.PDFFlowLib</code> package using the search box on the upper left.
+  <li><p>Go to the <b>Browse</b> tab. Make sure that the current package source is <code class="ctag">nuget.org</code> (on the upper right).
+Search for the <code class="ctag">Gehtsoft.PDFFlowLib</code> package using the search box on the upper left.
 Select the package from the list to display its information, which also enables the <b>Install</b> button
 along with a version-selection drop-down.</p></li>
-  <li><p>Select the <code>2.0.0</code> version from the drop-down and click <b>Install</b>.
+  <li><p>Select the <code class="ctag">2.0.0</code> version from the drop-down and click <b>Install</b>.
 Visual Studio installs the package and its dependencies into the project.
 You may be asked to accept license terms. When the installation completes, the added package appears on the <b>Installed</b> tab.
-The package is also listed in the <b>References</b> node of <b>Solution Explorer</b> indicating that you can refer to it in the project with <code>using</code> directives.</p></li>
-  <li><p>You can open the <code>.csproj</code> file to see the added reference. Right-click the project on the <code>Solution Explorer</code> tab (on the upper right)
-and select the option <code>Edit Project File</code> from the dropdown.</p></li>
+The package is also listed in the <b>References</b> node of <b>Solution Explorer</b> indicating that you can refer to it in the project with <code class="ctag">using</code> directives.</p></li>
+  <li><p>You can open the <code class="ctag">.csproj</code> file to see the added reference. Right-click the project on the <code class="ctag">Solution Explorer</code> tab (on the upper right)
+and select the option <code class="ctag">Edit Project File</code> from the dropdown.</p></li>
 </ol><p><br>
 <img src="img/PDFFlow_installation_in_Visual_Studio.gif"></p>
 <p><br><br>
 <b>JetBrains Rider NuGet Package Manager</b></p><ol class="main">
   <li><p>Open the <b>NuGet</b> tab at the bottom of JetBrains Rider.</p></li>
-  <li><p>Ensure that the current package source is <code>nuget.org</code> or <code>All feeds</code>.</p></li>
-  <li><p>Find the <code>Gehtsoft.PDFFlowLib</code> package using the search field on the upper left of the <b>Packages</b> tab.</p></li>
+  <li><p>Ensure that the current package source is <code class="ctag">nuget.org</code> or <code class="ctag">All feeds</code>.</p></li>
+  <li><p>Find the <code class="ctag">Gehtsoft.PDFFlowLib</code> package using the search field on the upper left of the <b>Packages</b> tab.</p></li>
   <li><p>In the right part of the tab, choose a project where you want to install the selected package.
 If your solution contains too many projects, you may want to use the scope selector on the toolbar to display a specific project and hide all others.</p></li>
   <li><p>Use the <b>Version</b> selector on the right tab to choose the desired version of the package.</p></li>
   <li><p>Click the <b>Install</b> button and confirm the installation in the pop-up window.</p></li>
   <li><p>After the installation completes, look at the project file to make sure that the package was installed.<br>
-You can open the <code>.csproj</code> file to see the added reference. Right-click the project on the <b>Explorer</b> tab (on the upper left) and select the following options
-from the dropdown: <code>Edit</code> -&gt; <code>Edit 'MyProject.csproj'</code>.</p></li>
+You can open the <code class="ctag">.csproj</code> file to see the added reference. Right-click the project on the <b>Explorer</b> tab (on the upper left) and select the following options
+from the dropdown: <code class="ctag">Edit</code> -&gt; <code class="ctag">Edit 'MyProject.csproj'</code>.</p></li>
 </ol><p><br>
 <img src="img/PDFFlow_installation_in_JetBrains_Rider.gif"></p>
 <p><br><br>
 <b>Visual Studio for Mac NuGet Package Manager</b></p><ol class="main">
   <li><p>With a project opened in Visual Studio for Mac, right-click the <b>Dependencies</b> folder
 (the <b>Packages]</b> folder if using a Xamarin project) in the <b>Solution Window</b> and select <b>Manage NuGet Packages</b>.</p></li>
-  <li><p>This launches the <b>Manage NuGet Packages</b> window. Ensure that the <b>Source</b> drop-down in the upper left corner is set to <code>nuget.org</code>,
+  <li><p>This launches the <b>Manage NuGet Packages</b> window. Ensure that the <b>Source</b> drop-down in the upper left corner is set to <code class="ctag">nuget.org</code>,
 so that you're searching the central NuGet package repository.</p></li>
-  <li><p>Use the search box in the upper right corner to find the <code>Gehtsoft.PDFFlowLib</code> package.
+  <li><p>Use the search box in the upper right corner to find the <code class="ctag">Gehtsoft.PDFFlowLib</code> package.
 When you have found the package, select it and click the <b>Add Package</b> button to begin the installation.</p></li>
 </ol><p><br><br>
 <b>Package Manager Console in Visual Studio (PowerShell)</b></p><ol class="main">
-  <li><p>Open the project/solution in Visual Studio and open the console using the <code>Tools</code> &gt; <code>NuGet Package Manager</code> &gt; <code>Package Manager Console</code> command.</p></li>
-  <li><p>Run the install command:</p><pre class="example" id="example14"><code>    Install-Package Gehtsoft.PDFFlowLib -ProjectName MyProject</code></pre></li>
+  <li><p>Open the project/solution in Visual Studio and open the console using the <code class="ctag">Tools</code> &gt; <code class="ctag">NuGet Package Manager</code> &gt; <code class="ctag">Package Manager Console</code> command.</p></li>
+  <li><p>Run the install command:</p><pre class="example" id="example14"><code class="csharp">    Install-Package Gehtsoft.PDFFlowLib -ProjectName MyProject</code></pre></li>
 </ol><p><br>
 <img src="img/PDFFlow_installation_in_Package_Manager_Console.gif"></p>
 <p><br><br>
 <b>nuget.exe CLI</b></p><ol class="main">
   <li><p>Open a command line and switch to the directory that contains your project file.</p></li>
-  <li><p>To install the Gehtsoft.PDFFlowLib package to the packages folder, use the following command:</p><pre class="example" id="example15"><code>    nuget install Gehtsoft.PDFFlowLib -OutputDirectory packages</code></pre></li>
+  <li><p>To install the Gehtsoft.PDFFlowLib package to the packages folder, use the following command:</p><pre class="example" id="example15"><code class="csharp">    nuget install Gehtsoft.PDFFlowLib -OutputDirectory packages</code></pre></li>
 </ol><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

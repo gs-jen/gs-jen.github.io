@@ -1,125 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Creating Multilevel List</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Creating Multilevel List</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to create a multilevel list.</p>
-    <p><b>Details</b></p><p>A section may have as many multilevel lists as you need.</p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Creating Multilevel List</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Creating Multilevel List</h1>
+<h2>Brief</h2>
+<p>The article describes how to create a multilevel list.</p>
+<h2>Details</h2><p>A section may have as many multilevel lists as you need.</p>
 <p>You can make a paragraph an item of a <i>numbered</i> multilevel list using the
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetListNumbered.TLB.html"><code>ParagraphBuilder.SetListNumbered</code></a> method.
 For each item, you can specify the numbering style, the level of the list, the left indent, and enable the hierarchic numeration is necessary.
@@ -130,8 +16,8 @@ The available numbering styles are: Arabic numbers, lower and upper Roman number
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetListBulleted.mi8.html"><code>ParagraphBuilder.SetListBulleted</code></a> method.
 For each item, you can specify the bullet symbol, the level of the list, and the left indent.
 The available bullet symbols are a bullet and a dash (see the <a href="Gehtsoft.PDFFlow.Models.Enumerations.ListBullet.html"><code>ListBullet</code></a> enumeration).</p>
-<p>The default level left indent for a multilevel list is <code>20f</code>, the default numbering style of a numbered list is <code>Arabic</code>,
-the default bullet symbol is <code>Bullet</code>.</p>
+<p>The default level left indent for a multilevel list is <code class="ctag">20f</code>, the default numbering style of a numbered list is <code class="ctag">Arabic</code>,
+the default bullet symbol is <code class="ctag">Bullet</code>.</p>
 <p>You can configure the formatting settings of list items directly or apply a style to them using methods of
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.
 You can also set a style for all lists in the section using the
@@ -146,191 +32,191 @@ and its automatic numeration will start from the beginning.</p>
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
-<p><b>Examples</b></p><div id="open79" style="display:none">
-  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('close79'); hidediv('open79');" onclick="javascript: showdiv('close79'); hidediv('open79');">[show]</a></p>
+<p><b>Examples</b></p><div id="open87" style="display:none">
+  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('close87'); hidediv('open87');" onclick="javascript: showdiv('close87'); hidediv('open87');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close79" style="display:inline">
-  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('open79'); hidediv('close79');" onclick="javascript: showdiv('open79'); hidediv('close79');">[hide]</a></p>
-  <pre class="example" id="example79"><code>            var latin = NumerationStyle.LowerLatin;
+<div id="close87" style="display:inline">
+  <p>Example 1. Create a numbered list&nbsp;<a href="javascript: showdiv('open87'); hidediv('close87');" onclick="javascript: showdiv('open87'); hidediv('close87');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example87"><code class="csharp">            var latin = NumerationStyle.LowerLatin;
             DocumentBuilder.New()
             .AddSection()
-                .AddParagraph(&quot;Level 0, Item 1&quot;).SetListNumbered().ToSection()
-                .AddParagraph(&quot;Level 1, Item a&quot;).SetListNumbered(latin, 1).ToSection()
-                .AddParagraph(&quot;Level 1, Item b&quot;).SetListNumbered(latin, 1).ToSection()
-                .AddParagraph(&quot;Level 0, Item 2&quot;).SetListNumbered().ToSection()
-                .AddParagraph(&quot;Level 0, Item 3&quot;).SetListNumbered().ToDocument()
-            .Build(&quot;Result.pdf&quot;);
+                .AddParagraph("Level 0, Item 1").SetListNumbered().ToSection()
+                .AddParagraph("Level 1, Item a").SetListNumbered(latin, 1).ToSection()
+                .AddParagraph("Level 1, Item b").SetListNumbered(latin, 1).ToSection()
+                .AddParagraph("Level 0, Item 2").SetListNumbered().ToSection()
+                .AddParagraph("Level 0, Item 3").SetListNumbered().ToDocument()
+            .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex1.png">
- <a href="pdf/Sample_CreatingMultilevelList1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open80" style="display:inline">
-  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('close80'); hidediv('open80');" onclick="javascript: showdiv('close80'); hidediv('open80');">[show]</a></p>
+ <img src="img/multilevel-list-ex1.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList1.pdf">See the document</a></code></pre>
+</div><div id="open88" style="display:inline">
+  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('close88'); hidediv('open88');" onclick="javascript: showdiv('close88'); hidediv('open88');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close80" style="display:none">
-  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('open80'); hidediv('close80');" onclick="javascript: showdiv('open80'); hidediv('close80');">[hide]</a></p>
-  <pre class="example" id="example80"><code>    var document = DocumentBuilder.New();
-    document.AddSectionToDocument(sectionBuilder =&gt;
+<div id="close88" style="display:none">
+  <p>Example 1a. Create a numbered list (using configuration actions)&nbsp;<a href="javascript: showdiv('open88'); hidediv('close88');" onclick="javascript: showdiv('open88'); hidediv('close88');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example88"><code class="csharp">    var document = DocumentBuilder.New();
+    document.AddSectionToDocument(sectionBuilder =>
         {
             sectionBuilder
-                .AddParagraphToSection(paragraphBuilder =&gt;
+                .AddParagraphToSection(paragraphBuilder =>
                 {
-                    paragraphBuilder.AddText(&quot;Level 0, Item 1&quot;);
+                    paragraphBuilder.AddText("Level 0, Item 1");
                     paragraphBuilder.SetListNumbered(NumerationStyle.Arabic, 0);
                 })
-                .AddParagraphToSection(paragraphBuilder =&gt;
+                .AddParagraphToSection(paragraphBuilder =>
                 {
-                    paragraphBuilder.AddText(&quot;Level 1, Item a&quot;);
+                    paragraphBuilder.AddText("Level 1, Item a");
                     paragraphBuilder.SetListNumbered(NumerationStyle.LowerLatin, 1);
                 })
-                .AddParagraphToSection(paragraphBuilder =&gt;
+                .AddParagraphToSection(paragraphBuilder =>
                 {
-                    paragraphBuilder.AddText(&quot;Level 1, Item b&quot;);
+                    paragraphBuilder.AddText("Level 1, Item b");
                     paragraphBuilder.SetListNumbered(NumerationStyle.LowerLatin, 1);
                 })
-                .AddParagraphToSection(paragraphBuilder =&gt;
+                .AddParagraphToSection(paragraphBuilder =>
                 {
-                    paragraphBuilder.AddText(&quot;Level 0, Item 2&quot;);
+                    paragraphBuilder.AddText("Level 0, Item 2");
                     paragraphBuilder.SetListNumbered(NumerationStyle.Arabic, 0);
                 })
-                .AddParagraphToSection(paragraphBuilder =&gt;
+                .AddParagraphToSection(paragraphBuilder =>
                 {
-                    paragraphBuilder.AddText(&quot;Level 0, Item 3&quot;);
+                    paragraphBuilder.AddText("Level 0, Item 3");
                     paragraphBuilder.SetListNumbered(NumerationStyle.Arabic, 0);
                 });
         });
-    document.Build(&quot;Result.pdf&quot;);
+    document.Build("Result.pdf");
  
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex1.png">
- <a href="pdf/Sample_CreatingMultilevelList2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open81" style="display:none">
-  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('close81'); hidediv('open81');" onclick="javascript: showdiv('close81'); hidediv('open81');">[show]</a></p>
+ <img src="img/multilevel-list-ex1.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList2.pdf">See the document</a></code></pre>
+</div><div id="open89" style="display:none">
+  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('close89'); hidediv('open89');" onclick="javascript: showdiv('close89'); hidediv('open89');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close81" style="display:inline">
-  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('open81'); hidediv('close81');" onclick="javascript: showdiv('open81'); hidediv('close81');">[hide]</a></p>
-  <pre class="example" id="example81"><code>            DocumentBuilder.New()
+<div id="close89" style="display:inline">
+  <p>Example 2. Create a bulleted list&nbsp;<a href="javascript: showdiv('open89'); hidediv('close89');" onclick="javascript: showdiv('open89'); hidediv('close89');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example89"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
-            .AddParagraph(&quot;Level 0, Item 1&quot;)
+            .AddParagraph("Level 0, Item 1")
                 .SetFontColor(Color.Red)
                 .SetListBulleted().ToSection()
-            .AddParagraph(&quot;Level 1, Item 1&quot;)
+            .AddParagraph("Level 1, Item 1")
                 .SetListBulleted(ListBullet.Bullet, 1).ToSection()
-            .AddParagraph(&quot;Level 1, Item 2&quot;)
+            .AddParagraph("Level 1, Item 2")
                 .SetListBulleted(ListBullet.Bullet, 1).ToSection()
-            .AddParagraph(&quot;Level 2, Item 1&quot;)
+            .AddParagraph("Level 2, Item 1")
                 .SetListBulleted(ListBullet.Dash, 2).ToSection()
-            .AddParagraph(&quot;Level 2, Item 2&quot;)
+            .AddParagraph("Level 2, Item 2")
                 .SetListBulleted(ListBullet.Dash, 2).ToSection()
-            .AddParagraph(&quot;Level 0, Item 2&quot;)
+            .AddParagraph("Level 0, Item 2")
                 .SetFontColor(Color.Red)
                 .SetListBulleted().ToSection()
-            .AddParagraph(&quot;Level 0, Item 3&quot;)
+            .AddParagraph("Level 0, Item 3")
                 .SetFontColor(Color.Red)
                 .SetListBulleted().ToDocument()
-            .Build(&quot;Result.pdf&quot;);
+            .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex3.png">
- <a href="pdf/Sample_CreatingMultilevelList3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open82" style="display:none">
-  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('close82'); hidediv('open82');" onclick="javascript: showdiv('close82'); hidediv('open82');">[show]</a></p>
+ <img src="img/multilevel-list-ex3.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList3.pdf">See the document</a></code></pre>
+</div><div id="open90" style="display:none">
+  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('close90'); hidediv('open90');" onclick="javascript: showdiv('close90'); hidediv('open90');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close82" style="display:inline">
-  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('open82'); hidediv('close82');" onclick="javascript: showdiv('open82'); hidediv('close82');">[hide]</a></p>
-  <pre class="example" id="example82"><code>            DocumentBuilder.New()
+<div id="close90" style="display:inline">
+  <p>Example 3. Set level indent values&nbsp;<a href="javascript: showdiv('open90'); hidediv('close90');" onclick="javascript: showdiv('open90'); hidediv('close90');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example90"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
-                .AddParagraph(&quot;Level 0, Item 1. Shifted by 5 points&quot;)
+                .AddParagraph("Level 0, Item 1. Shifted by 5 points")
                     .SetListBulleted(ListBullet.Bullet, 0, 5).ToSection()
-                .AddParagraph(&quot;Level 1, Item 1. Shifted by 15 points&quot;)
+                .AddParagraph("Level 1, Item 1. Shifted by 15 points")
                     .SetListBulleted(ListBullet.Bullet, 1, 15).ToSection()
-                .AddParagraph(&quot;Level 1, Item 2. Shifted by 15 points&quot;)
+                .AddParagraph("Level 1, Item 2. Shifted by 15 points")
                     .SetListBulleted(ListBullet.Bullet, 1, 15).ToSection()
-                .AddParagraph(&quot;Level 2, Item 1. Shifted by 20 points&quot;)
+                .AddParagraph("Level 2, Item 1. Shifted by 20 points")
                     .SetListBulleted(ListBullet.Dash, 2, 20).ToSection()
-                .AddParagraph(&quot;Level 2, Item 2. Shifted by 20 points&quot;)
+                .AddParagraph("Level 2, Item 2. Shifted by 20 points")
                     .SetListBulleted(ListBullet.Dash, 2, 20).ToDocument()
-            .Build(&quot;Result.pdf&quot;);
+            .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex4.png">
- <a href="pdf/Sample_CreatingMultilevelList4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open83" style="display:none">
-  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('close83'); hidediv('open83');" onclick="javascript: showdiv('close83'); hidediv('open83');">[show]</a></p>
+ <img src="img/multilevel-list-ex4.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList4.pdf">See the document</a></code></pre>
+</div><div id="open91" style="display:none">
+  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('close91'); hidediv('open91');" onclick="javascript: showdiv('close91'); hidediv('open91');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close83" style="display:inline">
-  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('open83'); hidediv('close83');" onclick="javascript: showdiv('open83'); hidediv('close83');">[hide]</a></p>
-  <pre class="example" id="example83"><code>            var latin = NumerationStyle.LowerLatin;
+<div id="close91" style="display:inline">
+  <p>Example 4. Set hierarchic numeration&nbsp;<a href="javascript: showdiv('open91'); hidediv('close91');" onclick="javascript: showdiv('open91'); hidediv('close91');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example91"><code class="csharp">            var latin = NumerationStyle.LowerLatin;
             var arabic = NumerationStyle.Arabic;
             DocumentBuilder.New()
             .AddSection()
-                .AddParagraph(&quot;Level 0, Item 1&quot;)
+                .AddParagraph("Level 0, Item 1")
                     .SetListNumbered().ToSection()
-                .AddParagraph(&quot;Level 1, Item a&quot;)
+                .AddParagraph("Level 1, Item a")
                     .SetListNumbered(latin, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 1, Item b&quot;)
+                .AddParagraph("Level 1, Item b")
                     .SetListNumbered(latin, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 0, Item 2&quot;)
+                .AddParagraph("Level 0, Item 2")
                     .SetListNumbered().ToSection()
-                .AddParagraph(&quot;Level 1, Item 1&quot;)
+                .AddParagraph("Level 1, Item 1")
                     .SetListNumbered(arabic, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 1, Item 2&quot;)
+                .AddParagraph("Level 1, Item 2")
                     .SetListNumbered(arabic, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 0, Item 3&quot;)
+                .AddParagraph("Level 0, Item 3")
                     .SetListNumbered().ToSection()
-                .AddParagraph(&quot;Level 1, Item 1&quot;)
+                .AddParagraph("Level 1, Item 1")
                     .SetListNumbered(arabic, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 1, Item 2&quot;)
+                .AddParagraph("Level 1, Item 2")
                     .SetListNumbered(arabic, 1, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 2, Item 1&quot;)
+                .AddParagraph("Level 2, Item 1")
                     .SetListNumbered(arabic, 2, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 2, Item 2&quot;)
+                .AddParagraph("Level 2, Item 2")
                     .SetListNumbered(arabic, 2, hierarchicNumeration: true).ToSection()
-                .AddParagraph(&quot;Level 1, Item 3&quot;)
+                .AddParagraph("Level 1, Item 3")
                     .SetListNumbered(arabic, 1, hierarchicNumeration: true).ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex5.png">
- <a href="pdf/Sample_CreatingMultilevelList5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open84" style="display:none">
-  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('close84'); hidediv('open84');" onclick="javascript: showdiv('close84'); hidediv('open84');">[show]</a></p>
+ <img src="img/multilevel-list-ex5.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList5.pdf">See the document</a></code></pre>
+</div><div id="open92" style="display:none">
+  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('close92'); hidediv('open92');" onclick="javascript: showdiv('close92'); hidediv('open92');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close84" style="display:inline">
-  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('open84'); hidediv('close84');" onclick="javascript: showdiv('open84'); hidediv('close84');">[hide]</a></p>
-  <pre class="example" id="example84"><code>            DocumentBuilder.New()
+<div id="close92" style="display:inline">
+  <p>Example 5. Add a list to a table&nbsp;<a href="javascript: showdiv('open92'); hidediv('close92');" onclick="javascript: showdiv('open92'); hidediv('close92');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example92"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
                 .AddTable()
                     .AddColumnToTable().AddColumnToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Cell1&quot;)
+                        .AddCellToRow("Cell1")
                         .AddCell()
-                            .AddParagraphToCell(&quot;List 1:&quot;)
-                            .AddParagraph(&quot;Item 1&quot;).SetListBulleted().ToCell()
-                            .AddParagraph(&quot;Item 2&quot;).SetListBulleted().ToCell()
-                            .AddParagraph(&quot;Item 3&quot;).SetListBulleted().ToCell()
-                            .AddParagraphToCell(&quot;List 2:&quot;)
-                            .AddParagraph(&quot;Item 1&quot;).SetListNumbered().ToCell()
-                            .AddParagraph(&quot;Item 2&quot;).SetListNumbered().ToCell()
-                            .AddParagraph(&quot;Item 3&quot;).SetListNumbered()
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                            .AddParagraphToCell("List 1:")
+                            .AddParagraph("Item 1").SetListBulleted().ToCell()
+                            .AddParagraph("Item 2").SetListBulleted().ToCell()
+                            .AddParagraph("Item 3").SetListBulleted().ToCell()
+                            .AddParagraphToCell("List 2:")
+                            .AddParagraph("Item 1").SetListNumbered().ToCell()
+                            .AddParagraph("Item 2").SetListNumbered().ToCell()
+                            .AddParagraph("Item 3").SetListNumbered()
+            .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex6.png">
- <a href="pdf/Sample_CreatingMultilevelList6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open85" style="display:none">
-  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('close85'); hidediv('open85');" onclick="javascript: showdiv('close85'); hidediv('open85');">[show]</a></p>
+ <img src="img/multilevel-list-ex6.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList6.pdf">See the document</a></code></pre>
+</div><div id="open93" style="display:none">
+  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('close93'); hidediv('open93');" onclick="javascript: showdiv('close93'); hidediv('open93');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close85" style="display:inline">
-  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('open85'); hidediv('close85');" onclick="javascript: showdiv('open85'); hidediv('close85');">[hide]</a></p>
-  <pre class="example" id="example85"><code>            <b>// Set a style for all lists in the section: numbered, font color red:</b>
+<div id="close93" style="display:inline">
+  <p>Example 6. Set the style and formatting for a list and list items&nbsp;<a href="javascript: showdiv('open93'); hidediv('close93');" onclick="javascript: showdiv('open93'); hidediv('close93');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example93"><code class="csharp">            <b>// Set a style for all lists in the section: numbered, font color red:</b>
             StyleBuilder listStyleInCurrentSection = StyleSheet.DefaultListNumberedBuilder().SetFontColor(Color.Red);
             StyleBuilder styleBlue = StyleBuilder.New().SetFontColor(Color.Blue);
             StyleBuilder styleListBold = StyleBuilder.New(StyleSheet.DefaultListNumberedBuilder()).SetFontBold();
@@ -340,38 +226,90 @@ and its automatic numeration will start from the beginning.</p>
             <b>// Set a style for the lists found in current section:</b>
                 .SetListStyle(listStyleInCurrentSection)
             <b>// Create a list, it will be numbered and have red font color as defined by the list style for the section:</b>
-                .AddParagraph(&quot;Item 1&quot;).SetList().ToSection()
-                .AddParagraph(&quot;Item 2&quot;).SetList().ToSection()
-                .AddParagraph(&quot;Item 3&quot;).SetList().ToSection()
+                .AddParagraph("Item 1").SetList().ToSection()
+                .AddParagraph("Item 2").SetList().ToSection()
+                .AddParagraph("Item 3").SetList().ToSection()
             <b>// Set formatting of one item:</b>
-                .AddParagraph(&quot;Item 4&quot;).SetList()
+                .AddParagraph("Item 4").SetList()
                                        .SetBold()
                                        .SetFontColor(Color.Green)
                                        .ToSection()
             <b>// Apply Blue style to paragraph, then apply list formatting. It will be bulleted, because direct ApplyStyle() has higher priority than s.SetListStyle():</b>
-                .AddParagraph(&quot;Item 5&quot;).ApplyStyle(styleBlue)
+                .AddParagraph("Item 5").ApplyStyle(styleBlue)
                                        .SetList().ToSection()
             <b>// Make a paragraph a list item:</b>
-                .AddParagraph(&quot;Item 6&quot;).ApplyStyle(StyleSheet.DefaultListNumberedBuilder())
+                .AddParagraph("Item 6").ApplyStyle(StyleSheet.DefaultListNumberedBuilder())
                                        .ToSection()
             <b>// Make a paragraph a list item and apply the Bold style:</b>
-                .AddParagraph(&quot;Item 7&quot;).ApplyStyle(styleListBold).ToSection()
+                .AddParagraph("Item 7").ApplyStyle(styleListBold).ToSection()
             <b>// Apply the Bulleted style to a list item. It will be bulleted because the direct ApplyStyle() has a higher priority than s.SetListStyle():</b>
-                .AddParagraph(&quot;Item 8&quot;).ApplyStyle(StyleSheet.DefaultListBulletedBuilder())
+                .AddParagraph("Item 8").ApplyStyle(StyleSheet.DefaultListBulletedBuilder())
                                        .ToSection()
             <b>// First apply the numbered style, then set the bulleted formatting. The list will be bulleted because the formatting has a higher priority than the style:</b>
-                .AddParagraph(&quot;Item 9&quot;).ApplyStyle(StyleSheet.DefaultListNumberedBuilder())
+                .AddParagraph("Item 9").ApplyStyle(StyleSheet.DefaultListNumberedBuilder())
                                        .SetListBulleted(ListBullet.Dash)
                                        .ToSection()
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
  
  
  <b>The above code will generate the following:</b>
  
- <img src="img/multilevel-list-ex7.png">
- <a href="pdf/Sample_CreatingMultilevelList7.pdf" target="_blank">See the document</a>
+ <img src="img/multilevel-list-ex7.png" width="800">
+ <a href="pdf/Sample_CreatingMultilevelList7.pdf">See the document</a>
+</code></pre>
+</div><div id="open94" style="display:none">
+  <p>Example 7. Add lists to the document flow and to multiple repeating areas&nbsp;<a href="javascript: showdiv('close94'); hidediv('open94');" onclick="javascript: showdiv('close94'); hidediv('open94');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+</div>
+<div id="close94" style="display:inline">
+  <p>Example 7. Add lists to the document flow and to multiple repeating areas&nbsp;<a href="javascript: showdiv('open94'); hidediv('close94');" onclick="javascript: showdiv('open94'); hidediv('close94');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example94"><code class="csharp">            DocumentBuilder builder = DocumentBuilder.New();
+            builder
+                .AddSection()
+                 <b>// First header:</b>
+                    .AddHeaderToOddPage(35)
+                            .AddParagraph("Header Odd list item 1.").SetListNumbered()
+                        .ToArea()
+                            .AddParagraph("Header Odd list item 2.").SetListNumbered()
+                        .ToArea()
+                            .AddLine()
+                .ToSection()
+                 <b>// Second header:</b>
+                    .AddHeaderToOddPage(35)
+                            .AddParagraph("Header Odd list item 1.").SetListNumbered()
+                        .ToArea()
+                            .AddParagraph("Header Odd list item 2.").SetListNumbered()
+                        .ToArea()
+                            .AddLine()
+                .ToSection()
+                 <b>// First footer:</b>
+                    .AddFooterToEvenPage(35)
+                        .AddLineToRepeatingArea()
+                            .AddParagraph("Footer Even list item 1.").SetListNumbered()
+                        .ToArea()
+                            .AddParagraph("Footer Even list item 2.").SetListNumbered()
+                .ToSection()
+                 <b>// Second footer:</b>
+                    .AddFooterToEvenPage(35)
+                        .AddLineToRepeatingArea()
+                            .AddParagraph("Footer Even list item 1.").SetListNumbered()
+                        .ToArea()
+                            .AddParagraph("Footer Even list item 2.").SetListNumbered()
+                .ToSection();
+             <b>// Lists in the document flow:</b>
+                    s.AddParagraph("First list in document flow:");
+                    for (int i = 0; i < 40; i++)
+                        s.AddParagraph("List item " + (i+1).ToString() + " in document flow").SetListNumbered();
+                    s.AddParagraph("Second list in document flow:");
+                    for (int i = 0; i < 40; i++)
+                        s.AddParagraph("List item " + (i+1).ToString() + " in document flow").SetListNumbered();
+            builder.Build("Result.pdf");
+ 
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/multilevel-list-ex8.png" width="800" />
+ <a href="pdf/Sample_CreatingMultilevelList8.pdf">See the document</a>
 </code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

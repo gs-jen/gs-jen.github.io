@@ -1,140 +1,60 @@
-<html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>ParagraphExtensions</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><code>class <b>ParagraphExtensions</b></code></font>
-    </p>
-    <p></p>
-    <table class="tmain" width="100%">
-      <tr>
-        <td colspan="2" class="thdr"><b>Parents</b></td>
-      </tr>
-      <tr>
-        <td style="tmain" width="30"></td>
-        <td style="tmain"><code>object</code></td>
-      </tr>
-    </table>
-    <p><b>Brief</b></p>
-    <p>The class is an extension of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a> and <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a> for adding content.</p><p></p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>ParagraphExtensions</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1><code>class <b>ParagraphExtensions</b></code></h1>
+<p></p>
+<table class="tmain" width="100%">
+  <tr>
+    <td colspan="2" class="thdr"><b>Parents</b></td>
+  </tr>
+  <tr>
+    <td class="tmain" width="30" style="border-right: none;"></td>
+    <td class="tmain" style="border-left: none;">
+      <p><code>object</code></p>
+    </td>
+  </tr>
+</table>
+<h2>Brief</h2>
+<p>The class is an extension of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a> and <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a> for adding content.</p><p></p>
 <table class="tmain" width="100%">
   <tr>
     <td colspan="2" class="thdr"><b>Static Public Methods</b></td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
+      <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageCount.qy7.html">AddPageCount</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a page count field with a custom text and a specified font to the paragraph and returns the <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain">
+      <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageCount.eT6.html">AddPageCount</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a page count field with a custom text to the paragraph and returns the <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain">
+      <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageCountToParagraph.q73.html">AddPageCountToParagraph</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a page count field with a custom text and a specified font to the paragraph and returns the <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain">
+      <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageCountToParagraph.SpE.html">AddPageCountToParagraph</a></p>
+    </td>
+    <td class="tmain" width="69%">
+      <p>Adds a page count field with a custom text to the paragraph and returns the <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageNumber.G47.html">AddPageNumber</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -142,7 +62,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageNumber.AnC.html">AddPageNumber</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -150,7 +70,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageNumber.SbA.html">AddPageNumber</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -158,7 +78,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageNumberToParagraph.1H8.html">AddPageNumberToParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -166,7 +86,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddPageNumberToParagraph.fsF.html">AddPageNumberToParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -174,7 +94,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.lxC.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -182,7 +102,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.xZG.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -190,7 +110,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.m47.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -198,7 +118,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.811.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -206,7 +126,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.iUE.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -214,7 +134,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.hq8.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -222,7 +142,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.juG.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -230,7 +150,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.1zD.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -238,7 +158,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.6w4.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -246,7 +166,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.o5G.html">AddParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -254,7 +174,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToRepeatingArea.RVF.html">AddParagraphToRepeatingArea</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -262,7 +182,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToRepeatingArea.B6E.html">AddParagraphToRepeatingArea</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -270,7 +190,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToRepeatingArea.8AC.html">AddParagraphToRepeatingArea</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -278,7 +198,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToSection.FN6.html">AddParagraphToSection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -286,7 +206,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToSection.DPB.html">AddParagraphToSection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -294,7 +214,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToSection.VcB.html">AddParagraphToSection</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -302,7 +222,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTabSymbol.Vn.html">AddTabSymbol</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -310,7 +230,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTabulation.mIC.html">AddTabulation</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -318,7 +238,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTabulationInPercent.8ID.html">AddTabulationInPercent</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -326,7 +246,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddText.P7.html">AddText</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -334,7 +254,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddText.jV3.html">AddText</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -342,7 +262,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddText.XSF.html">AddText</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -350,7 +270,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTextToParagraph.cu3.html">AddTextToParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -358,7 +278,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTextToParagraph.CEC.html">AddTextToParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -366,7 +286,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddUrl.N84.html">AddUrl</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -374,7 +294,7 @@ function showdiv( divname )
     </td>
   </tr>
   <tr>
-    <td class="tmain_nw">
+    <td class="tmain">
       <p><a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddUrlToParagraph.bZ2.html">AddUrlToParagraph</a></p>
     </td>
     <td class="tmain" width="69%">
@@ -382,6 +302,5 @@ function showdiv( divname )
     </td>
   </tr>
 </table><p>
-      <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="Gehtsoft.PDFFlow.Builder.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

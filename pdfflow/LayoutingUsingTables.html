@@ -1,132 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Layouting Using Tables</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Layouting Using Tables</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to create blocks of content with complex layout using tables with colspan and rowspan and nested tables.</p>
-    <p><b>Details</b></p><p>You can create a complex block of content where some of the elements are located on the same level, not after one another,
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Layouting Using Tables</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Layouting Using Tables</h1>
+<h2>Brief</h2>
+<p>The article describes how to create blocks of content with complex layout using tables with colspan and rowspan and nested tables.</p>
+<h2>Details</h2><p>You can create a complex block of content where some of the elements are located on the same level, not after one another,
 using a table with colspan and rowspan and nested tables. In many cases, setting rowspan and colspan parameters for table cells allow you to get the necessary table.
 For more complex cases, you should divide your table into several logical parts and add them as nested tables.</p>
 <p><b>Using rowspan and colspan parameters</b></p>
 <p>If you need to get a table with cells spanning several rows and columns, similar to this one:</p>
 <p><img src="img/creating_complex_table_ex1.png"></p>
-<p>Set the rowspan and colspan for the appropriate cells in the parameters of the <code>AddCell()</code> and <code>AddCellToRow()</code> methods
-or calling the methods <code>SetRowSpan()</code>, <code>SetColSpan()</code> for the cells. For example, <code>SetRowSpan(4)</code>, <code>SetColSpan(3)</code>.</p>
+<p>Set the rowspan and colspan for the appropriate cells in the parameters of the <code class="ctag">AddCell()</code> and <code class="ctag">AddCellToRow()</code> methods
+or calling the methods <code class="ctag">SetRowSpan()</code>, <code class="ctag">SetColSpan()</code> for the cells. For example, <code class="ctag">SetRowSpan(4)</code>, <code class="ctag">SetColSpan(3)</code>.</p>
 <p>See Example 1 below for a code illustration.
 <br><br>
 <b>Using nested tables</b></p>
@@ -134,16 +20,21 @@ or calling the methods <code>SetRowSpan()</code>, <code>SetColSpan()</code> for 
 <p><img src="img/creating_complex_table_ex2.png"></p>
 <p>Identify a logical part of the content and add it to the table as a nested table. This will allow you to simplify the code structure and make it easy to understand.
 In this table, the content located in the nested table is highlighted in blue.</p>
-<p>You can add a part of content in a separate procedure:</p><pre class="example" id="example54"><code>    private static void AddTablePartToCell(TableCellBuilder cell)
+<p>You can add a part of content in a separate procedure:</p><div id="open55" style="display:none">
+  <p>&nbsp;<a href="javascript: showdiv('close55'); hidediv('open55');" onclick="javascript: showdiv('close55'); hidediv('open55');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+</div>
+<div id="close55" style="display:inline">
+  <p>&nbsp;<a href="javascript: showdiv('open55'); hidediv('close55');" onclick="javascript: showdiv('open55'); hidediv('close55');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example55"><code class="csharp">    private static void AddTablePartToCell(TableCellBuilder cell)
     {
         cell.AddTable()
                 .AddColumnToTable().AddColumnToTable()
                 .AddColumnToTable().AddColumnToTable()
                 .AddRow()
-                    .AddCell(&quot;column 1,\nRow span&quot;, 1, 4).ToRow()
-                    .AddCellToRow(&quot;column 2&quot;)
-                    .AddCellToRow(&quot;column 3&quot;)
-                    .AddCell(&quot;column 4&quot;).ToTable()
+                    .AddCell("column 1,\nRow span", 1, 4).ToRow()
+                    .AddCellToRow("column 2")
+                    .AddCellToRow("column 3")
+                    .AddCell("column 4").ToTable()
                 .AddRow()
                     .AddCellToRow().AddCellToRow()
                     .AddCellToRow().AddCellToRow().ToTable()
@@ -153,7 +44,8 @@ In this table, the content located in the nested table is highlighted in blue.</
                 .AddRow()
                     .AddCellToRow().AddCellToRow()
                     .AddCellToRow().AddCellToRow();
-    }</code></pre><p>It will add the necessary content as a table nested in a cell.</p><pre class="example" id="example55"><code>    AddTablePartToCell(tableCell);</code></pre><p>With the help of such decomposition, you make your code simpler, which allows you to create your documents faster.</p>
+    }</code></pre>
+</div><p>It will add the necessary content as a table nested in a cell.</p><pre class="example" id="example56"><code class="csharp">    AddTablePartToCell(tableCell);</code></pre><p>With the help of such decomposition, you make your code simpler, which allows you to create your documents faster.</p>
 <p>See Example 2 below for a code illustration.</p>
 <p>Note that if the column width in the main table is set in percent, it may be necessary to recalculate the column width for the nested table.
 In the above example, the main table has five columns of 20% width. The nested table (highlighted in blue) has four columns of 25% width.
@@ -171,30 +63,46 @@ The cell with the vertical padding is highlighted in blue.</p>
 <p>Then you can use colspan and rowspan to configure the nested tables. For details on working with colspan and rowspan, in particular, on adding of empty cells for rowspan,
 see the <a href="AddingTable.html">Adding Table</a> article.</p>
 <p>See Example 4 below for a code illustration.</p>
-<p>Here's an example of a complex real document that was created using our library - Boarding Pass:</p>
-<p><img src="img/BoardingTableSchema.png"></p>
-<p>The area marked by a green rectangle is a table with a complex structure - it contains two nested tables - marked in red and dark-yellow.
+<p>Here's an example of a complex real document that was created using our library - Boarding Pass:</p><pre class="example" id="example57"><code class="csharp">    <img src="img/BoardingTableSchema.png" width="800"></code></pre><p>The area marked by a green rectangle is a table with a complex structure - it contains two nested tables - marked in red and dark-yellow.
 These tables are nested inside the cells of the main table that contains two columns (75% and 25% width respectively).</p>
 <p>But it is important to note that all elements in any cell are placed after one another in any case. A clear example of this behavior is the
 placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p>
 <p>You can find a sample of the Boarding Pass document accompanied by a descriptive article
 <a href="https://github.com/gehtsoft-usa/PDF.Flow.Examples/tree/master/Examples/BoardingPass" target="_blank">here</a>.
 <br><br></p>
-<p><b>See also</b></p>
+<p><b>Using fluent style to create nested tables</b></p>
+<p>When you need to create a document using a table with nested tables, as an alternative to decomposing the code into separate procedures,
+you can get the same result using the fluent style to code the entire complex table. You can change the current fluent context to parent objects
+using the following <code class="ctag">To...</code> methods: <code class="ctag">ToTable</code>, <code class="ctag">ToRow</code>, <code class="ctag">ToCell</code>, <code class="ctag">ToSection</code>.
+To avoid errors when creating nested tables, it is important to correctly specify changes of the current fluent context.</p>
+<p>Example of creating a simple table with a nested table using the fluent style:</p><pre class="example" id="example58"><code class="csharp">section
+                .AddTable()
+                    .AddColumnToTable()
+                    .AddRow()
+                    .AddCell()
+                        .AddTable()
+                            .AddColumnToTable()
+                            .AddRow()
+                            .AddCell(&quot;Nested table&quot;)
+                        .ToTable() // Change the fluent context to the nested table, not the parent one
+                    .ToCell() // Change the fluent context to the parent cell
+                .ToTable() // Change the fluent context to the parent table
+                    .AddRow()
+                        .AddCell(&quot;Parent table&quot;);    </code></pre><p><b>See also</b></p>
 <p><a href="AddingTable.html">Adding Table</a></p>
 <p><br><br>
-<b>Examples</b></p><div id="open56" style="display:none">
-  <p>Example 1. Create a table with rowspan and colspan&nbsp;<a href="javascript: showdiv('close56'); hidediv('open56');" onclick="javascript: showdiv('close56'); hidediv('open56');">[show]</a></p>
+<b>Examples</b></p><div id="open59" style="display:none">
+  <p>Example 1. Create a table with rowspan and colspan&nbsp;<a href="javascript: showdiv('close59'); hidediv('open59');" onclick="javascript: showdiv('close59'); hidediv('open59');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close56" style="display:inline">
-  <p>Example 1. Create a table with rowspan and colspan&nbsp;<a href="javascript: showdiv('open56'); hidediv('close56');" onclick="javascript: showdiv('open56'); hidediv('close56');">[hide]</a></p>
-  <pre class="example" id="example56"><code>                .AddSection()
+<div id="close59" style="display:inline">
+  <p>Example 1. Create a table with rowspan and colspan&nbsp;<a href="javascript: showdiv('open59'); hidediv('close59');" onclick="javascript: showdiv('open59'); hidediv('close59');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example59"><code class="csharp">                .AddSection()
                     .AddTable()
                         .AddColumnToTable().AddColumnToTable()
                         .AddColumnToTable().AddColumnToTable()
                         .AddRow()
-                            .AddCell(&quot;row span&quot;).SetRowSpan(4).ToRow()
-                            .AddCell(&quot;col span&quot;).SetColSpan(3).ToTable()
+                            .AddCell("row span").SetRowSpan(4).ToRow()
+                            .AddCell("col span").SetColSpan(3).ToTable()
                         .AddRow()
                             .AddCellToRow()
                             .AddCellToRow()
@@ -214,23 +122,23 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-table-ex16.png">
- <a href="pdf/Sample_ConfiguringTable16.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open57" style="display:none">
-  <p>Example 2. Create a table with a nested table&nbsp;<a href="javascript: showdiv('close57'); hidediv('open57');" onclick="javascript: showdiv('close57'); hidediv('open57');">[show]</a></p>
+ <img src="img/configure-table-ex16.png" width="800">
+ <a href="pdf/Sample_ConfiguringTable16.pdf">See the document</a></code></pre>
+</div><div id="open60" style="display:none">
+  <p>Example 2. Create a table with a nested table&nbsp;<a href="javascript: showdiv('close60'); hidediv('open60');" onclick="javascript: showdiv('close60'); hidediv('open60');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close57" style="display:inline">
-  <p>Example 2. Create a table with a nested table&nbsp;<a href="javascript: showdiv('open57'); hidediv('close57');" onclick="javascript: showdiv('open57'); hidediv('close57');">[hide]</a></p>
-  <pre class="example" id="example57"><code>        public static void DocumentBuild()
+<div id="close60" style="display:inline">
+  <p>Example 2. Create a table with a nested table&nbsp;<a href="javascript: showdiv('open60'); hidediv('close60');" onclick="javascript: showdiv('open60'); hidediv('close60');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example60"><code class="csharp">        public static void DocumentBuild()
         {
             var table = DocumentBuilder.New()
                 .AddSection()
                     .AddTable()
-                        .AddColumnPercent(&quot;&quot;, 25).ToTable()
-                        .AddColumnPercent(&quot;&quot;, 75).ToTable()
+                        .AddColumnPercent("", 25).ToTable()
+                        .AddColumnPercent("", 75).ToTable()
                         .AddRow()
-                        .AddCell(&quot;column 1,\nrow span&quot;, 1, 3).ToRow()
-                        .AddCell(&quot;column 2&quot;)
+                        .AddCell("column 1,\nrow span", 1, 3).ToRow()
+                        .AddCell("column 2")
                 .ToTable();
             var row2 = table.AddRow()
                             .AddCellToRow();
@@ -238,7 +146,7 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
             table.AddRow()
                             .AddCellToRow()
                             .AddCellToRow()
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
         }
  
         private static void AddTablePartToCell(TableCellBuilder cell)
@@ -247,10 +155,10 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
                     .AddColumnToTable().AddColumnToTable()
                     .AddColumnToTable().AddColumnToTable()
                     .AddRow()
-                        .AddCell(&quot;column 1,\nrow span&quot;, 1, 4).ToRow()
-                        .AddCellToRow(&quot;column 2&quot;)
-                        .AddCellToRow(&quot;column 3&quot;)
-                        .AddCell(&quot;column 4&quot;).ToTable()
+                        .AddCell("column 1,\nrow span", 1, 4).ToRow()
+                        .AddCellToRow("column 2")
+                        .AddCellToRow("column 3")
+                        .AddCell("column 4").ToTable()
                     .AddRow()
                         .AddCellToRow().AddCellToRow()
                         .AddCellToRow().AddCellToRow().ToTable()
@@ -264,14 +172,14 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-table-ex17.png">
- <a href="pdf/Sample_ConfiguringTable17.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open58" style="display:none">
-  <p>Example 3. Create a table with a nested table and height adjustment&nbsp;<a href="javascript: showdiv('close58'); hidediv('open58');" onclick="javascript: showdiv('close58'); hidediv('open58');">[show]</a></p>
+ <img src="img/configure-table-ex17.png" width="800">
+ <a href="pdf/Sample_ConfiguringTable17.pdf">See the document</a></code></pre>
+</div><div id="open61" style="display:none">
+  <p>Example 3. Create a table with a nested table and height adjustment&nbsp;<a href="javascript: showdiv('close61'); hidediv('open61');" onclick="javascript: showdiv('close61'); hidediv('open61');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close58" style="display:inline">
-  <p>Example 3. Create a table with a nested table and height adjustment&nbsp;<a href="javascript: showdiv('open58'); hidediv('close58');" onclick="javascript: showdiv('open58'); hidediv('close58');">[hide]</a></p>
-  <pre class="example" id="example58"><code>        public static void BuildDocument()
+<div id="close61" style="display:inline">
+  <p>Example 3. Create a table with a nested table and height adjustment&nbsp;<a href="javascript: showdiv('open61'); hidediv('close61');" onclick="javascript: showdiv('open61'); hidediv('close61');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example61"><code class="csharp">        public static void BuildDocument()
         {
             var builder = DocumentBuilder.New();
  
@@ -280,71 +188,71 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
                     .AddTable().SetWidth(250)
                         .AddColumnToTable()
                         .AddRow()
-                            .AddCell(&quot;City information&quot;)
+                            .AddCell("City information")
                                 .SetHorizontalAlignment(HorizontalAlignment.Center)
                     .ToTable();
             AddTablePartToCell(table.AddRow().AddCell());
             table.AddRow()
-                    .AddCell(&quot;Complex table is completed.&quot;)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                    .AddCell("Complex table is completed.")
+            .ToDocument().Build("Result.pdf");
         }
  
         private static void AddTablePartToCell(TableCellBuilder cell)
         {
             cell.AddTable()
             .SetWidth(XUnit.FromPercent(100))
-            .AddColumnPercentToTable(&quot;&quot;, 50)
-            .AddColumnPercentToTable(&quot;&quot;, 25)
-            .AddColumnPercentToTable(&quot;&quot;, 25)
+            .AddColumnPercentToTable("", 50)
+            .AddColumnPercentToTable("", 25)
+            .AddColumnPercentToTable("", 25)
             .AddRow()
                 .AddCell()
                     .SetRowSpan(4)
-                    .AddImageToCell(&quot;smile-emoji.png&quot;).ToRow()
-                .AddCellToRow(&quot;New York&quot;)
-                .AddCellToRow(&quot;New York&quot;).ToTable()
+                    .AddImageToCell("smile-emoji.png").ToRow()
+                .AddCellToRow("New York")
+                .AddCellToRow("New York").ToTable()
             .AddRow()
                 .AddCellToRow()
-                .AddCellToRow(&quot;Los Angeles&quot;)
-                .AddCellToRow(&quot;California&quot;).ToTable()
+                .AddCellToRow("Los Angeles")
+                .AddCellToRow("California").ToTable()
             .AddRow()
                 .AddCellToRow()
-                .AddCellToRow(&quot;Chicago&quot;)
-                .AddCellToRow(&quot;Illinois&quot;).ToTable()
+                .AddCellToRow("Chicago")
+                .AddCellToRow("Illinois").ToTable()
             .AddRow()
                 .AddCellToRow()
-                .AddCell(&quot;\n&quot;).SetColSpan(2)
+                .AddCell("\n").SetColSpan(2)
                           .SetPadding(0, 32);
         }
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-table-ex14.png">
- <a href="pdf/Sample_ConfiguringTable14.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open59" style="display:none">
-  <p>Example 4. Create a complex table with nested tables&nbsp;<a href="javascript: showdiv('close59'); hidediv('open59');" onclick="javascript: showdiv('close59'); hidediv('open59');">[show]</a></p>
+ <img src="img/configure-table-ex14.png" width="800">
+ <a href="pdf/Sample_ConfiguringTable14.pdf">See the document</a></code></pre>
+</div><div id="open62" style="display:none">
+  <p>Example 4. Create a complex table with nested tables&nbsp;<a href="javascript: showdiv('close62'); hidediv('open62');" onclick="javascript: showdiv('close62'); hidediv('open62');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close59" style="display:inline">
-  <p>Example 4. Create a complex table with nested tables&nbsp;<a href="javascript: showdiv('open59'); hidediv('close59');" onclick="javascript: showdiv('open59'); hidediv('close59');">[hide]</a></p>
-  <pre class="example" id="example59"><code>        public static void BuildDocument()
+<div id="close62" style="display:inline">
+  <p>Example 4. Create a complex table with nested tables&nbsp;<a href="javascript: showdiv('open62'); hidediv('close62');" onclick="javascript: showdiv('open62'); hidediv('close62');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example62"><code class="csharp">        public static void BuildDocument()
         {
             var table = DocumentBuilder.New()
                 .AddSection()
                     .AddTable()
                         .AddColumnToTable().AddColumnToTable()
                         .AddRow()
-                        .AddCell(&quot;Person&quot;)
+                        .AddCell("Person")
                         .SetHorizontalAlignment(HorizontalAlignment.Center)
                         .ToRow()
-                        .AddCell(&quot;Department&quot;)
+                        .AddCell("Department")
                         .SetHorizontalAlignment(HorizontalAlignment.Center)
                         .ToTable();
             var row2 = table.AddRow();
             AddPersonInfoPartToCell(row2.AddCell());
             AddDepartmentInfoPartToCell(row2.AddCell());
             table.AddRow()
-                    .AddCellToRow(&quot;E-mail&quot;)
-                    .AddCellToRow(&quot;Tel.number&quot;)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                    .AddCellToRow("E-mail")
+                    .AddCellToRow("Tel.number")
+            .ToDocument().Build("Result.pdf");
         }
  
         private static void AddPersonInfoPartToCell(TableCellBuilder cell)
@@ -352,18 +260,18 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
             cell.AddTable()
                     .AddColumnToTable().AddColumnToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Name&quot;)
-                        .AddCell(&quot;photo&quot;, 1, 4)
+                        .AddCellToRow("Name")
+                        .AddCell("photo", 1, 4)
                         .SetHorizontalAlignment(HorizontalAlignment.Center)
                         .ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Surname&quot;)
+                        .AddCellToRow("Surname")
                         .AddCell().ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;State&quot;)
+                        .AddCellToRow("State")
                         .AddCell().ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;City&quot;)
+                        .AddCellToRow("City")
                         .AddCell().ToTable();
         }
         private static void AddDepartmentInfoPartToCell(TableCellBuilder cell)
@@ -371,28 +279,27 @@ placement of the texts: &quot;Passenger name&quot;, &quot;PAVEL REMPEL&quot;.</p
             cell.AddTable()
                     .AddColumnToTable().AddColumnToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Name&quot;)
-                        .AddCell(&quot;image&quot;, 1, 2)
+                        .AddCellToRow("Name")
+                        .AddCell("image", 1, 2)
                         .SetHorizontalAlignment(HorizontalAlignment.Center)
                         .ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Structure&quot;)
+                        .AddCellToRow("Structure")
                         .AddCell().ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Floor&quot;)
-                        .AddCell(&quot;qrcode&quot;, 1, 2)
+                        .AddCellToRow("Floor")
+                        .AddCell("qrcode", 1, 2)
                         .SetHorizontalAlignment(HorizontalAlignment.Center)
                         .ToTable()
                     .AddRow()
-                        .AddCellToRow(&quot;Room&quot;)
+                        .AddCellToRow("Room")
                         .AddCell().ToTable();
         }
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-table-ex18.png">
- <a href="pdf/Sample_ConfiguringTable18.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/configure-table-ex18.png" width="800">
+ <a href="pdf/Sample_ConfiguringTable18.pdf">See the document</a></code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

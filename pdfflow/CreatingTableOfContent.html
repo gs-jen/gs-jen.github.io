@@ -1,140 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Creating Table of Content</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Creating Table of Content</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to create a table of content in a document.</p>
-    <p><b>Details</b></p><p>You can create a table of content (TOC), or an <i>outline</i>, at the end or in some other place in your document.
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Creating Table of Content</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Creating Table of Content</h1>
+<h2>Brief</h2>
+<p>The article describes how to create a table of content in a document.</p>
+<h2>Details</h2><p>You can create a table of content (TOC), or an <i>outline</i>, at the end or in some other place in your document.
 A TOC includes the paragraphs marked as TOC items which precede the TOC, no matter whether they are in one section or not.
 You can have several TOCs in one document. Items in a TOC are clickable, so you can quickly navigate to the corresponding paragraphs in the document.</p>
 <p>To mark a paragraph as a TOC item, call the method <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetOutline.3gB.html"><code>ParagraphBuilder.SetOutline</code></a>.
 In this case, the paragraph text and page number will appear in the TOC.<br>
-If you call the method without the parameter, the item level will be set to <code>0</code> and have no indent.
-If you create a multilevel TOC, specify the item level in the <code>OutlineLevel</code> parameter. The items with non-zero level values will be shifted to the left depending on their level.</p>
-<p>To add a TOC to a document, call one of the <code>AddOutline()</code> methods of the <a href="Gehtsoft.PDFFlow.Builder.OutlineExtensions.html"><code>OutlineExtensions</code></a> class for your document.
+If you call the method without the parameter, the item level will be set to <code class="ctag">0</code> and have no indent.
+If you create a multilevel TOC, specify the item level in the <code class="ctag">OutlineLevel</code> parameter. The items with non-zero level values will be shifted to the left depending on their level.</p>
+<p>To add a TOC to a document, call one of the <code class="ctag">AddOutline()</code> methods of the <a href="Gehtsoft.PDFFlow.Builder.OutlineExtensions.html"><code>OutlineExtensions</code></a> class for your document.
 When you add a TOC to your document, a separate section is created for it under the hood, so you can configure the margin, paper size, and page orientation settings for your TOC.
-If you do not specify any of these settings, they will have their default values defined by the default style, that is, <code>20f</code> margins, the <code>Letter</code> paper size, and the <code>Landscape</code> page orientation.
+If you do not specify any of these settings, they will have their default values defined by the default style, that is, <code class="ctag">20f</code> margins, the <code class="ctag">Letter</code> paper size, and the <code class="ctag">Landscape</code> page orientation.
 Along with these settings, you can configure the settings specific for the TOC: its font, caption, indent, and caption font. If not specified, they will also have their default values defined by the default style.</p><ul class="main">
   <li><p>To add a TOC and configure its settings in the method parameters, call the <a href="Gehtsoft.PDFFlow.Builder.OutlineExtensions.AddOutline.z5F.html"><code>AddOutline</code></a> method.</p></li>
   <li><p>To add a TOC and configure it by a configuration action, call the <a href="Gehtsoft.PDFFlow.Builder.OutlineExtensions.AddOutline.mKG.html"><code>AddOutline</code></a> method.</p></li>
 </ul><p>Both methods return an instance of the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.html"><code>OutlineBuilder</code></a> class that is derived from the
 <a href="Gehtsoft.PDFFlow.Builder.FormattedTextElementBuilder.html"><code>FormattedTextElementBuilder</code></a>, so you can use all its methods to configure the TOC,
-for example, <code>SetFont()</code>, <code>SetUnderline()</code>.</p>
+for example, <code class="ctag">SetFont()</code>, <code class="ctag">SetUnderline()</code>.</p>
 <p>You can configure the TOC using methods of the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.html"><code>OutlineBuilder</code></a> class.</p>
 <p>To set the text and font for the TOC caption, you can use one of the following options:</p><ul class="main">
   <li><p>Set the caption text using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCaption.yF4.html"><code>SetCaption</code></a> method and then set the
@@ -150,12 +36,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
 <p><a href="CreatingDocument.html">Creating Document</a></p>
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><br><br>
-<b>Examples</b></p><div id="open138" style="display:none">
-  <p>Example 1. Create a simple table of content&nbsp;<a href="javascript: showdiv('close138'); hidediv('open138');" onclick="javascript: showdiv('close138'); hidediv('open138');">[show]</a></p>
+<b>Examples</b></p><div id="open149" style="display:none">
+  <p>Example 1. Create a simple table of content&nbsp;<a href="javascript: showdiv('close149'); hidediv('open149');" onclick="javascript: showdiv('close149'); hidediv('open149');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close138" style="display:inline">
-  <p>Example 1. Create a simple table of content&nbsp;<a href="javascript: showdiv('open138'); hidediv('close138');" onclick="javascript: showdiv('open138'); hidediv('close138');">[hide]</a></p>
-  <pre class="example" id="example138"><code>            DocumentBuilder.New()
+<div id="close149" style="display:inline">
+  <p>Example 1. Create a simple table of content&nbsp;<a href="javascript: showdiv('open149'); hidediv('close149');" onclick="javascript: showdiv('open149'); hidediv('close149');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example149"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
                         .SetOutline()
@@ -180,12 +66,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex1.png">
  <a href="pdf/Sample_CreatingOutline1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open139" style="display:none">
-  <p>Example 2. Create a multilevel table of content&nbsp;<a href="javascript: showdiv('close139'); hidediv('open139');" onclick="javascript: showdiv('close139'); hidediv('open139');">[show]</a></p>
+</div><div id="open150" style="display:none">
+  <p>Example 2. Create a multilevel table of content&nbsp;<a href="javascript: showdiv('close150'); hidediv('open150');" onclick="javascript: showdiv('close150'); hidediv('open150');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close139" style="display:inline">
-  <p>Example 2. Create a multilevel table of content&nbsp;<a href="javascript: showdiv('open139'); hidediv('close139');" onclick="javascript: showdiv('open139'); hidediv('close139');">[hide]</a></p>
-  <pre class="example" id="example139"><code>            DocumentBuilder.New()
+<div id="close150" style="display:inline">
+  <p>Example 2. Create a multilevel table of content&nbsp;<a href="javascript: showdiv('open150'); hidediv('close150');" onclick="javascript: showdiv('open150'); hidediv('close150');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example150"><code class="csharp">            DocumentBuilder.New()
              <b>// Add content and mark some paragraphs as TOC items:</b>
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
@@ -228,12 +114,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex2.png">
  <a href="pdf/Sample_CreatingOutline2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open140" style="display:none">
-  <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('close140'); hidediv('open140');" onclick="javascript: showdiv('close140'); hidediv('open140');">[show]</a></p>
+</div><div id="open151" style="display:none">
+  <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('close151'); hidediv('open151');" onclick="javascript: showdiv('close151'); hidediv('open151');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close140" style="display:inline">
-  <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('open140'); hidediv('close140');" onclick="javascript: showdiv('open140'); hidediv('close140');">[hide]</a></p>
-  <pre class="example" id="example140"><code>            DocumentBuilder.New()
+<div id="close151" style="display:inline">
+  <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('open151'); hidediv('close151');" onclick="javascript: showdiv('open151'); hidediv('close151');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example151"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
                         .SetOutline()
@@ -259,12 +145,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex3.png">
  <a href="pdf/Sample_CreatingOutline3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open141" style="display:none">
-  <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('close141'); hidediv('open141');" onclick="javascript: showdiv('close141'); hidediv('open141');">[show]</a></p>
+</div><div id="open152" style="display:none">
+  <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('close152'); hidediv('open152');" onclick="javascript: showdiv('close152'); hidediv('open152');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close141" style="display:inline">
-  <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('open141'); hidediv('close141');" onclick="javascript: showdiv('open141'); hidediv('close141');">[hide]</a></p>
-  <pre class="example" id="example141"><code>            DocumentBuilder.New()
+<div id="close152" style="display:inline">
+  <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('open152'); hidediv('close152');" onclick="javascript: showdiv('open152'); hidediv('close152');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example152"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
                         .SetOutline(0)
@@ -293,12 +179,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex4.png">
  <a href="pdf/Sample_CreatingOutline4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open142" style="display:none">
-  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code>AddOutline</code> method&nbsp;<a href="javascript: showdiv('close142'); hidediv('open142');" onclick="javascript: showdiv('close142'); hidediv('open142');">[show]</a></p>
+</div><div id="open153" style="display:none">
+  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code class="ctag">AddOutline</code> method&nbsp;<a href="javascript: showdiv('close153'); hidediv('open153');" onclick="javascript: showdiv('close153'); hidediv('open153');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close142" style="display:inline">
-  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code>AddOutline</code> method&nbsp;<a href="javascript: showdiv('open142'); hidediv('close142');" onclick="javascript: showdiv('open142'); hidediv('close142');">[hide]</a></p>
-  <pre class="example" id="example142"><code>            DocumentBuilder.New()
+<div id="close153" style="display:inline">
+  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code class="ctag">AddOutline</code> method&nbsp;<a href="javascript: showdiv('open153'); hidediv('close153');" onclick="javascript: showdiv('open153'); hidediv('close153');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example153"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
                         .SetOutline()
@@ -325,12 +211,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex5.png">
  <a href="pdf/Sample_CreatingOutline5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open143" style="display:none">
-  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code>OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('close143'); hidediv('open143');" onclick="javascript: showdiv('close143'); hidediv('open143');">[show]</a></p>
+</div><div id="open154" style="display:none">
+  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code class="ctag">OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('close154'); hidediv('open154');" onclick="javascript: showdiv('close154'); hidediv('open154');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close143" style="display:inline">
-  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code>OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('open143'); hidediv('close143');" onclick="javascript: showdiv('open143'); hidediv('close143');">[hide]</a></p>
-  <pre class="example" id="example143"><code>            DocumentBuilder.New()
+<div id="close154" style="display:inline">
+  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code class="ctag">OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('open154'); hidediv('close154');" onclick="javascript: showdiv('open154'); hidediv('close154');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example154"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
                     .AddParagraph(&quot;Chapter I&quot;)
                         .SetOutline()
@@ -355,12 +241,12 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  
  <img src="img/creating-outline-ex6.png">
  <a href="pdf/Sample_CreatingOutline6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open144" style="display:none">
-  <p>Example 7. Support of several sections&nbsp;<a href="javascript: showdiv('close144'); hidediv('open144');" onclick="javascript: showdiv('close144'); hidediv('open144');">[show]</a></p>
+</div><div id="open155" style="display:none">
+  <p>Example 7. Support of several sections&nbsp;<a href="javascript: showdiv('close155'); hidediv('open155');" onclick="javascript: showdiv('close155'); hidediv('open155');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close144" style="display:inline">
-  <p>Example 7. Support of several sections&nbsp;<a href="javascript: showdiv('open144'); hidediv('close144');" onclick="javascript: showdiv('open144'); hidediv('close144');">[hide]</a></p>
-  <pre class="example" id="example144"><code>            DocumentBuilder.New()
+<div id="close155" style="display:inline">
+  <p>Example 7. Support of several sections&nbsp;<a href="javascript: showdiv('open155'); hidediv('close155');" onclick="javascript: showdiv('open155'); hidediv('close155');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example155"><code class="csharp">            DocumentBuilder.New()
              <b>// Section 1:</b>
                 .AddSection()
                     .AddParagraph(&quot;Section 1. Chapter I&quot;)
@@ -395,6 +281,5 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
  <img src="img/creating-outline-ex7.png">
  <a href="pdf/Sample_CreatingOutline7.pdf" target="_blank">See the document</a></code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

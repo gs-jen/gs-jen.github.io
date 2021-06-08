@@ -1,128 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Adding Paragraph</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Adding Paragraph</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to add and configure a paragraph.</p>
-    <p><b>Details</b></p><p>A paragraph is the main element of document content included in a <a href="AddingSection.html">section</a>, a
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Adding Paragraph</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Adding Paragraph</h1>
+<h2>Brief</h2>
+<p>The article describes how to add and configure a paragraph.</p>
+<h2>Details</h2><p>A paragraph is the main element of document content included in a <a href="AddingSection.html">section</a>, a
 <a href="AddingRepeatingArea.html">repeating area</a>, and <a href="AddingTable.html">table cells</a>.
 A section, a repeating area, and a table cell can contain as many paragraphs as you need.
-Paragraphs are used to generate text of different styles and can include URLs, inline images and tabulations.
+Paragraphs are used to generate text of different styles and can include URLs, inline images, page number and page count fields, and tabulations.
 See the <a href="AddingContentToParagraph.html">Adding Content to Paragraph</a> article for more details.</p>
 <p>You can add paragraphs and add content to them using methods of <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.html"><code>ParagraphExtensions</code></a> and
 configure paragraph settings by methods of <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a>.</p>
@@ -134,7 +20,7 @@ configure paragraph settings by methods of <a href="Gehtsoft.PDFFlow.Builder.Par
   </tr>
   <tr>
     <td class="tmain"><p>Font</p></td>
-    <td class="tmain"><p><code>Helvetica</code>, <code>11f</code>, <code>Black</code></p></td>
+    <td class="tmain"><p><code class="ctag">Helvetica</code>, <code class="ctag">11f</code>, <code class="ctag">Black</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFont.H2.html"><code>SetFont</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBold.KzF.html"><code>SetBold</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetFontName.jYA.html"><code>SetFontName</code></a>,
@@ -145,15 +31,15 @@ configure paragraph settings by methods of <a href="Gehtsoft.PDFFlow.Builder.Par
   </tr>
   <tr>
     <td class="tmain"><p>Strikethrough</p></td>
-    <td class="tmain"><p><code>Solid</code></p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code>.SetStrikethrough</code> methods,
+    <td class="tmain"><p><code class="ctag">Solid</code></p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code class="ctag">.SetStrikethrough</code> methods,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethroughStroke.Cu3.html"><code>SetStrikethroughStroke</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetStrikethroughColor.jI5.html"><code>SetStrikethroughColor</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Underline</p></td>
-    <td class="tmain"><p><code>Solid</code></p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code>.SetUnderline</code> methods,
+    <td class="tmain"><p><code class="ctag">Solid</code></p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code class="ctag">.SetUnderline</code> methods,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderlineStroke.ur2.html"><code>SetUnderlineStroke</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUnderlineColor.oV8.html"><code>SetUnderlineColor</code></a></p></td>
   </tr>
@@ -164,12 +50,12 @@ configure paragraph settings by methods of <a href="Gehtsoft.PDFFlow.Builder.Par
   </tr>
   <tr>
     <td class="tmain"><p>Line spacing</p></td>
-    <td class="tmain"><p><code>1.08f</code></p></td>
+    <td class="tmain"><p><code class="ctag">1.08f</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetLineSpacing.PVF.html"><code>SetLineSpacing</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Alignment</p></td>
-    <td class="tmain"><p><code>Left</code></p></td>
+    <td class="tmain"><p><code class="ctag">Left</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetJustifyAlignment.BCD.html"><code>SetJustifyAlignment</code></a> to justify text,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetAlignment.3I4.html"><code>SetAlignment</code></a> to change the alignment to left/right/center</p></td>
   </tr>
@@ -185,8 +71,8 @@ configure paragraph settings by methods of <a href="Gehtsoft.PDFFlow.Builder.Par
   </tr>
   <tr>
     <td class="tmain"><p>Borders</p></td>
-    <td class="tmain"><p>No borders (<code>Stroke.None</code>, <code>Color.None</code>, <code>0f</code>)</p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code>.SetBorder</code> methods,
+    <td class="tmain"><p>No borders (<code class="ctag">Stroke.None</code>, <code class="ctag">Color.None</code>, <code class="ctag">0f</code>)</p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code class="ctag">.SetBorder</code> methods,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderColor.d37.html"><code>SetBorderColor</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderStroke.p0B.html"><code>SetBorderStroke</code></a>,
 and <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderWidth.WPB.html"><code>SetBorderWidth</code></a> methods for configuring the corresponding parameters for all border sides;
@@ -197,7 +83,7 @@ and <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderWidth.WPB.html">
   <tr>
     <td class="tmain"><p>Margins - additional margins for a paragraph</p></td>
     <td class="tmain"><p>No additional margins</p></td>
-    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code>.SetMargins</code> methods,
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.html"><code>ParagraphBuilder</code></a><code class="ctag">.SetMargins</code> methods,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginTop.6iD.html"><code>SetMarginTop</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginRight.8fD.html"><code>SetMarginRight</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetMarginBottom.vyD.html"><code>SetMarginBottom</code></a>,
@@ -211,23 +97,28 @@ and <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetBorderWidth.WPB.html">
   </tr>
   <tr>
     <td class="tmain"><p>Text overflow action</p></td>
-    <td class="tmain"><p><code>Truncate</code></p></td>
+    <td class="tmain"><p><code class="ctag">Truncate</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetTextOverflowAction.u.html"><code>SetTextOverflowAction</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>URL color</p></td>
-    <td class="tmain"><p><code>Blue</code></p></td>
+    <td class="tmain"><p><code class="ctag">Blue</code></p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetUrlStyle.TTG.html"><code>SetURLStyle</code></a></p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Paragraph as a list item</p></td>
-    <td class="tmain"><p><code>False</code></p></td>
+    <td class="tmain"><p><code class="ctag">False</code></p></td>
     <td class="tmain"><p>See the <a href="CreatingMultilevelList.html">Creating Multilevel List</a> article for details on how to create and configure a list.</p></td>
   </tr>
   <tr>
     <td class="tmain"><p>Page break</p></td>
     <td class="tmain"><p>No page break</p></td>
     <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetPageBreak.TVA.html"><code>SetPageBreak</code></a></p></td>
+  </tr>
+  <tr>
+    <td class="tmain"><p>Keeping with the next element</p></td>
+    <td class="tmain"><p><code class="ctag">True</code></p></td>
+    <td class="tmain"><p><a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetKeepWithNext.3dE.html"><code>SetKeepWithNext</code></a></p></td>
   </tr>
 </table><p><b>Widow and Orphan Control</b></p>
 <p>When you have a paragraph that starts on one page and continues to another one, the last line of the paragraph can appear at the top or bottom of a page.
@@ -243,13 +134,19 @@ You can specify the page from which the paragraph will start in the method param
   <li><p><i>NextOddPage</i> - the paragraph starts from the next odd page or remains on the current page if it is located at the beginning of an odd page.</p></li>
 </ul><p>The available page breaks are listed in the <a href="Gehtsoft.PDFFlow.Models.Enumerations.PageBreak.html"><code>PageBreak</code></a> enumeration.</p>
 <p>See Example 10 below for a code illustration.</p>
+<p><b>Getting Text Width</b></p>
+<p>When adding a paragraph, you may need to know the actual width of a text in pixels,
+for example, to calculate the proper width of the cell where this text will be inserted.
+To measure the width of a text with a certain font, call the <a href="Gehtsoft.PDFFlow.UserUtils.TextUtils.MeasureTextWidth.tyB.html"><code>TextUtils.MeasureTextWidth</code></a>
+method passing the text and the font in its parameters.</p>
+<p>For an illustration of using the method in the code of a document, see Example 11 below.</p>
 <p><b>Paragraphs as TOC Items</b></p>
 <p>If you are going to add a table of content (TOC) to your document, you can mark the necessary paragraphs as TOC items calling the method
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.SetOutline.3gB.html"><code>ParagraphBuilder.SetOutline</code></a>. For details on how to create and configure a TOC, see the
 <a href="CreatingTableOfContent.html">Creating Table of Content</a> article.</p>
 <p><br><br>
 If you do not specify formatting settings for a paragraph, they will have their default values defined by the default paragraph style.
-You can create a style and apply it to all paragraphs on the document, section, repeating area or table cell level using the method <code>SetParagraphStyle</code>
+You can create a style and apply it to all paragraphs on the document, section, repeating area or table cell level using the method <code class="ctag">SetParagraphStyle</code>
 and to particular paragraphs using the method <a href="Gehtsoft.PDFFlow.Builder.ParagraphBuilder.ApplyStyle.wJD.html"><code>ApplyStyle</code></a>. A style can be also applied to paragraph content items (inline images, URLs, text elements, page numbers).
 See Example 9 below for a code illustration. For more on working with styles, see the article <a href="FormattingAndStyles.html">Formatting and Styles</a>.</p>
 <p><br>
@@ -260,77 +157,77 @@ See Example 9 below for a code illustration. For more on working with styles, se
 <p><a href="CreatingTableOfContent.html">Creating Table of Content</a></p>
 <p><a href="FormattingAndStyles.html">Formatting and Styles</a></p>
 <p><br>
-<b>Examples</b></p><div id="open60" style="display:none">
-  <p>Example 1. Add and configure a paragraph with text content and borders (variant 1)&nbsp;<a href="javascript: showdiv('close60'); hidediv('open60');" onclick="javascript: showdiv('close60'); hidediv('open60');">[show]</a></p>
+<b>Examples</b></p><div id="open63" style="display:none">
+  <p>Example 1. Add and configure a paragraph with text content and borders (variant 1)&nbsp;<a href="javascript: showdiv('close63'); hidediv('open63');" onclick="javascript: showdiv('close63'); hidediv('open63');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close60" style="display:inline">
-  <p>Example 1. Add and configure a paragraph with text content and borders (variant 1)&nbsp;<a href="javascript: showdiv('open60'); hidediv('close60');" onclick="javascript: showdiv('open60'); hidediv('close60');">[hide]</a></p>
-  <pre class="example" id="example60"><code>            DocumentBuilder.New()
+<div id="close63" style="display:inline">
+  <p>Example 1. Add and configure a paragraph with text content and borders (variant 1)&nbsp;<a href="javascript: showdiv('open63'); hidediv('close63');" onclick="javascript: showdiv('open63'); hidediv('close63');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example63"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
          <b>//Add a paragraph to the section:</b>
             .AddParagraph().SetAlignment(HorizontalAlignment.Center)
                 .SetFontColor(Color.Red)
                 .SetBorder(Stroke.Dotted)
-                .AddTextToParagraph(&quot;Lorem ipsum dolor sit amet&quot;)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                .AddTextToParagraph("Lorem ipsum dolor sit amet")
+            .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex1.png">
- <a href="pdf/Sample_AddingParagraph1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open61" style="display:inline">
-  <p>Example 2. Add and configure a paragraph with text content and borders (variant 2)&nbsp;<a href="javascript: showdiv('close61'); hidediv('open61');" onclick="javascript: showdiv('close61'); hidediv('open61');">[show]</a></p>
+ <img src="img/configure-paragraph-ex1.png" width="800">
+ <a href="pdf/Sample_AddingParagraph1.pdf">See the document</a></code></pre>
+</div><div id="open64" style="display:inline">
+  <p>Example 2. Add and configure a paragraph with text content and borders (variant 2)&nbsp;<a href="javascript: showdiv('close64'); hidediv('open64');" onclick="javascript: showdiv('close64'); hidediv('open64');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close61" style="display:none">
-  <p>Example 2. Add and configure a paragraph with text content and borders (variant 2)&nbsp;<a href="javascript: showdiv('open61'); hidediv('close61');" onclick="javascript: showdiv('open61'); hidediv('close61');">[hide]</a></p>
-  <pre class="example" id="example61"><code>            var document = DocumentBuilder.New();
-            document.AddSectionToDocument(sectionBuilder =&gt;
+<div id="close64" style="display:none">
+  <p>Example 2. Add and configure a paragraph with text content and borders (variant 2)&nbsp;<a href="javascript: showdiv('open64'); hidediv('close64');" onclick="javascript: showdiv('open64'); hidediv('close64');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example64"><code class="csharp">            var document = DocumentBuilder.New();
+            document.AddSectionToDocument(sectionBuilder =>
             {
                 sectionBuilder
                  <b>//Add a paragraph to the section:</b>
-                    .AddParagraph(paragraphBuilder =&gt;
+                    .AddParagraph(paragraphBuilder =>
                         paragraphBuilder
                             .SetAlignment(HorizontalAlignment.Center)
                             .SetFontColor(Color.Red)
                             .SetBorderStroke(Stroke.Dotted)
                             .SetBorderColor(Color.Black)
-                            .AddText(&quot;Lorem ipsum dolor sit amet&quot;));
+                            .AddText("Lorem ipsum dolor sit amet"));
             });
-            document.Build(&quot;Result.pdf&quot;);
+            document.Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex1.png">
- <a href="pdf/Sample_AddingParagraph2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open62" style="display:none">
-  <p>Example 3. Add a paragraph with text content and background color to a header&nbsp;<a href="javascript: showdiv('close62'); hidediv('open62');" onclick="javascript: showdiv('close62'); hidediv('open62');">[show]</a></p>
+ <img src="img/configure-paragraph-ex1.png" width="800">
+ <a href="pdf/Sample_AddingParagraph2.pdf">See the document</a></code></pre>
+</div><div id="open65" style="display:none">
+  <p>Example 3. Add a paragraph with text content and background color to a header&nbsp;<a href="javascript: showdiv('close65'); hidediv('open65');" onclick="javascript: showdiv('close65'); hidediv('open65');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close62" style="display:inline">
-  <p>Example 3. Add a paragraph with text content and background color to a header&nbsp;<a href="javascript: showdiv('open62'); hidediv('close62');" onclick="javascript: showdiv('open62'); hidediv('close62');">[hide]</a></p>
-  <pre class="example" id="example62"><code>            DocumentBuilder.New()
+<div id="close65" style="display:inline">
+  <p>Example 3. Add a paragraph with text content and background color to a header&nbsp;<a href="javascript: showdiv('open65'); hidediv('close65');" onclick="javascript: showdiv('open65'); hidediv('close65');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example65"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
          <b>//Add a header to the section:</b>
             .AddHeaderToBothPages(200)
                  <b>//Add a paragraph to the header:</b>
-                    .AddParagraph(paragraphBuilder =&gt;
+                    .AddParagraph(paragraphBuilder =>
                         paragraphBuilder
                             .SetAlignment(HorizontalAlignment.Center)
                             .SetFontColor(Color.Blue)
                             .SetFontSize(16)
                             .SetBackColor(Color.Yellow)
-                            .AddText(&quot;Lorem ipsum dolor sit amet&quot;))
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                            .AddText("Lorem ipsum dolor sit amet"))
+            .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex3.png">
- <a href="pdf/Sample_AddingParagraph3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open63" style="display:none">
-  <p>Example 4. Add a paragraph with borders and margins to a repeating area by coordinates&nbsp;<a href="javascript: showdiv('close63'); hidediv('open63');" onclick="javascript: showdiv('close63'); hidediv('open63');">[show]</a></p>
+ <img src="img/configure-paragraph-ex3.png" width="800">
+ <a href="pdf/Sample_AddingParagraph3.pdf">See the document</a></code></pre>
+</div><div id="open66" style="display:none">
+  <p>Example 4. Add a paragraph with borders and margins to a repeating area by coordinates&nbsp;<a href="javascript: showdiv('close66'); hidediv('open66');" onclick="javascript: showdiv('close66'); hidediv('open66');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close63" style="display:inline">
-  <p>Example 4. Add a paragraph with borders and margins to a repeating area by coordinates&nbsp;<a href="javascript: showdiv('open63'); hidediv('close63');" onclick="javascript: showdiv('open63'); hidediv('close63');">[hide]</a></p>
-  <pre class="example" id="example63"><code>            var styleParagraph = StyleBuilder.New().SetFontColor(Color.Blue);
+<div id="close66" style="display:inline">
+  <p>Example 4. Add a paragraph with borders and margins to a repeating area by coordinates&nbsp;<a href="javascript: showdiv('open66'); hidediv('close66');" onclick="javascript: showdiv('open66'); hidediv('close66');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example66"><code class="csharp">            var styleParagraph = StyleBuilder.New().SetFontColor(Color.Blue);
             DocumentBuilder.New()
             .AddSection()
          <b>//Set the style for paragraphs:</b>
@@ -338,113 +235,113 @@ See Example 9 below for a code illustration. For more on working with styles, se
          <b>//Add a repeating area to the section:</b>
             .AddRptAreaToBothPages(0, 0, 140, 50)
                  <b>//Add paragraph to header:</b>
-                    .AddParagraph(paragraphBuilder =&gt;
+                    .AddParagraph(paragraphBuilder =>
                         paragraphBuilder
                             .SetMarginRight(20)
                             .SetBorder(Stroke.Dotted, Color.Red, 0.4f)
                             .SetFontName(FontNames.Times)
                             .SetAlignment(HorizontalAlignment.Right)
-                            .AddText(&quot;Paragraph with border and margin 20&quot;))
+                            .AddText("Paragraph with border and margin 20"))
             .ToSection()
          <b>//Add a document flow area:</b>
             .AddDocumentFlowAreaToBothPages(140, 0, 612, 50)
-                .AddParagraph(&quot;Document with repeating area&quot;)
+                .AddParagraph("Document with repeating area")
                     .SetBorder(Stroke.Dotted, Color.Green, 0.4f)
                     .SetAlignment(HorizontalAlignment.Center)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex4.png">
- <a href="pdf/Sample_AddingParagraph4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open64" style="display:none">
-  <p>Example 5. Add a paragraph to a table cell&nbsp;<a href="javascript: showdiv('close64'); hidediv('open64');" onclick="javascript: showdiv('close64'); hidediv('open64');">[show]</a></p>
+ <img src="img/configure-paragraph-ex4.png" width="800">
+ <a href="pdf/Sample_AddingParagraph4.pdf">See the document</a></code></pre>
+</div><div id="open67" style="display:none">
+  <p>Example 5. Add a paragraph to a table cell&nbsp;<a href="javascript: showdiv('close67'); hidediv('open67');" onclick="javascript: showdiv('close67'); hidediv('open67');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close64" style="display:inline">
-  <p>Example 5. Add a paragraph to a table cell&nbsp;<a href="javascript: showdiv('open64'); hidediv('close64');" onclick="javascript: showdiv('open64'); hidediv('close64');">[hide]</a></p>
-  <pre class="example" id="example64"><code>            DocumentBuilder.New()
+<div id="close67" style="display:inline">
+  <p>Example 5. Add a paragraph to a table cell&nbsp;<a href="javascript: showdiv('open67'); hidediv('close67');" onclick="javascript: showdiv('open67'); hidediv('close67');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example67"><code class="csharp">            DocumentBuilder.New()
          <b>//Add a section and section content:</b>
             .AddSection()
                 .AddTable()
                     .AddColumnToTable()
                     .AddRow()
                         .AddCell()
-                            .AddParagraphToCell(&quot;Paragraph in table cell.&quot;)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                            .AddParagraphToCell("Paragraph in table cell.")
+            .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex5.png">
- <a href="pdf/Sample_AddingParagraph5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open65" style="display:none">
-  <p>Example 6. Create a paragraph with a first line indent&nbsp;<a href="javascript: showdiv('close65'); hidediv('open65');" onclick="javascript: showdiv('close65'); hidediv('open65');">[show]</a></p>
+ <img src="img/configure-paragraph-ex5.png" width="800">
+ <a href="pdf/Sample_AddingParagraph5.pdf">See the document</a></code></pre>
+</div><div id="open68" style="display:none">
+  <p>Example 6. Create a paragraph with a first line indent&nbsp;<a href="javascript: showdiv('close68'); hidediv('open68');" onclick="javascript: showdiv('close68'); hidediv('open68');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close65" style="display:inline">
-  <p>Example 6. Create a paragraph with a first line indent&nbsp;<a href="javascript: showdiv('open65'); hidediv('close65');" onclick="javascript: showdiv('open65'); hidediv('close65');">[hide]</a></p>
-  <pre class="example" id="example65"><code>            DocumentBuilder.New()
+<div id="close68" style="display:inline">
+  <p>Example 6. Create a paragraph with a first line indent&nbsp;<a href="javascript: showdiv('open68'); hidediv('close68');" onclick="javascript: showdiv('open68'); hidediv('close68');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example68"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
             .SetOrientation(PageOrientation.Portrait)
                  <b>//Add a paragraph to the section:</b>
-                    .AddParagraph(&quot;This is a simple example of a first line indented paragraph. It is a common practice to indent the first line of a paragraph.&quot;)
+                    .AddParagraph("This is a simple example of a first line indented paragraph. It is a common practice to indent the first line of a paragraph.")
                         .SetFirstLineIndent(15)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex6.png">
- <a href="pdf/Sample_AddingParagraph6.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open66" style="display:none">
-  <p>Example 7. Add a paragraph with the orphan control&nbsp;<a href="javascript: showdiv('close66'); hidediv('open66');" onclick="javascript: showdiv('close66'); hidediv('open66');">[show]</a></p>
+ <img src="img/configure-paragraph-ex6.png" width="800">
+ <a href="pdf/Sample_AddingParagraph6.pdf">See the document</a></code></pre>
+</div><div id="open69" style="display:none">
+  <p>Example 7. Add a paragraph with the orphan control&nbsp;<a href="javascript: showdiv('close69'); hidediv('open69');" onclick="javascript: showdiv('close69'); hidediv('open69');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close66" style="display:inline">
-  <p>Example 7. Add a paragraph with the orphan control&nbsp;<a href="javascript: showdiv('open66'); hidediv('close66');" onclick="javascript: showdiv('open66'); hidediv('close66');">[hide]</a></p>
-  <pre class="example" id="example66"><code>            DocumentBuilder.New()
+<div id="close69" style="display:inline">
+  <p>Example 7. Add a paragraph with the orphan control&nbsp;<a href="javascript: showdiv('open69'); hidediv('close69');" onclick="javascript: showdiv('open69'); hidediv('close69');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example69"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
             .SetSize(150, 60)
             .SetMargins(0)
-            .AddLineToSection(line =&gt; line.SetMarginTop(35))
+            .AddLineToSection(line => line.SetMarginTop(35))
          <b>//Add a paragraph to the section:</b>
-            .AddParagraph(&quot;This paragraph consists of &quot; +
-                          &quot;multiple lines. There should &quot; +
-                          &quot;be at least two lines at the end of &quot; +
-                          &quot;a paragraph on one page.&quot;)
+            .AddParagraph("This paragraph consists of " +
+                          "multiple lines. There should " +
+                          "be at least two lines at the end of " +
+                          "a paragraph on one page.")
                 .SetOrphanMinimum(2)
                 .SetWidowMinimum(0)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex7.png">
- <a href="pdf/Sample_AddingParagraph7.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open67" style="display:none">
-  <p>Example 8. Add a paragraph with the widow control&nbsp;<a href="javascript: showdiv('close67'); hidediv('open67');" onclick="javascript: showdiv('close67'); hidediv('open67');">[show]</a></p>
+ <img src="img/configure-paragraph-ex7.png" width="200">
+ <a href="pdf/Sample_AddingParagraph7.pdf">See the document</a></code></pre>
+</div><div id="open70" style="display:none">
+  <p>Example 8. Add a paragraph with the widow control&nbsp;<a href="javascript: showdiv('close70'); hidediv('open70');" onclick="javascript: showdiv('close70'); hidediv('open70');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close67" style="display:inline">
-  <p>Example 8. Add a paragraph with the widow control&nbsp;<a href="javascript: showdiv('open67'); hidediv('close67');" onclick="javascript: showdiv('open67'); hidediv('close67');">[hide]</a></p>
-  <pre class="example" id="example67"><code>            DocumentBuilder.New()
+<div id="close70" style="display:inline">
+  <p>Example 8. Add a paragraph with the widow control&nbsp;<a href="javascript: showdiv('open70'); hidediv('close70');" onclick="javascript: showdiv('open70'); hidediv('close70');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example70"><code class="csharp">            DocumentBuilder.New()
             .AddSection()
             .SetSize(150, 60)
             .SetMargins(0)
-            .AddLineToSection(line =&gt; line.SetMarginTop(35))
+            .AddLineToSection(line => line.SetMarginTop(35))
          <b>//Add a paragraph to the section:</b>
-            .AddParagraph(&quot;This paragraph consists of &quot; +
-                          &quot;multiple lines. There must &quot; +
-                          &quot;be at least two lines at the start of &quot; +
-                          &quot;a paragraph on one page.&quot;)
+            .AddParagraph("This paragraph consists of " +
+                          "multiple lines. There must " +
+                          "be at least two lines at the start of " +
+                          "a paragraph on one page.")
                 .SetOrphanMinimum(0)
                 .SetWidowMinimum(2)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex8.png">
- <a href="pdf/Sample_AddingParagraph8.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open68" style="display:none">
-  <p>Example 9. Add a paragraph with the border set in a style&nbsp;<a href="javascript: showdiv('close68'); hidediv('open68');" onclick="javascript: showdiv('close68'); hidediv('open68');">[show]</a></p>
+ <img src="img/configure-paragraph-ex8.png" width="200">
+ <a href="pdf/Sample_AddingParagraph8.pdf">See the document</a></code></pre>
+</div><div id="open71" style="display:none">
+  <p>Example 9. Add a paragraph with the border set in a style&nbsp;<a href="javascript: showdiv('close71'); hidediv('open71');" onclick="javascript: showdiv('close71'); hidediv('open71');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close68" style="display:inline">
-  <p>Example 9. Add a paragraph with the border set in a style&nbsp;<a href="javascript: showdiv('open68'); hidediv('close68');" onclick="javascript: showdiv('open68'); hidediv('close68');">[hide]</a></p>
-  <pre class="example" id="example68"><code>            var styleMain = StyleBuilder.New()
+<div id="close71" style="display:inline">
+  <p>Example 9. Add a paragraph with the border set in a style&nbsp;<a href="javascript: showdiv('open71'); hidediv('close71');" onclick="javascript: showdiv('open71'); hidediv('close71');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example71"><code class="csharp">            var styleMain = StyleBuilder.New()
                 .SetBorderColor(Color.Blue)
                 .SetBorderWidth(0.75f);
             var styleParagraph = StyleBuilder.New(styleMain)
@@ -453,39 +350,122 @@ See Example 9 below for a code illustration. For more on working with styles, se
          <b>//Create a document:</b>
             DocumentBuilder.New()
                 .AddSection().SetParagraphStyle(styleParagraph)
-                    .AddParagraph(&quot;Information note&quot;)
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+                    .AddParagraph("Information note")
+            .ToDocument().Build("Result.pdf");
 
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex9.png">
- <a href="pdf/Sample_AddingParagraph9.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open69" style="display:none">
-  <p>Example 10. Add paragraphs with page breaks&nbsp;<a href="javascript: showdiv('close69'); hidediv('open69');" onclick="javascript: showdiv('close69'); hidediv('open69');">[show]</a></p>
+ <img src="img/configure-paragraph-ex9.png" width="800">
+ <a href="pdf/Sample_AddingParagraph9.pdf">See the document</a></code></pre>
+</div><div id="open72" style="display:none">
+  <p>Example 10. Add paragraphs with page breaks&nbsp;<a href="javascript: showdiv('close72'); hidediv('open72');" onclick="javascript: showdiv('close72'); hidediv('open72');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close69" style="display:inline">
-  <p>Example 10. Add paragraphs with page breaks&nbsp;<a href="javascript: showdiv('open69'); hidediv('close69');" onclick="javascript: showdiv('open69'); hidediv('close69');">[hide]</a></p>
-  <pre class="example" id="example69"><code>            .AddSection()
+<div id="close72" style="display:inline">
+  <p>Example 10. Add paragraphs with page breaks&nbsp;<a href="javascript: showdiv('open72'); hidediv('close72');" onclick="javascript: showdiv('open72'); hidediv('close72');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example72"><code class="csharp">            .AddSection()
                 .SetSize(PaperSize.C6)
-                .AddParagraph(&quot;Paragraph1 has to be left at the same page&quot;)
+                .AddParagraph("Paragraph1 has to be left at the same page")
                     .SetPageBreak(PageBreak.NextPage)
             .ToSection()
-                .AddParagraph(&quot;Paragraph2 has to be started from page #3&quot;)
+                .AddParagraph("Paragraph2 has to be started from page #3")
                     .SetPageBreak(PageBreak.NextOddPage)
             .ToSection()
-                .AddParagraph(&quot;Paragraph3 has to be started from page #4&quot;)
+                .AddParagraph("Paragraph3 has to be started from page #4")
                     .SetPageBreak(PageBreak.NextEvenPage)
             .ToSection()
                 .AddFooterToBothPages(20)
                     .AddParagraph()
-                        .AddPageNumber(&quot;Page #&quot;)
+                        .AddPageNumber("Page #")
         .ToDocument()
  
  <b>The above code will generate the following:</b>
  
- <img src="img/configure-paragraph-ex10.png">
- <a href="pdf/Sample_AddingParagraph10.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/configure-paragraph-ex10.png" width="800">
+ <a href="pdf/Sample_AddingParagraph10.pdf">See the document</a></code></pre>
+</div><div id="open73" style="display:none">
+  <p>Example 11. Getting the width of text in the cell and using it to calculate the cell width&nbsp;<a href="javascript: showdiv('close73'); hidediv('open73');" onclick="javascript: showdiv('close73'); hidediv('open73');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+</div>
+<div id="close73" style="display:inline">
+  <p>Example 11. Getting the width of text in the cell and using it to calculate the cell width&nbsp;<a href="javascript: showdiv('open73'); hidediv('close73');" onclick="javascript: showdiv('open73'); hidediv('close73');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example73"><code class="csharp"> <b>// First, we get the pixel width of the text in the cell,
+ // then we use this width to calculate the column width (taking into account the cell borders)
+ // In this case, the column width will exactly fit the text</b>
+            
+        string textInColumn1 = "Column1";
+        string textInColumn2 = "And this is column2";
+        FontBuilder font = StyleSheet.DefaultFont();
+        float borderWidth = StyleSheet.DefaultBorderWidth;
+        float width1 = TextUtils.MeasureTextWidth(textInColumn1, font);
+        float width2 = TextUtils.MeasureTextWidth(textInColumn2, font);
+        float spaceBeforeTextInCell = 0.5f;
+        builder
+            .AddSection()
+                .AddTable()                       
+                    .AddColumnToTable("", width1 + borderWidth*2 + spaceBeforeTextInCell)
+                    .AddColumnToTable("", width2 + borderWidth*2 + spaceBeforeTextInCell)
+                        .AddRow()
+                            .SetFont(font)
+                            .AddCellToRow(textInColumn1)
+                            .AddCellToRow(textInColumn2)
+        .ToDocument()
+            .Build("Result.pdf");
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/using-text-width.png" width="800">
+ <a href="pdf/Sample_UsingGetTextWidth1.pdf">See the document</a></code></pre>
+</div><div id="open74" style="display:none">
+  <p>Example 12. Keeping a paragraph with the paragraph following it&nbsp;<a href="javascript: showdiv('close74'); hidediv('open74');" onclick="javascript: showdiv('close74'); hidediv('open74');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+</div>
+<div id="close74" style="display:inline">
+  <p>Example 12. Keeping a paragraph with the paragraph following it&nbsp;<a href="javascript: showdiv('open74'); hidediv('close74');" onclick="javascript: showdiv('open74'); hidediv('close74');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example74"><code class="csharp">        DocumentBuilder.New()
+            .AddSection()
+                .SetMargins(0)
+                .AddParagraph("PARAGRAPH 1")
+                .SetMarginTop(580)
+            .ToSection()
+                .AddParagraph("PARAGRAPH 2")
+                    .SetKeepWithNext(true)
+            .ToSection()
+                .AddParagraphToSection("PARAGRAPH 3")
+                .AddParagraphToSection("PARAGRAPH 4")
+        .ToDocument()
+            .Build("Result.pdf");
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/keepwithnext-paragraph-paragraph.png" width="800">
+ <a href="pdf/Sample_KeepWithNext_ParagraphBeforeParagraph.pdf">See the document</a>
+ 
+ If you use .SetKeepWithNext(false) for the same paragraph, the document will look as follows:
+ <img src="img/keepwithnext-paragraph-paragraph-false.png" width="800">
+</code></pre>
+</div><div id="open75" style="display:none">
+  <p>Example 13. Keeping a paragraph with the table following it&nbsp;<a href="javascript: showdiv('close75'); hidediv('open75');" onclick="javascript: showdiv('close75'); hidediv('open75');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+</div>
+<div id="close75" style="display:inline">
+  <p>Example 13. Keeping a paragraph with the table following it&nbsp;<a href="javascript: showdiv('open75'); hidediv('close75');" onclick="javascript: showdiv('open75'); hidediv('close75');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example75"><code class="csharp">        SectionBuilder s = builder.AddSection().SetMargins(0);
+        for (int tableCount = 1; tableCount <= 3; tableCount++)
+        {
+             s.AddParagraph("Table " + tableCount.ToString())
+                 .SetAlignment(HorizontalAlignment.Center).SetBold().SetFontSize(20)
+                 .SetKeepWithNext(true);
+             TableBuilder t = s.AddTable().AddColumnToTable("Column 1").AddColumnToTable("Column 2");
+             for (int rowCount = 1; rowCount <= 16; rowCount++)
+                 t.AddRow().AddCellToRow("Cell 1").AddCell("Cell 2");
+        }
+        s.ToDocument()
+            .Build("Result.pdf");
+ 
+ <b>The above code will generate the following:</b>
+ 
+ <img src="img/keepwithnext-paragraph-table.png" width="800">
+ <a href="pdf/Sample_KeepWithNext_ParagraphBeforeTable.pdf">See the document</a>
+ 
+ If you use .SetKeepWithNext(false) for the same paragraph, the document will look as follows:
+ <img src="img/keepwithnext-paragraph-table-false.png" width="800"></code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>

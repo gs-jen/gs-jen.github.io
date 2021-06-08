@@ -1,125 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-  <head>
-    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Adding Tabulations</title><script language="javascript" type="text/javascript">
-function hidediv( divname )
-{
-    document.getElementById( divname ).style.display = 'none';
-}
-
-function showdiv( divname )
-{
-    document.getElementById( divname ).style.display = 'inline';
-}
-</script><style type="text/css">
-    body
-    {
-        color:#444444;
-        background-color:white;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-    }
-    A:link
-    {
-        color:#0068be;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    A:visited
-    {
-        color:#039CCF;
-        font-family:Trebuchet MS, Arial;
-        font-size:10pt;
-        cursor:pointer;
-    }
-    p, h1, h2, h3, h4, h5, h6
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-
-    pre.example
-    {
-        background-color : #f1f1f1;
-    }
-
-    ul, ul.main
-    {
-        list-style-type : disc;
-        margin-left: 18pt;
-    }
-    ol, ol.main
-    {
-        list-style-type: decimal;
-        margin-left: 18pt;
-    }
-    li
-    {
-        font-family : Trebuchet MS, Arial;
-    }
-    ul.hhc
-    {
-        list-style-type : none;
-        margin-left : 1em;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    li.hhc
-    {
-        font-family : Trebuchet MS, Arial;
-        margin-left : 0;
-        padding : 0;
-        padding-left : 0;
-        text-indent : 0;
-    }
-    
-    table, table.tmain
-    {
-        font-size:10pt;
-        border-collapse : collapse;
-        border : 1px solid;
-        border-color : #dfe3e7;
-    }
-    td.tmain, td.tmain_nw, td.thdr
-    {
-        border : 1px solid;
-        border-color : #dfe3e7;
-        background-color : rgb(255, 255, 255);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-    }
-    td.tmain p, td.tmain_nw p, td.thdr p
-    {
-        margin-bottom : 6pt;
-    }
-    td.tmain_nw
-    {
-        white-space : nowrap;
-    }
-    td.thdr
-    {
-        font-size:10pt;
-        background-color : #f1f1f1;
-    }
-    table.decl
-    {
-        border : 0px none;
-        background-color : rgb(192, 192, 192);
-        vertical-align : top;
-        padding : 3px;
-        font-family : Trebuchet MS, Arial;
-        width : 100%;
-    }
-</style></head>
-  <body>
-    <p>
-      <font size="+1"><b>Adding Tabulations</b></font>
-    </p>
-    <p><b>Brief</b></p>
-    <p>The article describes how to add and configure tabulations in a paragraph.</p>
-    <p><b>Details</b></p><p>Tabulations allow you to align the paragraph content. You can add tabulations of three types:</p><ul class="main">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><title>Adding Tabulations</title><link rel="stylesheet" href="highlighter/default.css">
+<link rel="stylesheet" href="res/styles.css">
+<link rel="stylesheet" href="res/dripicons.css"></head><body><script type="text/javascript" src="highlighter/highlight.pack.js"></script><script type="text/javascript" src="highlighter/highlight.cshtml.js"></script><script type="text/javascript" src="settings.js"></script><script type="text/javascript" src="res/page-scripts.js"></script><script type="text/javascript">
+    loadStarted();
+</script><h1>Adding Tabulations</h1>
+<h2>Brief</h2>
+<p>The article describes how to add and configure tabulations in a paragraph.</p>
+<h2>Details</h2><p>Tabulations allow you to align the paragraph content. You can add tabulations of three types:</p><ul class="main">
   <li><p><i>Left</i> - the paragraph content will be aligned to the left of the tabulation position.</p></li>
   <li><p><i>Right</i> - the paragraph content will be aligned to the right of the tabulation position.</p></li>
   <li><p><i>Center</i> - the paragraph content will be center-aligned on the tabulation position.</p></li>
@@ -137,89 +23,89 @@ The space before the tabulated content can be filled with leading symbols: botto
 <br><br></p>
 <p>To add a tabulation symbol before a paragraph element, you can use the following options:</p><ul class="main">
   <li><p>Call the method <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddTabSymbol.Vn.html"><code>AddTabSymbol</code></a>.</p></li>
-  <li><p>Set the <code>addTabulationSymbol</code> parameter to <code>True</code>
+  <li><p>Set the <code class="ctag">addTabulationSymbol</code> parameter to <code class="ctag">True</code>
 when calling <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraph.m47.html"><code>AddParagraph</code></a>,
 <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.AddParagraphToSection.DPB.html"><code>AddParagraphToSection</code></a>,
-or one of the <code>AddText</code> and <code>AddTextToParagraph</code> methods of <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.html"><code>ParagraphExtensions</code></a>.</p></li>
+or one of the <code class="ctag">AddText</code> and <code class="ctag">AddTextToParagraph</code> methods of <a href="Gehtsoft.PDFFlow.Builder.ParagraphExtensions.html"><code>ParagraphExtensions</code></a>.</p></li>
 </ul><p><br><br>
 <b>Create Lines Using Tabulations</b></p>
-<p>You can create lines, underlines and signature lines using tabulations with the <code>BottomLine</code> leading.
-For example, you can create a line with length = 100% of the paragraph width, the tabulation position of 100% and the tabulation type <code>Right</code>:</p><pre class="example" id="example86"><code>	s.AddParagraph().AddTabSymbol().AddTabulationInPercent(100, TabulationType.Right, TabulationLeading.BottomLine);</code></pre><p><br>
+<p>You can create lines, underlines and signature lines using tabulations with the <code class="ctag">BottomLine</code> leading.
+For example, you can create a line with length = 100% of the paragraph width, the tabulation position of 100% and the tabulation type <code class="ctag">Right</code>:</p><pre class="example" id="example95"><code class="csharp">   s.AddParagraph().AddTabSymbol().AddTabulationInPercent(100, TabulationType.Right, TabulationLeading.BottomLine);</code></pre><p><br>
 <b>See also</b></p>
 <p><a href="AddingParagraph.html">Adding Paragraph</a></p>
 <p><a href="AddingContentToParagraph.html">Adding Content to Paragraph</a></p>
 <p><br>
-<b>Examples</b></p><div id="open87" style="display:none">
-  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('close87'); hidediv('open87');" onclick="javascript: showdiv('close87'); hidediv('open87');">[show]</a></p>
+<b>Examples</b></p><div id="open96" style="display:none">
+  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('close96'); hidediv('open96');" onclick="javascript: showdiv('close96'); hidediv('open96');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close87" style="display:inline">
-  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('open87'); hidediv('close87');" onclick="javascript: showdiv('open87'); hidediv('close87');">[hide]</a></p>
-  <pre class="example" id="example87"><code>   DocumentBuilder
+<div id="close96" style="display:inline">
+  <p>Example 1. Add one tabulation per line&nbsp;<a href="javascript: showdiv('open96'); hidediv('close96');" onclick="javascript: showdiv('open96'); hidediv('close96');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example96"><code class="csharp">   DocumentBuilder
        .New()
        .AddSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;LEFT300&quot;).AddTabulation(300, TabulationType.Left)
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("LEFT300").AddTabulation(300, TabulationType.Left)
        .ToSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;RIGHT300&quot;).AddTabulation(300, TabulationType.Right)
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("RIGHT300").AddTabulation(300, TabulationType.Right)
        .ToSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;CENTER300&quot;).AddTabulation(300, TabulationType.Center)
-	.ToDocument()
-       .Build(&quot;Result.pdf&quot;);
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("CENTER300").AddTabulation(300, TabulationType.Center)
+   .ToDocument()
+       .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex2.png">
- <a href="pdf/Sample_AddingTabulation1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open88" style="display:none">
-  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('close88'); hidediv('open88');" onclick="javascript: showdiv('close88'); hidediv('open88');">[show]</a></p>
+ <img src ="img/tabulation-ex2.png" width="800">
+ <a href="pdf/Sample_AddingTabulation1.pdf">See the document</a></code></pre>
+</div><div id="open97" style="display:none">
+  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('close97'); hidediv('open97');" onclick="javascript: showdiv('close97'); hidediv('open97');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close88" style="display:inline">
-  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('open88'); hidediv('close88');" onclick="javascript: showdiv('open88'); hidediv('close88');">[hide]</a></p>
-  <pre class="example" id="example88"><code>   DocumentBuilder
+<div id="close97" style="display:inline">
+  <p>Example 2. Add two tabulations with leading symbols per line&nbsp;<a href="javascript: showdiv('open97'); hidediv('close97');" onclick="javascript: showdiv('open97'); hidediv('close97');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example97"><code class="csharp">   DocumentBuilder
        .New()
        .AddSection()
-           .AddParagraph(&quot;TEXT&quot;, addTabulationSymbol: true)
-           .AddTextToParagraph(&quot;LEFT200&quot;, addTabulationSymbol: true)
-           .AddTextToParagraph(&quot;RIGHT400&quot;)
+           .AddParagraph("TEXT", addTabulationSymbol: true)
+           .AddTextToParagraph("LEFT200", addTabulationSymbol: true)
+           .AddTextToParagraph("RIGHT400")
            .AddTabulation(200, TabulationType.Left, TabulationLeading.DotBottom)
            .AddTabulation(400, TabulationType.Right, TabulationLeading.BottomLine)
        .ToSection()
            .AddParagraph()
-           .AddTextToParagraph(&quot;TEXT&quot;, addTabulationSymbol: true)
-           .AddTextToParagraph(&quot;RIGHT200&quot;, addTabulationSymbol: true)
-           .AddTextToParagraph(&quot;CENTER400&quot;)
+           .AddTextToParagraph("TEXT", addTabulationSymbol: true)
+           .AddTextToParagraph("RIGHT200", addTabulationSymbol: true)
+           .AddTextToParagraph("CENTER400")
            .AddTabulation(200, TabulationType.Right, TabulationLeading.DotCenter)
            .AddTabulation(400, TabulationType.Center, TabulationLeading.BottomLine)
-       .ToDocument().Build(&quot;Result.pdf&quot;);
+       .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex3.png">
- <a href="pdf/Sample_AddingTabulation2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open89" style="display:none">
-  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('close89'); hidediv('open89');" onclick="javascript: showdiv('close89'); hidediv('open89');">[show]</a></p>
+ <img src ="img/tabulation-ex3.png" width="800">
+ <a href="pdf/Sample_AddingTabulation2.pdf">See the document</a></code></pre>
+</div><div id="open98" style="display:none">
+  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('close98'); hidediv('open98');" onclick="javascript: showdiv('close98'); hidediv('open98');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close89" style="display:inline">
-  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('open89'); hidediv('close89');" onclick="javascript: showdiv('open89'); hidediv('close89');">[hide]</a></p>
-  <pre class="example" id="example89"><code>   DocumentBuilder
+<div id="close98" style="display:inline">
+  <p>Example 3. Add tabulations with the position in percent&nbsp;<a href="javascript: showdiv('open98'); hidediv('close98');" onclick="javascript: showdiv('open98'); hidediv('close98');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example98"><code class="csharp">   DocumentBuilder
        .New()
        .AddSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;LEFT75%&quot;).AddTabulationInPercent(75, TabulationType.Left)
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("LEFT75%").AddTabulationInPercent(75, TabulationType.Left)
        .ToSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;RIGHT75%&quot;).AddTabulationInPercent(75, TabulationType.Right)
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("RIGHT75%").AddTabulationInPercent(75, TabulationType.Right)
        .ToSection()
-           .AddParagraph().AddTabSymbol().AddTextToParagraph(&quot;CENTER75%&quot;).AddTabulationInPercent(75, TabulationType.Center)
-       .ToDocument().Build(&quot;Result.pdf&quot;);
+           .AddParagraph().AddTabSymbol().AddTextToParagraph("CENTER75%").AddTabulationInPercent(75, TabulationType.Center)
+       .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex4.png">
- <a href="pdf/Sample_AddingTabulation3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open90" style="display:none">
-  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('close90'); hidediv('open90');" onclick="javascript: showdiv('close90'); hidediv('open90');">[show]</a></p>
+ <img src ="img/tabulation-ex4.png" width="800">
+ <a href="pdf/Sample_AddingTabulation3.pdf">See the document</a></code></pre>
+</div><div id="open99" style="display:none">
+  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('close99'); hidediv('open99');" onclick="javascript: showdiv('close99'); hidediv('open99');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close90" style="display:inline">
-  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('open90'); hidediv('close90');" onclick="javascript: showdiv('open90'); hidediv('close90');">[hide]</a></p>
-  <pre class="example" id="example90"><code>    DocumentBuilder
+<div id="close99" style="display:inline">
+  <p>Example 4. Create lines by means of tabulations&nbsp;<a href="javascript: showdiv('open99'); hidediv('close99');" onclick="javascript: showdiv('open99'); hidediv('close99');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example99"><code class="csharp">    DocumentBuilder
         .New()
         .AddSection()
             .AddParagraph()
@@ -227,18 +113,18 @@ For example, you can create a line with length = 100% of the paragraph width, th
                 .AddTabSymbol()
                 .AddTabulation(200, TabulationType.Left, TabulationLeading.DotBottom)
                 .AddTabulation(400, TabulationType.Left, TabulationLeading.BottomLine)
-        .ToDocument().Build(&quot;Result.pdf&quot;);
+        .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex5.png">
- <a href="pdf/Sample_AddingTabulation4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open91" style="display:none">
-  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('close91'); hidediv('open91');" onclick="javascript: showdiv('close91'); hidediv('open91');">[show]</a></p>
+ <img src ="img/tabulation-ex5.png" width="800">
+ <a href="pdf/Sample_AddingTabulation4.pdf">See the document</a></code></pre>
+</div><div id="open100" style="display:none">
+  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('close100'); hidediv('open100');" onclick="javascript: showdiv('close100'); hidediv('open100');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close91" style="display:inline">
-  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('open91'); hidediv('close91');" onclick="javascript: showdiv('open91'); hidediv('close91');">[hide]</a></p>
-  <pre class="example" id="example91"><code>    DocumentBuilder
+<div id="close100" style="display:inline">
+  <p>Example 5. Create signature lines using tabulations&nbsp;<a href="javascript: showdiv('open100'); hidediv('close100');" onclick="javascript: showdiv('open100'); hidediv('close100');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example100"><code class="csharp">    DocumentBuilder
         .New()
         .AddSection()
             .AddParagraph()
@@ -249,21 +135,21 @@ For example, you can create a line with length = 100% of the paragraph width, th
             .ToSection()
             .AddParagraph()
             <b>// Add text under the first line in the center (position 10%):</b>
-            .AddTabSymbol().AddTextToParagraph(&quot;(Date)&quot;).AddTabulationInPercent(10, TabulationType.Center)
+            .AddTabSymbol().AddTextToParagraph("(Date)").AddTabulationInPercent(10, TabulationType.Center)
             <b>// Add text under the second line in the center (position 80%):</b>
-            .AddTabSymbol().AddTextToParagraph(&quot;(Name)&quot;).AddTabulationInPercent(80, TabulationType.Center)
-        .ToDocument().Build(&quot;Result.pdf&quot;);
+            .AddTabSymbol().AddTextToParagraph("(Name)").AddTabulationInPercent(80, TabulationType.Center)
+        .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex6.png">
- <a href="pdf/Sample_AddingTabulation5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open92" style="display:none">
-  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('close92'); hidediv('open92');" onclick="javascript: showdiv('close92'); hidediv('open92');">[show]</a></p>
+ <img src ="img/tabulation-ex6.png" width="800">
+ <a href="pdf/Sample_AddingTabulation5.pdf">See the document</a></code></pre>
+</div><div id="open101" style="display:none">
+  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('close101'); hidediv('open101');" onclick="javascript: showdiv('close101'); hidediv('open101');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close92" style="display:inline">
-  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('open92'); hidediv('close92');" onclick="javascript: showdiv('open92'); hidediv('close92');">[hide]</a></p>
-  <pre class="example" id="example92"><code>    DocumentBuilder
+<div id="close101" style="display:inline">
+  <p>Example 6. Use tabulations in a table&nbsp;<a href="javascript: showdiv('open101'); hidediv('close101');" onclick="javascript: showdiv('open101'); hidediv('close101');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example101"><code class="csharp">    DocumentBuilder
         .New()
         .AddSection()
             .AddTable()
@@ -271,36 +157,35 @@ For example, you can create a line with length = 100% of the paragraph width, th
             .AddRow()
                 .AddCellToRow()
                 .AddCell()
-                    .AddParagraph().AddTextToParagraph(&quot;Text&quot;, addTabulationSymbol: true)
+                    .AddParagraph().AddTextToParagraph("Text", addTabulationSymbol: true)
                                     .AddTabulationInPercent(50, TabulationType.Left, TabulationLeading.BottomLine)
-                                    .AddText(&quot;Left&quot;)
+                                    .AddText("Left")
                     .ToCell()
-                    .AddParagraph().AddTextToParagraph(&quot;Text&quot;, addTabulationSymbol: true)
+                    .AddParagraph().AddTextToParagraph("Text", addTabulationSymbol: true)
                                     .AddTabulationInPercent(50, TabulationType.Right, TabulationLeading.DotBottom)
-                                    .AddText(&quot;Right&quot;)
+                                    .AddText("Right")
                     .ToCell()
-                    .AddParagraph().AddTextToParagraph(&quot;Text&quot;, addTabulationSymbol: true)
+                    .AddParagraph().AddTextToParagraph("Text", addTabulationSymbol: true)
                                     .AddTabulationInPercent(50, TabulationType.Center, TabulationLeading.DotCenter)
-                                    .AddText(&quot;Center&quot;)
+                                    .AddText("Center")
                     .ToCell()
                     .AddParagraph().AddTabSymbol()
                                     .AddTabulationInPercent(50, TabulationType.Left, TabulationLeading.BottomLine)
-                                   .AddText(&quot;Left&quot;)
+                                   .AddText("Left")
                     .ToCell()
                     .AddParagraph().AddTabSymbol()
                                     .AddTabulationInPercent(50, TabulationType.Right, TabulationLeading.DotBottom)
-                                    .AddText(&quot;Right&quot;)
+                                    .AddText("Right")
                     .ToCell()
                     .AddParagraph().AddTabSymbol()
                                     .AddTabulationInPercent(50, TabulationType.Center, TabulationLeading.DotCenter)
-                                    .AddText(&quot;Center&quot;)
-        .ToDocument().Build(&quot;Result.pdf&quot;);
+                                    .AddText("Center")
+        .ToDocument().Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/tabulation-ex7.png">
- <a href="pdf/Sample_AddingTabulation6.pdf" target="_blank">See the document</a></code></pre>
+ <img src ="img/tabulation-ex7.png" width="800">
+ <a href="pdf/Sample_AddingTabulation6.pdf">See the document</a></code></pre>
 </div><p>
-      <center><a href="tutorials.html">back</a></center>
-    </p><script language="javascript" type="text/javascript">if(window.parent.frames[0]) window.parent.frames[0].selectItem(window.location.href);</script></body>
-</html>
+  <center><a href="tutorials.html">back</a></center>
+</p><script language="javascript" type="text/javascript">syncList();</script></body></html>
