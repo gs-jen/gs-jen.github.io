@@ -5,37 +5,41 @@
 </script><h1>Adding Repeating Area</h1>
 <h2>Brief</h2>
 <p>The article describes how to add and configure repeating areas.</p>
-<h2>Details</h2><p><i>Repeating area</i> is a container with content that repeats on both odd and even pages of a section, or on its odd or even pages.
+<h2>Details</h2><p>A <i>repeating area</i> is a container with content that repeats on both odd and even pages of a section, or on the section's odd or even pages.
 A repeating area is a box of specified width or height located in a certain position on a page.<br>
-The position can be:</p><ul class="main">
-  <li><p><i>Predefined</i>. The following types of repeating areas have a predefined position:</p><ul class="main">
-  <li><p>Headers - located at the top margin of the section.</p></li>
-  <li><p>Footers - located at the bottom margin of the section.</p></li>
-  <li><p>Left and right repeating areas - located at the left and right margins of the section.</p></li>
+The position of a repeating area can be either predefined or specified by coordinates:</p><ul class="main">
+  <li><p>The following types of repeating areas have a predefined position:</p><ul class="main">
+  <li><p>Headers are located at the top margin of the section.</p></li>
+  <li><p>Footers are located at the bottom margin of the section.</p></li>
+  <li><p>Left and right repeating areas are located at the left and right margins of the section.</p></li>
 </ul></li>
-  <li><p>Specified <i>by coordinates</i> on a page as the distance from the left and top margins of the section.</p></li>
-</ul><p>A repeating area can include any content elements, such as paragraphs, tables, images, lines.
-They can be added to the area using the corresponding methods, for example <code class="ctag">AddParagraph</code> and <code class="ctag">AddParagraphToRepeatingArea</code>.
+  <li><p>A repeating area can be specified <i>by coordinates</i> on a page as the distance from the left and top margins of the section.</p></li>
+</ul><p>A repeating area can include any content elements, such as paragraphs, tables, images, and lines.
+The elements can be added to the area using the corresponding methods, for example <code class="ctag">AddParagraph</code> and <code class="ctag">AddParagraphToRepeatingArea</code>.
 The elements must fit in the repeating area box.<br>
 For details about adding and configuring content elements, see the corresponding articles.</p>
-<p>Repeating areas can be added to a section for both odd and even pages and for odd and even pages separately
+<p>Repeating areas can be added to a section for both the odd and even pages and for the odd and even pages separately,
 by using the corresponding methods of <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a>.</p>
-<p>You can add a number of repeating areas to a section, but they should not overlap.</p>
-<p>When a number of repeating areas are added, the following rules apply:</p><ul class="main">
-  <li><p>If headers, footers and left and right repeating areas are added to a section, their priority is configured by the
-<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetRepeatingAreaPriority.Td5.html"><code>SectionBuilder.SetRepeatingAreaPriority</code></a> method.
-By default, headers and footers have priority over left and right repeating areas - that is, the height of the left and right repeating areas
-is reduced by the height of headers and footers.</p></li>
-  <li><p>If you add a number of repeating areas with a predefined position of the same type, for example, footers -
-they will stack on to each other in the order they were added to the section without any space between them.</p></li>
+<p>You can add several repeating areas to a section, but they should not overlap.</p>
+<p>When several repeating areas are added, the following rules apply:</p><ul class="main">
+  <li><p>The priority of headers, footers and left and right repeating areas in a section is configured by the
+<a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.SetRepeatingAreaPriority.Td5.html"><code>SectionBuilder.SetRepeatingAreaPriority</code></a> method.<br>
+By default, headers and footers take a priority over left and right repeating areas, that is, the height of the left and right repeating areas
+is reduced by the height of headers and footers:<br></p>
+<p><img src="img/rep_areas_priority.png"></p></li>
+  <li><p>When adding several repeating areas with the predefined position of the same type, for example, footers,
+they will stack on to each other in the order they were added to the section without any space between them.<br>
+For example, several headers and several left repeating areas look as follows:<br></p>
+<p><img src="img/multiple_rep_areas.png"></p></li>
 </ul><p><b>Repeating Areas and Document Flow Areas</b></p>
-<p>The layout of pages in a section is defined by repeating areas and <a href="AddingDocumentFlowArea.html">document flow area</a>.</p><ul class="main">
-  <li><p>If you add a repeating area by specifying its coordinates, it is necessary to specify the coordinates of the document flow area.</p></li>
-  <li><p>If the coordinates of the document flow area are specified for the same pages (both odd and even, odd, or even) as the repeating areas,
+<p>The layout of pages in a section is defined by repeating areas and <a href="AddingDocumentFlowArea.html">document flow area</a>.
+There are few rules that apply when combining repeating areas and a document flow area.</p><ul class="main">
+  <li><p>If you add a repeating area by specifying its coordinates, it is then necessary to specify the coordinates of the document flow area.</p></li>
+  <li><p>If the coordinates of the document flow area are specified for the same pages as the repeating areas (both odd and even, odd, or even),
 it is also necessary to make sure that the repeating areas do not overlap it.</p></li>
   <li><p>If you add a repeating area with a predefined position and the coordinates of the document flow area are not specified,
 the section content will occupy the entire remaining space of the page.</p></li>
-</ul><p>Note that if you need to create a document only with repeating areas and without a document flow area, for correct generation
+</ul><p>Note that if you need to create a document with only repeating areas and without a document flow area, for a correct generation
 of the document, you should call the <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a><code class="ctag">.SetMargins(0)</code> method.</p>
 <p><br><br>
 If you do not specify formatting settings for a repeating area, they will have their default values defined by the default style.

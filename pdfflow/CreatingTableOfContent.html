@@ -43,29 +43,29 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
   <p>Example 1. Create a simple table of content&nbsp;<a href="javascript: showdiv('open149'); hidediv('close149');" onclick="javascript: showdiv('open149'); hidediv('close149');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
   <pre class="example" id="example149"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter II&quot;)
+                    .AddParagraph("Chapter II")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter III&quot;)
+                    .AddParagraph("Chapter III")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter III&quot;)
+                    .AddParagraph("Text of chapter III")
             .ToDocument()
                 .AddOutline()
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex1.png">
- <a href="pdf/Sample_CreatingOutline1.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex1.png" width="800">
+ <a href="pdf/Sample_CreatingOutline1.pdf">See the document</a></code></pre>
 </div><div id="open150" style="display:none">
   <p>Example 2. Create a multilevel table of content&nbsp;<a href="javascript: showdiv('close150'); hidediv('open150');" onclick="javascript: showdiv('close150'); hidediv('open150');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
@@ -74,46 +74,46 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
   <pre class="example" id="example150"><code class="csharp">            DocumentBuilder.New()
              <b>// Add content and mark some paragraphs as TOC items:</b>
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                      <b>// Set the higher level:</b>
                         .SetOutline(0)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.1&quot;)
+                    .AddParagraph("Chapter I.1")
                      <b>// Set the first sub-level:</b>
                         .SetOutline(1)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.1&quot;)
+                    .AddParagraph("Text of chapter I.1")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.2&quot;)
+                    .AddParagraph("Chapter I.2")
                         .SetOutline(1)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.2&quot;)
+                    .AddParagraph("Text of chapter I.2")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.2.a&quot;)
+                    .AddParagraph("Chapter I.2.a")
                      <b>// Set the second sub-level:</b>
                         .SetOutline(2)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.2.a&quot;)
+                    .AddParagraph("Text of chapter I.2.a")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.2.a&quot;)
+                    .AddParagraph("Chapter I.2.a")
                         .SetOutline(2)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.2.a&quot;)
+                    .AddParagraph("Text of chapter I.2.a")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter II&quot;)
+                    .AddParagraph("Chapter II")
                         .SetOutline(0)
             .ToDocument()
              <b>// Add a TOC to the document and set the left indent to 20:</b>
-                .AddOutline(outlineCaption:&quot;Outline&quot;, levelLeftIndent:20)
+                .AddOutline(outlineCaption:"Outline", levelLeftIndent:20)
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex2.png">
- <a href="pdf/Sample_CreatingOutline2.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex2.png" width="800">
+ <a href="pdf/Sample_CreatingOutline2.pdf">See the document</a></code></pre>
 </div><div id="open151" style="display:none">
   <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('close151'); hidediv('open151');" onclick="javascript: showdiv('close151'); hidediv('open151');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
@@ -121,30 +121,30 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
   <p>Example 3. Create a table of content in the middle of a document&nbsp;<a href="javascript: showdiv('open151'); hidediv('close151');" onclick="javascript: showdiv('open151'); hidediv('close151');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
   <pre class="example" id="example151"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter II&quot;)
+                    .AddParagraph("Chapter II")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
             .ToDocument()
                 .AddOutline()
             .ToDocument()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter III&quot;)
+                    .AddParagraph("Chapter III")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter III&quot;)
+                    .AddParagraph("Text of chapter III")
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex3.png">
- <a href="pdf/Sample_CreatingOutline3.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex3.png" width="800">
+ <a href="pdf/Sample_CreatingOutline3.pdf">See the document</a></code></pre>
 </div><div id="open152" style="display:none">
   <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('close152'); hidediv('open152');" onclick="javascript: showdiv('close152'); hidediv('open152');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
@@ -152,20 +152,20 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
   <p>Example 4. Create a table of content with a line leader&nbsp;<a href="javascript: showdiv('open152'); hidediv('close152');" onclick="javascript: showdiv('open152'); hidediv('close152');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
   <pre class="example" id="example152"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                         .SetOutline(0)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.1&quot;)
+                    .AddParagraph("Chapter I.1")
                         .SetOutline(1)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.1&quot;)
+                    .AddParagraph("Text of chapter I.1")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter I.1.a&quot;)
+                    .AddParagraph("Chapter I.1.a")
                         .SetOutline(2)
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I.1.a&quot;)
+                    .AddParagraph("Text of chapter I.1.a")
             .ToDocument()
                 .AddOutline()
                  <b>// Set the Red Dotted line leader between the TOC item text and the page number:</b>
@@ -173,74 +173,74 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
                  <b>// Shift levels from the left:</b>
                     .SetLevelLeftIndent(15)
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex4.png">
- <a href="pdf/Sample_CreatingOutline4.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex4.png" width="800">
+ <a href="pdf/Sample_CreatingOutline4.pdf">See the document</a></code></pre>
 </div><div id="open153" style="display:none">
-  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code class="ctag">AddOutline</code> method&nbsp;<a href="javascript: showdiv('close153'); hidediv('open153');" onclick="javascript: showdiv('close153'); hidediv('open153');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the [c]AddOutline[/c] method&nbsp;<a href="javascript: showdiv('close153'); hidediv('open153');" onclick="javascript: showdiv('close153'); hidediv('open153');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
 <div id="close153" style="display:inline">
-  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the <code class="ctag">AddOutline</code> method&nbsp;<a href="javascript: showdiv('open153'); hidediv('close153');" onclick="javascript: showdiv('open153'); hidediv('close153');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <p>Example 5. Create a table of content with setting fonts and colors using the parameters of the [c]AddOutline[/c] method&nbsp;<a href="javascript: showdiv('open153'); hidediv('close153');" onclick="javascript: showdiv('open153'); hidediv('close153');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
   <pre class="example" id="example153"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter II&quot;)
+                    .AddParagraph("Chapter II")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
             .ToDocument()
              <b>// Set Fonts in the AddOutline method:</b>
                 .AddOutline(
-                    outlineCaption: &quot;Outline&quot;,
+                    outlineCaption: "Outline",
                     outlineFont: Fonts.Courier(16).SetColor(Color.Green),
                     captionFont: Fonts.Times(20).SetColor(Color.Red).SetBold().SetUnderline(Stroke.Double, Color.Blue)
                         )
                  <b>// Spacing color will be Green as defined by the TOC font:</b>
                     .SetSpacingUnderlineStroke(Stroke.Dashed)
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex5.png">
- <a href="pdf/Sample_CreatingOutline5.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex5.png" width="800">
+ <a href="pdf/Sample_CreatingOutline5.pdf">See the document</a></code></pre>
 </div><div id="open154" style="display:none">
-  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code class="ctag">OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('close154'); hidediv('open154');" onclick="javascript: showdiv('close154'); hidediv('open154');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the [c]OutlineBuilder[/c] class&nbsp;<a href="javascript: showdiv('close154'); hidediv('open154');" onclick="javascript: showdiv('close154'); hidediv('open154');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
 <div id="close154" style="display:inline">
-  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the <code class="ctag">OutlineBuilder</code> class&nbsp;<a href="javascript: showdiv('open154'); hidediv('close154');" onclick="javascript: showdiv('open154'); hidediv('close154');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <p>Example 6. Create a table of content with setting fonts and colors using the methods of the [c]OutlineBuilder[/c] class&nbsp;<a href="javascript: showdiv('open154'); hidediv('close154');" onclick="javascript: showdiv('open154'); hidediv('close154');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
   <pre class="example" id="example154"><code class="csharp">            DocumentBuilder.New()
                 .AddSection()
-                    .AddParagraph(&quot;Chapter I&quot;)
+                    .AddParagraph("Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Chapter II&quot;)
+                    .AddParagraph("Chapter II")
                             !.SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
             .ToDocument()
-                .AddOutline(&quot;Outline&quot;)
+                .AddOutline("Outline")
                  <b>// Set Fonts using the OutlineBuilder methods:</b>
                     .SetCaptionFont(Fonts.Times(20).SetColor(Color.Red).SetBold().SetUnderline(Stroke.Double, Color.Blue))
                     .SetOutlineFont(Fonts.Courier(16).SetColor(Color.Green))
                  <b>// The line leader color will be Green as defined by the TOC font:</b>
                     .SetSpacingUnderlineStroke(Stroke.Dashed)
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex6.png">
- <a href="pdf/Sample_CreatingOutline6.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex6.png" width="800">
+ <a href="pdf/Sample_CreatingOutline6.pdf">See the document</a></code></pre>
 </div><div id="open155" style="display:none">
   <p>Example 7. Support of several sections&nbsp;<a href="javascript: showdiv('close155'); hidediv('open155');" onclick="javascript: showdiv('close155'); hidediv('open155');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
@@ -249,37 +249,37 @@ caption font using the <a href="Gehtsoft.PDFFlow.Builder.OutlineBuilder.SetCapti
   <pre class="example" id="example155"><code class="csharp">            DocumentBuilder.New()
              <b>// Section 1:</b>
                 .AddSection()
-                    .AddParagraph(&quot;Section 1. Chapter I&quot;)
+                    .AddParagraph("Section 1. Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Section 1. Chapter II&quot;)
+                    .AddParagraph("Section 1. Chapter II")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
             .ToDocument()
              <b>// Section 2:</b>
                 .AddSection()
-                    .AddParagraph(&quot;Section 2. Chapter I&quot;)
+                    .AddParagraph("Section 2. Chapter I")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter I&quot;)
+                    .AddParagraph("Text of chapter I")
                 .ToSection()
-                    .AddParagraph(&quot;Section 2. Chapter II&quot;)
+                    .AddParagraph("Section 2. Chapter II")
                         .SetOutline()
                 .ToSection()
-                    .AddParagraph(&quot;Text of chapter II&quot;)
+                    .AddParagraph("Text of chapter II")
             .ToDocument()
              <b>// This TOC will contain items from both sections before calling AddOutline:</b>
-                .AddOutline(&quot;Outline&quot;)
+                .AddOutline("Outline")
             .ToDocument()
-                .Build(&quot;Result.pdf&quot;);
+                .Build("Result.pdf");
  
  <b>The above code will generate the following:</b>
  
- <img src="img/creating-outline-ex7.png">
- <a href="pdf/Sample_CreatingOutline7.pdf" target="_blank">See the document</a></code></pre>
+ <img src="img/creating-outline-ex7.png" width="800">
+ <a href="pdf/Sample_CreatingOutline7.pdf">See the document</a></code></pre>
 </div><p>
   <center><a href="tutorials.html">back</a></center>
 </p><script language="javascript" type="text/javascript">syncList();</script></body></html>

@@ -99,14 +99,12 @@ specified in a style:</p><ul class="main">
 </ul><p>For example,</p><pre class="example" id="example166"><code class="csharp">   var myHeader2Style = StyleBuilder.New(myHeader1Style).SetFontColor(Color.Blue).SetMarginTop(Inherit.Parent).SetMarginBottom(Inherit.Parent);</code></pre><p>Note that borders, margins, and paddings are never inherited for a paragraph.</p>
 <p><b>Defining the Final Values of Element Formatting Parameters</b></p>
 <p>The final values of element formatting parameters in a document are defined based on the styles and formatting applied to them on different levels
-as illustrated in the following diagram.</p>
-<p><img src="img/formatting-calculation.png"></p>
-<p><b>Examples</b></p><div id="open167" style="display:none">
-  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('close167'); hidediv('open167');" onclick="javascript: showdiv('close167'); hidediv('open167');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+as illustrated in the following diagram.</p><pre id="example167"><code class="csharp"><img src="img/formatting-calculation.png" width="800"></code></pre><p><b>Examples</b></p><div id="open168" style="display:none">
+  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('close168'); hidediv('open168');" onclick="javascript: showdiv('close168'); hidediv('open168');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close167" style="display:inline">
-  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('open167'); hidediv('close167');" onclick="javascript: showdiv('open167'); hidediv('close167');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example167"><code class="csharp">         <b>//Create a style:</b>
+<div id="close168" style="display:inline">
+  <p>Example 1. Apply a style to a paragraph&nbsp;<a href="javascript: showdiv('open168'); hidediv('close168');" onclick="javascript: showdiv('open168'); hidediv('close168');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example168"><code class="csharp">         <b>//Create a style:</b>
             var styleHeader = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(16)
@@ -115,20 +113,20 @@ as illustrated in the following diagram.</p>
          <b>//Create a document:</b>
             DocumentBuilder.New()
          <b>//Add content and apply the style to the paragraph:</b>
-            .AddSection().AddParagraph(&quot;Header&quot;).ApplyStyle(styleHeader)
+            .AddSection().AddParagraph("Header").ApplyStyle(styleHeader)
          <b>//Build a file:</b>
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex1.png">
-    <a href="pdf/Sample_HowToUseStyles1.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open168" style="display:none">
-  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('close168'); hidediv('open168');" onclick="javascript: showdiv('close168'); hidediv('open168');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+    <img src="img/howto-use-styles-ex1.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles1.pdf">See the document</a></code></pre>
+</div><div id="open169" style="display:none">
+  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('close169'); hidediv('open169');" onclick="javascript: showdiv('close169'); hidediv('open169');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close168" style="display:inline">
-  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('open168'); hidediv('close168');" onclick="javascript: showdiv('open168'); hidediv('close168');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example168"><code class="csharp">         <b>//Create a style:</b>
+<div id="close169" style="display:inline">
+  <p>Example 2. Apply a style to a document&nbsp;<a href="javascript: showdiv('open169'); hidediv('close169');" onclick="javascript: showdiv('open169'); hidediv('close169');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example169"><code class="csharp">         <b>//Create a style:</b>
             var styleMain = StyleBuilder.New()
             .SetFontName(FontNames.Helvetica)
             .SetFontSize(12);
@@ -136,21 +134,21 @@ as illustrated in the following diagram.</p>
             DocumentBuilder.New().ApplyStyle(styleMain)
          <b>//Add content:</b>
             .AddSection()
-                        .AddParagraphToSection(&quot;Document font style paragraph:&quot;)
-                        .AddParagraphToSection(&quot;Helvetica 12&quot;)
+                        .AddParagraphToSection("Document font style paragraph:")
+                        .AddParagraphToSection("Helvetica 12")
          <b>//Build a file:</b>
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex2.png">
-    <a href="pdf/Sample_HowToUseStyles2.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open169" style="display:none">
-  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('close169'); hidediv('open169');" onclick="javascript: showdiv('close169'); hidediv('open169');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+    <img src="img/howto-use-styles-ex2.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles2.pdf">See the document</a></code></pre>
+</div><div id="open170" style="display:none">
+  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('close170'); hidediv('open170');" onclick="javascript: showdiv('close170'); hidediv('open170');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close169" style="display:inline">
-  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('open169'); hidediv('close169');" onclick="javascript: showdiv('open169'); hidediv('close169');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example169"><code class="csharp">         <b>//Create styles for a document and for a paragraph:</b>
+<div id="close170" style="display:inline">
+  <p>Example 3. Apply styles to a document and to its sections&nbsp;<a href="javascript: showdiv('open170'); hidediv('close170');" onclick="javascript: showdiv('open170'); hidediv('close170');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example170"><code class="csharp">         <b>//Create styles for a document and for a paragraph:</b>
             var styleMain = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(12);
@@ -162,23 +160,23 @@ as illustrated in the following diagram.</p>
          <b>//Add content:</b>
             .AddSection()
          <b>//Apply the style to the paragraph:</b>
-                .AddParagraph(&quot;Header&quot;).ApplyStyle(styleHeader).ToSection()
+                .AddParagraph("Header").ApplyStyle(styleHeader).ToSection()
          <b>//Add paragraphs:</b>
-                .AddParagraphToSection(&quot;Document font style paragraph:&quot;)
-                .AddParagraphToSection(&quot;Helvetica 12&quot;)
+                .AddParagraphToSection("Document font style paragraph:")
+                .AddParagraphToSection("Helvetica 12")
          <b>//Build a file:</b>
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex3.png">
-    <a href="pdf/Sample_HowToUseStyles3.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open170" style="display:none">
-  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('close170'); hidediv('open170');" onclick="javascript: showdiv('close170'); hidediv('open170');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+    <img src="img/howto-use-styles-ex3.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles3.pdf">See the document</a></code></pre>
+</div><div id="open171" style="display:none">
+  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('close171'); hidediv('open171');" onclick="javascript: showdiv('close171'); hidediv('open171');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close170" style="display:inline">
-  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('open170'); hidediv('close170');" onclick="javascript: showdiv('open170'); hidediv('close170');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example170"><code class="csharp">         <b>//Create styles:</b>
+<div id="close171" style="display:inline">
+  <p>Example 4. Apply styles to sections&nbsp;<a href="javascript: showdiv('open171'); hidediv('close171');" onclick="javascript: showdiv('open171'); hidediv('close171');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example171"><code class="csharp">         <b>//Create styles:</b>
             var styleSection = StyleBuilder.New()
                 .SetFontName(FontNames.Helvetica)
                 .SetFontSize(14);
@@ -189,24 +187,24 @@ as illustrated in the following diagram.</p>
             var document = DocumentBuilder.New();
          <b>//Add section1 with the first style:</b>
             var section1 = document.AddSection().ApplyStyle(styleSection);
-            section1.AddParagraphToSection(&quot;Section font style paragraph:&quot;)
-                    .AddParagraphToSection(&quot;Helvetica 12&quot;);
+            section1.AddParagraphToSection("Section font style paragraph:")
+                    .AddParagraphToSection("Helvetica 12");
          <b>//Add section2 with the second style:</b>
             var section2 = document.AddSection().ApplyStyle(styleAddition);
-            section2.AddParagraphToSection(&quot;Addition info font style paragraph:&quot;)
-                    .AddParagraphToSection(&quot;Helvetica oblique&quot;);
+            section2.AddParagraphToSection("Addition info font style paragraph:")
+                    .AddParagraphToSection("Helvetica oblique");
          <b>//Build a file:</b>
-            document.Build(&quot;Result.pdf&quot;);
+            document.Build("Result.pdf");
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex4.png">
-    <a href="pdf/Sample_HowToUseStyles4.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open171" style="display:none">
-  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('close171'); hidediv('open171');" onclick="javascript: showdiv('close171'); hidediv('open171');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+    <img src="img/howto-use-styles-ex4.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles4.pdf">See the document</a></code></pre>
+</div><div id="open172" style="display:none">
+  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('close172'); hidediv('open172');" onclick="javascript: showdiv('close172'); hidediv('open172');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close171" style="display:inline">
-  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('open171'); hidediv('close171');" onclick="javascript: showdiv('open171'); hidediv('close171');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example171"><code class="csharp">            var imagePath = &quot;imageFile.png&quot;;
+<div id="close172" style="display:inline">
+  <p>Example 5. Apply a style to all images in a section&nbsp;<a href="javascript: showdiv('open172'); hidediv('close172');" onclick="javascript: showdiv('open172'); hidediv('close172');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example172"><code class="csharp">            var imagePath = "imageFile.png";
          <b>//Create a style for images:</b>
             var styleImage = StyleBuilder.New()
                 .SetBorder(0.75f, Stroke.Solid, Color.Blue)
@@ -216,23 +214,23 @@ as illustrated in the following diagram.</p>
          <b>//Add a section with the style for images:</b>
             .AddSection().SetImageStyle(styleImage)
          <b>//Add content:</b>
-                .AddParagraphToSection(&quot;Document with content misc. types&quot;)
+                .AddParagraphToSection("Document with content misc. types")
                 .AddImageToSection(imagePath, 48, 48)
-                .AddParagraphToSection(&quot;Setup style for all images in section: blue border and margins.&quot;)
+                .AddParagraphToSection("Setup style for all images in section: blue border and margins.")
                 .AddImageToSection(imagePath, 48, 48)
          <b>//Build a file:</b>
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex5.png">
-    <a href="pdf/Sample_HowToUseStyles5.pdf" target="_blank">See the document</a></code></pre>
-</div><div id="open172" style="display:none">
-  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('close172'); hidediv('open172');" onclick="javascript: showdiv('close172'); hidediv('open172');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
+    <img src="img/howto-use-styles-ex5.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles5.pdf">See the document</a></code></pre>
+</div><div id="open173" style="display:none">
+  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('close173'); hidediv('open173');" onclick="javascript: showdiv('close173'); hidediv('open173');" class="action">Show<span class="side-icon dripicons-chevron-right"></span></a></p>
 </div>
-<div id="close172" style="display:inline">
-  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('open172'); hidediv('close172');" onclick="javascript: showdiv('open172'); hidediv('close172');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
-  <pre class="example" id="example172"><code class="csharp">            var imagePath = &quot;imageFile.png&quot;;
+<div id="close173" style="display:inline">
+  <p>Example 6. Apply styles with inheritance of parameters&nbsp;<a href="javascript: showdiv('open173'); hidediv('close173');" onclick="javascript: showdiv('open173'); hidediv('close173');" class="action">Hide<span class="side-icon dripicons-chevron-down"></span></a></p>
+  <pre class="example" id="example173"><code class="csharp">            var imagePath = "imageFile.png";
          <b>//Create a style:</b>
             var styleParent = StyleBuilder.New()
                 .SetFontColor(Color.Blue)
@@ -245,21 +243,21 @@ as illustrated in the following diagram.</p>
          <b>//Add a section with the style for all paragraphs in the document:</b>
             .AddSection().SetParagraphStyle(styleParent)
          <b>//Add content:</b>
-                .AddParagraphToSection(&quot;Paragraph with 'parent' section style.&quot;)
-                .AddParagraph(&quot;Paragraph with style 'child1': &quot;)
+                .AddParagraphToSection("Paragraph with 'parent' section style.")
+                .AddParagraph("Paragraph with style 'child1': ")
                     .ApplyStyle(styleChild1)
-                    .AddTextToParagraph(&quot;inherit border from parent style&quot;)
+                    .AddTextToParagraph("inherit border from parent style")
             .ToSection()
-                .AddParagraph(&quot;Paragraph with style 'child2': &quot;)
+                .AddParagraph("Paragraph with style 'child2': ")
                     .ApplyStyle(styleChild2)
-                    .AddTextToParagraph(&quot;no inherit border style&quot;)
+                    .AddTextToParagraph("no inherit border style")
          <b>//Build a file:</b>
-            .ToDocument().Build(&quot;Result.pdf&quot;);
+            .ToDocument().Build("Result.pdf");
 
     <b>The above code will generate the following:</b>
  
-    <img src="img/howto-use-styles-ex6.png">
-    <a href="pdf/UserContract_Sample_HowToUseStyles6.pdf" target="_blank">See the document</a></code></pre>
+    <img src="img/howto-use-styles-ex6.png" width="800">
+    <a href="pdf/Sample_HowToUseStyles6.pdf">See the document</a></code></pre>
 </div><p>
   <center><a href="tutorials.html">back</a></center>
 </p><script language="javascript" type="text/javascript">syncList();</script></body></html>

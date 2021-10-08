@@ -27,13 +27,14 @@ not after one another, and include different types of elements. For more details
 configure the table and add content to it inside this method.</p></li>
 </ul><pre class="example" id="example21"><code class="csharp">   mySectionBuilder.AddTable(...)</code></pre></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTableToSection.ahD.html"><code>AddTableToSection</code></a> method
-to add a table, configure the table and add content to it inside this method.</p><pre class="example" id="example22"><code class="csharp">   mySectionBuilder.AddTableToSection(...)</code></pre></li>
+to add a table, configure it and return SectionBuilder.</p><pre class="example" id="example22"><code class="csharp">   mySectionBuilder.AddTableToSection(...)
+                   .AddParagraph(&quot;Some paragraph added to the section&quot;)</code></pre></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableBuilder.New.VE4.html"><code>TableBuilder.New</code></a> method and pass the instance of
 <a href="Gehtsoft.PDFFlow.Builder.SectionBuilder.html"><code>SectionBuilder</code></a> you want to add this table to in this method.</p></li>
-</ul><p><b>To add a table to a repeating area</b>, you can use the following options:</p><ul class="main">
+</ul><p><b>To add a table to a repeating area</b>, you can use one of the following:</p><ul class="main">
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTable.EeE.html"><code>AddTable</code></a> method to add a table and specify the column width.</p><pre class="example" id="example23"><code class="csharp">   myRepeatingAreaBuilder.AddTable(...)</code></pre></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddTableToRepeatingArea.c03.html"><code>AddTableToRepeatingArea</code></a> method
-to add a table, configure the table and add content to it inside this method.</p><pre class="example" id="example24"><code class="csharp">   myRepeatingAreaBuilder.AddTableToRepeatingArea(...)</code></pre></li>
+to add a table, configure it and return area.</p><pre class="example" id="example24"><code class="csharp">   myRepeatingAreaBuilder.AddTableToRepeatingArea(...)</code></pre></li>
 </ul><p><br>
 <b>Configuring the Table</b></p>
 <p>When you add a table and do not specify any style or formatting for it, it will be created with default formatting settings defined in the default table style.</p>
@@ -94,16 +95,20 @@ You can specify the page from which the table will start in the method parameter
 <b>Adding and Configuring Columns, Rows, and Cells</b></p>
 <p>After you add a table to a section or repeating area, you should add columns, rows and cells to the table by following these steps:</p><ol class="main">
   <li><p>Add columns to the table using one of the following options:</p><ul class="main">
-  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddColumn</code></a> methods.</p></li>
+  <li><p>Call one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddColumn</code></a> (returning TableColumn) or <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddColumnToTable</code></a> (returning Table) methods.</p></li>
   <li><p>Call the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.AddColumnPercent.IA9.html"><code>AddColumnPercent</code></a> method to set the column width in percent.</p></li>
 </ul><p>Call any of these methods for each column you want to add.<br>
-For example:</p><pre class="example" id="example26"><code class="csharp">   myTableBuilder.AddColumn().AddColumn().AddColumn();</code></pre></li>
-  <li><p>Add a row to the table by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRow</code></a> or
-<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRowToTable</code></a> methods.
+For example:</p><pre class="example" id="example26"><code class="csharp">   myTableBuilder
+     .AddColumnToTable()
+       .AddColumn()
+     .ToTable()
+       .AddColumnPercent(35);</code></pre></li>
+  <li><p>Add a row to the table by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRow</code></a> (returning TableRow)or
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddRowToTable</code></a> (returning Table)  methods.
 <br>
 For example,</p><pre class="example" id="example27"><code class="csharp">   myTable.AddRow(...)</code></pre></li>
-  <li><p>Add cells to the row by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCell</code></a> or
-<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCellToRow</code></a> methods.
+  <li><p>Add cells to the row by calling one of the <a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCell</code></a> (returining TableCell) or
+<a href="Gehtsoft.PDFFlow.Builder.TableExtensions.html"><code>AddCellToRow</code></a> (returning TableRow) methods.
 The number of cells in the row must be equal to the number of columns in the table.</p></li>
 </ol><p>The style and formatting for table columns, rows and cells can be configured using the methods of
 <a href="Gehtsoft.PDFFlow.Builder.TableColumnBuilder.html"><code>TableColumnBuilder</code></a>,
